@@ -3,7 +3,6 @@ import 'package:custom_localization_generator/custom_localization_generator.dart
 import 'package:source_gen/source_gen.dart';
 
 Builder customLocalizationGenerator(BuilderOptions options) {
-  print("test");
   return SharedPartBuilder(
       [CustomLocalizationGenerator()], 'custom_localization');
 }
