@@ -1,0 +1,17 @@
+{
+  "en_us": {
+    "language_code": "en",
+    "script_code": "us",
+    "is_default": true,
+    "lbl": {
+      "app_name": "Test Localization",
+      "user_name": "UserName"
+    }
+  },
+  "iw": {
+    "language_code": "iw",
+    "lbl": {
+      "user_name": "יציאה"
+    }
+  }
+}
