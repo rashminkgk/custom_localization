@@ -23,6 +23,11 @@ dev_dependencies:
 
 3. Create a json file in following format
 
+- Root elements must be language code
+- ``language_code``,``script_code``  are required.
+- set ``is_default`` to ``true`` if the locale is default locale otherwise not required.
+- You can create any number of objects inside locale object ex. inside ```"en_us"```. 
+
 ```json
 {
   "en_us": {
