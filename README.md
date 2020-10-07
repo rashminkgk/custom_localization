@@ -14,11 +14,13 @@ git submodule add http://gitlab.coruscate.in/flutter/custom_localization.git
 
 ```yaml
 dependencies:
-    custom_localization: ^0.0.1
+    custom_localization:
+        path: ./custom_localization
 
 dev_dependencies:
     build_runner: any
-    custom_localization_generator: ^0.0.1
+    custom_localization_generator:
+        path: ./custom_localization/custom_localization_generator
 ```
 
 3. Create a json file in following format
