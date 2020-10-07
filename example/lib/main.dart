@@ -36,7 +36,7 @@ class TestPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: <Widget>[Text(R.string.lbl.appName)],
+      children: <Widget>[Text(R.string.app.lblAppName)],
     );
   }
 }

@@ -108,17 +108,15 @@ String generateLocaleClass(LocaleData defaultLocal, LocaleData localeData) {
     } else {
       source += "@override get ${toCamelCase(innerKey)}=> $subClassName(); ";
     }
-
-    if (localeData.languageCode != null)
-      source +=
-          "static String get languageCode=>\"${localeData.languageCode}\";";
-
-    if (localeData.scriptCode != null)
-      source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
-    if (localeData.languageName != null)
-      source +=
-          "static String get languageName=>\"${localeData.languageName}\";";
   });
+
+  if (localeData.languageCode != null)
+    source += "static String get languageCode=>\"${localeData.languageCode}\";";
+
+  if (localeData.scriptCode != null)
+    source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
+  if (localeData.languageName != null)
+    source += "static String get languageName=>\"${localeData.languageName}\";";
 
   source += "}";
   subClasses.forEach((element) {
@@ -145,7 +143,7 @@ String generateRClass(
 
   static Map<String, ${defaultLocale.className}> _supportedLocales = $supportedLocalesSource
 
-  static EnUs _getDefaultLocal() {
+  static ${defaultLocale.className} _getDefaultLocal() {
     //return default strings if locale is not set
 
     if (_appLocale == null) return ${defaultLocale.className}();
