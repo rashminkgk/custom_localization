@@ -48,11 +48,11 @@ class English {
 
 class App {
   String lblAppName = "Kick Scooter";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class Signup {
-  String lblFirstName = "First Name";
-  String lblLastName = "Last Name";
   String lblSelectDateOfBirth = "Select Date of Birth";
   String lblGender = "Gender";
   String lblEnterPhoneNo = "Enter Phone No";
@@ -64,6 +64,11 @@ class Signup {
   String lblRidersAgreement = "Rider's Agreement";
   String msgAgeInfo =
       "You should be at least 16 to ride the scooter. Accounts of users younger than 16 may get restricted.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "lbl_first_name": "First Name",
+    "lbl_last_name": "Last Name",
+  };
 }
 
 class AddCard {
@@ -72,6 +77,8 @@ class AddCard {
   String lblCardHolderName = "Card Holder Name";
   String lblExpiryDate = "Expiry Date";
   String lblCvvCode = "CVV Code";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class Portugese extends English {
@@ -88,6 +95,8 @@ class Portugese extends English {
 class PortugeseApp extends App {
   @override
   get lblAppName => "Scooter chute";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class PortugeseSignup extends Signup {
@@ -116,6 +125,8 @@ class PortugeseSignup extends Signup {
   @override
   get msgAgeInfo =>
       "Você deve ter pelo menos 16 para montar o scooter. Contas de usuários com menos de 16 podem ficar restrito.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class PortugeseAddCard extends AddCard {
@@ -129,6 +140,8 @@ class PortugeseAddCard extends AddCard {
   get lblExpiryDate => "Data de validade";
   @override
   get lblCvvCode => "Código de Valor de Verificação de Cartão";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class Arabic extends English {
@@ -145,6 +158,8 @@ class Arabic extends English {
 class ArabicApp extends App {
   @override
   get lblAppName => "ركلة سكوتر";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class ArabicSignup extends Signup {
@@ -173,6 +188,8 @@ class ArabicSignup extends Signup {
   @override
   get msgAgeInfo =>
       "يجب أن تكون على الأقل 16 لركوب دراجة نارية. حسابات المستخدمين الذين تقل أعمارهم عن 16 قد تحصل المحظورة.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }
 
 class ArabicAddCard extends AddCard {
@@ -186,4 +203,6 @@ class ArabicAddCard extends AddCard {
   get lblExpiryDate => "تاريخ الانتهاء";
   @override
   get lblCvvCode => "رقم الكود الموجود على بطاقات الاتمان";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
 }

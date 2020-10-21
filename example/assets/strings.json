@@ -6,6 +6,10 @@
       "lbl_app_name": "Kick Scooter"
     },
     "signup": {
+      "dynamicKeys": [
+        "lbl_first_name",
+        "lbl_last_name"
+      ],
       "lbl_first_name": "First Name",
       "lbl_last_name": "Last Name",
       "lbl_select_date_of_birth": "Select Date of Birth",

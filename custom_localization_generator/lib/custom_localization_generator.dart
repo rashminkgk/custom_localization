@@ -11,11 +11,17 @@ import 'package:source_gen/source_gen.dart';
 
 class CustomLocalizationGenerator
     extends GeneratorForAnnotation<CustomLocalization> {
+  static String _getValueByKeyMethod =
+      "String byKey(String key)=> _dynamicValues[key];";
+
   @override
   generateForAnnotatedElement(
       Element element, ConstantReader annotation, BuildStep buildStep) async {
-    String jsonString =
-        await File(annotation.read("jsonFileUrl").stringValue).readAsString();
+    return getSource(annotation.read("jsonFileUrl").stringValue);
+  }
+
+  Future<String> getSource(String fileUrl) async {
+    String jsonString = await File(fileUrl).readAsString();
 
     if (jsonString == null)
       throw Exception("!!!!!! Please add a json file with all strings.");
@@ -41,7 +47,7 @@ class CustomLocalizationGenerator
           innerValue.forEach((key, value) {
             if (localeData.subClassFields[subClassName] == null)
               localeData.subClassFields[subClassName] = {};
-            localeData.subClassFields[subClassName][toCamelCase(key)] = value;
+            localeData.subClassFields[subClassName][key] = value;
           });
         }
       });
@@ -63,79 +69,109 @@ class CustomLocalizationGenerator
 
     return finalSource;
   }
-}
 
-String generateLocaleClass(LocaleData defaultLocal, LocaleData localeData) {
-  String source = "class " + localeData.className;
-  if (defaultLocal != null) source += " extends ${defaultLocal.className}";
+  String generateLocaleClass(LocaleData defaultLocal, LocaleData localeData) {
+    String source = "class " + localeData.className;
+    if (defaultLocal != null) source += " extends ${defaultLocal.className}";
 
-  source += "{";
-  List<String> subClasses = [];
-  Map<String, Map<String, String>> innerMap = localeData.subClassFields;
+    source += "{";
+    List<String> subClasses = [];
+    Map<String, Map<String, dynamic>> innerMap = localeData.subClassFields;
 
-  innerMap.forEach((innerKey, innerValue) {
-    //create child class
-    String subClassSource = "class " + innerKey;
-    String subClassName = innerKey;
-    if (defaultLocal != null) {
-      //find name of parent class from default locale
-      String parentClassOfSubClass = defaultLocal.subClassNames
-          .singleWhere((element) => element == innerKey);
-      if (parentClassOfSubClass != null) {
-        if (localeData.languageCode != null)
-          subClassName = toTitleCase(localeData.languageCode) + innerKey;
-        subClassSource = "class $subClassName extends $parentClassOfSubClass";
+    innerMap.forEach((innerKey, innerValue) {
+      //create child class
+      String subClassSource = "class " + innerKey;
+      String subClassName = innerKey;
+      if (defaultLocal != null) {
+        //find name of parent class from default locale
+        String parentClassOfSubClass = defaultLocal.subClassNames
+            .singleWhere((element) => element == innerKey);
+        if (parentClassOfSubClass != null) {
+          if (localeData.languageCode != null)
+            subClassName = toTitleCase(localeData.languageCode) + innerKey;
+          subClassSource = "class $subClassName extends $parentClassOfSubClass";
+        }
       }
-    }
 
-    subClassSource += "{";
-    //add fields with value if class is default locale otherwise add getters of default class fields
-    if (defaultLocal == null) {
-      innerValue.forEach((key, value) {
-        subClassSource += " String $key = \"$value\" ;";
-      });
-    } else {
-      innerValue.forEach((key, value) {
-        subClassSource += "@override get $key => \"$value\" ;";
-      });
-    }
-    subClassSource += "}";
-    subClasses.add(subClassSource);
+      subClassSource += "{";
+      List<String> dynamicKeys = [];
 
-    //add child class as fields in Locale class if its the default locale otherwise add as getter with value of child class
-    if (defaultLocal == null) {
-      source += "$innerKey ${toCamelCase(innerKey)}= $innerKey();";
-    } else {
-      source += "@override get ${toCamelCase(innerKey)}=> $subClassName(); ";
-    }
-  });
+      String dynamicKeysSource =
+          _getValueByKeyMethod + " Map<String,String> _dynamicValues={";
+      //add fields with value if class is default locale otherwise add getters of default class fields
+      //add key-value to map if key is in dynamicKeys list
+      if (defaultLocal == null) {
+        innerValue.forEach((key, value) {
+          if (key == "dynamicKeys") {
+            if (value is List<dynamic>) {
+              print("in if");
+              dynamicKeys.addAll(value.map((e) => e.toString()));
+            }
+          } else {
+            if (dynamicKeys.contains(key)) {
+              dynamicKeysSource += "\"$key\": \"$value\",";
+              print(dynamicKeysSource);
+            } else
+              subClassSource += " String ${toCamelCase(key)} = \"$value\" ;";
+          }
+        });
+      } else {
+        innerValue.forEach((key, value) {
+          if (key == "dynamicKeys") {
+            if (value is List<String>) dynamicKeys.addAll(value);
+          } else {
+            if (dynamicKeys.contains(key)) {
+              dynamicKeysSource += "\"$key\": \"$value\",";
+            } else {
+              subClassSource +=
+                  "@override get ${toCamelCase(key)} => \"$value\" ;";
+            }
+          }
+        });
+      }
+      dynamicKeysSource += "};";
+      print("final source");
+      print(dynamicKeysSource);
+      subClassSource += dynamicKeysSource;
+      subClassSource += "}";
+      subClasses.add(subClassSource);
 
-  if (localeData.languageCode != null)
-    source += "static String get languageCode=>\"${localeData.languageCode}\";";
+      //add child class as fields in Locale class if its the default locale otherwise add as getter with value of child class
+      if (defaultLocal == null) {
+        source += "$innerKey ${toCamelCase(innerKey)}= $innerKey();";
+      } else {
+        source += "@override get ${toCamelCase(innerKey)}=> $subClassName(); ";
+      }
+    });
 
-  if (localeData.scriptCode != null)
-    source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
-  if (localeData.languageName != null)
-    source += "static String get languageName=>\"${localeData.languageName}\";";
+    if (localeData.languageCode != null)
+      source +=
+          "static String get languageCode=>\"${localeData.languageCode}\";";
 
-  source += "}";
-  subClasses.forEach((element) {
-    source += element;
-  });
-  var formatter = new DartFormatter();
-  return formatter.format(source);
-}
+    if (localeData.scriptCode != null)
+      source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
+    if (localeData.languageName != null)
+      source +=
+          "static String get languageName=>\"${localeData.languageName}\";";
 
-String generateRClass(
-    List<LocaleData> supportedLocales, LocaleData defaultLocale) {
-  String supportedLocalesSource = "{";
-  supportedLocales.forEach((element) {
-    supportedLocalesSource +=
-        "\"${element.languageName}\":${element.className}(),";
-  });
-  supportedLocalesSource += "};";
+    source += "}";
+    subClasses.forEach((element) {
+      source += element;
+    });
+    var formatter = new DartFormatter();
+    return formatter.format(source);
+  }
 
-  String source = '''
+  String generateRClass(
+      List<LocaleData> supportedLocales, LocaleData defaultLocale) {
+    String supportedLocalesSource = "{";
+    supportedLocales.forEach((element) {
+      supportedLocalesSource +=
+          "\"${element.languageName}\":${element.className}(),";
+    });
+    supportedLocalesSource += "};";
+
+    String source = '''
   class R {
   static ${defaultLocale.className} get string => _getDefaultLocal();
 
@@ -165,6 +201,7 @@ String generateRClass(
 }
  ''';
 
-  var formatter = new DartFormatter();
-  return formatter.format(source);
+    var formatter = new DartFormatter();
+    return formatter.format(source);
+  }
 }
