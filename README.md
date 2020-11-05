@@ -4,26 +4,22 @@ A Flutter package to generate Localization classes from JSON File
 
 ## Getting Started
 
-1. Use following command and clone this package into your package.
-
-```shell script
-git submodule add http://gitlab.coruscate.in/flutter/custom_localization.git
-```
-
-2. Add following dependencies to `pubspec.yaml`.
+1. Add following dependencies to `pubspec.yaml`.
 
 ```yaml
 dependencies:
     custom_localization:
-        path: ./custom_localization
+        git: https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git
 
 dev_dependencies:
     build_runner: any
     custom_localization_generator:
-        path: ./custom_localization/custom_localization_generator
+        git:
+          url: https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git
+          path: custom_localization_generator
 ```
 
-3. Create a json file in following format
+3. Create a json file in following format or export from the App Localization sheet
 
 - Root elements must be language code
 - ``language_code``,``script_code``  are required.
