@@ -7,19 +7,15 @@ import 'package:custom_localization/custom_localization.dart';
 import 'package:custom_localization_generator/locale_data.dart';
 import 'package:custom_localization_generator/text_utills.dart';
 import 'package:dart_style/dart_style.dart';
-import 'package:source_gen/source_gen.dart';
 
-class CustomLocalizationGenerator
-    extends GeneratorForAnnotation<CustomLocalization> {
+main() async {
+  TestGen testGen = TestGen();
+  print(await testGen.getSource("assets/strings.json"));
+}
+
+class TestGen {
   static String _getValueByKeyMethod =
       "String byKey(String key)=> _dynamicValues[key];";
-
-  @override
-  generateForAnnotatedElement(
-      Element element, ConstantReader annotation, BuildStep buildStep) async {
-    return getSource(annotation.read("jsonFileUrl").stringValue);
-  }
-
 
   Future<String> getSource(String fileUrl) async {
     String jsonString = await File(fileUrl).readAsString();
@@ -121,7 +117,7 @@ class CustomLocalizationGenerator
             dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
           } else {
             subClassSource +=
-            "@override get ${toCamelCase(key)} => \"$value\" ;";
+                "@override get ${toCamelCase(key)} => \"$value\" ;";
           }
         });
       }
@@ -142,13 +138,13 @@ class CustomLocalizationGenerator
 
     if (localeData.languageCode != null)
       source +=
-      "static String get languageCode=>\"${localeData.languageCode}\";";
+          "static String get languageCode=>\"${localeData.languageCode}\";";
 
     if (localeData.scriptCode != null)
       source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
     if (localeData.languageName != null)
       source +=
-      "static String get languageName=>\"${localeData.languageName}\";";
+          "static String get languageName=>\"${localeData.languageName}\";";
 
     source += "}";
     subClasses.forEach((element) {
@@ -163,7 +159,7 @@ class CustomLocalizationGenerator
     String supportedLocalesSource = "{";
     supportedLocales.forEach((element) {
       supportedLocalesSource +=
-      "\"${element.languageName}\":${element.className}(),";
+          "\"${element.languageName}\":${element.className}(),";
     });
     supportedLocalesSource += "};";
 

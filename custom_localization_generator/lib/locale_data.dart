@@ -7,4 +7,5 @@ class LocaleData {
   Map<String, Map<String, dynamic>> subClassFields =
       {}; // map of subclass name and its fields with values
   List<String> subClassNames = []; //
+  List<String> dynamicKeys = [];
 }
