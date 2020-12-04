@@ -22,7 +22,7 @@ String toCamelCase(String str) {
         result += words[i][0].toUpperCase() + words[i].substring(1);
     }
   } else {
-    return words[0];
+    return words[0][0].toLowerCase()+words[0].substring(1);
   }
   return result;
 }
