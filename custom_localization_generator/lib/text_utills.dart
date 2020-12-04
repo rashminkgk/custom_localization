@@ -1,21 +1,33 @@
 String toTitleCase(String str) {
-  return str
-      .replaceAllMapped(
-      RegExp(
-          r'[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+'),
-          (Match m) =>
-      "${m[0][0].toUpperCase()}${m[0].substring(1).toLowerCase()}")
-      .replaceAll(RegExp(r'(_|-)+'), '');
+  String result = "";
+  str = str.replaceAll("_", " ");
+  List<String> words = str.toLowerCase().split(" ");
+  words.forEach((element) {
+    element = element.trim();
+    result += element[0].toUpperCase() + element.substring(1);
+  });
+  return result;
 }
 
 String toCamelCase(String str) {
-  String s = str
-      .replaceAllMapped(
-      RegExp(
-          r'[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+'),
-          (Match m) =>
-      "${m[0][0].toUpperCase()}${m[0].substring(1).toLowerCase()}")
-      .replaceAll(RegExp(r'(_|-|\s)+'), '');
-  return s[0].toLowerCase() + s.substring(1);
+  String result = "";
+  str = str.replaceAll("_", " ");
+  List<String> words = str.split(" ");
+  if (words.length > 1) {
+    for (int i = 0; i < words.length; i++) {
+      words[i] = words[i].trim().toLowerCase();
+      if (i == 0)
+        result += words[i][0].toLowerCase() + words[i].substring(1);
+      else
+        result += words[i][0].toUpperCase() + words[i].substring(1);
+    }
+  } else {
+    return words[0];
+  }
+  return result;
 }
 
+main() {
+  print(toTitleCase("No data strings"));
+  print(toCamelCase("no data strings"));
+}

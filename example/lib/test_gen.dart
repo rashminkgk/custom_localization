@@ -18,7 +18,7 @@ class TestGen {
       "String byKey(String key)=> _dynamicValues[key];";
 
   Future<String> getSource(String fileUrl) async {
-    String jsonString = await File(fileUrl).readAsString();
+    String jsonString = File(fileUrl).readAsStringSync();
 
     if (jsonString == null)
       throw Exception("!!!!!! Please add a json file with all strings.");
@@ -150,8 +150,9 @@ class TestGen {
     subClasses.forEach((element) {
       source += element;
     });
-    var formatter = new DartFormatter();
-    return formatter.format(source);
+    /*var formatter = new DartFormatter();
+    return formatter.format(source);*/
+    return source;
   }
 
   String generateRClass(
@@ -193,7 +194,8 @@ class TestGen {
 }
  ''';
 
-    var formatter = new DartFormatter();
-    return formatter.format(source);
+    /*var formatter = new DartFormatter();
+    return formatter.format(source);*/
+    return source;
   }
 }
