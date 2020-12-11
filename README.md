@@ -2,7 +2,7 @@
 
 A Flutter package to generate Localization classes from JSON File
 
-Note: Your Keys will be converted as per Dart's coding styles.
+### Note: Your Keys will be converted as per Dart's coding styles.
 
 ## Generated Code Sample
 
