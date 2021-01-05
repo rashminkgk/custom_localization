@@ -107,18 +107,16 @@ class TestGen {
             if (localeData.dynamicKeys.contains(key)) {
               dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
               print(dynamicKeysSource);
-            } else
-              subClassSource += " String ${toCamelCase(key)} = \"$value\" ;";
+            }
+            subClassSource += " String ${toCamelCase(key)} = \"$value\" ;";
           }
         });
       } else {
         innerValue.forEach((key, value) {
           if (defaultLocal.dynamicKeys.contains(key)) {
             dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
-          } else {
-            subClassSource +=
-                "@override get ${toCamelCase(key)} => \"$value\" ;";
           }
+          subClassSource += "@override get ${toCamelCase(key)} => \"$value\" ;";
         });
       }
       dynamicKeysSource += "};";
