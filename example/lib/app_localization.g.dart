@@ -13,7 +13,12 @@ class R {
 
   static Map<String, English> _supportedLocales = {
     "English": English(),
-    "Portugese": Portugese(),
+    "Chinese": Chinese(),
+    "French": French(),
+    "JAPAN": Japan(),
+    "Italian": Italian(),
+    "Spanish": Spanish(),
+    "Germany": Germany(),
     "Arabic": Arabic(),
   };
 
@@ -39,170 +44,11986 @@ class R {
 }
 
 class English {
-  App app = App();
-  Signup signup = Signup();
-  AddCard addCard = AddCard();
+  AuthStrings authStrings = AuthStrings();
+  CommonString commonString = CommonString();
+  ErrorString errorString = ErrorString();
+  NoDataStrings noDataStrings = NoDataStrings();
+  ScreenTitle screenTitle = ScreenTitle();
+  Dynamickeys dynamickeys = Dynamickeys();
   static String get languageCode => "English";
   static String get languageName => "English";
 }
 
-class App {
-  String lblAppName = "Kick Scooter";
+class AuthStrings {
+  String editCompanyInformation = "Edit Company Information";
+  String selectNatureOfOrganization = "Select Nature Of Organization";
+  String setNewPassword = "Set your new password and sign in again.";
+  String enterCompanyName = "Please enter Company Name.";
+  String pleaseEnterCustomerOTP = "Please enter customer ride code.";
+  String pleaseEnterPickupOTP = "Please enter customer pickup code.";
+  String pleaseEnterDeliveryOTP = "Please enter customer delivery code.";
+  String verified = "Verified";
+  String verify = "Verify";
+  String addressLineOne = "Address 1";
+  String addressLineTwo = "Address 2";
+  String addressLineThree = "Address 3";
+  String oldPassword = "Old Password";
+  String skype = "Skype";
+  String whatsApp = "Whatsapp";
+  String pinCode = "PinCode*";
+  String verifyMobileDesc =
+      "Please verify mobile number to update the profile.";
+  String verifyNow = "Verify Now";
+  String password = "Password";
+  String backToHome = "Go to Home";
+  String forgotPassword = "Forgot Password?";
+  String signInCap = "Sign In";
+  String moveToLogIn = "Move to Log In";
+  String dontHaveAnAccount = "Don't have an account? ";
+  String clickHere = "Click here";
+  String signUpHere = "Signup here";
+  String reset = "Reset";
+  String haveRegisterCode = "Have a registration code?";
+  String welcome = "Welcome Back!";
+  String signInAsGuest = "Sign In as Guest";
+  String editProfileTitle = "Edit Profile";
+  String emaillbl = "Email";
+  String searchInventory = "Search product";
+  String emailAddress = "Email Address*";
+  String offlineFilter =
+      "Unable to find the desired solitaire? We can help you get the best deal from our offline inventory.";
+  String loginDesc =
+      "Do you want to enable Touch Id/MPin to unlock My Diamonds? Please choose an option to unlock app";
+  String searchDiamonds = "Search diamonds";
+  String continueWithSearch = "Do you want to continue your search?";
+  String mobileNumber = "Mobile";
+  String searchHint = "Search...";
+  String selectYourCountry = "Select Country";
+  String resendCodeIn = "Resend code in";
+  String resendCode = "Resend";
+  String haveAnAccount = "Already have an account?";
+  String dontReceiveCode = "If you didn't receive a code!";
+  String inLogin = "to log in.";
+  String resetPwdDesc =
+      "Add password and confirm password to reset your password.";
+  String backToLogin = "Back to Log In";
+  String firstName = "First Name*";
+  String name = "Username*";
+  String lastName = "Last Name*";
+  String middleName = "Middle Name*";
+  String confirmPassword = "Confirm Password";
+  String currentPasswordErr = "Current Password Error";
+  String passwordChanged = "Password Changed";
+  String lblLogInErr = "Log In Error";
+  String enterYour = "Enter your";
+  String details = "Details";
+  String registerCode = "Registration Code";
+  String registerCodeDesc =
+      "Add a registration code to start your enrolment with 3eco.";
+  String uploadPhotoDesc = "Take a selfie of your self";
+  String updateProfile = "Update Profile";
+  String postalCode = "Postal Code*";
+  String removeButton = "Remove";
+  String gender = "Gender";
+  String male = "Male";
+  String female = "Female";
+  String changePassword = "Change Password";
+  String currentPassword = "Current Password*";
+  String newPassword = "New Password*";
+  String confirmNewPassword = "Confirm Password*";
+  String personalDocuments = "Personal Documents";
+  String assignedAuto = "Assigned Auto";
+  String logout = "Log Out";
+  String logoutConfirmationMsg = "Are you sure you want to log out?";
+  String address = "Address*";
+  String accountNumber = "Account Number";
+  String bankerName = "Bankers Name";
+  String nameLable = "Name";
+  String ifscCode = "IFSC code";
+  String businessRegistrationNumbr = "Business Registration Number";
+  String businessRelationshipPeriod = "Business Relationship Period (In Years)";
+  String designation = "Designation";
+  String nameofDesignation = "Name of";
+  String natureofOrganization = "Nature of Organization";
+  String uploadFile = "No File Choosen";
+  String update = "UPDATE";
+  String resetPwd = "Reset Password";
+  String pwdReset = "Password reset";
+  String signInWithMPIN = "Sign In with MPIN";
+  String pwdChanged = "Password Changed";
+  String successfullyPwdDesc =
+      "You have successfully reset your password. Please use your new password when logging in.";
+  String lblProfileSetup = "Your profile is set up";
+  String lblProfileSetupDesc = "We have received your profile details";
+  String hoursAvailable = "Total Shifttime";
+  String confirmStoneDetail = "Confirm Stone Detail";
+  String companyName = "Company Name";
+  String invoiceDate = "Invoice Date";
+  String companyCode = "Company Code";
+  String saveCompanyDetails = "Save Company Details";
+  String passwordNotChange = "Password does not match";
+  String rememberPassword = "Remember Password?";
+  String sendOTP = "Send OTP";
+  String resendNow = "Resend Now";
+  String didNotReceiveOTP = "If you didn't receive an OTP!";
+  String sendOTPToEmail =
+      "We will send an OTP to your entered email address or user name. Please enter the email address or user name.";
+  String enterOTP =
+      "The OTP has been sent to your registered Email address. Please enter the OTP.";
+  String backToSignIn = "Back to Sign In";
+  String passwordResetSuccessfully = "Password reset successfully.";
+  String emailAndUname = "Email/UserName";
+  String signUp = "Sign Up";
+  String promotionText = "Promotional offers";
+  String termsAndCondition = "Terms and Condition";
+  String mustAgreeTermsAndCondition =
+      "You must agree to terms and condition to Sign In as Guest User";
+  String forgotPasswordTitle = "Forgot Password";
+  String uploadKYC = "Upload KYC";
+  String uploadKycDesc =
+      "Please upload your KYC documents to access full features.";
+  String hintPhotoIdentityProof = "Photo Identity Proof*";
+  String hintBussinerssProof = "Business Identity Proof*";
+  String btnFileUpload = "File Upload";
+  String pleaseUploadPhotoProof = "Please upload Photo Identity Proof.";
+  String pleaseUploadBussinessProof = "Please upload Business Identity Proof.";
+  String pleaseSelectFileFormat =
+      "Please upload file in any of following formats : .jpg";
+  String kycSubmitted = "KYC Submitted";
+  String kycSubmmittedDesc = "Your KYC has been submitted successfully.";
+  String btnMoveToHome = "Move to Home";
+  String kYCRejected = "KYC Rejected";
+  String kycRejectedDesc =
+      "Your KYC has been rejected. Please upload your KYC documents again to access all features.";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class Signup {
-  String lblSelectDateOfBirth = "Select Date of Birth";
-  String lblGender = "Gender";
-  String lblEnterPhoneNo = "Enter Phone No";
-  String lblEnterPassword = "Enter Password";
-  String lblAlreadyHaveAnAccount = "Have an Account ?";
-  String lblPhoneNo = "Phone No.";
-  String lblMale = "Male";
-  String lblFemale = "Female";
-  String lblRidersAgreement = "Rider's Agreement";
-  String msgAgeInfo =
-      "You should be at least 16 to ride the scooter. Accounts of users younger than 16 may get restricted.";
+class CommonString {
+  String seeMore = "See More";
+  String seeLess = "See Less";
+  String modify = "Modify";
+  String delete = "Delete";
+  String details = "Details";
+  String edit = "Edit";
+  String addDemand = "Add demand";
+  String demandTitle = "Demand Title";
+  String pleaseEnterDemandTitle = "Please enter Demand Title";
+  String demandAddedSuccessfully = "Demand Added Successfully";
+  String selectAtleastOneFilter = "Please";
+  String savedSearch = "Saved Search";
+  String searchSavedSearch = "Search Saved Search";
+  String viewDetails = "View Details";
+  String viewLessDetails = "View Less Details";
+  String myDemand = "My Demand";
+  String date = "Date";
+  String selectTime = "Select Time";
+  String selectDate = "Select Date";
+  String offerVelidTill = "Offer Valid Till";
+  String officeVisitDate = "Office Visit Date";
+  String all = "All";
+  String status = "Status";
+  String save = "Save";
+  String verify = "Verify";
+  String readMore = "Read More";
+  String goodMorning = "Good Morning";
+  String goodAfternoon = "Good Afternoon";
+  String goodEvening = "Good Evening";
+  String btnSkip = "Skip";
+  String btnUpdate = "Update";
+  String btnContinue = "Continue";
+  String btnContinueCap = "CONTINUE";
+  String btnEdit = "Edit";
+  String btnSubmit = "Submit";
+  String btnNextCap = "Next";
+  String btnSaveCap = "Update Password";
+  String btnWithdrawCap = "WITHDRAW";
+  String btnSaveAndContinueCap = "SAVE & CONTINUE";
+  String btnUnregister = "Unregistered Mobile";
+  String btnClose = "Close";
+  String remove = "Remove";
+  String refresh = "Refresh";
+  String fetchLocationMessage = "Please wait we are fetching your location";
+  String done = "Done";
+  String doneCap = "DONE";
+  String cancel = "Cancel";
+  String allow = "Allow";
+  String countryFirst = "Please Select Country First";
+  String apply = "Apply";
+  String cancelCap = "CANCEL";
+  String uploadCap = "UPLOAD";
+  String yesCancelCap = "YES";
+  String upload = "Upload";
+  String ok = "Ok";
+  String home = "Home";
+  String goToMyWatchList = "Go to My Watchlist";
+  String goToMyOrder = "Go to My Order";
+  String gotToMyOffer = "Go to My Offer";
+  String gotToMyHold = "Go to My Hold";
+  String gotToMyEnquiry = "Go to My Enquiry";
+  String gotToMyBid = "Go to My Bid";
+  String gotToMyReminder = "Go to My Reminder";
+  String gotToMyComments = "Go to My Notes";
+  String yes = "Yes";
+  String no = "No";
+  String selectCountry = "Select Country";
+  String clickHere = "Click Here";
+  String btnAddNewAddress = "ADD NEW ADDRESS";
+  String btnCancel = "CANCEL";
+  String btnTakeSelfie = "Take Selfie";
+  String successfully = "Successfully";
+  String lblAppExit = "Are you sure you want to exit?";
+  String lblExit = "Exit";
+  String openAppSetting = "Open Settings";
+  String lblOr = "Or";
+  String fromLbl = "From";
+  String toLbl = "To";
+  String showMore = "Show More";
+  String showLess = "Show Less";
+  String selectCity = "Select City";
+  String notYetAvailable = "Not yet available";
+  String updateAvailable = "Update Available!";
+  String downloadAppFrom = "Download application update from";
+  String playStore = "Play Store";
+  String skipUpdate = "Skip Update";
+  String stateFirst = "Please Select State First";
+  String reallyExit = "Really exit?";
+  String alert = "Alert!";
+  String loading = "Loading";
+  String error = "Error";
+  String jumpToTop = "Jump to top";
+  String ihaveread = "I have read and accept";
+  String selected = "Select";
+  String lbllogout = "Log Out";
+  String lblThanx = "Thank you";
+  String lblSelectCity = "Select City";
+  String lblSelectState = "Select State";
+  String lblSelectCountry = "Select Country";
+  String lblCity = "City";
+  String lblCountry = "Country";
+  String lblName = "Name";
+  String lblPinCode = "PIN Code";
+  String lblMobileNumber = "Mobile Number";
+  String lblState = "State";
+  String lblCode = "Code:";
+  String lblOrderNo = "Order No:";
+  String lblOrderItem = "Order Item:";
+  String lblDelivered = "Delivered";
+  String lblTicketReady = "Your ticket is ready";
+  String lblPersonTicket = "Ticket of 2 person";
+  String lblShuttleBus = "Shuttle Bus";
+  String lblPickup = "Pickup";
+  String lblDropoff = "Dropoff";
+  String lblPassenger = "Passenger";
+  String lblDeliveryNo = "Delivery No.";
+  String lblPrice = "Price";
+  String lblValid = "Valid For";
+  String lblRenew = "Renew";
+  String lblDeparture = "Departure";
+  String lblArrived = "Arrived";
+  String lblSendtoFriend = "Send to friend";
+  String popupRenewTitle = "Renew ticket";
+  String popupRenewDesc = "Lorem ipsum dolor sit amet";
+  String popuplblPassenger = "Passenger";
+  String popuplblCancel = "Cancel";
+  String popupbtnRenew = "Renew";
+  String ridelblAwesome = "Awesome";
+  String ridebtnDone = "Done";
+  String offerPricePerCarat = "Offered Price (Cts)";
+  String dropOffText = "Dropoff";
+  String pickUpText = "Pickup";
+  String startAtText = "Start at";
+  String endAtText = "End at";
+  String personText = "person";
+  String paymentScreenTitle = "Payment";
+  String pickuplbl = "Pickup";
+  String droplbl = "Dropoff";
+  String makePaymentButtonlbl = "Make payment";
+  String pessangerslbl = "Passengers";
+  String priceBreakuplbl = "Price Breakup";
+  String tripPricelbl = "Trip Price";
+  String taxeslbl = "Taxes";
+  String totallbl = "Total";
+  String cardNumberhint = "Card Number";
+  String cvvhint = "CVV";
+  String datehint = "MM/YY";
+  String btnTryAgain = "Try Again";
+  String cityFirst = "Please select city first";
+  String enterFareDetails = "Enter Sales Details";
+  String fromDate = "From Date";
+  String toDate = "Selected Date";
+  String btnUnderstand = "I Understand";
+  String applicationUpdate = "Application Update";
+  String newVersionMessage = "A new version of application is available";
+  String paymentCollected = "Payment Collected";
+  String addComment = "Add a comment";
+  String more = "More";
+  String carat = "Carat";
+  String pcs = "Pcs";
+  String cts = "Cts";
+  String disc = "Disc %";
+  String avgPriceCrt = "Avg. Price/Ct";
+  String amount = "Amount";
+  String confirmStone = "Confirm Stone";
+  String confirm = "Confirm";
+  String offered = "Offered";
+  String validTill = "Valid till";
+  String remark = "Remark";
+  String color = "Color";
+  String colorGroup = "Color Group";
+  String colorFancy = "Fancy";
+  String colorWhite = "White";
+  String clarity = "Clarity";
+  String clarityGroup = "Clarity Group";
+  String intensity = "Intensity";
+  String overtone = "Overtone";
+  String selectBusinessType = "Select Business Type";
+  String selectState = "Select State";
+  String search = "Search";
+  String profile = "My Profile";
+  String personal = "Personal";
+  String business = "Business";
+  String documents = "Documents";
+  String noSlotFound = "No slots found";
+  String noDiamondFound =
+      "No Diamonds matching your search. Please add you demand.";
+  String selectType = "Select Virtual Type";
+  String noSavedSearch = "No Saved Search Exists";
+  String searchCity = "Search city";
+  String searchCountry = "Search Country";
+  String searchState = "Search state";
+  String notifications = "Notification";
+  String enter2Stone = "Please select at least 2 stone to compare.";
+  String bidDesc =
+      "is currently located in India and for delivery in any other country apart from india will take at least 7-10 working days.";
+  String packetNo = "Packet No:";
+  String quit = "Quit";
+  String agree = "I Agree";
+  String laterToday = "Later today";
+  String toMorrow = "Tomorrow";
+  String nextWeek = "Next week";
+  String chooseAnother = "Choose another";
+  String dateTime = "Date & time";
+  String language = "Language";
+  String diamNow = "DiamNow";
+  String noDocument = "No Documents Found";
+  String searchBusinessType = "Search Business Type";
+  String hours = "Hours";
+  String minutes = "Minutes";
+  String seconds = "Seconds";
+  String bidEndsIn = "Bid ends in:";
+  String shape = "Shape";
+  String download = "Download";
+  String share = "Share";
+  String placeOrder = "Place order";
+  String enterComment = "Please Enter Comment";
+  String deleteItem = "Are you sure you want to delete?";
+  String shippingPolicy = "Shipping Policy";
+  String offerSundayRestriction =
+      "Sunday is not allowed. Office working days are Monday to Saturday";
+  String weekAgo = "1 week ago";
+  String lastWeek = "Last Week";
+  String dayAgo = "days ago";
+  String onedayAgo = "1 day ago";
+  String yesterday = "Yesterday";
+  String hourAgo = "hours ago";
+  String onehourAgo = "1 hour ago";
+  String anhourAgo = "An hour ago";
+  String mintuesAgo = "minutes ago";
+  String onemintuesAgo = "1 minute ago";
+  String amintueAgo = "A minute ago";
+  String secondsAgo = "seconds ago";
+  String justNow = "Just Now";
+  String today = "Today";
+  String past = "Past";
+  String selectPhotoProof = "Select document";
+  String pleaseSelectPhotoProof = "Please select document";
+  String selectBusinessProof = "Select document";
+  String pleaseSelectBusinessProof = "Please select document";
+  String touchId = "Touch Id";
+  String faceId = "Face Id";
+  String enableTouchId = "Enable Touch Id to unlock My Diamonds?";
+  String enableFaceId = "Enable Face Id to unlock My Diamonds?";
+  String unlockWithTouchId = "Unlock My Diamonds using Touch Id";
+  String unlockWithFaceId = "Unlock My Diamonds using Face Id.";
+  String mPin = "MPin";
+  String holdMemoStatusDiamondorder =
+      "You can not confirmed stones which are already in hold or memo status";
+  String searchStoneIdCertificateNo = "Search Stone Id/Certificate No";
+  String createMPin = "Create New MPin";
+  String reentermpin = "Reenter MPin";
+  String forgotmpin = "Forgot MPIN?";
+  String verifympin = "Verify Mpin";
+  String enteryoursixdigitcode = "Enter your 6 digit MPIN";
+  String changempin = "Change MPin";
+  String faceidandtouchnotenable =
+      "FaceId/TouchId is not enabled in your phone, Please enable to use this feature";
+  String enablempintounlockmydiamonds =
+      "Enable MPin to unlock app? It will disable Touch Id. Are you sure you want to continue?";
+  String enabletouchidtounlockmydiamonds =
+      "Enable Touch Id to unlock app? It will disable MPin. Are you sure you want to continue?";
+  String rememberme = "Remember Me";
+  String usertouchid = "Use Touch Id";
+  String usempin = "Use MPin";
+  String filesarenotavailableonserver =
+      "Files are not available on server,Please try again later";
+  String allfileshavebeendownloaded = "All files have been downloaded.";
+  String filesisdownloaded = "files is downloaded";
+  String filesisnotdownloadedbcz =
+      "files is not downloaded because it's not exist in the server.";
+  String downloadingCanceled = "Downloading canceled";
+  String downloading = "Downloading...";
+  String expirydate = "Expiry Date :";
+  String youreallywanttodelete = "You really want to delete";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ErrorString {
+  String accessDenide = "Access denied";
+  String pleaseSelectOfferTillDate = "Please select offer till date.";
+  String pleaseSelectOfficeVisitDate = "Please select office visit date";
+  String deleteStoneMsg = "Are you sure you want to delete stone(s) ?";
+  String acceptTermsAndCondition = "Please accept terms and condition";
+  String diamondCompareRemove = "At least 2 Stones are required to compare.";
+  String diamondSelectionError = "Please select at least one stone.";
+  String pleaseEnterCompanyName = "Please enter company name.";
+  String selectInvoiceDate = "Select Invoice Date";
+  String pleaseEnterComment = "Please enter comment.";
+  String pleaseEnterRemarks = "Please enter remarks.";
+  String selectExpiryDate = "Please select expiry date.";
+  String enterOTP = "Please enter code";
+  String pleaseEnterOTP = "Please enter verification code.";
+  String enteredCodeNotMatching = "Entered code is not matching. Try again";
+  String selectCancellationReason = "Please select reason for cancellation";
+  String enterDesc = "Please enter description.";
+  String enterTitle = "Please enter title.";
+  String enterEmailOrPhone = "Please enter email/mobile.";
+  String enterPassword = "Password can't be empty. Please enter Password.";
+  String enterConfirmPassword = "Please enter confirm password.";
+  String enterSkype = "Please Enter Skype.";
+  String enterRegisterCode = "Please enter registration code";
+  String enterEmail = "Please enter the Email address.";
+  String enterPhone = "Please enter Mobile Number.";
+  String enterUsername = "Username can't be empty. Please enter Username.";
+  String enterValidEmail = "Please enter the valid Email address.";
+  String enterValidPhone = "Please enter the valid Mobile Number.";
+  String enterValidWhatsappPhone =
+      "Please enter the valid WhatsApp Mobile Number.";
+  String enterValidPassword = "Please enter 6 characters or long password.";
+  String mismatchPassword = "Password and confirm password is not matching.";
+  String enterFirstName = "Please enter the First Name.";
+  String enterMiddleName = "Please enter the Middle Name.";
+  String enterPinCode = "Please enter the Pin Code.";
+  String enterName = "Please enter name.";
+  String enterLastName = "Please enter Last Name.";
+  String enterAddress = "Please enter address.";
+  String enterValidPinCode = "Enter Valid PinCode.";
+  String enterValidAddress = "Please enter 10 characters or long address.";
+  String enterPostalCode = "Please enter postal code.";
+  String enterValidPostalCode = "Please enter 6 digit numeric postal code.";
+  String enterCurrentPassword = "Please enter current password.";
+  String enterNewPassword = "Please enter new password.";
+  String enterFareAmount = "Please enter sales amount.";
+  String enterOrderNO = "Please enter order no.";
+  String enterServiceType = "Please select type of service.";
+  String enterPaymentType = "Please select payment type.";
+  String enterValidFareAmount = "Sales amount can not be zero.";
+  String enterPassangerNo = "Please enter no. of passengers.";
+  String enterValidPassangerNo = "No. of passengers can not be zero.";
+  String notEnterMorePassangerNo =
+      "No. of passengers can not be more than seven.";
+  String drivingLicenseValidationText =
+      "Please enter 15 digit alphanumeric driving licence number.";
+  String pANCardValidationText =
+      "Please enter 10 digit alphanumeric PAN card number.";
+  String selectFromDate = "Please select from date";
+  String selectToDate = "Please select to date";
+  String fromGreaterTo = "Selected date must be greater than current date";
+  String wrongPassword =
+      "Password must contains, Minimum 8 characters, 1 uppercase alphabet, 1 lower case alphabet, 1 digit, 1 special charater";
+  String fromValueGreateThanTo =
+      "From Value should be less than or equal to To value";
+  String toValueGreaterThanFrom =
+      "To Value should be greater than or equal to From value";
+  String pleaseEnterCompanyCode = "Please enter company code";
+  String enterSamePassword =
+      "Confirm Password does not match with New Password. Please enter confirm password same as New Password.";
+  String selectAppointmentDate = "Please select appointment date";
+  String selectTimeSlot = "Please select time slot";
+  String enterComments = "Please enter comment";
+  String selectVirtualType = "Please select virtual type";
+  String versionError = "Version Error";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class NoDataStrings {
+  String noDataFound = "No record found";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ScreenTitle {
+  String placeAnOffer = "Place an Offer";
+  String addedInWatchList = "Added in Watchlist";
+  String addedInOffer = "Offer Submitted";
+  String addedInCart = "Added in Cart";
+  String addedInBid = "Added in Bid";
+  String myEnquiry = "My Enquiry";
+  String delete = "Delete";
+  String addDemand = "Add Demand";
+  String matchPair = "Match Pair";
+  String savedAndSearch = "Save & Search";
+  String updateAndSearch = "Update & Search";
+  String upcoming = "Upcoming";
+  String bidPricePerCt = "Bid Price / Ct";
+  String bidDisc = "Bid Disc";
+  String bidValue = "Bid Value";
+  String bidStone = "Bid Stone";
+  String myCart = "My Cart";
+  String myComment = "My Notes";
+  String compare = "Compare";
+  String compareStones = "Compare Stones";
+  String statusHold = "On Hold";
+  String statusOnMemo = "On Memo";
+  String statusAvailable = "Available";
+  String statusNew = "New Arrival";
+  String statusOffer = "Stone Of The Day/Promotion";
+  String statusMyHold = "My Hold";
+  String signup = "Sign up";
+  String addToOffice = "Add To Office";
+  String addComment = "Add Comment";
+  String addEnquiry = "Add Enquiry";
+  String finalOffer = "Final Offer";
+  String finalDisc = "Final Disc";
+  String finalRate = "Final Rate";
+  String finalValue = "Final Value";
+  String orderMsg =
+      "1) The prices mentioned over here are fixed and hence not negotiable. \\n2) The grading, parameters mentioned on our website beyond GIA's Grading.";
+  String offerMsg =
+      "Offered stone will directly be confirmed if the price gets approved so we request you to be sure before offering. Any stone(s) put in Offer list is not kept on hold for you as it is available for other customer's as well.";
+  String note = "Note";
+  String hours = "Hours";
+  String offeredDisc = "Offered Dis";
+  String offeredPriceCt = "Offered Pr/Ct";
+  String addOffer = "Add Offer";
+  String expDiscPer = "Expected Discount";
+  String todayDiscPer = "Today's Disc";
+  String searchResult = "Search Result";
+  String searchDiamond = "Search Diamond";
+  String basic = "Basic";
+  String advanced = "Advanced";
+  String stoneIdCertNo = "StoneID/Cert No";
+  String takeSignature = "Take Signature";
+  String optional = "Optional";
+  String myAddress = "My Address";
+  String expiryDate = "Expiry Date";
+  String drivingLicenceDesc = "Your driving licence picture";
+  String panDesc = "Your PAN card picture";
+  String selfie = "Selfie";
+  String selfieDesc = "Your selfie picture";
+  String pending = "Pending";
+  String rejected = "Rejected";
+  String uploadAgain = "Upload";
+  String remove = "Remove";
+  String title = "Title";
+  String description = "Description";
+  String uploadYour = "Upload your";
+  String raiseDispute = "Tell us about it";
+  String drivingLicense = "Driving Licence";
+  String pANCard = "PAN Card";
+  String saveContinue = "Save and Continue";
+  String uploadFrontUmgText = "Upload Front Side Image";
+  String uploadPANCardImgText = "Upload PAN Card Image";
+  String uploadBackImageText = "Upload Back Side Image";
+  String helptopic = "Help Topics";
+  String newRideSharingRequest = "New Ride Sharing Requests";
+  String newRequest = "New Requests";
+  String welcomeTo = "Welcome to";
+  String welcomeDesc = "Login to your existing account of Mani Jewel";
+  String forgotPassword = "Forgot your";
+  String forgotPasswordDesc =
+      "Enter your registered mobile number to recover your password.";
+  String termsAndCondition = "Terms & Conditions";
+  String privacyPolicy = "Privacy Policy";
+  String aboutUS = "About Us";
+  String otpVerification = "Verify Ride Code";
+  String otpVerificationDelivery = "Verify Pickup Code";
+  String otpVerificationDeliveryDone = "Verify Delivery Code";
+  String enterOtp = "Enter 4-digit";
+  String recoveryCode = "Recovery code";
+  String editProfile = "Edit Profile";
+  String myProfile = "My Profile";
+  String reset = "Reset";
+  String yourPassword = "Your Password";
+  String photo = "Photo";
+  String otpDesc =
+      "The recovery code was sent to your mobile number. Please enter the code.";
+  String otpVerifyDesc =
+      "The verification code was sent to your mobile number. Please enter the code.";
+  String diamondDetail = "Diamond Detail";
+  String home = "Home";
+  String search = "Search";
+  String quickSearch = "Quick Search";
+  String newArrival = "New Arrival";
+  String exclusiveDiamonds = "Exclusive Diamonds";
+  String diamondOnAuction = "Diamond On Auction";
+  String stoneOfTheDays = "Best Buy";
+  String myWatchlist = "My Watchlist";
+  String myBid = "My Bid";
+  String myHold = "My Hold";
+  String myOrder = "My Ordered List";
+  String confirmStone = "Confirm Stone";
+  String myOffice = "My Office View";
+  String myOffer = "My Offer List";
+  String myPurchased = "My Purchased History";
+  String mySavedSearch = "My Saved Search";
+  String savedSearch = "Saved Search";
+  String myDemand = "My Demand";
+  String contactUs = "Contact Us";
+  String changePassword = "Change Password";
+  String logout = "Logout";
+  String fareDetailsTitle = "Enter Sales Details";
+  String fairAmt = "Sales Amount";
+  String noOfPassengers = "No. of Passengers";
+  String remarks = "Remarks";
+  String orderNo = "Order No.";
+  String typeOfService = "Type of Service";
+  String paymentType = "Payment Type*";
+  String recentlyView = "Recently View";
+  String uploadImgValidationText =
+      "Upload file must be .jpg, .jpeg, .png or .pdf having size 5 mb or less.";
+  String drivingLicenseHintText = "Driving Licence Number";
+  String pANCARDHintText = "PAN Card Number";
+  String viewRide = "View Rides";
+  String myVehicle = "My Vehicle";
+  String personalDocument = "Personal Documents";
+  String help = "HELP";
+  String about = "About";
+  String bankDetails = "Bank Details";
+  String accountAndPayment = "Account and Payment";
+  String enquiry = "Enquiry";
+  String download = "Download";
+  String addToCart = "Add to Cart";
+  String addToWatchList = "Add to Watchlist";
+  String finalCalculation = "Final Calc.";
+  String bookOffice = "Book Office";
+  String clearSelection = "Clear Selection";
+  String comment = "Comments";
+  String hold = "Hold";
+  String offer = "Offer";
+  String officeView = "Office View";
+  String placeOrder = "Place Order";
+  String buyNow = "Buy Now";
+  String cancelStone = "Cancel Stone";
+  String share = "Share";
+  String watchlist = "Watchlist";
+  String exclusive = "Exclusive";
+  String featuredStones = "Featured Stones";
+  String stoneOfDay = "Stones of Day";
+  String recentSearch = "Recent Search";
+  String viewAll = "View All";
+  String salesPersonDetail = "Sales Person Detail";
+  String searchTitle = "Search Title";
+  String enterSearchTitle = "Enter Search Title";
+  String timeSlots = "Time Slots";
+  String selectCustomDate = "Select Custom date";
+  String availableSlot = "Available Slots";
+  String reqOfficeView = "Request Office View";
+  String myComments = "My Comment";
+  String myReminder = "My Reminder";
+  String reminder = "Reminder";
+  String manageAddress = "Manage Addresses";
+  String myAccount = "My Account";
+  String declaimer = "Disclaimer";
+  String shareStone = "Share Stone";
+  String addRemider = "Add reminder";
+  String offlineSearch = "Offline Search";
+  String searchHistory = "Search History";
+  String offlineStock = "Offline Stock";
+  String searchOffline = "Search (Offline)";
+  String voiceSearch = "Voice Search";
+  String tapMictoSpeak = "Tap mic to Speak";
+  String typeToSearch = "Type to Search";
+  String typeWordsToSearch = "Type at least 3 words to search stones";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class Dynamickeys {
+  String shape = "Shape";
+  String caratRange = "Carat Range";
+  String basicDetail = "Basic Details";
+  String measurementTitle = "Measurements";
+  String inclusionDetail = "Inclusion Details";
+  String other = "Other";
+  String stoneID = "Stone ID";
+  String labTitle = "Lab";
+  String certNo = "CERT. NO.";
+  String locationTitle = "LOCATION";
+  String shapeTitle = "Shape";
+  String caratTitle = "Carat";
+  String colorTitle = "Color";
+  String clarity = "Clarity";
+  String clarityTitle = "CLARITY";
+  String shadeTitle = "Shade";
+  String cutTitle = "Cut";
+  String polishTitle = "Polish";
+  String symmentryTitle = "Symmentry";
+  String fluorescenceTitle = "Fluorescence";
+  String rapTitle = r"RAP ($)";
+  String discountTitle = "Discount (%)";
+  String priceAndCt = r"Price/Ct ($)";
+  String amountTitle = "Amount";
+  String eyeCleanTitle = "Eye Clean";
+  String brownTitle = "BROWN";
+  String milkyTitle = "Milky";
+  String mixTingeTitle = "MIX TINGE";
+  String dimensionTitle = "DIMENSIONS  (MM)";
+  String girdleTitle = "GIRDLE (%)";
+  String tableTitle = "Table %";
+  String crownAngleTitle = "Crown Angle";
+  String depthTitle = "Depth %";
+  String pavAngleTitle = "Pav Angle";
+  String crownHeightTitle = "Crown Height";
+  String pavDepthTitle = "Pav Height";
+  String starLengthTitle = "Star Length";
+  String lowerHalfTitle = "Lower Half";
+  String gridleTitle = "Girdle";
+  String gridleFacetedTitle = "GIRDLE FACETED";
+  String culetTitle = "Culet";
+  String rationTitle = "Ratio";
+  String blackInclusionTitle = "BLACK INCLUSION";
+  String otherInclusionTitle = "Other Inclusion";
+  String openInclusionTitle = "OPEN INCLUSION";
+  String extraFacetTitle = "EXTRA FACET";
+  String naturalTitle = "Natural";
+  String hAndATitle = "H & A";
+  String keyToSymbol = "KEY TO SYMBOL";
+  String labComments = "LAB COMMENTS";
+  String laserInsTitle = "LASER INS";
+  String basicTitle = "Basic";
+  String advancedTitle = "Advanced";
+  String stoneIdTitle = "Stone ID/Cert No";
+  String defaultTitle = "Default";
+  String newDiamondsTitle = "New Diamonds";
+  String priceLowToHigh = "Price Low to High";
+  String priceHighToLow = "Price High to Low";
+  String disLowToHigh = "Discount Low to High";
+  String disHighToLow = "Discount High to Low";
+  String colorLowToHigh = "Color Low to High";
+  String colorHighToLow = "Color High to Low";
+  String caratLowToHigh = "Carat Low to High";
+  String caratHighToLow = "Carat High to Low";
+  String clarityLowToHigh = "Clarity Low to High";
+  String clarityHighToLow = "Clarity High to Low";
+  String colorShadeTitle = "Color Shade";
+  String certiTitle = "Certificate Number";
+  String arrivalsTitle = "Arrivals";
+  String lengthTitle = "Length";
+  String widthTitle = "Width";
+  String pavilionAngleTitle = "Pavilion Angle";
+  String girdleConditionTitle = "Girdle Condition";
+  String cluetConditionTitle = "Culet Condition";
+  String disTitle = "Dis%";
+  String depthTitleWithoutPerc = "Depth";
+  String otherInformationTitle = "Other Information";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {
-    "lbl_first_name": "First Name",
-    "lbl_last_name": "Last Name",
+    "shape": "Shape",
+    "caratRange": "Carat Range",
+    "basicDetail": "Basic Details",
+    "measurementTitle": "Measurements",
+    "inclusionDetail": "Inclusion Details",
+    "other": "Other",
+    "stoneID": "Stone ID",
+    "labTitle": "Lab",
+    "certNo": "CERT. NO.",
+    "locationTitle": "LOCATION",
+    "shapeTitle": "Shape",
+    "caratTitle": "Carat",
+    "colorTitle": "Color",
+    "clarity": "Clarity",
+    "clarityTitle": "CLARITY",
+    "shadeTitle": "Shade",
+    "cutTitle": "Cut",
+    "polishTitle": "Polish",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "Fluorescence",
+    "rapTitle": r"RAP ($)",
+    "discountTitle": "Discount (%)",
+    "priceAndCt": r"Price/Ct ($)",
+    "amountTitle": "Amount",
+    "eyeCleanTitle": "Eye Clean",
+    "brownTitle": "BROWN",
+    "milkyTitle": "Milky",
+    "mixTingeTitle": "MIX TINGE",
+    "dimensionTitle": "DIMENSIONS  (MM)",
+    "girdleTitle": "GIRDLE (%)",
+    "tableTitle": "Table %",
+    "crownAngleTitle": "Crown Angle",
+    "depthTitle": "Depth %",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "Crown Height",
+    "pavDepthTitle": "Pav Height",
+    "starLengthTitle": "Star Length",
+    "lowerHalfTitle": "Lower Half",
+    "gridleTitle": "Girdle",
+    "gridleFacetedTitle": "GIRDLE FACETED",
+    "culetTitle": "Culet",
+    "rationTitle": "Ratio",
+    "blackInclusionTitle": "BLACK INCLUSION",
+    "otherInclusionTitle": "Other Inclusion",
+    "openInclusionTitle": "OPEN INCLUSION",
+    "extraFacetTitle": "EXTRA FACET",
+    "naturalTitle": "Natural",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "KEY TO SYMBOL",
+    "labComments": "LAB COMMENTS",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "Basic",
+    "advancedTitle": "Advanced",
+    "stoneIdTitle": "Stone ID/Cert No",
+    "defaultTitle": "Default",
+    "newDiamondsTitle": "New Diamonds",
+    "priceLowToHigh": "Price Low to High",
+    "priceHighToLow": "Price High to Low",
+    "disLowToHigh": "Discount Low to High",
+    "disHighToLow": "Discount High to Low",
+    "colorLowToHigh": "Color Low to High",
+    "colorHighToLow": "Color High to Low",
+    "caratLowToHigh": "Carat Low to High",
+    "caratHighToLow": "Carat High to Low",
+    "clarityLowToHigh": "Clarity Low to High",
+    "clarityHighToLow": "Clarity High to Low",
+    "colorShadeTitle": "Color Shade",
+    "certiTitle": "Certificate Number",
+    "arrivalsTitle": "Arrivals",
+    "lengthTitle": "Length",
+    "widthTitle": "Width",
+    "pavilionAngleTitle": "Pavilion Angle",
+    "girdleConditionTitle": "Girdle Condition",
+    "cluetConditionTitle": "Culet Condition",
+    "disTitle": "Dis%",
+    "depthTitleWithoutPerc": "Depth",
+    "otherInformationTitle": "Other Information",
   };
 }
 
-class AddCard {
-  String lblCreditCard = "Credit Card";
-  String lblCardNumber = "Card Number";
-  String lblCardHolderName = "Card Holder Name";
-  String lblExpiryDate = "Expiry Date";
-  String lblCvvCode = "CVV Code";
+class Chinese extends English {
+  @override
+  get authStrings => ChineseAuthStrings();
+  @override
+  get commonString => ChineseCommonString();
+  @override
+  get errorString => ChineseErrorString();
+  @override
+  get noDataStrings => ChineseNoDataStrings();
+  @override
+  get screenTitle => ChineseScreenTitle();
+  @override
+  get dynamickeys => ChineseDynamickeys();
+  static String get languageCode => "Chinese";
+  static String get languageName => "Chinese";
+}
+
+class ChineseAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation => "出问题了！ \\n下拉刷新";
+  @override
+  get selectNatureOfOrganization => "选择性质组织";
+  @override
+  get setNewPassword => "重新设置新密码，请请进进入系统";
+  @override
+  get enterCompanyName => "请输入公司名称。";
+  @override
+  get pleaseEnterCustomerOTP => "请输入客户乘坐的代码。";
+  @override
+  get pleaseEnterPickupOTP => "请输入自取代码。";
+  @override
+  get pleaseEnterDeliveryOTP => "请输入客户交付代码。";
+  @override
+  get verified => "验证";
+  @override
+  get verify => "校验";
+  @override
+  get addressLineOne => "地址1";
+  @override
+  get addressLineTwo => "地址2";
+  @override
+  get addressLineThree => "地址3";
+  @override
+  get oldPassword => "旧密码";
+  @override
+  get skype => "Skype的";
+  @override
+  get whatsApp => "WhatsApp的";
+  @override
+  get pinCode => "PIN码*";
+  @override
+  get verifyMobileDesc => "请确认手机号码，以更新的姿态。";
+  @override
+  get verifyNow => "立即验证";
+  @override
+  get password => "密码";
+  @override
+  get backToHome => "回家";
+  @override
+  get forgotPassword => "忘记密码？";
+  @override
+  get signInCap => "登入";
+  @override
+  get moveToLogIn => "移动登录";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "点击这里";
+  @override
+  get signUpHere => "在此注册";
+  @override
+  get reset => "重启";
+  @override
+  get haveRegisterCode => "有注册码？";
+  @override
+  get welcome => "欢迎回来！";
+  @override
+  get signInAsGuest => "以访客身分登入";
+  @override
+  get editProfileTitle => "编辑个人资料";
+  @override
+  get emaillbl => "电子邮件";
+  @override
+  get searchInventory => "搜索产品";
+  @override
+  get emailAddress => "电子邮件地址*";
+  @override
+  get offlineFilter => "无法找到所需的纸牌？我们可以帮助你从我们的离线的库存最好的交易。";
+  @override
+  get loginDesc => "是否要启用触摸ID / M-PIN解锁我的钻石？请选择一个选项，以解锁应用";
+  @override
+  get searchDiamonds => "搜索钻石";
+  @override
+  get continueWithSearch => "你想继续搜索？";
+  @override
+  get mobileNumber => "移动";
+  @override
+  get searchHint => "搜索...";
+  @override
+  get selectYourCountry => "选择国家";
+  @override
+  get resendCodeIn => "在重新发送代码";
+  @override
+  get resendCode => "重发";
+  @override
+  get haveAnAccount => "已经有一个帐户？";
+  @override
+  get dontReceiveCode => "如果您没有收到代码！";
+  @override
+  get inLogin => "登录。";
+  @override
+  get resetPwdDesc => "添加密码和确认密码重置您的密码。";
+  @override
+  get backToLogin => "回到登入";
+  @override
+  get firstName => "名字*";
+  @override
+  get name => "用户名*";
+  @override
+  get lastName => "姓*";
+  @override
+  get middleName => "中间名字*";
+  @override
+  get confirmPassword => "确认密码";
+  @override
+  get currentPasswordErr => "当前密码错误";
+  @override
+  get passwordChanged => "密码已更改";
+  @override
+  get lblLogInErr => "登录错误";
+  @override
+  get enterYour => "输入您的";
+  @override
+  get details => "细节";
+  @override
+  get registerCode => "注册码";
+  @override
+  get registerCodeDesc => "添加一个注册码与3eco启动招生。";
+  @override
+  get uploadPhotoDesc => "把你自己的自拍照";
+  @override
+  get updateProfile => "更新配置文件";
+  @override
+  get postalCode => "邮政编码*";
+  @override
+  get removeButton => "去掉";
+  @override
+  get gender => "性别";
+  @override
+  get male => "男";
+  @override
+  get female => "女";
+  @override
+  get changePassword => "更改密码";
+  @override
+  get currentPassword => "当前密码*";
+  @override
+  get newPassword => "新密码*";
+  @override
+  get confirmNewPassword => "确认密码*";
+  @override
+  get personalDocuments => "个人文档";
+  @override
+  get assignedAuto => "自动分配";
+  @override
+  get logout => "登出";
+  @override
+  get logoutConfirmationMsg => "你确定要注销？";
+  @override
+  get address => "地址*";
+  @override
+  get accountNumber => "账号";
+  @override
+  get bankerName => "银行名称";
+  @override
+  get nameLable => "名称";
+  @override
+  get ifscCode => "IFSC代码";
+  @override
+  get businessRegistrationNumbr => "商业登记号码";
+  @override
+  get businessRelationshipPeriod => "业务关系期限（年）";
+  @override
+  get designation => "指定";
+  @override
+  get nameofDesignation => "的名字";
+  @override
+  get natureofOrganization => "组织的性质";
+  @override
+  get uploadFile => "没有文件Choosen";
+  @override
+  get update => "UPDATE";
+  @override
+  get resetPwd => "重设密码";
+  @override
+  get pwdReset => "重设密码";
+  @override
+  get signInWithMPIN => "请用M-PIN";
+  @override
+  get pwdChanged => "密码已更改";
+  @override
+  get successfullyPwdDesc => "您已成功重置您的密码。在登录时，请使用您的新密码。";
+  @override
+  get lblProfileSetup => "您的个人资料设置";
+  @override
+  get lblProfileSetupDesc => "我们已经收到您的个人资料详细信息";
+  @override
+  get hoursAvailable => "总Shifttime";
+  @override
+  get confirmStoneDetail => "确认石详细";
+  @override
+  get companyName => "公司名";
+  @override
+  get invoiceDate => "发票日期";
+  @override
+  get companyCode => "公司代码";
+  @override
+  get saveCompanyDetails => "保存公司信息";
+  @override
+  get passwordNotChange => "密码不匹配";
+  @override
+  get rememberPassword => "记住密码？";
+  @override
+  get sendOTP => "发送OTP";
+  @override
+  get resendNow => "现在重发";
+  @override
+  get didNotReceiveOTP => "如果您没有收到OTP！";
+  @override
+  get sendOTPToEmail => "我们将发送一个OTP到您输入的电子邮件地址或用户名。请输入电子邮件地址或用户名。";
+  @override
+  get enterOTP => "检察官办公室已经被发送到您注册的电子邮件地址。请输入OTP。";
+  @override
+  get backToSignIn => "返回登录";
+  @override
+  get passwordResetSuccessfully => "密码重置成功。";
+  @override
+  get emailAndUname => "Email /用户名";
+  @override
+  get signUp => "注册";
+  @override
+  get promotionText => "促销优惠";
+  @override
+  get termsAndCondition => "附带条约";
+  @override
+  get mustAgreeTermsAndCondition => "你必须同意的条款和条件，以访客身分登入用户";
+  @override
+  get forgotPasswordTitle => "忘记密码";
+  @override
+  get uploadKYC => "上传KYC";
+  @override
+  get uploadKycDesc => "请上传您的KYC文件来访问完整的功能。";
+  @override
+  get hintPhotoIdentityProof => "照片的身份证明*";
+  @override
+  get hintBussinerssProof => "商务身份证明*";
+  @override
+  get btnFileUpload => "上传文件";
+  @override
+  get pleaseUploadPhotoProof => "请上传照片的身份证明。";
+  @override
+  get pleaseUploadBussinessProof => "请上传商家身份证明。";
+  @override
+  get pleaseSelectFileFormat => "请所有的上传以下格式的文件名：.jpg";
+  @override
+  get kycSubmitted => "KYC提交";
+  @override
+  get kycSubmmittedDesc => "您的KYC已成功提交。";
+  @override
+  get btnMoveToHome => "移至首页";
+  @override
+  get kYCRejected => "KYC拒绝";
+  @override
+  get kycRejectedDesc => "您的KYC已被拒绝。请重新上传您的文件KYC访问所有功能。";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class Portugese extends English {
+class ChineseCommonString extends CommonString {
   @override
-  get app => PortugeseApp();
+  get seeMore => "查看更多";
   @override
-  get signup => PortugeseSignup();
+  get seeLess => "较少见";
   @override
-  get addCard => PortugeseAddCard();
-  static String get languageCode => "Portugese";
-  static String get languageName => "Portugese";
+  get modify => "修改";
+  @override
+  get delete => "删除";
+  @override
+  get details => "细节";
+  @override
+  get edit => "编辑";
+  @override
+  get addDemand => "新增需求";
+  @override
+  get demandTitle => "需求标题";
+  @override
+  get pleaseEnterDemandTitle => "请输入需求标题";
+  @override
+  get demandAddedSuccessfully => "需求增加成功";
+  @override
+  get selectAtleastOneFilter => "请";
+  @override
+  get savedSearch => "保存的搜索";
+  @override
+  get searchSavedSearch => "搜索保存的搜索";
+  @override
+  get viewDetails => "查看详情";
+  @override
+  get viewLessDetails => "查看较少的细节";
+  @override
+  get myDemand => "我的需求";
+  @override
+  get date => "日期";
+  @override
+  get selectTime => "选择时间";
+  @override
+  get selectDate => "选择日期";
+  @override
+  get offerVelidTill => "优惠有效期至";
+  @override
+  get officeVisitDate => "办公室访问日期";
+  @override
+  get all => "所有";
+  @override
+  get status => "状态";
+  @override
+  get save => "保存";
+  @override
+  get verify => "校验";
+  @override
+  get readMore => "阅读更多";
+  @override
+  get goodMorning => "早上好";
+  @override
+  get goodAfternoon => "下午好";
+  @override
+  get goodEvening => "晚上好";
+  @override
+  get btnSkip => "跳跃";
+  @override
+  get btnUpdate => "更新";
+  @override
+  get btnContinue => "继续";
+  @override
+  get btnContinueCap => "继续";
+  @override
+  get btnEdit => "编辑";
+  @override
+  get btnSubmit => "提交";
+  @override
+  get btnNextCap => "下一个";
+  @override
+  get btnSaveCap => "更新密码";
+  @override
+  get btnWithdrawCap => "收回";
+  @override
+  get btnSaveAndContinueCap => "保存并继续";
+  @override
+  get btnUnregister => "未注册手机";
+  @override
+  get btnClose => "关";
+  @override
+  get remove => "去掉";
+  @override
+  get refresh => "刷新";
+  @override
+  get fetchLocationMessage => "请等待我们撷取你的位置";
+  @override
+  get done => "完成";
+  @override
+  get doneCap => "DONE";
+  @override
+  get cancel => "取消";
+  @override
+  get allow => "允许";
+  @override
+  get countryFirst => "请选择国家一";
+  @override
+  get apply => "应用";
+  @override
+  get cancelCap => "取消";
+  @override
+  get uploadCap => "上传";
+  @override
+  get yesCancelCap => "是";
+  @override
+  get upload => "上传";
+  @override
+  get ok => "好";
+  @override
+  get home => "家";
+  @override
+  get goToMyWatchList => "转到我的关注";
+  @override
+  get goToMyOrder => "转到我的订单";
+  @override
+  get gotToMyOffer => "转到我的报价";
+  @override
+  get gotToMyHold => "转到我保持";
+  @override
+  get gotToMyEnquiry => "转到我的询价";
+  @override
+  get gotToMyBid => "转到我的出价";
+  @override
+  get gotToMyReminder => "转到我的提醒";
+  @override
+  get gotToMyComments => "转到我的注释";
+  @override
+  get yes => "是";
+  @override
+  get no => "没有";
+  @override
+  get selectCountry => "选择国家";
+  @override
+  get clickHere => "点击这里";
+  @override
+  get btnAddNewAddress => "添加新地址";
+  @override
+  get btnCancel => "取消";
+  @override
+  get btnTakeSelfie => "就拿自拍";
+  @override
+  get successfully => "顺利";
+  @override
+  get lblAppExit => "你确定要离开？";
+  @override
+  get lblExit => "出口";
+  @override
+  get openAppSetting => "打开设置";
+  @override
+  get lblOr => "要么";
+  @override
+  get fromLbl => "从";
+  @override
+  get toLbl => "至";
+  @override
+  get showMore => "展示更多";
+  @override
+  get showLess => "显示较少";
+  @override
+  get selectCity => "选择城市";
+  @override
+  get notYetAvailable => "尚不可用";
+  @override
+  get updateAvailable => "有可用更新！";
+  @override
+  get downloadAppFrom => "下载应用程序更新从";
+  @override
+  get playStore => "应用商店";
+  @override
+  get skipUpdate => "跳过更新";
+  @override
+  get stateFirst => "请选择国家一";
+  @override
+  get reallyExit => "真的退出？";
+  @override
+  get alert => "警报！";
+  @override
+  get loading => "载入中";
+  @override
+  get error => "错误";
+  @override
+  get jumpToTop => "跳转到顶部";
+  @override
+  get ihaveread => "我已阅读并接受";
+  @override
+  get selected => "选择";
+  @override
+  get lbllogout => "登出";
+  @override
+  get lblThanx => "谢谢";
+  @override
+  get lblSelectCity => "选择城市";
+  @override
+  get lblSelectState => "选择国家";
+  @override
+  get lblSelectCountry => "选择国家";
+  @override
+  get lblCity => "市";
+  @override
+  get lblCountry => "国家";
+  @override
+  get lblName => "名称";
+  @override
+  get lblPinCode => "PIN码";
+  @override
+  get lblMobileNumber => "手机号码";
+  @override
+  get lblState => "州";
+  @override
+  get lblCode => "码：";
+  @override
+  get lblOrderNo => "订单号：";
+  @override
+  get lblOrderItem => "订购：";
+  @override
+  get lblDelivered => "交付";
+  @override
+  get lblTicketReady => "你的票了";
+  @override
+  get lblPersonTicket => "2人门票";
+  @override
+  get lblShuttleBus => "机场摆渡车";
+  @override
+  get lblPickup => "拾起";
+  @override
+  get lblDropoff => "放下";
+  @override
+  get lblPassenger => "乘客";
+  @override
+  get lblDeliveryNo => "交货号";
+  @override
+  get lblPrice => "价钱";
+  @override
+  get lblValid => "有效期";
+  @override
+  get lblRenew => "更新";
+  @override
+  get lblDeparture => "离开";
+  @override
+  get lblArrived => "到达";
+  @override
+  get lblSendtoFriend => "发送给朋友";
+  @override
+  get popupRenewTitle => "续订票";
+  @override
+  get popupRenewDesc => "Lorem存有悲坐阿梅德";
+  @override
+  get popuplblPassenger => "乘客";
+  @override
+  get popuplblCancel => "取消";
+  @override
+  get popupbtnRenew => "更新";
+  @override
+  get ridelblAwesome => "真棒";
+  @override
+  get ridebtnDone => "完成";
+  @override
+  get offerPricePerCarat => "所报的价格（CTS）";
+  @override
+  get dropOffText => "放下";
+  @override
+  get pickUpText => "拾起";
+  @override
+  get startAtText => "在开始";
+  @override
+  get endAtText => "在结束";
+  @override
+  get personText => "人";
+  @override
+  get paymentScreenTitle => "付款";
+  @override
+  get pickuplbl => "拾起";
+  @override
+  get droplbl => "放下";
+  @override
+  get makePaymentButtonlbl => "付款";
+  @override
+  get pessangerslbl => "乘客";
+  @override
+  get priceBreakuplbl => "价格解体";
+  @override
+  get tripPricelbl => "旅行价格";
+  @override
+  get taxeslbl => "税";
+  @override
+  get totallbl => "总";
+  @override
+  get cardNumberhint => "卡号";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / YY";
+  @override
+  get btnTryAgain => "再试一次";
+  @override
+  get cityFirst => "首先请选择城市";
+  @override
+  get enterFareDetails => "进入销售详细信息";
+  @override
+  get fromDate => "从日期";
+  @override
+  get toDate => "选定的日期";
+  @override
+  get btnUnderstand => "我明白";
+  @override
+  get applicationUpdate => "应用程序更新";
+  @override
+  get newVersionMessage => "应用程序的新版本可用";
+  @override
+  get paymentCollected => "收集付款";
+  @override
+  get addComment => "添加评论";
+  @override
+  get more => "更多";
+  @override
+  get carat => "克拉";
+  @override
+  get pcs => "PCS";
+  @override
+  get cts => "CTS";
+  @override
+  get disc => "光盘％";
+  @override
+  get avgPriceCrt => "平均。价格/ CT";
+  @override
+  get amount => "量";
+  @override
+  get confirmStone => "确认石";
+  @override
+  get confirm => "确认";
+  @override
+  get offered => "参团";
+  @override
+  get validTill => "有效期至";
+  @override
+  get remark => "备注";
+  @override
+  get color => "颜色";
+  @override
+  get colorGroup => "色集团";
+  @override
+  get colorFancy => "幻想";
+  @override
+  get colorWhite => "白色";
+  @override
+  get clarity => "明晰";
+  @override
+  get clarityGroup => "清晰度集团";
+  @override
+  get intensity => "强度";
+  @override
+  get overtone => "弦外之音";
+  @override
+  get selectBusinessType => "选择业务类型";
+  @override
+  get selectState => "选择国家";
+  @override
+  get search => "搜索";
+  @override
+  get profile => "我的简历";
+  @override
+  get personal => "个人";
+  @override
+  get business => "商业";
+  @override
+  get documents => "文件";
+  @override
+  get noSlotFound => "没有找到插槽";
+  @override
+  get noDiamondFound => "没有钻石符合搜索。请添加您的需求。";
+  @override
+  get selectType => "选择虚拟类型";
+  @override
+  get noSavedSearch => "没有保存的搜索已存在";
+  @override
+  get searchCity => "搜索城市";
+  @override
+  get searchCountry => "搜索国家";
+  @override
+  get searchState => "搜索状态";
+  @override
+  get notifications => "通知";
+  @override
+  get enter2Stone => "请选择至少2个石头比较。";
+  @override
+  get bidDesc => "目前位于印度和用于分离任何其他国家交付印度至少需要7-10个工作日。";
+  @override
+  get packetNo => "包号：";
+  @override
+  get quit => "放弃";
+  @override
+  get agree => "我同意";
+  @override
+  get laterToday => "今天晚些时候";
+  @override
+  get toMorrow => "明天";
+  @override
+  get nextWeek => "下周";
+  @override
+  get chooseAnother => "另一种选择";
+  @override
+  get dateTime => "约会时间";
+  @override
+  get language => "语言";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "找不到任何文档";
+  @override
+  get searchBusinessType => "搜索业务类型";
+  @override
+  get hours => "小时";
+  @override
+  get minutes => "分钟";
+  @override
+  get seconds => "秒";
+  @override
+  get bidEndsIn => "投标结束在：";
+  @override
+  get shape => "形状";
+  @override
+  get download => "下载";
+  @override
+  get share => "分享";
+  @override
+  get placeOrder => "下订单";
+  @override
+  get enterComment => "请填写评论";
+  @override
+  get deleteItem => "你确定你要删除？";
+  @override
+  get shippingPolicy => "航运政策";
+  @override
+  get offerSundayRestriction => "周日是不允许的。办公室工作日为周一至周六";
+  @override
+  get weekAgo => "1周前";
+  @override
+  get lastWeek => "上个星期";
+  @override
+  get dayAgo => "几天前";
+  @override
+  get onedayAgo => "1天前";
+  @override
+  get yesterday => "昨天";
+  @override
+  get hourAgo => "小时前";
+  @override
+  get onehourAgo => "1小时前";
+  @override
+  get anhourAgo => "一小时前";
+  @override
+  get mintuesAgo => "几分钟前";
+  @override
+  get onemintuesAgo => "1分钟前";
+  @override
+  get amintueAgo => "一分钟前";
+  @override
+  get secondsAgo => "秒前";
+  @override
+  get justNow => "现在";
+  @override
+  get today => "今天";
+  @override
+  get past => "过去";
+  @override
+  get selectPhotoProof => "选择文档";
+  @override
+  get pleaseSelectPhotoProof => "请选择文件";
+  @override
+  get selectBusinessProof => "选择文档";
+  @override
+  get pleaseSelectBusinessProof => "请选择文件";
+  @override
+  get touchId => "触摸标识";
+  @override
+  get faceId => "面部识别";
+  @override
+  get enableTouchId => "允许使用Touch ID解锁我的钻石？";
+  @override
+  get enableFaceId => "启用面部识别解锁我的钻石？";
+  @override
+  get unlockWithTouchId => "采用触摸式标识解锁我的钻石";
+  @override
+  get unlockWithFaceId => "解锁使用面部识别我的钻石。";
+  @override
+  get mPin => "M-PIN";
+  @override
+  get holdMemoStatusDiamondorder => "你不能确诊的石块，已经在保持或备忘录状态";
+  @override
+  get searchStoneIdCertificateNo => "搜索石ID /证书号";
+  @override
+  get createMPin => "创建新的M-PIN";
+  @override
+  get reentermpin => "重新输入M-PIN";
+  @override
+  get forgotmpin => "忘记了M-PIN？";
+  @override
+  get verifympin => "验证M-PIN";
+  @override
+  get enteryoursixdigitcode => "输入您的6位M-PIN";
+  @override
+  get changempin => "更改M-PIN";
+  @override
+  get faceidandtouchnotenable => "FaceId / TouchId在您的手机未启用，请启用使用此功能";
+  @override
+  get enablempintounlockmydiamonds => "启用M-PIN解锁应用程序？这将禁用触摸标识。你确定你要继续吗？";
+  @override
+  get enabletouchidtounlockmydiamonds => "允许使用Touch ID解锁应用？这将禁用M-PIN。你确定你要继续吗？";
+  @override
+  get rememberme => "记得我";
+  @override
+  get usertouchid => "使用触摸标识";
+  @override
+  get usempin => "使用M-PIN";
+  @override
+  get filesarenotavailableonserver => "文件不可用的服务器，请稍后重试";
+  @override
+  get allfileshavebeendownloaded => "所有文件都被下载。";
+  @override
+  get filesisdownloaded => "文件下载";
+  @override
+  get filesisnotdownloadedbcz => "文件没有下载，因为它不是在服务器存在。";
+  @override
+  get downloadingCanceled => "取消下载";
+  @override
+  get downloading => "下载...";
+  @override
+  get expirydate => "到期日 ：";
+  @override
+  get youreallywanttodelete => "你真的要删除";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "明晰",
+    "shape": "形状",
+  };
 }
 
-class PortugeseApp extends App {
+class ChineseErrorString extends ErrorString {
   @override
-  get lblAppName => "Scooter chute";
+  get accessDenide => "拒绝访问";
+  @override
+  get pleaseSelectOfferTillDate => "请选择报价，直到日期。";
+  @override
+  get pleaseSelectOfficeVisitDate => "请选择办公室访问日期";
+  @override
+  get deleteStoneMsg => "你确定要删除石（S）？";
+  @override
+  get acceptTermsAndCondition => "请接受条款和条件";
+  @override
+  get diamondCompareRemove => "至少2块石头都需要进行比较。";
+  @override
+  get diamondSelectionError => "请选择至少一石。";
+  @override
+  get pleaseEnterCompanyName => "请输入公司名称。";
+  @override
+  get selectInvoiceDate => "选择发票日期";
+  @override
+  get pleaseEnterComment => "请输入评论。";
+  @override
+  get pleaseEnterRemarks => "请输入备注。";
+  @override
+  get selectExpiryDate => "请选择到期日。";
+  @override
+  get enterOTP => "请输入代码";
+  @override
+  get pleaseEnterOTP => "请输入验证码。";
+  @override
+  get enteredCodeNotMatching => "输入的代码不匹配。再试一次";
+  @override
+  get selectCancellationReason => "请选择取消原因";
+  @override
+  get enterDesc => "请输入描述。";
+  @override
+  get enterTitle => "请输入标题。";
+  @override
+  get enterEmailOrPhone => "请输入电子邮件/移动。";
+  @override
+  get enterPassword => "密码不能为空。请输入密码。";
+  @override
+  get enterConfirmPassword => "请输入确认密码。";
+  @override
+  get enterSkype => "请输入Skype的。";
+  @override
+  get enterRegisterCode => "请输入注册码";
+  @override
+  get enterEmail => "请输入电子邮件地址。";
+  @override
+  get enterPhone => "请输入手机号码。";
+  @override
+  get enterUsername => "用户名不能为空。请输入用户名。";
+  @override
+  get enterValidEmail => "请输入有效电子邮件地址。";
+  @override
+  get enterValidPhone => "请输入有效的手机号码。";
+  @override
+  get enterValidWhatsappPhone => "请输入有效的WhatsApp的手机号码。";
+  @override
+  get enterValidPassword => "请输入6个字符或长密码。";
+  @override
+  get mismatchPassword => "密码和确认密码不匹配。";
+  @override
+  get enterFirstName => "请输入名字。";
+  @override
+  get enterMiddleName => "请输入中间名。";
+  @override
+  get enterPinCode => "请输入PIN码。";
+  @override
+  get enterName => "请输入名称。";
+  @override
+  get enterLastName => "请输入姓氏。";
+  @override
+  get enterAddress => "请输入地址。";
+  @override
+  get enterValidPinCode => "输入pin码有效。";
+  @override
+  get enterValidAddress => "请输入10个字符或长地址。";
+  @override
+  get enterPostalCode => "请输入邮政编码。";
+  @override
+  get enterValidPostalCode => "请输入6位数字的邮政编码。";
+  @override
+  get enterCurrentPassword => "请输入当前的密码。";
+  @override
+  get enterNewPassword => "请输入新的密码。";
+  @override
+  get enterFareAmount => "请输入销售金额。";
+  @override
+  get enterOrderNO => "请输入任何命令。";
+  @override
+  get enterServiceType => "请选择服务类型。";
+  @override
+  get enterPaymentType => "请选择付款方式。";
+  @override
+  get enterValidFareAmount => "销售金额不能为零。";
+  @override
+  get enterPassangerNo => "请输入no。的乘客。";
+  @override
+  get enterValidPassangerNo => "乘客人数不能为零。";
+  @override
+  get notEnterMorePassangerNo => "乘客人数不能超过7。";
+  @override
+  get drivingLicenseValidationText => "请输入15位的字母数字驾驶执照号码。";
+  @override
+  get pANCardValidationText => "请输入10位的字母数字PAN卡号码。";
+  @override
+  get selectFromDate => "请从日期选择";
+  @override
+  get selectToDate => "请选择最新";
+  @override
+  get fromGreaterTo => "选定的日期必须大于当前日期";
+  @override
+  get wrongPassword => "密码必须含有至少8个字符，1个大写字母，1个小写字母，1位，1个特殊系统字符";
+  @override
+  get fromValueGreateThanTo => "从值应小于或等于要值";
+  @override
+  get toValueGreaterThanFrom => "价值应大于或等于从价值";
+  @override
+  get pleaseEnterCompanyCode => "请输入公司代码";
+  @override
+  get enterSamePassword => "确认密码不匹配新密码。请输入确认密码相同的新密码。";
+  @override
+  get selectAppointmentDate => "请选择预约日期";
+  @override
+  get selectTimeSlot => "请选择时隙";
+  @override
+  get enterComments => "请填写评论";
+  @override
+  get selectVirtualType => "请选择虚拟型";
+  @override
+  get versionError => "版本错误";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class PortugeseSignup extends Signup {
+class ChineseNoDataStrings extends NoDataStrings {
   @override
-  get lblFirstName => "Nome";
-  @override
-  get lblLastName => "Sobrenome";
-  @override
-  get lblSelectDateOfBirth => "Selecione Data de Nascimento";
-  @override
-  get lblGender => "Gênero";
-  @override
-  get lblEnterPhoneNo => "Telefone";
-  @override
-  get lblEnterPassword => "Digite a senha";
-  @override
-  get lblAlreadyHaveAnAccount => "Ter uma conta ?";
-  @override
-  get lblPhoneNo => "Telefone não.";
-  @override
-  get lblMale => "Masculino";
-  @override
-  get lblFemale => "Fêmea";
-  @override
-  get lblRidersAgreement => "Acordo de Rider";
-  @override
-  get msgAgeInfo =>
-      "Você deve ter pelo menos 16 para montar o scooter. Contas de usuários com menos de 16 podem ficar restrito.";
+  get noDataFound => "没有找到记录";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class PortugeseAddCard extends AddCard {
+class ChineseScreenTitle extends ScreenTitle {
   @override
-  get lblCreditCard => "Cartão de crédito";
+  get placeAnOffer => "将报价";
   @override
-  get lblCardNumber => "Número do cartão";
+  get addedInWatchList => "加入监视列表";
   @override
-  get lblCardHolderName => "Nome do Titular";
+  get addedInOffer => "提交报价";
   @override
-  get lblExpiryDate => "Data de validade";
+  get addedInCart => "加入购物车";
   @override
-  get lblCvvCode => "Código de Valor de Verificação de Cartão";
+  get addedInBid => "加入投标";
+  @override
+  get myEnquiry => "我的询价";
+  @override
+  get delete => "删除";
+  @override
+  get addDemand => "添加请求";
+  @override
+  get matchPair => "比赛配对";
+  @override
+  get savedAndSearch => "保存和搜索";
+  @override
+  get updateAndSearch => "更新和搜索";
+  @override
+  get upcoming => "即将到来";
+  @override
+  get bidPricePerCt => "买入价/ CT";
+  @override
+  get bidDisc => "竞价盘";
+  @override
+  get bidValue => "投标值";
+  @override
+  get bidStone => "投标石";
+  @override
+  get myCart => "我的车";
+  @override
+  get myComment => "我的笔记";
+  @override
+  get compare => "比较";
+  @override
+  get compareStones => "比较石头";
+  @override
+  get statusHold => "等候接听";
+  @override
+  get statusOnMemo => "在备忘录";
+  @override
+  get statusAvailable => "可得到";
+  @override
+  get statusNew => "新品到货";
+  @override
+  get statusOffer => "石天/促销";
+  @override
+  get statusMyHold => "我保持";
+  @override
+  get signup => "注册";
+  @override
+  get addToOffice => "添加到办公室";
+  @override
+  get addComment => "添加评论";
+  @override
+  get addEnquiry => "加入询价";
+  @override
+  get finalOffer => "最终发";
+  @override
+  get finalDisc => "最终光盘";
+  @override
+  get finalRate => "最终速率";
+  @override
+  get finalValue => "最终值";
+  @override
+  get orderMsg => "1）价格提到在这里是固定的，因此没有商量的余地。 \\ N2）分级，参数上我们超越GIA的分级网站提及。";
+  @override
+  get offerMsg =>
+      "如果价格得到批准，所以我们要求你要发行之前，请确保所提供的石头会直接予以确认。放在发售列表中的所有石（S）没有保持搁置了你，因为它是供其他客户也是如此。";
+  @override
+  get note => "注意";
+  @override
+  get hours => "小时";
+  @override
+  get offeredDisc => "参团派息";
+  @override
+  get offeredPriceCt => "提供镨/ CT";
+  @override
+  get addOffer => "新增优惠";
+  @override
+  get expDiscPer => "预计折扣";
+  @override
+  get todayDiscPer => "今天的盘";
+  @override
+  get searchResult => "搜索结果";
+  @override
+  get searchDiamond => "搜索钻石";
+  @override
+  get basic => "基本";
+  @override
+  get advanced => "高级";
+  @override
+  get stoneIdCertNo => "StoneID /证书号";
+  @override
+  get takeSignature => "拿签名";
+  @override
+  get optional => "可选的";
+  @override
+  get myAddress => "我的地址";
+  @override
+  get expiryDate => "到期日";
+  @override
+  get drivingLicenceDesc => "你的驾驶执照图片";
+  @override
+  get panDesc => "您的PAN卡图片";
+  @override
+  get selfie => "自拍";
+  @override
+  get selfieDesc => "您的自拍照片";
+  @override
+  get pending => "待定";
+  @override
+  get rejected => "拒绝";
+  @override
+  get uploadAgain => "上传";
+  @override
+  get remove => "去掉";
+  @override
+  get title => "标题";
+  @override
+  get description => "描述";
+  @override
+  get uploadYour => "上传";
+  @override
+  get raiseDispute => "告诉我们";
+  @override
+  get drivingLicense => "驾照";
+  @override
+  get pANCard => "PAN卡";
+  @override
+  get saveContinue => "保存并继续";
+  @override
+  get uploadFrontUmgText => "上传正面图像";
+  @override
+  get uploadPANCardImgText => "上传PAN卡图片";
+  @override
+  get uploadBackImageText => "上传背面图像";
+  @override
+  get helptopic => "帮助主题";
+  @override
+  get newRideSharingRequest => "新的拼车要求";
+  @override
+  get newRequest => "新要求";
+  @override
+  get welcomeTo => "欢迎来到";
+  @override
+  get welcomeDesc => "登录到您的现有帐户摩尼宝石的";
+  @override
+  get forgotPassword => "忘了你的";
+  @override
+  get forgotPasswordDesc => "输入你的手机号码，以恢复您的密码。";
+  @override
+  get termsAndCondition => "条款和条件";
+  @override
+  get privacyPolicy => "隐私政策";
+  @override
+  get aboutUS => "关于我们";
+  @override
+  get otpVerification => "验证码换乘";
+  @override
+  get otpVerificationDelivery => "验证应答码";
+  @override
+  get otpVerificationDeliveryDone => "验证码交付";
+  @override
+  get enterOtp => "输入4位数";
+  @override
+  get recoveryCode => "恢复码";
+  @override
+  get editProfile => "编辑个人资料";
+  @override
+  get myProfile => "我的简历";
+  @override
+  get reset => "重启";
+  @override
+  get yourPassword => "你的密码";
+  @override
+  get photo => "照片";
+  @override
+  get otpDesc => "恢复码已发送到您的手机号码。请输入验证码。";
+  @override
+  get otpVerifyDesc => "验证码已发送到您的手机号码。请输入验证码。";
+  @override
+  get diamondDetail => "钻石详细";
+  @override
+  get home => "家";
+  @override
+  get search => "搜索";
+  @override
+  get quickSearch => "快速搜索";
+  @override
+  get newArrival => "新品到货";
+  @override
+  get exclusiveDiamonds => "独家钻石级";
+  @override
+  get diamondOnAuction => "钻石拍卖";
+  @override
+  get stoneOfTheDays => "百思买";
+  @override
+  get myWatchlist => "我的关注";
+  @override
+  get myBid => "我的出价";
+  @override
+  get myHold => "我保持";
+  @override
+  get myOrder => "我的有序列表";
+  @override
+  get confirmStone => "确认石";
+  @override
+  get myOffice => "我的办公室查看";
+  @override
+  get myOffer => "我的报价列表";
+  @override
+  get myPurchased => "我购买的历史";
+  @override
+  get mySavedSearch => "我保存的搜索";
+  @override
+  get savedSearch => "保存的搜索";
+  @override
+  get myDemand => "我的需求";
+  @override
+  get contactUs => "联系我们";
+  @override
+  get changePassword => "更改密码";
+  @override
+  get logout => "登出";
+  @override
+  get fareDetailsTitle => "进入销售详细信息";
+  @override
+  get fairAmt => "销售额";
+  @override
+  get noOfPassengers => "乘客人数";
+  @override
+  get remarks => "备注";
+  @override
+  get orderNo => "订单号。";
+  @override
+  get typeOfService => "服务类型";
+  @override
+  get paymentType => "支付方式*";
+  @override
+  get recentlyView => "最近查看";
+  @override
+  get uploadImgValidationText => "具有大小为5 MB或更少上传文件必须是.JPG，.JPEG，png格式或.PDF。";
+  @override
+  get drivingLicenseHintText => "驾驶执照号码";
+  @override
+  get pANCARDHintText => "PAN卡号码";
+  @override
+  get viewRide => "查看游戏机";
+  @override
+  get myVehicle => "我的车";
+  @override
+  get personalDocument => "个人文档";
+  @override
+  get help => "救命";
+  @override
+  get about => "关于";
+  @override
+  get bankDetails => "银行明细";
+  @override
+  get accountAndPayment => "帐户和付费";
+  @override
+  get enquiry => "查询";
+  @override
+  get download => "下载";
+  @override
+  get addToCart => "添加到购物车";
+  @override
+  get addToWatchList => "加入观看列表";
+  @override
+  get finalCalculation => "最终计算";
+  @override
+  get bookOffice => "图书办公室";
+  @override
+  get clearSelection => "清空选项";
+  @override
+  get comment => "评论";
+  @override
+  get hold => "保持";
+  @override
+  get offer => "提供";
+  @override
+  get officeView => "办公室查看";
+  @override
+  get placeOrder => "下订单";
+  @override
+  get buyNow => "立即购买";
+  @override
+  get cancelStone => "取消石";
+  @override
+  get share => "分享";
+  @override
+  get watchlist => "监视列表";
+  @override
+  get exclusive => "独家";
+  @override
+  get featuredStones => "特色石材";
+  @override
+  get stoneOfDay => "日石";
+  @override
+  get recentSearch => "最近的搜索";
+  @override
+  get viewAll => "查看全部";
+  @override
+  get salesPersonDetail => "销售人员详细";
+  @override
+  get searchTitle => "搜索标题";
+  @override
+  get enterSearchTitle => "输入搜索标题";
+  @override
+  get timeSlots => "时隙";
+  @override
+  get selectCustomDate => "选择自定义日期";
+  @override
+  get availableSlot => "可用插槽";
+  @override
+  get reqOfficeView => "要求事务查看";
+  @override
+  get myComments => "我的评论";
+  @override
+  get myReminder => "我的提醒";
+  @override
+  get reminder => "提醒";
+  @override
+  get manageAddress => "管理地址";
+  @override
+  get myAccount => "我的帐户";
+  @override
+  get declaimer => "放弃";
+  @override
+  get shareStone => "分享石";
+  @override
+  get addRemider => "添加提醒";
+  @override
+  get offlineSearch => "在线搜索";
+  @override
+  get searchHistory => "搜索历史记录";
+  @override
+  get offlineStock => "脱机股票";
+  @override
+  get searchOffline => "搜索（离线）";
+  @override
+  get voiceSearch => "声音搜索";
+  @override
+  get tapMictoSpeak => "点击麦克风讲";
+  @override
+  get typeToSearch => "键入搜索";
+  @override
+  get typeWordsToSearch => "键入至少3个字进行搜索石头";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
+}
+
+class ChineseDynamickeys extends Dynamickeys {
+  @override
+  get shape => "形状";
+  @override
+  get caratRange => "克拉范围";
+  @override
+  get basicDetail => "基本详情";
+  @override
+  get measurementTitle => "测量";
+  @override
+  get inclusionDetail => "包容详情";
+  @override
+  get other => "其他";
+  @override
+  get stoneID => "石ID";
+  @override
+  get labTitle => "实验室";
+  @override
+  get certNo => "CERT。没有。";
+  @override
+  get locationTitle => "位置";
+  @override
+  get shapeTitle => "形状";
+  @override
+  get caratTitle => "克拉";
+  @override
+  get colorTitle => "颜色";
+  @override
+  get clarityTitle => "明晰";
+  @override
+  get shadeTitle => "阴凉处";
+  @override
+  get cutTitle => "切";
+  @override
+  get polishTitle => "抛光";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "荧光";
+  @override
+  get rapTitle => r"RAP（/$）";
+  @override
+  get discountTitle => "折扣（％）";
+  @override
+  get priceAndCt => r"价格/ CT ($)";
+  @override
+  get amountTitle => "量";
+  @override
+  get eyeCleanTitle => "眼部清洁";
+  @override
+  get brownTitle => "棕色";
+  @override
+  get milkyTitle => "乳白色";
+  @override
+  get mixTingeTitle => "MIX色彩";
+  @override
+  get dimensionTitle => "尺寸（mm）";
+  @override
+  get girdleTitle => "腰带（％）";
+  @override
+  get tableTitle => "表％";
+  @override
+  get crownAngleTitle => "皇冠角";
+  @override
+  get depthTitle => "深度％";
+  @override
+  get pavAngleTitle => "Pav Angle";
+  @override
+  get crownHeightTitle => "冠高";
+  @override
+  get pavDepthTitle => "亭深比（％）";
+  @override
+  get starLengthTitle => "长星";
+  @override
+  get lowerHalfTitle => "下半";
+  @override
+  get gridleTitle => "腰带";
+  @override
+  get gridleFacetedTitle => "束带FACETED";
+  @override
+  get culetTitle => "底尖";
+  @override
+  get rationTitle => "比";
+  @override
+  get blackInclusionTitle => "黑色包裹体";
+  @override
+  get otherInclusionTitle => "其他入选";
+  @override
+  get openInclusionTitle => "打开包裹";
+  @override
+  get extraFacetTitle => "EXTRA FACET";
+  @override
+  get naturalTitle => "自然";
+  @override
+  get hAndATitle => "哈";
+  @override
+  get keyToSymbol => "关键符号";
+  @override
+  get labComments => "LAB评论";
+  @override
+  get laserInsTitle => "激光惯导系统";
+  @override
+  get basicTitle => "基本";
+  @override
+  get advancedTitle => "高级";
+  @override
+  get stoneIdTitle => "石ID /证书号";
+  @override
+  get defaultTitle => "默认";
+  @override
+  get newDiamondsTitle => "新的钻石";
+  @override
+  get priceLowToHigh => "价格由低到高";
+  @override
+  get priceHighToLow => "价格从高到低";
+  @override
+  get disLowToHigh => "折扣低到高";
+  @override
+  get disHighToLow => "折扣高至低";
+  @override
+  get colorLowToHigh => "颜色从低到高";
+  @override
+  get colorHighToLow => "颜色从高到低";
+  @override
+  get caratLowToHigh => "克拉低到高";
+  @override
+  get caratHighToLow => "克拉从高到低";
+  @override
+  get clarityLowToHigh => "净度从低到高";
+  @override
+  get clarityHighToLow => "净度从高到低";
+  @override
+  get colorShadeTitle => "色光";
+  @override
+  get certiTitle => "证书编号";
+  @override
+  get arrivalsTitle => "到达";
+  @override
+  get lengthTitle => "长度";
+  @override
+  get widthTitle => "宽度";
+  @override
+  get pavilionAngleTitle => "亭角";
+  @override
+  get girdleConditionTitle => "束带条件";
+  @override
+  get cluetConditionTitle => "底尖状况";
+  @override
+  get disTitle => "派息％";
+  @override
+  get depthTitleWithoutPerc => "深度";
+  @override
+  get otherInformationTitle => "其他信息";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "形状",
+    "caratRange": "克拉范围",
+    "basicDetail": "基本详情",
+    "measurementTitle": "测量",
+    "inclusionDetail": "包容详情",
+    "other": "其他",
+    "stoneID": "石ID",
+    "labTitle": "实验室",
+    "certNo": "CERT。没有。",
+    "locationTitle": "位置",
+    "shapeTitle": "形状",
+    "caratTitle": "克拉",
+    "colorTitle": "颜色",
+    "clarityTitle": "明晰",
+    "shadeTitle": "阴凉处",
+    "cutTitle": "切",
+    "polishTitle": "抛光",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "荧光",
+    "rapTitle": r"RAP（/$）",
+    "discountTitle": "折扣（％）",
+    "priceAndCt": r"价格/ CT ($)",
+    "amountTitle": "量",
+    "eyeCleanTitle": "眼部清洁",
+    "brownTitle": "棕色",
+    "milkyTitle": "乳白色",
+    "mixTingeTitle": "MIX色彩",
+    "dimensionTitle": "尺寸（mm）",
+    "girdleTitle": "腰带（％）",
+    "tableTitle": "表％",
+    "crownAngleTitle": "皇冠角",
+    "depthTitle": "深度％",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "冠高",
+    "pavDepthTitle": "亭深比（％）",
+    "starLengthTitle": "长星",
+    "lowerHalfTitle": "下半",
+    "gridleTitle": "腰带",
+    "gridleFacetedTitle": "束带FACETED",
+    "culetTitle": "底尖",
+    "rationTitle": "比",
+    "blackInclusionTitle": "黑色包裹体",
+    "otherInclusionTitle": "其他入选",
+    "openInclusionTitle": "打开包裹",
+    "extraFacetTitle": "EXTRA FACET",
+    "naturalTitle": "自然",
+    "hAndATitle": "哈",
+    "keyToSymbol": "关键符号",
+    "labComments": "LAB评论",
+    "laserInsTitle": "激光惯导系统",
+    "basicTitle": "基本",
+    "advancedTitle": "高级",
+    "stoneIdTitle": "石ID /证书号",
+    "defaultTitle": "默认",
+    "newDiamondsTitle": "新的钻石",
+    "priceLowToHigh": "价格由低到高",
+    "priceHighToLow": "价格从高到低",
+    "disLowToHigh": "折扣低到高",
+    "disHighToLow": "折扣高至低",
+    "colorLowToHigh": "颜色从低到高",
+    "colorHighToLow": "颜色从高到低",
+    "caratLowToHigh": "克拉低到高",
+    "caratHighToLow": "克拉从高到低",
+    "clarityLowToHigh": "净度从低到高",
+    "clarityHighToLow": "净度从高到低",
+    "colorShadeTitle": "色光",
+    "certiTitle": "证书编号",
+    "arrivalsTitle": "到达",
+    "lengthTitle": "长度",
+    "widthTitle": "宽度",
+    "pavilionAngleTitle": "亭角",
+    "girdleConditionTitle": "束带条件",
+    "cluetConditionTitle": "底尖状况",
+    "disTitle": "派息％",
+    "depthTitleWithoutPerc": "深度",
+    "otherInformationTitle": "其他信息",
+  };
+}
+
+class French extends English {
+  @override
+  get authStrings => FrenchAuthStrings();
+  @override
+  get commonString => FrenchCommonString();
+  @override
+  get errorString => FrenchErrorString();
+  @override
+  get noDataStrings => FrenchNoDataStrings();
+  @override
+  get screenTitle => FrenchScreenTitle();
+  @override
+  get dynamickeys => FrenchDynamickeys();
+  static String get languageCode => "French";
+  static String get languageName => "French";
+}
+
+class FrenchAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation =>
+      "Quelque chose a mal tourné! \\n Déroulez Actualiser";
+  @override
+  get selectNatureOfOrganization => "Sélectionnez la nature de l'organisation";
+  @override
+  get setNewPassword =>
+      "Définissez votre nouveau mot de passe et vous connecter à nouveau.";
+  @override
+  get enterCompanyName => "S'il vous plaît entrer Nom de la société.";
+  @override
+  get pleaseEnterCustomerOTP =>
+      "S'il vous plaît entrer le code de conduite du client.";
+  @override
+  get pleaseEnterPickupOTP =>
+      "S'il vous plaît entrer le code de pick-up à la clientèle.";
+  @override
+  get pleaseEnterDeliveryOTP =>
+      "S'il vous plaît entrer le code de livraison du client.";
+  @override
+  get verified => "Vérifié";
+  @override
+  get verify => "Vérifier";
+  @override
+  get addressLineOne => "Adresse 1";
+  @override
+  get addressLineTwo => "Adresse 2";
+  @override
+  get addressLineThree => "adresse 3";
+  @override
+  get oldPassword => "ancien mot de passe";
+  @override
+  get skype => "Skype";
+  @override
+  get whatsApp => "WhatsApp";
+  @override
+  get pinCode => "Code PIN*";
+  @override
+  get verifyMobileDesc =>
+      "S'il vous plaît vérifier le numéro mobile pour mettre à jour le profil.";
+  @override
+  get verifyNow => "Vérifiez maintenant";
+  @override
+  get password => "Mot de passe";
+  @override
+  get backToHome => "Aller à la maison";
+  @override
+  get forgotPassword => "Mot de passe oublié?";
+  @override
+  get signInCap => "Se connecter";
+  @override
+  get moveToLogIn => "Déplacer vers Connexion";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "Cliquez ici";
+  @override
+  get signUpHere => "Inscrivez-vous ici";
+  @override
+  get reset => "Réinitialiser";
+  @override
+  get haveRegisterCode => "Un code d'enregistrement?";
+  @override
+  get welcome => "Nous saluons le retour!";
+  @override
+  get signInAsGuest => "Se connecter comme invité";
+  @override
+  get editProfileTitle => "Editer le profil";
+  @override
+  get emaillbl => "Email";
+  @override
+  get searchInventory => "Recherche produit";
+  @override
+  get emailAddress => "Adresse e-mail*";
+  @override
+  get offlineFilter =>
+      "Impossible de trouver le solitaire désiré? Nous pouvons vous aider à obtenir la meilleure affaire de notre inventaire hors ligne.";
+  @override
+  get loginDesc =>
+      "Est-ce que vous voulez activer tactile Id / Ampin pour déverrouiller Mes diamants? S'il vous plaît choisir une option pour l'application déverrouiller";
+  @override
+  get searchDiamonds => "Recherche diamants";
+  @override
+  get continueWithSearch => "Voulez-vous continuer votre recherche?";
+  @override
+  get mobileNumber => "Mobile";
+  @override
+  get searchHint => "Chercher...";
+  @override
+  get selectYourCountry => "Choisissez le pays";
+  @override
+  get resendCodeIn => "Code Renvoyez";
+  @override
+  get resendCode => "Recevoir à nouveau";
+  @override
+  get haveAnAccount => "Vous avez déjà un compte?";
+  @override
+  get dontReceiveCode => "Si vous ne recevez pas de code!";
+  @override
+  get inLogin => "ouvrir une session.";
+  @override
+  get resetPwdDesc =>
+      "Ajouter un mot de passe et confirmez le mot de passe pour réinitialiser votre mot de passe.";
+  @override
+  get backToLogin => "Retour connexion";
+  @override
+  get firstName => "Prénom*";
+  @override
+  get name => "Nom d'utilisateur*";
+  @override
+  get lastName => "Nom de famille*";
+  @override
+  get middleName => "Deuxième nom*";
+  @override
+  get confirmPassword => "Confirmez le mot de passe";
+  @override
+  get currentPasswordErr => "Erreur de mot de passe actuel";
+  @override
+  get passwordChanged => "Mot de passe changé";
+  @override
+  get lblLogInErr => "Erreur d'identification";
+  @override
+  get enterYour => "Entrez votre";
+  @override
+  get details => "Détails";
+  @override
+  get registerCode => "Code d'enregistrement";
+  @override
+  get registerCodeDesc =>
+      "Ajouter un code d'enregistrement pour commencer votre inscription avec 3Eco.";
+  @override
+  get uploadPhotoDesc => "Prenez un selfie de votre auto";
+  @override
+  get updateProfile => "Mettre à jour le profil";
+  @override
+  get postalCode => "Code postal*";
+  @override
+  get removeButton => "Retirer";
+  @override
+  get gender => "Le sexe";
+  @override
+  get male => "Masculin";
+  @override
+  get female => "Femme";
+  @override
+  get changePassword => "Changer le mot de passe";
+  @override
+  get currentPassword => "Mot de passe actuel*";
+  @override
+  get newPassword => "Nouveau mot de passe*";
+  @override
+  get confirmNewPassword => "Confirmez le mot de passe*";
+  @override
+  get personalDocuments => "Documents personnels";
+  @override
+  get assignedAuto => "attribué automatiquement";
+  @override
+  get logout => "Se déconnecter";
+  @override
+  get logoutConfirmationMsg => "Êtes-vous sûr de vouloir vous déconnecter?";
+  @override
+  get address => "Adresse*";
+  @override
+  get accountNumber => "Numéro de compte";
+  @override
+  get bankerName => "Les banquiers Nom";
+  @override
+  get nameLable => "Nom";
+  @override
+  get ifscCode => "Code IFSC";
+  @override
+  get businessRegistrationNumbr => "Numéro d'enregistrement professionel";
+  @override
+  get businessRelationshipPeriod => "Relation d'affaires Période (en années)";
+  @override
+  get designation => "La désignation";
+  @override
+  get nameofDesignation => "Nom de";
+  @override
+  get natureofOrganization => "Nature de l'organisation";
+  @override
+  get uploadFile => "Aucun fichier Choosen";
+  @override
+  get update => "METTRE À JOUR";
+  @override
+  get resetPwd => "réinitialiser le mot de passe";
+  @override
+  get pwdReset => "Réinitialisation du mot de passe";
+  @override
+  get signInWithMPIN => "Connectez-vous avec MPIN";
+  @override
+  get pwdChanged => "Mot de passe changé";
+  @override
+  get successfullyPwdDesc =>
+      "Vous avez réussi à réinitialiser votre mot de passe. S'il vous plaît utiliser votre nouveau mot de passe lors de la connexion.";
+  @override
+  get lblProfileSetup => "Votre profil est mis en place";
+  @override
+  get lblProfileSetupDesc => "Nous avons reçu les détails de votre profil";
+  @override
+  get hoursAvailable => "total des Shifttime";
+  @override
+  get confirmStoneDetail => "Confirmer Détail Pierre";
+  @override
+  get companyName => "Nom de la compagnie";
+  @override
+  get invoiceDate => "date de la facture";
+  @override
+  get companyCode => "Code de l'entreprise";
+  @override
+  get saveCompanyDetails => "Enregistrer sur la société";
+  @override
+  get passwordNotChange => "Le mot de passe ne correspond pas";
+  @override
+  get rememberPassword => "Se souvenir du mot de passe?";
+  @override
+  get sendOTP => "Envoyer OTP";
+  @override
+  get resendNow => "maintenant Renvoyer";
+  @override
+  get didNotReceiveOTP => "Si vous ne recevez pas un OTP!";
+  @override
+  get sendOTPToEmail =>
+      "Nous vous ferons parvenir un OTP à votre adresse e-mail indiquée ou nom d'utilisateur. S'il vous plaît entrez l'adresse e-mail ou nom d'utilisateur.";
+  @override
+  get enterOTP =>
+      "Le Bureau du Procureur a été envoyé à votre adresse e-mail enregistrée. S'il vous plaît entrer dans le Bureau du Procureur.";
+  @override
+  get backToSignIn => "Retour à Se connecter";
+  @override
+  get passwordResetSuccessfully => "Mot de passe remis à zéro.";
+  @override
+  get emailAndUname => "Email /";
+  @override
+  get signUp => "S'inscrire";
+  @override
+  get promotionText => "Offres promotionnelles";
+  @override
+  get termsAndCondition => "Termes et conditions";
+  @override
+  get mustAgreeTermsAndCondition =>
+      "Vous devez accepter les termes et condition Se connecter comme Utilisateur invité";
+  @override
+  get forgotPasswordTitle => "Mot de passe oublié";
+  @override
+  get uploadKYC => "Télécharger KYC";
+  @override
+  get uploadKycDesc =>
+      "S'il vous plaît télécharger vos documents KYC pour accéder aux fonctionnalités complètes.";
+  @override
+  get hintPhotoIdentityProof => "Photo preuve d'identité *";
+  @override
+  get hintBussinerssProof => "Identité d'entreprise Preuve *";
+  @override
+  get btnFileUpload => "Téléchargement de fichiers";
+  @override
+  get pleaseUploadPhotoProof =>
+      "S'il vous plaît télécharger Preuve photo d'identité.";
+  @override
+  get pleaseUploadBussinessProof =>
+      "S'il vous plaît télécharger Une preuve d'identité d'entreprise.";
+  @override
+  get pleaseSelectFileFormat =>
+      "S'il vous plaît télécharger le fichier dans l'un des formats suivants: .jpg";
+  @override
+  get kycSubmitted => "KYC Soumis";
+  @override
+  get kycSubmmittedDesc => "Votre KYC a été soumis avec succès.";
+  @override
+  get btnMoveToHome => "Déplacer à l'accueil";
+  @override
+  get kYCRejected => "KYC Rejeté";
+  @override
+  get kycRejectedDesc =>
+      "Votre KYC a été rejetée. S'il vous plaît télécharger vos documents KYC à nouveau pour accéder à toutes les fonctionnalités.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class FrenchCommonString extends CommonString {
+  @override
+  get seeMore => "voir plus";
+  @override
+  get seeLess => "Voir Moins";
+  @override
+  get modify => "Modifier";
+  @override
+  get delete => "Effacer";
+  @override
+  get details => "Détails";
+  @override
+  get edit => "Éditer";
+  @override
+  get addDemand => "Ajouter la demande";
+  @override
+  get demandTitle => "Titre de la demande";
+  @override
+  get pleaseEnterDemandTitle => "S'il vous plaît entrer le titre de la demande";
+  @override
+  get demandAddedSuccessfully => "La demande d'ajout avec succès";
+  @override
+  get selectAtleastOneFilter => "S'il vous plaît";
+  @override
+  get savedSearch => "Recherche sauvegardée";
+  @override
+  get searchSavedSearch => "Recherche sauvegardée Recherche";
+  @override
+  get viewDetails => "Voir les détails";
+  @override
+  get viewLessDetails => "Voir Moins de détails";
+  @override
+  get myDemand => "ma demande";
+  @override
+  get date => "Date";
+  @override
+  get selectTime => "Sélectionnez Heure";
+  @override
+  get selectDate => "Sélectionner une date";
+  @override
+  get offerVelidTill => "Offre valable jusqu'au";
+  @override
+  get officeVisitDate => "Bureau Date de la visite";
+  @override
+  get all => "Tout";
+  @override
+  get status => "Statut";
+  @override
+  get save => "sauver";
+  @override
+  get verify => "Vérifier";
+  @override
+  get readMore => "Lire la suite";
+  @override
+  get goodMorning => "Bonjour";
+  @override
+  get goodAfternoon => "Bonne après-midi";
+  @override
+  get goodEvening => "Bonsoir";
+  @override
+  get btnSkip => "Sauter";
+  @override
+  get btnUpdate => "Mettre à jour";
+  @override
+  get btnContinue => "Continuer";
+  @override
+  get btnContinueCap => "CONTINUER";
+  @override
+  get btnEdit => "Éditer";
+  @override
+  get btnSubmit => "Soumettre";
+  @override
+  get btnNextCap => "Prochain";
+  @override
+  get btnSaveCap => "Mettre à jour le mot de passe";
+  @override
+  get btnWithdrawCap => "SE DÉSISTER";
+  @override
+  get btnSaveAndContinueCap => "ENREGISTRER CONTINUER";
+  @override
+  get btnUnregister => "non enregistré mobile";
+  @override
+  get btnClose => "Fermer";
+  @override
+  get remove => "Retirer";
+  @override
+  get refresh => "Rafraîchir";
+  @override
+  get fetchLocationMessage =>
+      "S'il vous plaît attendre que nous récupérions votre emplacement";
+  @override
+  get done => "Terminé";
+  @override
+  get doneCap => "TERMINÉ";
+  @override
+  get cancel => "Annuler";
+  @override
+  get allow => "Autoriser";
+  @override
+  get countryFirst => "Choisissez un pays d'abord";
+  @override
+  get apply => "Appliquer";
+  @override
+  get cancelCap => "ANNULER";
+  @override
+  get uploadCap => "TÉLÉCHARGER";
+  @override
+  get yesCancelCap => "OUI";
+  @override
+  get upload => "Télécharger";
+  @override
+  get ok => "D'accord";
+  @override
+  get home => "Accueil";
+  @override
+  get goToMyWatchList => "Allez à ma liste";
+  @override
+  get goToMyOrder => "Allez à ma commande";
+  @override
+  get gotToMyOffer => "Aller à mon offre";
+  @override
+  get gotToMyHold => "Allez à mon attente";
+  @override
+  get gotToMyEnquiry => "Allez à mon enquête";
+  @override
+  get gotToMyBid => "Allez à mon offre";
+  @override
+  get gotToMyReminder => "Allez à Mon Rappel";
+  @override
+  get gotToMyComments => "Aller à Mes notes";
+  @override
+  get yes => "Oui";
+  @override
+  get no => "Non";
+  @override
+  get selectCountry => "Choisissez le pays";
+  @override
+  get clickHere => "Cliquez ici";
+  @override
+  get btnAddNewAddress => "AJOUTER UNE NOUVELLE ADRESSE";
+  @override
+  get btnCancel => "ANNULER";
+  @override
+  get btnTakeSelfie => "prenez selfie";
+  @override
+  get successfully => "Avec succès";
+  @override
+  get lblAppExit => "Êtes-vous sûr de vouloir quitter?";
+  @override
+  get lblExit => "Sortie";
+  @override
+  get openAppSetting => "ouvrir les paramètres";
+  @override
+  get lblOr => "Ou";
+  @override
+  get fromLbl => "De";
+  @override
+  get toLbl => "À";
+  @override
+  get showMore => "Montre plus";
+  @override
+  get showLess => "Montrer moins";
+  @override
+  get selectCity => "Sélectionnez une ville";
+  @override
+  get notYetAvailable => "Pas encore disponible";
+  @override
+  get updateAvailable => "Mise à jour disponible!";
+  @override
+  get downloadAppFrom => "Télécharger l'application de mise à jour";
+  @override
+  get playStore => "Play Store";
+  @override
+  get skipUpdate => "Sauter Mise à jour";
+  @override
+  get stateFirst => "Veuillez sélectionner État d'abord";
+  @override
+  get reallyExit => "Vraiment quitter?";
+  @override
+  get alert => "Alerte!";
+  @override
+  get loading => "Chargement";
+  @override
+  get error => "Erreur";
+  @override
+  get jumpToTop => "Sauter vers le haut";
+  @override
+  get ihaveread => "j'ai lu et accepté";
+  @override
+  get selected => "Sélectionner";
+  @override
+  get lbllogout => "Se déconnecter";
+  @override
+  get lblThanx => "Je vous remercie";
+  @override
+  get lblSelectCity => "Sélectionnez une ville";
+  @override
+  get lblSelectState => "Sélectionnez l'état";
+  @override
+  get lblSelectCountry => "Choisissez le pays";
+  @override
+  get lblCity => "Ville";
+  @override
+  get lblCountry => "Pays";
+  @override
+  get lblName => "Nom";
+  @override
+  get lblPinCode => "Code PIN";
+  @override
+  get lblMobileNumber => "Numéro de portable";
+  @override
+  get lblState => "Etat";
+  @override
+  get lblCode => "Code:";
+  @override
+  get lblOrderNo => "N ° de commande:";
+  @override
+  get lblOrderItem => "Passer commande Référence:";
+  @override
+  get lblDelivered => "Livré";
+  @override
+  get lblTicketReady => "Votre billet est prêt";
+  @override
+  get lblPersonTicket => "Ticket de 2 personnes";
+  @override
+  get lblShuttleBus => "Navette";
+  @override
+  get lblPickup => "Ramasser";
+  @override
+  get lblDropoff => "Déposer";
+  @override
+  get lblPassenger => "Passager";
+  @override
+  get lblDeliveryNo => "No. de livraison";
+  @override
+  get lblPrice => "Prix";
+  @override
+  get lblValid => "Valable";
+  @override
+  get lblRenew => "Renouveler";
+  @override
+  get lblDeparture => "Départ";
+  @override
+  get lblArrived => "Arrivée";
+  @override
+  get lblSendtoFriend => "Envoyer à un ami";
+  @override
+  get popupRenewTitle => "renouveler billet";
+  @override
+  get popupRenewDesc => "Lorem ipsum dolor sit amet";
+  @override
+  get popuplblPassenger => "Passager";
+  @override
+  get popuplblCancel => "Annuler";
+  @override
+  get popupbtnRenew => "Renouveler";
+  @override
+  get ridelblAwesome => "Impressionnant";
+  @override
+  get ridebtnDone => "Terminé";
+  @override
+  get offerPricePerCarat => "Prix ​​offert (Cts)";
+  @override
+  get dropOffText => "Déposer";
+  @override
+  get pickUpText => "Ramasser";
+  @override
+  get startAtText => "Commencer à";
+  @override
+  get endAtText => "Fin à";
+  @override
+  get personText => "la personne";
+  @override
+  get paymentScreenTitle => "Paiement";
+  @override
+  get pickuplbl => "Ramasser";
+  @override
+  get droplbl => "Déposer";
+  @override
+  get makePaymentButtonlbl => "Effectuer le paiement";
+  @override
+  get pessangerslbl => "Les passagers";
+  @override
+  get priceBreakuplbl => "Prix ​​Breakup";
+  @override
+  get tripPricelbl => "Prix ​​de voyage";
+  @override
+  get taxeslbl => "impôts";
+  @override
+  get totallbl => "Total";
+  @override
+  get cardNumberhint => "Numéro de carte";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / AA";
+  @override
+  get btnTryAgain => "Réessayer";
+  @override
+  get cityFirst => "S'il vous plaît sélectionner la ville première";
+  @override
+  get enterFareDetails => "Entrez détails de vente";
+  @override
+  get fromDate => "Partir de la date";
+  @override
+  get toDate => "date sélectionnée";
+  @override
+  get btnUnderstand => "Je comprends";
+  @override
+  get applicationUpdate => "Mise à jour d'application";
+  @override
+  get newVersionMessage =>
+      "Une nouvelle version de l'application est disponible";
+  @override
+  get paymentCollected => "paiement Collected";
+  @override
+  get addComment => "Ajouter un commentaire";
+  @override
+  get more => "Plus";
+  @override
+  get carat => "Carat";
+  @override
+  get pcs => "pcs";
+  @override
+  get cts => "Cts";
+  @override
+  get disc => "disque%";
+  @override
+  get avgPriceCrt => "Moy. Prix ​​/ Ct";
+  @override
+  get amount => "Montant";
+  @override
+  get confirmStone => "Confirmer pierre";
+  @override
+  get confirm => "Confirmer";
+  @override
+  get offered => "Offert";
+  @override
+  get validTill => "Valable jusqu'au";
+  @override
+  get remark => "Remarque";
+  @override
+  get color => "Couleur";
+  @override
+  get colorGroup => "Groupe de couleurs";
+  @override
+  get colorFancy => "Fantaisie";
+  @override
+  get colorWhite => "blanc";
+  @override
+  get clarity => "Clarté";
+  @override
+  get clarityGroup => "Groupe clarté";
+  @override
+  get intensity => "Intensité";
+  @override
+  get overtone => "Harmonique";
+  @override
+  get selectBusinessType => "Sélectionner le type d'entreprise";
+  @override
+  get selectState => "Sélectionnez l'état";
+  @override
+  get search => "Chercher";
+  @override
+  get profile => "Mon profil";
+  @override
+  get personal => "Personnel";
+  @override
+  get business => "Affaires";
+  @override
+  get documents => "documents";
+  @override
+  get noSlotFound => "Aucun emplacement trouvé";
+  @override
+  get noDiamondFound =>
+      "Aucun diamants correspondant à votre recherche. S'il vous plaît vous ajoutez exigez.";
+  @override
+  get selectType => "Sélectionner le type virtuel";
+  @override
+  get noSavedSearch => "Aucune recherche enregistrée Exists";
+  @override
+  get searchCity => "ville Recherche";
+  @override
+  get searchCountry => "Recherche Pays";
+  @override
+  get searchState => "État de recherche";
+  @override
+  get notifications => "Notification";
+  @override
+  get enter2Stone =>
+      "S'il vous plaît sélectionner au moins 2 pierre à comparer.";
+  @override
+  get bidDesc =>
+      "est actuellement situé en Inde et pour la livraison dans un autre pays en dehors de l'Inde prendra au moins 7-10 jours ouvrables.";
+  @override
+  get packetNo => "Non paquet:";
+  @override
+  get quit => "Quitter";
+  @override
+  get agree => "Je suis d'accord";
+  @override
+  get laterToday => "Plus tard aujourd'hui";
+  @override
+  get toMorrow => "Demain";
+  @override
+  get nextWeek => "Prochaine semaine";
+  @override
+  get chooseAnother => "Choisis un autre";
+  @override
+  get dateTime => "Date et heure";
+  @override
+  get language => "Langue";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "Aucun document trouvé";
+  @override
+  get searchBusinessType => "Rechercher Type d'entreprise";
+  @override
+  get hours => "Heures";
+  @override
+  get minutes => "Minutes";
+  @override
+  get seconds => "secondes";
+  @override
+  get bidEndsIn => "Offre se termine par:";
+  @override
+  get shape => "Forme";
+  @override
+  get download => "Télécharger";
+  @override
+  get share => "Partager";
+  @override
+  get placeOrder => "Passer la commande";
+  @override
+  get enterComment => "S'il vous plaît écrire votre commentaire";
+  @override
+  get deleteItem => "Etes-vous sûr que vous voulez supprimer?";
+  @override
+  get shippingPolicy => "Politique des transports maritimes";
+  @override
+  get offerSundayRestriction =>
+      "Dimanche n'est pas autorisé. Bureau journées de travail sont du lundi au samedi";
+  @override
+  get weekAgo => "Il ya 1 semaine";
+  @override
+  get lastWeek => "La semaine dernière";
+  @override
+  get dayAgo => "il y a quelques jours";
+  @override
+  get onedayAgo => "il y a 1 jour";
+  @override
+  get yesterday => "Hier";
+  @override
+  get hourAgo => "il y a des heures";
+  @override
+  get onehourAgo => "Il ya 1 heure";
+  @override
+  get anhourAgo => "Il y a une heure";
+  @override
+  get mintuesAgo => "il y a quelques minutes";
+  @override
+  get onemintuesAgo => "il y a 1 minute";
+  @override
+  get amintueAgo => "Il y'a une minute";
+  @override
+  get secondsAgo => "il y a quelques instants";
+  @override
+  get justNow => "Juste maintenant";
+  @override
+  get today => "Aujourd'hui";
+  @override
+  get past => "Passé";
+  @override
+  get selectPhotoProof => "sélection du document";
+  @override
+  get pleaseSelectPhotoProof => "S'il vous plaît sélectionner le document";
+  @override
+  get selectBusinessProof => "sélection du document";
+  @override
+  get pleaseSelectBusinessProof => "S'il vous plaît sélectionner le document";
+  @override
+  get touchId => "Id tactile";
+  @override
+  get faceId => "Id visage";
+  @override
+  get enableTouchId => "Activer tactile Id pour déverrouiller Mes diamants?";
+  @override
+  get enableFaceId => "Activer Id Face à déverrouiller Mes diamants?";
+  @override
+  get unlockWithTouchId => "Débloquer Mes diamants à l'aide tactile Id";
+  @override
+  get unlockWithFaceId => "Déverrouillez Mes diamants en utilisant Id Face.";
+  @override
+  get mPin => "Ampin";
+  @override
+  get holdMemoStatusDiamondorder =>
+      "Vous ne pouvez pas confirmer les pierres qui sont déjà en attente ou de l'état mémo";
+  @override
+  get searchStoneIdCertificateNo => "Recherche Pierre Id / certificat Non";
+  @override
+  get createMPin => "Créer un nouveau Ampin";
+  @override
+  get reentermpin => "reenter Ampin";
+  @override
+  get forgotmpin => "Mot MPIN?";
+  @override
+  get verifympin => "vérifier Ampin";
+  @override
+  get enteryoursixdigitcode => "Entrez votre 6 chiffres MPIN";
+  @override
+  get changempin => "changement Ampin";
+  @override
+  get faceidandtouchnotenable =>
+      "FaceID / TouchId n'est pas activé dans votre téléphone, activez S'il vous plaît utiliser cette fonctionnalité";
+  @override
+  get enablempintounlockmydiamonds =>
+      "Activer Ampin pour application déverrouiller? Il désactivera tactile Id. Es-tu sur de vouloir continuer?";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "Activer tactile Id pour l'application déverrouiller? Il désactive Ampin. Es-tu sur de vouloir continuer?";
+  @override
+  get rememberme => "Souviens-toi de moi";
+  @override
+  get usertouchid => "Utilisation tactile Id";
+  @override
+  get usempin => "Utilisez Ampin";
+  @override
+  get filesarenotavailableonserver =>
+      "Les fichiers ne sont pas disponibles sur le serveur, S'il vous plaît réessayer plus tard";
+  @override
+  get allfileshavebeendownloaded => "Tous les fichiers ont été téléchargés.";
+  @override
+  get filesisdownloaded => "fichiers est téléchargé";
+  @override
+  get filesisnotdownloadedbcz =>
+      "les fichiers ne sont pas téléchargés parce qu'il est existe pas dans le serveur.";
+  @override
+  get downloadingCanceled => "le téléchargement annulé";
+  @override
+  get downloading => "Téléchargement...";
+  @override
+  get expirydate => "Date d'expiration :";
+  @override
+  get youreallywanttodelete => "Vous voulez vraiment supprimer";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "Clarté",
+    "shape": "Forme",
+  };
+}
+
+class FrenchErrorString extends ErrorString {
+  @override
+  get accessDenide => "Accès refusé";
+  @override
+  get pleaseSelectOfferTillDate =>
+      "S'il vous plaît sélectionner l'offre jusqu'à ce jour.";
+  @override
+  get pleaseSelectOfficeVisitDate =>
+      "S'il vous plaît choisir la date de visite de bureau";
+  @override
+  get deleteStoneMsg => "Êtes-vous sûr de vouloir lapider delete (s)?";
+  @override
+  get acceptTermsAndCondition =>
+      "S'il vous plaît accepter les termes et conditions";
+  @override
+  get diamondCompareRemove =>
+      "Au moins 2 pierres sont nécessaires pour comparer.";
+  @override
+  get diamondSelectionError =>
+      "S'il vous plaît sélectionner au moins une pierre.";
+  @override
+  get pleaseEnterCompanyName =>
+      "S'il vous plaît entrez le nom de l'entreprise.";
+  @override
+  get selectInvoiceDate => "Sélectionnez Date de la facture";
+  @override
+  get pleaseEnterComment => "S'il vous plaît écrire votre commentaire.";
+  @override
+  get pleaseEnterRemarks => "S'il vous plaît entrer des remarques.";
+  @override
+  get selectExpiryDate => "S'il vous plaît choisir la date d'expiration.";
+  @override
+  get enterOTP => "S'il vous plaît entrer le code";
+  @override
+  get pleaseEnterOTP => "S'il vous plaît entrer le code de vérification.";
+  @override
+  get enteredCodeNotMatching => "code saisi ne correspond pas à. Réessayer";
+  @override
+  get selectCancellationReason =>
+      "S'il vous plaît choisir raison de l'annulation";
+  @override
+  get enterDesc => "S'il vous plaît entrer la description.";
+  @override
+  get enterTitle => "Veuillez entrer le titre.";
+  @override
+  get enterEmailOrPhone => "S'il vous plaît entrer un email / mobile.";
+  @override
+  get enterPassword =>
+      "Mot de passe ne peut pas être vide. Veuillez entrer le mot de passe.";
+  @override
+  get enterConfirmPassword =>
+      "S'il vous plaît entrer le mot de passe de confirmation.";
+  @override
+  get enterSkype => "Entrez s'il vous plaît Skype.";
+  @override
+  get enterRegisterCode => "S'il vous plaît entrer le code d'inscription";
+  @override
+  get enterEmail => "S'il vous plaît entrer votre adresse mail.";
+  @override
+  get enterPhone => "S'il vous plaît entrer numéro de mobile.";
+  @override
+  get enterUsername =>
+      "Nom d'utilisateur ne peut pas être vide. S'il vous plaît entrer Nom d'utilisateur.";
+  @override
+  get enterValidEmail => "S'il vous plaît entrer l'adresse email valide.";
+  @override
+  get enterValidPhone => "S'il vous plaît entrer le numéro de mobile valide.";
+  @override
+  get enterValidWhatsappPhone =>
+      "S'il vous plaît entrer le numéro de mobile valide WhatsApp.";
+  @override
+  get enterValidPassword =>
+      "S'il vous plaît entrer 6 caractères ou long mot de passe.";
+  @override
+  get mismatchPassword =>
+      "Mot de passe et le mot de passe de confirmation ne correspond pas à.";
+  @override
+  get enterFirstName => "S'il vous plaît entrer le prénom.";
+  @override
+  get enterMiddleName => "S'il vous plaît entrer le prénom.";
+  @override
+  get enterPinCode => "S'il vous plaît entrer le code PIN.";
+  @override
+  get enterName => "S'il vous plaît entrez le nom.";
+  @override
+  get enterLastName => "S'il vous plaît entrer Nom.";
+  @override
+  get enterAddress => "S'il vous plaît entrer l'adresse.";
+  @override
+  get enterValidPinCode => "Entrez Valid PinCode.";
+  @override
+  get enterValidAddress =>
+      "S'il vous plaît entrer 10 caractères ou adresse longue.";
+  @override
+  get enterPostalCode => "S'il vous plaît entrer le code postal.";
+  @override
+  get enterValidPostalCode =>
+      "S'il vous plaît entrer le code postal numérique à 6 chiffres.";
+  @override
+  get enterCurrentPassword => "S'il vous plaît entrer le mot de passe actuel.";
+  @override
+  get enterNewPassword => "S'il vous plaît entrer un nouveau mot de passe.";
+  @override
+  get enterFareAmount => "S'il vous plaît entrer le montant des ventes.";
+  @override
+  get enterOrderNO => "S'il vous plaît entrer N ° de commande.";
+  @override
+  get enterServiceType => "S'il vous plaît sélectionner le type de service.";
+  @override
+  get enterPaymentType => "S'il vous plaît sélectionner le type de paiement.";
+  @override
+  get enterValidFareAmount =>
+      "montant des ventes ne peut pas être égale à zéro.";
+  @override
+  get enterPassangerNo => "S'il vous plaît entrer pas. des passagers.";
+  @override
+  get enterValidPassangerNo => "Nombre de passagers ne peut pas être nul.";
+  @override
+  get notEnterMorePassangerNo =>
+      "Nombre de passagers ne peut être plus de sept.";
+  @override
+  get drivingLicenseValidationText =>
+      "S'il vous plaît entrer 15 chiffres alphanumériques numéro de permis de conduire.";
+  @override
+  get pANCardValidationText =>
+      "S'il vous plaît entrez 10 chiffres alphanumériques numéro de carte PAN.";
+  @override
+  get selectFromDate => "S'il vous plaît sélectionner la date";
+  @override
+  get selectToDate => "S'il vous plaît sélectionner à ce jour";
+  @override
+  get fromGreaterTo =>
+      "La date sélectionnée doit être supérieure à la date actuelle";
+  @override
+  get wrongPassword =>
+      "Mot de passe doit contient 8 caractères minimum, 1 alphabet en majuscules, 1 alphabet minuscules, chiffres 1, 1 charater spéciale";
+  @override
+  get fromValueGreateThanTo =>
+      "De valeur doit être inférieure ou égale à la valeur A";
+  @override
+  get toValueGreaterThanFrom =>
+      "Pour la valeur doit être supérieure ou égale à la valeur A partir de";
+  @override
+  get pleaseEnterCompanyCode =>
+      "S'il vous plaît entrer le code de l'entreprise";
+  @override
+  get enterSamePassword =>
+      "Confirmer mot de passe ne correspond pas à nouveau mot de passe. S'il vous plaît entrer le mot de passe Confirmer même que nouveau mot de passe.";
+  @override
+  get selectAppointmentDate => "S'il vous plaît choisir la date de rendez-vous";
+  @override
+  get selectTimeSlot => "S'il vous plaît, sélectionner l'emplacement de temps";
+  @override
+  get enterComments => "S'il vous plaît écrire votre commentaire";
+  @override
+  get selectVirtualType => "S'il vous plaît sélectionner le type virtuel";
+  @override
+  get versionError => "erreur version";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class FrenchNoDataStrings extends NoDataStrings {
+  @override
+  get noDataFound => "Aucun Enregistrement Trouvé";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class FrenchScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "Placez une offre";
+  @override
+  get addedInWatchList => "Ajouté à la liste de suivi";
+  @override
+  get addedInOffer => "offre Submitted";
+  @override
+  get addedInCart => "Ajouté au panier";
+  @override
+  get addedInBid => "Ajouté dans l'offre";
+  @override
+  get myEnquiry => "mon enquête sur";
+  @override
+  get delete => "Effacer";
+  @override
+  get addDemand => "Ajouter la demande";
+  @override
+  get matchPair => "match Paire";
+  @override
+  get savedAndSearch => "Enregistrer recherche";
+  @override
+  get updateAndSearch => "Mise à jour et recherche";
+  @override
+  get upcoming => "A venir";
+  @override
+  get bidPricePerCt => "Prix ​​Offre / Ct";
+  @override
+  get bidDisc => "offre disque";
+  @override
+  get bidValue => "offre Valeur";
+  @override
+  get bidStone => "Pierre offre";
+  @override
+  get myCart => "mon panier";
+  @override
+  get myComment => "Mes notes";
+  @override
+  get compare => "Comparer";
+  @override
+  get compareStones => "Pierres comparer";
+  @override
+  get statusHold => "En attente";
+  @override
+  get statusOnMemo => "le Mémo";
+  @override
+  get statusAvailable => "Disponible";
+  @override
+  get statusNew => "Nouvelle arrivee";
+  @override
+  get statusOffer => "Pierre du jour / Promotion";
+  @override
+  get statusMyHold => "mon attente";
+  @override
+  get signup => "S'inscrire";
+  @override
+  get addToOffice => "Ajouter au bureau";
+  @override
+  get addComment => "Ajouter un commentaire";
+  @override
+  get addEnquiry => "Ajouter Enquête";
+  @override
+  get finalOffer => "Offre définitive";
+  @override
+  get finalDisc => "disque final";
+  @override
+  get finalRate => "Taux final";
+  @override
+  get finalValue => "Valeur finale";
+  @override
+  get orderMsg =>
+      "1) Les prix mentionnés ici sont fixes et donc pas négociable. \\ n 2) Le classement, les paramètres mentionnés sur notre site au-delà du classement GIA.";
+  @override
+  get offerMsg =>
+      "pierre offerte sera directement confirmée si le prix est approuvé nous vous demandons donc d'être sûr avant d'offrir. Toute pierre (s) mis en liste d'offre ne sont pas mis en attente pour vous car il est disponible pour les autres clients est aussi bien.";
+  @override
+  get note => "Remarque";
+  @override
+  get hours => "Heures";
+  @override
+  get offeredDisc => "Dis offerts";
+  @override
+  get offeredPriceCt => "Offert Pr / Ct";
+  @override
+  get addOffer => "Ajouter une offre";
+  @override
+  get expDiscPer => "Remise prévue";
+  @override
+  get todayDiscPer => "Disque d'aujourd'hui";
+  @override
+  get searchResult => "Résultat de la recherche";
+  @override
+  get searchDiamond => "Recherche diamant";
+  @override
+  get basic => "De base";
+  @override
+  get advanced => "Avancée";
+  @override
+  get stoneIdCertNo => "StoneID / Cert Non";
+  @override
+  get takeSignature => "Prenez Signature";
+  @override
+  get optional => "Optionnel";
+  @override
+  get myAddress => "Mon adresse";
+  @override
+  get expiryDate => "Date d'expiration";
+  @override
+  get drivingLicenceDesc => "image Votre permis de conduire";
+  @override
+  get panDesc => "Votre image de carte PAN";
+  @override
+  get selfie => "selfie";
+  @override
+  get selfieDesc => "Votre image selfie";
+  @override
+  get pending => "En attente";
+  @override
+  get rejected => "Rejeté";
+  @override
+  get uploadAgain => "Télécharger";
+  @override
+  get remove => "Retirer";
+  @override
+  get title => "Titre";
+  @override
+  get description => "La description";
+  @override
+  get uploadYour => "Téléchargez votre";
+  @override
+  get raiseDispute => "Dis nous à propos de cela";
+  @override
+  get drivingLicense => "Permis de conduire";
+  @override
+  get pANCard => "PAN carte";
+  @override
+  get saveContinue => "Sauvegarder et continuer";
+  @override
+  get uploadFrontUmgText => "Télécharger Image Front Side";
+  @override
+  get uploadPANCardImgText => "Télécharger PAN Carte image";
+  @override
+  get uploadBackImageText => "Réimportez Side image";
+  @override
+  get helptopic => "Sujets d'aide";
+  @override
+  get newRideSharingRequest => "Les nouvelles demandes de covoiturage";
+  @override
+  get newRequest => "Les nouvelles demandes";
+  @override
+  get welcomeTo => "Bienvenue à";
+  @override
+  get welcomeDesc => "Connectez-vous à votre compte existant de Mani Jewel";
+  @override
+  get forgotPassword => "Oublié votre";
+  @override
+  get forgotPasswordDesc =>
+      "Entrez votre numéro de mobile enregistré pour récupérer votre mot de passe.";
+  @override
+  get termsAndCondition => "termes et conditions";
+  @override
+  get privacyPolicy => "Politique de confidentialité";
+  @override
+  get aboutUS => "À propos de nous";
+  @override
+  get otpVerification => "Vérification du code de tour";
+  @override
+  get otpVerificationDelivery => "Vérification du code de ramassage";
+  @override
+  get otpVerificationDeliveryDone => "Vérification du code de livraison";
+  @override
+  get enterOtp => "Entrez 4 chiffres";
+  @override
+  get recoveryCode => "Code de récupération";
+  @override
+  get editProfile => "Editer le profil";
+  @override
+  get myProfile => "Mon profil";
+  @override
+  get reset => "Réinitialiser";
+  @override
+  get yourPassword => "Votre mot de passe";
+  @override
+  get photo => "Photo";
+  @override
+  get otpDesc =>
+      "Le code de récupération a été envoyé à votre numéro de téléphone mobile. S'il vous plaît entrer le code.";
+  @override
+  get otpVerifyDesc =>
+      "Le code de vérification a été envoyé à votre numéro de téléphone mobile. S'il vous plaît entrer le code.";
+  @override
+  get diamondDetail => "Détail diamant";
+  @override
+  get home => "Accueil";
+  @override
+  get search => "Chercher";
+  @override
+  get quickSearch => "Recherche rapide";
+  @override
+  get newArrival => "Nouvelle arrivee";
+  @override
+  get exclusiveDiamonds => "Diamants exclusifs";
+  @override
+  get diamondOnAuction => "Diamond sur Auction";
+  @override
+  get stoneOfTheDays => "Meilleur achat";
+  @override
+  get myWatchlist => "Watchlist Mes";
+  @override
+  get myBid => "mon offre";
+  @override
+  get myHold => "mon attente";
+  @override
+  get myOrder => "Ma liste ordonnée";
+  @override
+  get confirmStone => "Confirmer pierre";
+  @override
+  get myOffice => "Mon bureau Voir";
+  @override
+  get myOffer => "Ma liste d'offre";
+  @override
+  get myPurchased => "Mon histoire achetée";
+  @override
+  get mySavedSearch => "Mes recherches";
+  @override
+  get savedSearch => "Recherche sauvegardée";
+  @override
+  get myDemand => "ma demande";
+  @override
+  get contactUs => "Nous contacter";
+  @override
+  get changePassword => "Changer le mot de passe";
+  @override
+  get logout => "Se déconnecter";
+  @override
+  get fareDetailsTitle => "Entrez détails de vente";
+  @override
+  get fairAmt => "Montant des ventes";
+  @override
+  get noOfPassengers => "Nombre de passagers";
+  @override
+  get remarks => "Remarques";
+  @override
+  get orderNo => "N ° de commande.";
+  @override
+  get typeOfService => "Type de service";
+  @override
+  get paymentType => "Type de paiement*";
+  @override
+  get recentlyView => "récemment Voir";
+  @override
+  get uploadImgValidationText =>
+      "fichier Upload doit être .jpg, .jpeg, .png ou .pdf taille ayant 5 Mo ou moins.";
+  @override
+  get drivingLicenseHintText => "Numéro de permis de conduire";
+  @override
+  get pANCARDHintText => "PAN Numéro de la carte";
+  @override
+  get viewRide => "Manèges Voir";
+  @override
+  get myVehicle => "mon véhicule";
+  @override
+  get personalDocument => "Documents personnels";
+  @override
+  get help => "AIDEZ-MOI";
+  @override
+  get about => "À propos";
+  @override
+  get bankDetails => "Coordonnées bancaires";
+  @override
+  get accountAndPayment => "Compte et paiement";
+  @override
+  get enquiry => "Enquête";
+  @override
+  get download => "Télécharger";
+  @override
+  get addToCart => "Ajouter au chariot";
+  @override
+  get addToWatchList => "Ajouter à la liste";
+  @override
+  get finalCalculation => "Calcul final";
+  @override
+  get bookOffice => "Bureau du livre";
+  @override
+  get clearSelection => "Effacer la sélection";
+  @override
+  get comment => "commentaires";
+  @override
+  get hold => "Tenir";
+  @override
+  get offer => "Offre";
+  @override
+  get officeView => "bureau Vue";
+  @override
+  get placeOrder => "Passer la commande";
+  @override
+  get buyNow => "Acheter maintenant";
+  @override
+  get cancelStone => "annuler Pierre";
+  @override
+  get share => "Partager";
+  @override
+  get watchlist => "liste";
+  @override
+  get exclusive => "Exclusif";
+  @override
+  get featuredStones => "Pierres en vedette";
+  @override
+  get stoneOfDay => "Pierres de jour";
+  @override
+  get recentSearch => "Recherche récente";
+  @override
+  get viewAll => "Voir tout";
+  @override
+  get salesPersonDetail => "Détail des ventes Personne";
+  @override
+  get searchTitle => "Recherche Titre";
+  @override
+  get enterSearchTitle => "Entrez votre recherche Titre";
+  @override
+  get timeSlots => "Tranches de temps";
+  @override
+  get selectCustomDate => "Choisissez une date personnalisée";
+  @override
+  get availableSlot => "Machines à sous disponibles";
+  @override
+  get reqOfficeView => "Demander bureau Voir";
+  @override
+  get myComments => "Mon commentaire";
+  @override
+  get myReminder => "mon Rappel";
+  @override
+  get reminder => "Rappel";
+  @override
+  get manageAddress => "gérer les adresses";
+  @override
+  get myAccount => "Mon compte";
+  @override
+  get declaimer => "Avertissement";
+  @override
+  get shareStone => "Partager Pierre";
+  @override
+  get addRemider => "Ajouter un rappel";
+  @override
+  get offlineSearch => "Hors ligne Recherche";
+  @override
+  get searchHistory => "Historique des recherches";
+  @override
+  get offlineStock => "Stock Hors ligne";
+  @override
+  get searchOffline => "Rechercher (Hors ligne)";
+  @override
+  get voiceSearch => "Recherche vocale";
+  @override
+  get tapMictoSpeak => "Appuyez sur micro à parler";
+  @override
+  get typeToSearch => "Tapez pour rechercher";
+  @override
+  get typeWordsToSearch => "Tapez au moins 3 mots pour rechercher des pierres";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class FrenchDynamickeys extends Dynamickeys {
+  @override
+  get shape => "Forme";
+  @override
+  get caratRange => "carat Gamme";
+  @override
+  get basicDetail => "Détails de base";
+  @override
+  get measurementTitle => "Des mesures";
+  @override
+  get inclusionDetail => "Détails d'inclusion";
+  @override
+  get other => "Autre";
+  @override
+  get stoneID => "Stone ID";
+  @override
+  get labTitle => "Laboratoire";
+  @override
+  get certNo => "Cert. NON.";
+  @override
+  get locationTitle => "EMPLACEMENT";
+  @override
+  get shapeTitle => "Forme";
+  @override
+  get caratTitle => "Carat";
+  @override
+  get colorTitle => "Couleur";
+  @override
+  get clarityTitle => "CLARTÉ";
+  @override
+  get shadeTitle => "Ombre";
+  @override
+  get cutTitle => "Couper";
+  @override
+  get polishTitle => "polonais";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "Fluorescence";
+  @override
+  get rapTitle => r"RAP ($)";
+  @override
+  get discountTitle => "Remise (%)";
+  @override
+  get priceAndCt => r"Prix ​​/ Ct ($)";
+  @override
+  get amountTitle => "Montant";
+  @override
+  get eyeCleanTitle => "Nettoyer les yeux";
+  @override
+  get brownTitle => "MARRON";
+  @override
+  get milkyTitle => "Laiteux";
+  @override
+  get mixTingeTitle => "MIX Tinge";
+  @override
+  get dimensionTitle => "Dimensions (mm)";
+  @override
+  get girdleTitle => "GIRDLE (%)";
+  @override
+  get tableTitle => "Table %";
+  @override
+  get crownAngleTitle => "Couronne Angle";
+  @override
+  get depthTitle => "profondeur%";
+  @override
+  get pavAngleTitle => "Pav Angle";
+  @override
+  get crownHeightTitle => "Couronne Hauteur";
+  @override
+  get pavDepthTitle => "Profondeur du Pavillon (en%)";
+  @override
+  get starLengthTitle => "Longueur étoiles";
+  @override
+  get lowerHalfTitle => "Moitié inférieure";
+  @override
+  get gridleTitle => "Ceinture";
+  @override
+  get gridleFacetedTitle => "GIRDLE FACETTES";
+  @override
+  get culetTitle => "colette";
+  @override
+  get rationTitle => "Rapport";
+  @override
+  get blackInclusionTitle => "BLACK INCLUSION";
+  @override
+  get otherInclusionTitle => "autres inclusion";
+  @override
+  get openInclusionTitle => "INCLUSION OUVERT";
+  @override
+  get extraFacetTitle => "EXTRA FACETTES";
+  @override
+  get naturalTitle => "Naturel";
+  @override
+  get hAndATitle => "H & A";
+  @override
+  get keyToSymbol => "CLÉ DE SYMBOLE";
+  @override
+  get labComments => "LAB COMMENTAIRES";
+  @override
+  get laserInsTitle => "LASER INS";
+  @override
+  get basicTitle => "De base";
+  @override
+  get advancedTitle => "Avancée";
+  @override
+  get stoneIdTitle => "Pierre ID / Cert Non";
+  @override
+  get defaultTitle => "Défaut";
+  @override
+  get newDiamondsTitle => "nouveaux diamants";
+  @override
+  get priceLowToHigh => "Prix ​​croissant";
+  @override
+  get priceHighToLow => "Prix ​​élevé au plus bas";
+  @override
+  get disLowToHigh => "Remise bas au plus élevé";
+  @override
+  get disHighToLow => "Remise élevé au plus bas";
+  @override
+  get colorLowToHigh => "Couleur bas au plus élevé";
+  @override
+  get colorHighToLow => "Couleur élevé au plus bas";
+  @override
+  get caratLowToHigh => "Carat bas au plus élevé";
+  @override
+  get caratHighToLow => "Carat élevé au plus bas";
+  @override
+  get clarityLowToHigh => "Clarté bas au plus élevé";
+  @override
+  get clarityHighToLow => "Clarté élevé au plus bas";
+  @override
+  get colorShadeTitle => "Nuance de couleur";
+  @override
+  get certiTitle => "Numéro de certificat";
+  @override
+  get arrivalsTitle => "Arrivées";
+  @override
+  get lengthTitle => "Longueur";
+  @override
+  get widthTitle => "Largeur";
+  @override
+  get pavilionAngleTitle => "pavillon Angle";
+  @override
+  get girdleConditionTitle => "Condition Ceinturon";
+  @override
+  get cluetConditionTitle => "colette Condition";
+  @override
+  get disTitle => "Dis%";
+  @override
+  get depthTitleWithoutPerc => "Profondeur";
+  @override
+  get otherInformationTitle => "les autres informations";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "Forme",
+    "caratRange": "carat Gamme",
+    "basicDetail": "Détails de base",
+    "measurementTitle": "Des mesures",
+    "inclusionDetail": "Détails d'inclusion",
+    "other": "Autre",
+    "stoneID": "Stone ID",
+    "labTitle": "Laboratoire",
+    "certNo": "Cert. NON.",
+    "locationTitle": "EMPLACEMENT",
+    "shapeTitle": "Forme",
+    "caratTitle": "Carat",
+    "colorTitle": "Couleur",
+    "clarityTitle": "CLARTÉ",
+    "shadeTitle": "Ombre",
+    "cutTitle": "Couper",
+    "polishTitle": "polonais",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "Fluorescence",
+    "rapTitle": r"RAP ($)",
+    "discountTitle": "Remise (%)",
+    "priceAndCt": r"Prix ​​/ Ct ($)",
+    "amountTitle": "Montant",
+    "eyeCleanTitle": "Nettoyer les yeux",
+    "brownTitle": "MARRON",
+    "milkyTitle": "Laiteux",
+    "mixTingeTitle": "MIX Tinge",
+    "dimensionTitle": "Dimensions (mm)",
+    "girdleTitle": "GIRDLE (%)",
+    "tableTitle": "Table %",
+    "crownAngleTitle": "Couronne Angle",
+    "depthTitle": "profondeur%",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "Couronne Hauteur",
+    "pavDepthTitle": "Profondeur du Pavillon (en%)",
+    "starLengthTitle": "Longueur étoiles",
+    "lowerHalfTitle": "Moitié inférieure",
+    "gridleTitle": "Ceinture",
+    "gridleFacetedTitle": "GIRDLE FACETTES",
+    "culetTitle": "colette",
+    "rationTitle": "Rapport",
+    "blackInclusionTitle": "BLACK INCLUSION",
+    "otherInclusionTitle": "autres inclusion",
+    "openInclusionTitle": "INCLUSION OUVERT",
+    "extraFacetTitle": "EXTRA FACETTES",
+    "naturalTitle": "Naturel",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "CLÉ DE SYMBOLE",
+    "labComments": "LAB COMMENTAIRES",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "De base",
+    "advancedTitle": "Avancée",
+    "stoneIdTitle": "Pierre ID / Cert Non",
+    "defaultTitle": "Défaut",
+    "newDiamondsTitle": "nouveaux diamants",
+    "priceLowToHigh": "Prix ​​croissant",
+    "priceHighToLow": "Prix ​​élevé au plus bas",
+    "disLowToHigh": "Remise bas au plus élevé",
+    "disHighToLow": "Remise élevé au plus bas",
+    "colorLowToHigh": "Couleur bas au plus élevé",
+    "colorHighToLow": "Couleur élevé au plus bas",
+    "caratLowToHigh": "Carat bas au plus élevé",
+    "caratHighToLow": "Carat élevé au plus bas",
+    "clarityLowToHigh": "Clarté bas au plus élevé",
+    "clarityHighToLow": "Clarté élevé au plus bas",
+    "colorShadeTitle": "Nuance de couleur",
+    "certiTitle": "Numéro de certificat",
+    "arrivalsTitle": "Arrivées",
+    "lengthTitle": "Longueur",
+    "widthTitle": "Largeur",
+    "pavilionAngleTitle": "pavillon Angle",
+    "girdleConditionTitle": "Condition Ceinturon",
+    "cluetConditionTitle": "colette Condition",
+    "disTitle": "Dis%",
+    "depthTitleWithoutPerc": "Profondeur",
+    "otherInformationTitle": "les autres informations",
+  };
+}
+
+class Japan extends English {
+  @override
+  get authStrings => JapanAuthStrings();
+  @override
+  get commonString => JapanCommonString();
+  @override
+  get errorString => JapanErrorString();
+  @override
+  get noDataStrings => JapanNoDataStrings();
+  @override
+  get screenTitle => JapanScreenTitle();
+  @override
+  get dynamickeys => JapanDynamickeys();
+  static String get languageCode => "JAPAN";
+  static String get languageName => "JAPAN";
+}
+
+class JapanAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation => "何かが間違っていました！ 1更新にプルダウン";
+  @override
+  get selectNatureOfOrganization => "組織の性質を選択";
+  @override
+  get setNewPassword => "もう一度新しいパスワードや記号を設定します。";
+  @override
+  get enterCompanyName => "会社名を入力してください。";
+  @override
+  get pleaseEnterCustomerOTP => "顧客の乗車コードを入力してください。";
+  @override
+  get pleaseEnterPickupOTP => "顧客のピックアップコードを入力してください。";
+  @override
+  get pleaseEnterDeliveryOTP => "顧客の配信コードを入力してください。";
+  @override
+  get verified => "確認済み";
+  @override
+  get verify => "確認";
+  @override
+  get addressLineOne => "住所（1";
+  @override
+  get addressLineTwo => "アドレス2";
+  @override
+  get addressLineThree => "住所3";
+  @override
+  get oldPassword => "以前のパスワード";
+  @override
+  get skype => "スカイプ";
+  @override
+  get whatsApp => "WhatsApp";
+  @override
+  get pinCode => "ピンコード*";
+  @override
+  get verifyMobileDesc => "プロファイルを更新するために携帯電話番号を確認してください。";
+  @override
+  get verifyNow => "今すぐ確認";
+  @override
+  get password => "パスワード";
+  @override
+  get backToHome => "ホームへ";
+  @override
+  get forgotPassword => "パスワードをお忘れですか？";
+  @override
+  get signInCap => "サインイン";
+  @override
+  get moveToLogIn => "ログインに移動";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "ここをクリック";
+  @override
+  get signUpHere => "ここにサインアップします";
+  @override
+  get reset => "リセット";
+  @override
+  get haveRegisterCode => "登録コードをお持ちですか？";
+  @override
+  get welcome => "お帰りなさい！";
+  @override
+  get signInAsGuest => "ゲストとしてサインイン";
+  @override
+  get editProfileTitle => "プロファイル編集";
+  @override
+  get emaillbl => "Eメール";
+  @override
+  get searchInventory => "検索製品";
+  @override
+  get emailAddress => "電子メールアドレス*";
+  @override
+  get offlineFilter =>
+      "希望ソリティアを見つけることができませんでしたか？私たちは、あなたが私たちのオフラインインベントリから、最良の取引を得るのを助けることができます。";
+  @override
+  get loginDesc =>
+      "あなたは私のダイヤモンドのロックを解除するために、タッチID / MPinを有効にしますか？ロック解除アプリのオプションを選択してください";
+  @override
+  get searchDiamonds => "検索ダイヤモンド";
+  @override
+  get continueWithSearch => "あなたの検索を継続しますか？";
+  @override
+  get mobileNumber => "モバイル";
+  @override
+  get searchHint => "探す...";
+  @override
+  get selectYourCountry => "国を選択";
+  @override
+  get resendCodeIn => "再送コードで";
+  @override
+  get resendCode => "再送信";
+  @override
+  get haveAnAccount => "すでにアカウントをお持ちですか？";
+  @override
+  get dontReceiveCode => "あなたは、コードを受け取っていない場合は！";
+  @override
+  get inLogin => "ログインします。";
+  @override
+  get resetPwdDesc => "あなたのパスワードをリセットするためのパスワードと確認パスワードを追加します。";
+  @override
+  get backToLogin => "ログインに戻る";
+  @override
+  get firstName => "ファーストネーム*";
+  @override
+  get name => "ユーザー名*";
+  @override
+  get lastName => "苗字*";
+  @override
+  get middleName => "ミドルネーム*";
+  @override
+  get confirmPassword => "パスワードを認証する";
+  @override
+  get currentPasswordErr => "現在のパスワードエラー";
+  @override
+  get passwordChanged => "パスワード変更済み";
+  @override
+  get lblLogInErr => "ログインエラー";
+  @override
+  get enterYour => "あなたの〜を入力してください";
+  @override
+  get details => "細部";
+  @override
+  get registerCode => "登録コード";
+  @override
+  get registerCodeDesc => "3ecoであなたの登録を開始するには登録コードを追加します。";
+  @override
+  get uploadPhotoDesc => "あなたの自己の自分撮りを取ります";
+  @override
+  get updateProfile => "プロフィールを更新";
+  @override
+  get postalCode => "郵便番号*";
+  @override
+  get removeButton => "削除する";
+  @override
+  get gender => "性別";
+  @override
+  get male => "男性";
+  @override
+  get female => "女性";
+  @override
+  get changePassword => "パスワードを変更する";
+  @override
+  get currentPassword => "現在のパスワード*";
+  @override
+  get newPassword => "新しいパスワード*";
+  @override
+  get confirmNewPassword => "パスワードを認証する*";
+  @override
+  get personalDocuments => "パーソナルドキュメント";
+  @override
+  get assignedAuto => "割り当てられオート";
+  @override
+  get logout => "ログアウト";
+  @override
+  get logoutConfirmationMsg => "あなたがログアウトしてもよろしいですか？";
+  @override
+  get address => "住所*";
+  @override
+  get accountNumber => "口座番号";
+  @override
+  get bankerName => "全国銀行名";
+  @override
+  get nameLable => "名前";
+  @override
+  get ifscCode => "IFSCコード";
+  @override
+  get businessRegistrationNumbr => "ビジネス登録番号";
+  @override
+  get businessRelationshipPeriod => "ビジネス関係の期間（年数）";
+  @override
+  get designation => "指定";
+  @override
+  get nameofDesignation => "の名前";
+  @override
+  get natureofOrganization => "組織の性質";
+  @override
+  get uploadFile => "NO FILEなかっ選びだし";
+  @override
+  get update => "更新";
+  @override
+  get resetPwd => "パスワードを再設定する";
+  @override
+  get pwdReset => "パスワードのリセット";
+  @override
+  get signInWithMPIN => "MPINでサインイン";
+  @override
+  get pwdChanged => "パスワード変更済み";
+  @override
+  get successfullyPwdDesc => "あなたは成功したパスワードをリセットしています。ログイン時に新しいパスワードを使用してください。";
+  @override
+  get lblProfileSetup => "あなたのプロフィールが設定されています";
+  @override
+  get lblProfileSetupDesc => "私たちはあなたのプロフィールの詳細を受けています";
+  @override
+  get hoursAvailable => "総Shifttime";
+  @override
+  get confirmStoneDetail => "確認ストーンの詳細";
+  @override
+  get companyName => "会社名";
+  @override
+  get invoiceDate => "請求書の日付";
+  @override
+  get companyCode => "会社コード";
+  @override
+  get saveCompanyDetails => "保存会社情報";
+  @override
+  get passwordNotChange => "パスワードが一致しません";
+  @override
+  get rememberPassword => "パスワードを覚える？";
+  @override
+  get sendOTP => "OTPを送信";
+  @override
+  get resendNow => "再送今";
+  @override
+  get didNotReceiveOTP => "あなたはOTPを受け取っていない場合は！";
+  @override
+  get sendOTPToEmail =>
+      "私たちはあなたの入力した電子メールアドレスまたはユーザー名にOTPを送信します。電子メールアドレスまたはユーザー名を入力してください。";
+  @override
+  get enterOTP => "OTPは、ご登録のメールアドレスに送信されました。 OTPを入力してください。";
+  @override
+  get backToSignIn => "Inを署名する戻ります";
+  @override
+  get passwordResetSuccessfully => "パスワードが正常にリセット。";
+  @override
+  get emailAndUname => "メール/ユーザー名";
+  @override
+  get signUp => "サインアップ";
+  @override
+  get promotionText => "プロモーション";
+  @override
+  get termsAndCondition => "利用規約と条件";
+  @override
+  get mustAgreeTermsAndCondition => "あなたはゲストユーザーとしてサインインする用語と条件に同意する必要があります";
+  @override
+  get forgotPasswordTitle => "パスワードをお忘れですか";
+  @override
+  get uploadKYC => "アップロードKYC";
+  @override
+  get uploadKycDesc => "フル機能にアクセスするためにあなたのKYCのドキュメントをアップロードしてください。";
+  @override
+  get hintPhotoIdentityProof => "写真のアイデンティティの証明*";
+  @override
+  get hintBussinerssProof => "ビジネスアイデンティティ証明*";
+  @override
+  get btnFileUpload => "ファイルのアップロード";
+  @override
+  get pleaseUploadPhotoProof => "写真のアイデンティティの証明をアップロードしてください。";
+  @override
+  get pleaseUploadBussinessProof => "ビジネスアイデンティティの証明をアップロードしてください。";
+  @override
+  get pleaseSelectFileFormat => "次のいずれかの形式でファイルをアップロードしてください：.JPG";
+  @override
+  get kycSubmitted => "KYC提出";
+  @override
+  get kycSubmmittedDesc => "あなたのKYCは正常に送信されました。";
+  @override
+  get btnMoveToHome => "ホームへ移動";
+  @override
+  get kYCRejected => "KYC拒否";
+  @override
+  get kycRejectedDesc =>
+      "あなたのKYCは拒否されました。すべての機能にアクセスするには、再度ごKYCのドキュメントをアップロードしてください。";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class JapanCommonString extends CommonString {
+  @override
+  get seeMore => "続きを見る";
+  @override
+  get seeLess => "参照少ないです";
+  @override
+  get modify => "変更";
+  @override
+  get delete => "[削除]";
+  @override
+  get details => "細部";
+  @override
+  get edit => "編集します";
+  @override
+  get addDemand => "需要を追加";
+  @override
+  get demandTitle => "需要タイトル";
+  @override
+  get pleaseEnterDemandTitle => "デマンドタイトルを入力してください。";
+  @override
+  get demandAddedSuccessfully => "需要が正常に追加します";
+  @override
+  get selectAtleastOneFilter => "お願いします";
+  @override
+  get savedSearch => "保存された検索";
+  @override
+  get searchSavedSearch => "保存された検索を検索";
+  @override
+  get viewDetails => "詳細を見る";
+  @override
+  get viewLessDetails => "画面を狭く詳細";
+  @override
+  get myDemand => "マイデマンド";
+  @override
+  get date => "日付";
+  @override
+  get selectTime => "選択時間";
+  @override
+  get selectDate => "日付を選択";
+  @override
+  get offerVelidTill => "オファー有効ティル";
+  @override
+  get officeVisitDate => "オフィス訪問日";
+  @override
+  get all => "すべて";
+  @override
+  get status => "状態";
+  @override
+  get save => "保存する";
+  @override
+  get verify => "確認";
+  @override
+  get readMore => "続きを読む";
+  @override
+  get goodMorning => "おはようございます";
+  @override
+  get goodAfternoon => "こんにちは";
+  @override
+  get goodEvening => "こんばんは";
+  @override
+  get btnSkip => "スキップ";
+  @override
+  get btnUpdate => "更新";
+  @override
+  get btnContinue => "継続する";
+  @override
+  get btnContinueCap => "継続する";
+  @override
+  get btnEdit => "編集します";
+  @override
+  get btnSubmit => "参加する";
+  @override
+  get btnNextCap => "次";
+  @override
+  get btnSaveCap => "更新パスワード";
+  @override
+  get btnWithdrawCap => "WITHDRAW";
+  @override
+  get btnSaveAndContinueCap => "SAVE＆CONTINUE";
+  @override
+  get btnUnregister => "未登録の移動";
+  @override
+  get btnClose => "閉じる";
+  @override
+  get remove => "削除する";
+  @override
+  get refresh => "リフレッシュ";
+  @override
+  get fetchLocationMessage => "私たちはあなたの場所を取得しているお待ちください";
+  @override
+  get done => "完了";
+  @override
+  get doneCap => "DONE";
+  @override
+  get cancel => "キャンセル";
+  @override
+  get allow => "許します";
+  @override
+  get countryFirst => "してください国を選択ファースト";
+  @override
+  get apply => "適用します";
+  @override
+  get cancelCap => "キャンセル";
+  @override
+  get uploadCap => "UPLOAD";
+  @override
+  get yesCancelCap => "はい";
+  @override
+  get upload => "アップロード";
+  @override
+  get ok => "OK";
+  @override
+  get home => "家";
+  @override
+  get goToMyWatchList => "マイウォッチリストに移動します";
+  @override
+  get goToMyOrder => "私の注文に行きます";
+  @override
+  get gotToMyOffer => "私の申し出に行きます";
+  @override
+  get gotToMyHold => "私のホールドに行きます";
+  @override
+  get gotToMyEnquiry => "お問合せに行きます";
+  @override
+  get gotToMyBid => "私の入札に行きます";
+  @override
+  get gotToMyReminder => "私のリマインダーに行きます";
+  @override
+  get gotToMyComments => "マイノートに移動します";
+  @override
+  get yes => "はい";
+  @override
+  get no => "番号";
+  @override
+  get selectCountry => "国を選択";
+  @override
+  get clickHere => "ここをクリック";
+  @override
+  get btnAddNewAddress => "新しい住所を追加する";
+  @override
+  get btnCancel => "キャンセル";
+  @override
+  get btnTakeSelfie => "自分撮りを取ります";
+  @override
+  get successfully => "うまく";
+  @override
+  get lblAppExit => "終了してよろしいですか？";
+  @override
+  get lblExit => "出口";
+  @override
+  get openAppSetting => "オープン設定";
+  @override
+  get lblOr => "若しくは";
+  @override
+  get fromLbl => "から";
+  @override
+  get toLbl => "に";
+  @override
+  get showMore => "もっと見せる";
+  @override
+  get showLess => "レスショー";
+  @override
+  get selectCity => "都市を選びなさい";
+  @override
+  get notYetAvailable => "まだ利用できません";
+  @override
+  get updateAvailable => "利用可能な更新！";
+  @override
+  get downloadAppFrom => "からダウンロードしたアプリケーションのアップデート";
+  @override
+  get playStore => "プレイストア";
+  @override
+  get skipUpdate => "スキップアップデート";
+  @override
+  get stateFirst => "してください選択国家ファースト";
+  @override
+  get reallyExit => "本当に終了？";
+  @override
+  get alert => "警告！";
+  @override
+  get loading => "積載";
+  @override
+  get error => "エラー";
+  @override
+  get jumpToTop => "トップへジャンプ";
+  @override
+  get ihaveread => "私は読み、同意します";
+  @override
+  get selected => "選択する";
+  @override
+  get lbllogout => "ログアウト";
+  @override
+  get lblThanx => "ありがとうございました";
+  @override
+  get lblSelectCity => "都市を選びなさい";
+  @override
+  get lblSelectState => "選択状態";
+  @override
+  get lblSelectCountry => "国を選択";
+  @override
+  get lblCity => "市";
+  @override
+  get lblCountry => "国";
+  @override
+  get lblName => "名前";
+  @override
+  get lblPinCode => "ピンコード";
+  @override
+  get lblMobileNumber => "携帯電話番号";
+  @override
+  get lblState => "状態";
+  @override
+  get lblCode => "コード：";
+  @override
+  get lblOrderNo => "注文番号：";
+  @override
+  get lblOrderItem => "注文アイテム：";
+  @override
+  get lblDelivered => "配信";
+  @override
+  get lblTicketReady => "あなたのチケットは準備ができています";
+  @override
+  get lblPersonTicket => "2人のチケット";
+  @override
+  get lblShuttleBus => "シャトルバス";
+  @override
+  get lblPickup => "選び出す";
+  @override
+  get lblDropoff => "落ちる";
+  @override
+  get lblPassenger => "旅客";
+  @override
+  get lblDeliveryNo => "配達号";
+  @override
+  get lblPrice => "価格";
+  @override
+  get lblValid => "に有効";
+  @override
+  get lblRenew => "書き換えます";
+  @override
+  get lblDeparture => "出発";
+  @override
+  get lblArrived => "到着した";
+  @override
+  get lblSendtoFriend => "友達に送る";
+  @override
+  get popupRenewTitle => "チケットを更新";
+  @override
+  get popupRenewDesc => "Loremのイプサム嘆き座るAMET";
+  @override
+  get popuplblPassenger => "旅客";
+  @override
+  get popuplblCancel => "キャンセル";
+  @override
+  get popupbtnRenew => "書き換えます";
+  @override
+  get ridelblAwesome => "驚くばかり";
+  @override
+  get ridebtnDone => "完了";
+  @override
+  get offerPricePerCarat => "提示された価格（CTS）";
+  @override
+  get dropOffText => "落ちる";
+  @override
+  get pickUpText => "選び出す";
+  @override
+  get startAtText => "スタート時";
+  @override
+  get endAtText => "終わりに";
+  @override
+  get personText => "人";
+  @override
+  get paymentScreenTitle => "支払い";
+  @override
+  get pickuplbl => "選び出す";
+  @override
+  get droplbl => "落ちる";
+  @override
+  get makePaymentButtonlbl => "支払う";
+  @override
+  get pessangerslbl => "乗客";
+  @override
+  get priceBreakuplbl => "価格分裂";
+  @override
+  get tripPricelbl => "トリップ価格";
+  @override
+  get taxeslbl => "税金";
+  @override
+  get totallbl => "トータル";
+  @override
+  get cardNumberhint => "カード番号";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / YY";
+  @override
+  get btnTryAgain => "再試行";
+  @override
+  get cityFirst => "最初の都市を選択してください";
+  @override
+  get enterFareDetails => "セールス詳細を入力します。";
+  @override
+  get fromDate => "日から";
+  @override
+  get toDate => "選択された日付";
+  @override
+  get btnUnderstand => "わかります";
+  @override
+  get applicationUpdate => "アプリケーションのアップデート";
+  @override
+  get newVersionMessage => "アプリケーションの新しいバージョンが入手可能です";
+  @override
+  get paymentCollected => "お支払い収集";
+  @override
+  get addComment => "コメントを追加します";
+  @override
+  get more => "もっと";
+  @override
+  get carat => "カラット";
+  @override
+  get pcs => "個";
+  @override
+  get cts => "CTS";
+  @override
+  get disc => "ディスク％";
+  @override
+  get avgPriceCrt => "平均。価格/ CT";
+  @override
+  get amount => "量";
+  @override
+  get confirmStone => "確認ストーン";
+  @override
+  get confirm => "確認";
+  @override
+  get offered => "提供";
+  @override
+  get validTill => "まで有効";
+  @override
+  get remark => "リマーク";
+  @override
+  get color => "色";
+  @override
+  get colorGroup => "カラーグループ";
+  @override
+  get colorFancy => "ファンシー";
+  @override
+  get colorWhite => "白い";
+  @override
+  get clarity => "明快";
+  @override
+  get clarityGroup => "クラリティグループ";
+  @override
+  get intensity => "強";
+  @override
+  get overtone => "倍音";
+  @override
+  get selectBusinessType => "ビジネスの種類を選択します";
+  @override
+  get selectState => "選択状態";
+  @override
+  get search => "探す";
+  @override
+  get profile => "私のプロフィール";
+  @override
+  get personal => "個人的な";
+  @override
+  get business => "ビジネス";
+  @override
+  get documents => "ドキュメント";
+  @override
+  get noSlotFound => "スロット見つかりません";
+  @override
+  get noDiamondFound => "検索条件に一致するダイヤモンドありません。あなたが求めて追加してください。";
+  @override
+  get selectType => "仮想タイプを選択します";
+  @override
+  get noSavedSearch => "ノー保存された検索が存在します";
+  @override
+  get searchCity => "検索city";
+  @override
+  get searchCountry => "検索する国";
+  @override
+  get searchState => "検索状態";
+  @override
+  get notifications => "お知らせ";
+  @override
+  get enter2Stone => "比較するために、少なくとも2石を選択してください。";
+  @override
+  get bidDesc => "現在、インドに位置し、他の国での配信のために離れてインドから少なくとも7-10営業日かかります。";
+  @override
+  get packetNo => "パケット番号：";
+  @override
+  get quit => "終了する";
+  @override
+  get agree => "同意する";
+  @override
+  get laterToday => "今日あとで";
+  @override
+  get toMorrow => "明日";
+  @override
+  get nextWeek => "来週";
+  @override
+  get chooseAnother => "別のものを選びます";
+  @override
+  get dateTime => "日付時刻";
+  @override
+  get language => "言語";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "いいえドキュメントが見つかりませんでした";
+  @override
+  get searchBusinessType => "検索ビジネスの種類";
+  @override
+  get hours => "時間";
+  @override
+  get minutes => "議事録";
+  @override
+  get seconds => "秒";
+  @override
+  get bidEndsIn => "入札に終了します。";
+  @override
+  get shape => "形状";
+  @override
+  get download => "ダウンロード";
+  @override
+  get share => "シェア";
+  @override
+  get placeOrder => "場所の順序";
+  @override
+  get enterComment => "コメントを入力してください。";
+  @override
+  get deleteItem => "消去してもよろしいですか？";
+  @override
+  get shippingPolicy => "配送ポリシー";
+  @override
+  get offerSundayRestriction => "日曜日は許可されていません。オフィス営業日は月曜日から土曜日までです";
+  @override
+  get weekAgo => "1週間前";
+  @override
+  get lastWeek => "先週";
+  @override
+  get dayAgo => "数日前";
+  @override
+  get onedayAgo => "1日前";
+  @override
+  get yesterday => "昨日";
+  @override
+  get hourAgo => "時間前";
+  @override
+  get onehourAgo => "1時間前";
+  @override
+  get anhourAgo => "1時間前";
+  @override
+  get mintuesAgo => "数分前";
+  @override
+  get onemintuesAgo => "1分前";
+  @override
+  get amintueAgo => "分前";
+  @override
+  get secondsAgo => "秒前";
+  @override
+  get justNow => "ちょうど今";
+  @override
+  get today => "今日";
+  @override
+  get past => "過去";
+  @override
+  get selectPhotoProof => "ドキュメントを選択";
+  @override
+  get pleaseSelectPhotoProof => "文書を選択してください";
+  @override
+  get selectBusinessProof => "ドキュメントを選択";
+  @override
+  get pleaseSelectBusinessProof => "文書を選択してください";
+  @override
+  get touchId => "タッチ同上";
+  @override
+  get faceId => "フェイス同上";
+  @override
+  get enableTouchId => "私のダイヤモンドのロックを解除するにはタッチIDを有効にしますか？";
+  @override
+  get enableFaceId => "私のダイヤモンドのロックを解除する顔IDを有効にしますか？";
+  @override
+  get unlockWithTouchId => "タッチIDを使用して私のダイヤモンドのロックを解除";
+  @override
+  get unlockWithFaceId => "フェイスIDを使用して私のダイヤモンドのロックを解除します。";
+  @override
+  get mPin => "MPin";
+  @override
+  get holdMemoStatusDiamondorder => "あなたは保留に既にある石やメモの状態を確認することはできません";
+  @override
+  get searchStoneIdCertificateNo => "ストーンID /証明書番号を検索";
+  @override
+  get createMPin => "新しいMPinを作成します。";
+  @override
+  get reentermpin => "再入力MPin";
+  @override
+  get forgotmpin => "MPINを忘れましたか？";
+  @override
+  get verifympin => "Mpinを確認";
+  @override
+  get enteryoursixdigitcode => "あなたの6桁を入力しMPIN";
+  @override
+  get changempin => "変更MPin";
+  @override
+  get faceidandtouchnotenable =>
+      "FaceId / TouchIdお使いの携帯電話で有効になっていません、この機能を使用するために有効にしてください";
+  @override
+  get enablempintounlockmydiamonds =>
+      "ロック解除アプリにMPinを有効にしますか？これは、タッチイドを無効にします。あなたが継続してもよろしいですか？";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "ロック解除アプリにタッチIDを有効にしますか？それはMPinを無効にします。あなたが継続してもよろしいですか？";
+  @override
+  get rememberme => "私を覚えてますか";
+  @override
+  get usertouchid => "使用タッチ同上";
+  @override
+  get usempin => "使用MPin";
+  @override
+  get filesarenotavailableonserver => "ファイルがサーバー上で利用できない、後でもう一度お試しください";
+  @override
+  get allfileshavebeendownloaded => "すべてのファイルがダウンロードされています。";
+  @override
+  get filesisdownloaded => "ファイルがダウンロードされます";
+  @override
+  get filesisnotdownloadedbcz => "それは、サーバーに存在していないため、ファイルがダウンロードされません。";
+  @override
+  get downloadingCanceled => "キャンセルダウンロード";
+  @override
+  get downloading => "ダウンロード中...";
+  @override
+  get expirydate => "有効期限 ：";
+  @override
+  get youreallywanttodelete => "あなたは本当に削除したいです";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "明快",
+    "shape": "形状",
+  };
+}
+
+class JapanErrorString extends ErrorString {
+  @override
+  get accessDenide => "アクセスが拒否されました";
+  @override
+  get pleaseSelectOfferTillDate => "日付までのオファーを選択してください。";
+  @override
+  get pleaseSelectOfficeVisitDate => "オフィスの訪問日を選択してください";
+  @override
+  get deleteStoneMsg => "あなたは、削除石（複数可）にもよろしいですか？";
+  @override
+  get acceptTermsAndCondition => "用語と条件を受け入れてください。";
+  @override
+  get diamondCompareRemove => "少なくとも2枚のストーンズは、比較するのに必要とされます。";
+  @override
+  get diamondSelectionError => "少なくとも一つの石を選択してください。";
+  @override
+  get pleaseEnterCompanyName => "会社名を入力してください。";
+  @override
+  get selectInvoiceDate => "請求書の日付を選択";
+  @override
+  get pleaseEnterComment => "コメントを入力してください。";
+  @override
+  get pleaseEnterRemarks => "発言を入力してください。";
+  @override
+  get selectExpiryDate => "有効期限を選択してください。";
+  @override
+  get enterOTP => "コードを入力してください";
+  @override
+  get pleaseEnterOTP => "確認コードを入力してください。";
+  @override
+  get enteredCodeNotMatching => "入力されたコードが一致していません。再試行";
+  @override
+  get selectCancellationReason => "キャンセルの理由を選択してください";
+  @override
+  get enterDesc => "説明を入力してください。";
+  @override
+  get enterTitle => "タイトルを入力してください。";
+  @override
+  get enterEmailOrPhone => "電子メール/モバイルを入力してください。";
+  @override
+  get enterPassword => "パスワードが空にすることはできません。パスワードを入力してください。";
+  @override
+  get enterConfirmPassword => "確認パスワードを入力してください。";
+  @override
+  get enterSkype => "スカイプを入力してください。";
+  @override
+  get enterRegisterCode => "登録コードを入力してください";
+  @override
+  get enterEmail => "メールアドレスを入力してください。";
+  @override
+  get enterPhone => "携帯電話番号を入力してください。";
+  @override
+  get enterUsername => "ユーザー名は空にすることはできません。ユーザー名を入力してください。";
+  @override
+  get enterValidEmail => "有効なメールアドレスを入力してください。";
+  @override
+  get enterValidPhone => "有効な携帯電話番号を入力してください。";
+  @override
+  get enterValidWhatsappPhone => "有効なのWhatsApp携帯電話番号を入力してください。";
+  @override
+  get enterValidPassword => "6つの文字または長いパスワードを入力してください。";
+  @override
+  get mismatchPassword => "パスワードと確認パスワードが一致していません。";
+  @override
+  get enterFirstName => "まず名前を入力してください。";
+  @override
+  get enterMiddleName => "ミドルネームを入力してください。";
+  @override
+  get enterPinCode => "ピンコードを入力してください。";
+  @override
+  get enterName => "名前を入力してください。";
+  @override
+  get enterLastName => "姓を入力してください。";
+  @override
+  get enterAddress => "アドレスを入力してください。";
+  @override
+  get enterValidPinCode => "有効なPINコードを入力します。";
+  @override
+  get enterValidAddress => "10文字または長いアドレスを入力してください。";
+  @override
+  get enterPostalCode => "郵便番号を入力してください。";
+  @override
+  get enterValidPostalCode => "6桁の数字郵便番号を入力してください。";
+  @override
+  get enterCurrentPassword => "現在のパスワードを入力してください。";
+  @override
+  get enterNewPassword => "新しいパスワードを入力してください。";
+  @override
+  get enterFareAmount => "売上金額を入力してください。";
+  @override
+  get enterOrderNO => "無順序を入力してください。";
+  @override
+  get enterServiceType => "サービスの種類を選択してください。";
+  @override
+  get enterPaymentType => "支払いタイプを選択してください。";
+  @override
+  get enterValidFareAmount => "販売量はゼロにすることはできません。";
+  @override
+  get enterPassangerNo => "何を入力していないしてください。乗客の。";
+  @override
+  get enterValidPassangerNo => "乗客の番号はゼロにすることはできません。";
+  @override
+  get notEnterMorePassangerNo => "乗客の番号は、7つ以上にすることはできません。";
+  @override
+  get drivingLicenseValidationText => "ライセンス番号を駆動英数字15桁を入力してください。";
+  @override
+  get pANCardValidationText => "PANカード番号英数字10桁を入力してください。";
+  @override
+  get selectFromDate => "日付から選択してください";
+  @override
+  get selectToDate => "日付を選択してください";
+  @override
+  get fromGreaterTo => "選択した日付が現在の日付よりも大きくなければなりません";
+  @override
+  get wrongPassword =>
+      "パスワード必須では、最低8つの文字、1つの大文字のアルファベット、1つの小文字のアルファベット、1桁、1つの特別charaterが含まれています";
+  @override
+  get fromValueGreateThanTo => "値からより小かの値に等しくなければなりません";
+  @override
+  get toValueGreaterThanFrom => "値よりも大きくなければなりませんまたは値に等しいから、";
+  @override
+  get pleaseEnterCompanyCode => "会社コードを入力してください";
+  @override
+  get enterSamePassword =>
+      "パスワードの確認は、新しいパスワードと一致していません。新しいパスワードと同じパスワードの確認を入力してください。";
+  @override
+  get selectAppointmentDate => "予定の日付を選択してください";
+  @override
+  get selectTimeSlot => "タイムスロットを選択してください";
+  @override
+  get enterComments => "コメントを入力してください。";
+  @override
+  get selectVirtualType => "仮想種類を選択してください";
+  @override
+  get versionError => "バージョンエラー";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class JapanNoDataStrings extends NoDataStrings {
+  @override
+  get noDataFound => "いいえレコード見つかりませんでした";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class JapanScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "オファーを配置";
+  @override
+  get addedInWatchList => "ウォッチリストに追加しました";
+  @override
+  get addedInOffer => "オファー提出";
+  @override
+  get addedInCart => "カートに追加しました";
+  @override
+  get addedInBid => "入札に追加しました";
+  @override
+  get myEnquiry => "お問合せ";
+  @override
+  get delete => "[削除]";
+  @override
+  get addDemand => "需要を追加";
+  @override
+  get matchPair => "マッチペア";
+  @override
+  get savedAndSearch => "保存して検索";
+  @override
+  get updateAndSearch => "アップデート＆検索";
+  @override
+  get upcoming => "来たる";
+  @override
+  get bidPricePerCt => "入札価格/ CT";
+  @override
+  get bidDisc => "入札ディスク";
+  @override
+  get bidValue => "入札値";
+  @override
+  get bidStone => "入札ストーン";
+  @override
+  get myCart => "私のカート";
+  @override
+  get myComment => "私のノート";
+  @override
+  get compare => "比較します";
+  @override
+  get compareStones => "ストーンズの比較";
+  @override
+  get statusHold => "保留";
+  @override
+  get statusOnMemo => "メモオン";
+  @override
+  get statusAvailable => "利用できます";
+  @override
+  get statusNew => "新参者";
+  @override
+  get statusOffer => "デイ/プロモーションストーン";
+  @override
+  get statusMyHold => "マイホールド";
+  @override
+  get signup => "サインアップ";
+  @override
+  get addToOffice => "オフィスに追加";
+  @override
+  get addComment => "コメントを追加";
+  @override
+  get addEnquiry => "お問い合わせを追加します。";
+  @override
+  get finalOffer => "最終提案";
+  @override
+  get finalDisc => "最終的なディスク";
+  @override
+  get finalRate => "最終レート";
+  @override
+  get finalValue => "最終的な値";
+  @override
+  get orderMsg =>
+      "1）価格はこっちに言及固定されているので、交渉の余地はありません。 \\ N2）グレーディングは、パラメータは、GIAのグレーディングを越えた当社のウェブサイト上で言及しました。";
+  @override
+  get offerMsg =>
+      "私たちが提供する前に確認するためにあなたを要求するので、価格が承認されます場合はご提供石が直接確認されます。オファーリスト内の任意の石（S）プットは、それが、他の顧客のために利用可能であるとして、あなたのために保留されていません。";
+  @override
+  get note => "注意";
+  @override
+  get hours => "時間";
+  @override
+  get offeredDisc => "提供されるディス";
+  @override
+  get offeredPriceCt => "提供されるのPr / CT";
+  @override
+  get addOffer => "オファーを追加";
+  @override
+  get expDiscPer => "期待ディスカウント";
+  @override
+  get todayDiscPer => "今日のディスク";
+  @override
+  get searchResult => "検索結果";
+  @override
+  get searchDiamond => "検索ダイヤモンド";
+  @override
+  get basic => "基本的な";
+  @override
+  get advanced => "高度";
+  @override
+  get stoneIdCertNo => "StoneID /証明書はありません";
+  @override
+  get takeSignature => "署名してください";
+  @override
+  get optional => "オプショナル";
+  @override
+  get myAddress => "私の住所";
+  @override
+  get expiryDate => "有効期限";
+  @override
+  get drivingLicenceDesc => "あなたの運転免許証の写真";
+  @override
+  get panDesc => "あなたのPANカード画像";
+  @override
+  get selfie => "自分撮り";
+  @override
+  get selfieDesc => "あなたの自分撮り写真";
+  @override
+  get pending => "保留中";
+  @override
+  get rejected => "拒否されました";
+  @override
+  get uploadAgain => "アップロード";
+  @override
+  get remove => "削除する";
+  @override
+  get title => "題名";
+  @override
+  get description => "説明";
+  @override
+  get uploadYour => "アップロード";
+  @override
+  get raiseDispute => "それについて教えてください";
+  @override
+  get drivingLicense => "運転免許証";
+  @override
+  get pANCard => "PANカード";
+  @override
+  get saveContinue => "保存して続行";
+  @override
+  get uploadFrontUmgText => "アップロード表面画像";
+  @override
+  get uploadPANCardImgText => "アップロードPANカードの画像";
+  @override
+  get uploadBackImageText => "アップロード裏面の画像";
+  @override
+  get helptopic => "ヘルプトピックス";
+  @override
+  get newRideSharingRequest => "新ライド共有要求";
+  @override
+  get newRequest => "新しい要求";
+  @override
+  get welcomeTo => "へようこそ！";
+  @override
+  get welcomeDesc => "マニジュエルの既存のアカウントにログイン";
+  @override
+  get forgotPassword => "忘れました";
+  @override
+  get forgotPasswordDesc => "あなたのパスワードを回復するために、ご登録の携帯電話番号を入力します。";
+  @override
+  get termsAndCondition => "ご利用規約";
+  @override
+  get privacyPolicy => "個人情報保護方針";
+  @override
+  get aboutUS => "私たちに関しては";
+  @override
+  get otpVerification => "ライドのコードを確認してください";
+  @override
+  get otpVerificationDelivery => "ピックアップコードを確認してください";
+  @override
+  get otpVerificationDeliveryDone => "配達コードを確認してください";
+  @override
+  get enterOtp => "4桁を入力します。";
+  @override
+  get recoveryCode => "回復コード";
+  @override
+  get editProfile => "プロファイル編集";
+  @override
+  get myProfile => "私のプロフィール";
+  @override
+  get reset => "リセット";
+  @override
+  get yourPassword => "あなたのパスワード";
+  @override
+  get photo => "写真";
+  @override
+  get otpDesc => "回復コードは、あなたの携帯電話番号に送信されました。コードを入力してください。";
+  @override
+  get otpVerifyDesc => "検証コードは、あなたの携帯電話番号に送信されました。コードを入力してください。";
+  @override
+  get diamondDetail => "ダイヤモンドの詳細";
+  @override
+  get home => "家";
+  @override
+  get search => "探す";
+  @override
+  get quickSearch => "クイック検索";
+  @override
+  get newArrival => "新参者";
+  @override
+  get exclusiveDiamonds => "独占ダイヤモンド";
+  @override
+  get diamondOnAuction => "ダイヤモンドでオークション";
+  @override
+  get stoneOfTheDays => "ベストバイ";
+  @override
+  get myWatchlist => "マイウォッチリスト";
+  @override
+  get myBid => "私の入札";
+  @override
+  get myHold => "マイホールド";
+  @override
+  get myOrder => "私の順序付きリスト";
+  @override
+  get confirmStone => "確認ストーン";
+  @override
+  get myOffice => "私のオフィスを見ます";
+  @override
+  get myOffer => "マイオファー一覧";
+  @override
+  get myPurchased => "私の購入の歴史";
+  @override
+  get mySavedSearch => "私の保存された検索";
+  @override
+  get savedSearch => "保存された検索";
+  @override
+  get myDemand => "マイデマンド";
+  @override
+  get contactUs => "お問い合わせ";
+  @override
+  get changePassword => "パスワードを変更する";
+  @override
+  get logout => "ログアウト";
+  @override
+  get fareDetailsTitle => "セールス詳細を入力します。";
+  @override
+  get fairAmt => "売上高";
+  @override
+  get noOfPassengers => "乗客の米国特許";
+  @override
+  get remarks => "備考";
+  @override
+  get orderNo => "注文番号。";
+  @override
+  get typeOfService => "サービスの種類";
+  @override
+  get paymentType => "支払いタイプ*";
+  @override
+  get recentlyView => "最近で見ます";
+  @override
+  get uploadImgValidationText =>
+      "アップロードファイルは.JPG、.JPEG、.pngのか.PDFたサイズ5メガバイト以下でなければなりません。";
+  @override
+  get drivingLicenseHintText => "運転免許証番号";
+  @override
+  get pANCARDHintText => "PANカード番号";
+  @override
+  get viewRide => "ビューライド";
+  @override
+  get myVehicle => "私の車";
+  @override
+  get personalDocument => "パーソナルドキュメント";
+  @override
+  get help => "助けて";
+  @override
+  get about => "約";
+  @override
+  get bankDetails => "銀行詳細";
+  @override
+  get accountAndPayment => "アカウントとお支払い";
+  @override
+  get enquiry => "問い合わせ";
+  @override
+  get download => "ダウンロード";
+  @override
+  get addToCart => "カートに追加";
+  @override
+  get addToWatchList => "気に入ったリストに追加する";
+  @override
+  get finalCalculation => "最終的な計算";
+  @override
+  get bookOffice => "ブックオフィス";
+  @override
+  get clearSelection => "明確な選択";
+  @override
+  get comment => "注釈";
+  @override
+  get hold => "ホールド";
+  @override
+  get offer => "提供";
+  @override
+  get officeView => "オフィスビュー";
+  @override
+  get placeOrder => "オーダーします";
+  @override
+  get buyNow => "今買う";
+  @override
+  get cancelStone => "ストーンをキャンセル";
+  @override
+  get share => "シェア";
+  @override
+  get watchlist => "ウォッチリスト";
+  @override
+  get exclusive => "排他的";
+  @override
+  get featuredStones => "注目のストーンズ";
+  @override
+  get stoneOfDay => "デイのストーンズ";
+  @override
+  get recentSearch => "最近の検索";
+  @override
+  get viewAll => "全てを見ます";
+  @override
+  get salesPersonDetail => "営業担当者の詳細";
+  @override
+  get searchTitle => "検索タイトル";
+  @override
+  get enterSearchTitle => "検索タイトルを入力します。";
+  @override
+  get timeSlots => "タイムスロット";
+  @override
+  get selectCustomDate => "カスタム日付を選択";
+  @override
+  get availableSlot => "使用可能なスロット";
+  @override
+  get reqOfficeView => "Officeのビューをリクエスト";
+  @override
+  get myComments => "私のコメント";
+  @override
+  get myReminder => "私のリマインダー";
+  @override
+  get reminder => "リマインダー";
+  @override
+  get manageAddress => "アドレスを管理";
+  @override
+  get myAccount => "マイアカウント";
+  @override
+  get declaimer => "免責条項";
+  @override
+  get shareStone => "シェアストーン";
+  @override
+  get addRemider => "リマインダーを追加";
+  @override
+  get offlineSearch => "オフライン検索";
+  @override
+  get searchHistory => "検索履歴";
+  @override
+  get offlineStock => "オフライン証券";
+  @override
+  get searchOffline => "検索（オフライン）";
+  @override
+  get voiceSearch => "音声検索";
+  @override
+  get tapMictoSpeak => "話すようにマイクをタップ";
+  @override
+  get typeToSearch => "検索の種類";
+  @override
+  get typeWordsToSearch => "石を検索するには、少なくとも3つのワードを入力";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class JapanDynamickeys extends Dynamickeys {
+  @override
+  get shape => "形状";
+  @override
+  get caratRange => "カラットの範囲";
+  @override
+  get basicDetail => "基本的な詳細";
+  @override
+  get measurementTitle => "測定";
+  @override
+  get inclusionDetail => "インクルージョンの詳細";
+  @override
+  get other => "他の";
+  @override
+  get stoneID => "石のID";
+  @override
+  get labTitle => "ラボ";
+  @override
+  get certNo => "CERT。番号。";
+  @override
+  get locationTitle => "ロケーション";
+  @override
+  get shapeTitle => "形状";
+  @override
+  get caratTitle => "カラット";
+  @override
+  get colorTitle => "色";
+  @override
+  get clarityTitle => "CLARITY";
+  @override
+  get shadeTitle => "シェード";
+  @override
+  get cutTitle => "切る";
+  @override
+  get polishTitle => "研磨";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "蛍光";
+  @override
+  get rapTitle => r"RAP（/$）";
+  @override
+  get discountTitle => "割引（％）";
+  @override
+  get priceAndCt => r"価格/ CT（/$）";
+  @override
+  get amountTitle => "量";
+  @override
+  get eyeCleanTitle => "アイクリーン";
+  @override
+  get brownTitle => "褐色";
+  @override
+  get milkyTitle => "ミルキー";
+  @override
+  get mixTingeTitle => "MIX色合い";
+  @override
+  get dimensionTitle => "寸法（mm）";
+  @override
+  get girdleTitle => "ガードル（％）";
+  @override
+  get tableTitle => "テーブル ％";
+  @override
+  get crownAngleTitle => "クラウン角度";
+  @override
+  get depthTitle => "深％";
+  @override
+  get pavAngleTitle => "Pav Angle";
+  @override
+  get crownHeightTitle => "クラウン高さ";
+  @override
+  get pavDepthTitle => "パビリオンの深さ（％）";
+  @override
+  get starLengthTitle => "スターの長さ";
+  @override
+  get lowerHalfTitle => "下半分";
+  @override
+  get gridleTitle => "ガードル";
+  @override
+  get gridleFacetedTitle => "ガードルファセット";
+  @override
+  get culetTitle => "キューレット";
+  @override
+  get rationTitle => "比";
+  @override
+  get blackInclusionTitle => "BLACK INCLUSION";
+  @override
+  get otherInclusionTitle => "その他のインクルージョン";
+  @override
+  get openInclusionTitle => "OPEN INCLUSION";
+  @override
+  get extraFacetTitle => "EXTRA FACET";
+  @override
+  get naturalTitle => "ナチュラル";
+  @override
+  get hAndATitle => "H＆A";
+  @override
+  get keyToSymbol => "KEY TO SYMBOL";
+  @override
+  get labComments => "LABコメント";
+  @override
+  get laserInsTitle => "LASER INS";
+  @override
+  get basicTitle => "基本的な";
+  @override
+  get advancedTitle => "高度";
+  @override
+  get stoneIdTitle => "ストーンID /証明書はありません";
+  @override
+  get defaultTitle => "デフォルト";
+  @override
+  get newDiamondsTitle => "新しいダイヤモンド";
+  @override
+  get priceLowToHigh => "高いに価格低";
+  @override
+  get priceHighToLow => "低価格高へ";
+  @override
+  get disLowToHigh => "ハイへの割引、低コスト";
+  @override
+  get disHighToLow => "低への割引高いです";
+  @override
+  get colorLowToHigh => "ハイへの色の低";
+  @override
+  get colorHighToLow => "低への色のハイ";
+  @override
+  get caratLowToHigh => "ハイへカラット低";
+  @override
+  get caratHighToLow => "低へカラット高いです";
+  @override
+  get clarityLowToHigh => "ハイへクラリティ低";
+  @override
+  get clarityHighToLow => "低へクラリティ高いです";
+  @override
+  get colorShadeTitle => "色合い";
+  @override
+  get certiTitle => "証明書番号";
+  @override
+  get arrivalsTitle => "到着";
+  @override
+  get lengthTitle => "長さ";
+  @override
+  get widthTitle => "幅";
+  @override
+  get pavilionAngleTitle => "パビリオン角";
+  @override
+  get girdleConditionTitle => "ガードル条件";
+  @override
+  get cluetConditionTitle => "キューレット条件";
+  @override
+  get disTitle => "ディス％";
+  @override
+  get depthTitleWithoutPerc => "深さ";
+  @override
+  get otherInformationTitle => "その他の情報";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "形状",
+    "caratRange": "カラットの範囲",
+    "basicDetail": "基本的な詳細",
+    "measurementTitle": "測定",
+    "inclusionDetail": "インクルージョンの詳細",
+    "other": "他の",
+    "stoneID": "石のID",
+    "labTitle": "ラボ",
+    "certNo": "CERT。番号。",
+    "locationTitle": "ロケーション",
+    "shapeTitle": "形状",
+    "caratTitle": "カラット",
+    "colorTitle": "色",
+    "clarityTitle": "CLARITY",
+    "shadeTitle": "シェード",
+    "cutTitle": "切る",
+    "polishTitle": "研磨",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "蛍光",
+    "rapTitle": r"RAP（/$）",
+    "discountTitle": "割引（％）",
+    "priceAndCt": r"価格/ CT（/$）",
+    "amountTitle": "量",
+    "eyeCleanTitle": "アイクリーン",
+    "brownTitle": "褐色",
+    "milkyTitle": "ミルキー",
+    "mixTingeTitle": "MIX色合い",
+    "dimensionTitle": "寸法（mm）",
+    "girdleTitle": "ガードル（％）",
+    "tableTitle": "テーブル ％",
+    "crownAngleTitle": "クラウン角度",
+    "depthTitle": "深％",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "クラウン高さ",
+    "pavDepthTitle": "パビリオンの深さ（％）",
+    "starLengthTitle": "スターの長さ",
+    "lowerHalfTitle": "下半分",
+    "gridleTitle": "ガードル",
+    "gridleFacetedTitle": "ガードルファセット",
+    "culetTitle": "キューレット",
+    "rationTitle": "比",
+    "blackInclusionTitle": "BLACK INCLUSION",
+    "otherInclusionTitle": "その他のインクルージョン",
+    "openInclusionTitle": "OPEN INCLUSION",
+    "extraFacetTitle": "EXTRA FACET",
+    "naturalTitle": "ナチュラル",
+    "hAndATitle": "H＆A",
+    "keyToSymbol": "KEY TO SYMBOL",
+    "labComments": "LABコメント",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "基本的な",
+    "advancedTitle": "高度",
+    "stoneIdTitle": "ストーンID /証明書はありません",
+    "defaultTitle": "デフォルト",
+    "newDiamondsTitle": "新しいダイヤモンド",
+    "priceLowToHigh": "高いに価格低",
+    "priceHighToLow": "低価格高へ",
+    "disLowToHigh": "ハイへの割引、低コスト",
+    "disHighToLow": "低への割引高いです",
+    "colorLowToHigh": "ハイへの色の低",
+    "colorHighToLow": "低への色のハイ",
+    "caratLowToHigh": "ハイへカラット低",
+    "caratHighToLow": "低へカラット高いです",
+    "clarityLowToHigh": "ハイへクラリティ低",
+    "clarityHighToLow": "低へクラリティ高いです",
+    "colorShadeTitle": "色合い",
+    "certiTitle": "証明書番号",
+    "arrivalsTitle": "到着",
+    "lengthTitle": "長さ",
+    "widthTitle": "幅",
+    "pavilionAngleTitle": "パビリオン角",
+    "girdleConditionTitle": "ガードル条件",
+    "cluetConditionTitle": "キューレット条件",
+    "disTitle": "ディス％",
+    "depthTitleWithoutPerc": "深さ",
+    "otherInformationTitle": "その他の情報",
+  };
+}
+
+class Italian extends English {
+  @override
+  get authStrings => ItalianAuthStrings();
+  @override
+  get commonString => ItalianCommonString();
+  @override
+  get errorString => ItalianErrorString();
+  @override
+  get noDataStrings => ItalianNoDataStrings();
+  @override
+  get screenTitle => ItalianScreenTitle();
+  @override
+  get dynamickeys => ItalianDynamickeys();
+  static String get languageCode => "Italian";
+  static String get languageName => "Italian";
+}
+
+class ItalianAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation => "Modifica informazioni sulla società";
+  @override
+  get selectNatureOfOrganization => "Selezionare la natura di organizzazione";
+  @override
+  get setNewPassword => "Impostare la nuova password e accedere nuovamente.";
+  @override
+  get enterCompanyName => "Si prega di inserire Nome azienda.";
+  @override
+  get pleaseEnterCustomerOTP => "Si prega di inserire il codice giro cliente.";
+  @override
+  get pleaseEnterPickupOTP => "Si prega di inserire il codice cliente pickup.";
+  @override
+  get pleaseEnterDeliveryOTP =>
+      "Si prega di inserire il codice consegna al cliente.";
+  @override
+  get verified => "Verificati";
+  @override
+  get verify => "Verificare";
+  @override
+  get addressLineOne => "Indirizzo 1";
+  @override
+  get addressLineTwo => "Indirizzo 2";
+  @override
+  get addressLineThree => "indirizzo 3";
+  @override
+  get oldPassword => "vecchia password";
+  @override
+  get skype => "Skype";
+  @override
+  get whatsApp => "WhatsApp";
+  @override
+  get pinCode => "Codice PIN*";
+  @override
+  get verifyMobileDesc =>
+      "Controllare numero di cellulare per aggiornare il profilo.";
+  @override
+  get verifyNow => "verifica ora";
+  @override
+  get password => "Parola d'ordine";
+  @override
+  get backToHome => "Vai alla Home";
+  @override
+  get forgotPassword => "Ha dimenticato la password?";
+  @override
+  get signInCap => "Registrati";
+  @override
+  get moveToLogIn => "Spostare a Login";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "Clicca qui";
+  @override
+  get signUpHere => "Registrati qui";
+  @override
+  get reset => "Ripristina";
+  @override
+  get haveRegisterCode => "Avere un codice di registrazione?";
+  @override
+  get welcome => "Ben tornato!";
+  @override
+  get signInAsGuest => "Accedi come Guest";
+  @override
+  get editProfileTitle => "Modifica Profilo";
+  @override
+  get emaillbl => "E-mail";
+  @override
+  get searchInventory => "Ricerca prodotto";
+  @override
+  get emailAddress => "Indirizzo email*";
+  @override
+  get offlineFilter =>
+      "Impossibile trovare il solitario desiderato? Siamo in grado di aiutarvi a ottenere il miglior prezzo in nostro inventario offline.";
+  @override
+  get loginDesc =>
+      "Vuoi abilitare tocco Id / MPin per sbloccare i miei diamanti? Scegliere l'opzione di sblocco app";
+  @override
+  get searchDiamonds => "ricerca diamanti";
+  @override
+  get continueWithSearch => "Vuoi continuare la ricerca?";
+  @override
+  get mobileNumber => "Mobile";
+  @override
+  get searchHint => "Ricerca...";
+  @override
+  get selectYourCountry => "Seleziona il paese";
+  @override
+  get resendCodeIn => "Codice rinvialo";
+  @override
+  get resendCode => "Rispedisci";
+  @override
+  get haveAnAccount => "Hai già un account?";
+  @override
+  get dontReceiveCode => "Se non hai ricevuto un codice!";
+  @override
+  get inLogin => "effettuare il login.";
+  @override
+  get resetPwdDesc =>
+      "Aggiungere la password e la password Conferma per reimpostare la password.";
+  @override
+  get backToLogin => "Torna al login";
+  @override
+  get firstName => "Nome di battesimo*";
+  @override
+  get name => "Nome utente*";
+  @override
+  get lastName => "Cognome*";
+  @override
+  get middleName => "Secondo nome*";
+  @override
+  get confirmPassword => "conferma password";
+  @override
+  get currentPasswordErr => "Errore password corrente";
+  @override
+  get passwordChanged => "Password cambiata";
+  @override
+  get lblLogInErr => "Errore di accesso";
+  @override
+  get enterYour => "Inserisci la tua";
+  @override
+  get details => "Dettagli";
+  @override
+  get registerCode => "Codice di registrazione";
+  @override
+  get registerCodeDesc =>
+      "Aggiungere un codice di registrazione per iniziare la vostra iscrizione con 3eco.";
+  @override
+  get uploadPhotoDesc => "Prendete un selfie della vostra auto";
+  @override
+  get updateProfile => "Aggiorna il profilo";
+  @override
+  get postalCode => "Codice postale*";
+  @override
+  get removeButton => "Rimuovere";
+  @override
+  get gender => "Genere";
+  @override
+  get male => "Maschio";
+  @override
+  get female => "Femmina";
+  @override
+  get changePassword => "Cambia la password";
+  @override
+  get currentPassword => "Password attuale*";
+  @override
+  get newPassword => "Nuova password*";
+  @override
+  get confirmNewPassword => "Conferma password*";
+  @override
+  get personalDocuments => "Documenti personali";
+  @override
+  get assignedAuto => "assegnato Auto";
+  @override
+  get logout => "Disconnettersi";
+  @override
+  get logoutConfirmationMsg => "Sei sicuro di voler uscire?";
+  @override
+  get address => "Indirizzo*";
+  @override
+  get accountNumber => "Numero di conto";
+  @override
+  get bankerName => "Nome banchieri";
+  @override
+  get nameLable => "Nome";
+  @override
+  get ifscCode => "codice IFSC";
+  @override
+  get businessRegistrationNumbr => "Numero di registrazione";
+  @override
+  get businessRelationshipPeriod => "Relazione d'affari Periodo (in anni)";
+  @override
+  get designation => "Designazione";
+  @override
+  get nameofDesignation => "Nome di";
+  @override
+  get natureofOrganization => "Natura dell'Organizzazione";
+  @override
+  get uploadFile => "Nessun file Scelto";
+  @override
+  get update => "AGGIORNARE";
+  @override
+  get resetPwd => "Resetta la password";
+  @override
+  get pwdReset => "Reimpostazione della password";
+  @override
+  get signInWithMPIN => "Accedi con MPIN";
+  @override
+  get pwdChanged => "Password cambiata";
+  @override
+  get successfullyPwdDesc =>
+      "Hai successo reimpostare la password. Si prega di utilizzare la nuova password quando si accede.";
+  @override
+  get lblProfileSetup => "Il tuo profilo è impostato";
+  @override
+  get lblProfileSetupDesc => "Abbiamo ricevuto i dettagli del profilo";
+  @override
+  get hoursAvailable => "totale Shifttime";
+  @override
+  get confirmStoneDetail => "Conferma di pietra Dettaglio";
+  @override
+  get companyName => "Nome della ditta";
+  @override
+  get invoiceDate => "Data fattura";
+  @override
+  get companyCode => "Codice della ditta";
+  @override
+  get saveCompanyDetails => "Salva Dettagli Azienda";
+  @override
+  get passwordNotChange => "La password non corrisponde";
+  @override
+  get rememberPassword => "Ricordare la password?";
+  @override
+  get sendOTP => "Invia OTP";
+  @override
+  get resendNow => "Rispedisci Ora";
+  @override
+  get didNotReceiveOTP => "Se non hai ricevuto un'OTP!";
+  @override
+  get sendOTPToEmail =>
+      "Invieremo un'OTP al tuo indirizzo email immesso o nome utente. Si prega di inserire l'indirizzo email o nome utente.";
+  @override
+  get enterOTP =>
+      "L'OTP è stato inviato al tuo indirizzo email registrato. Si prega di inserire l'OTP.";
+  @override
+  get backToSignIn => "Torna l'Entra";
+  @override
+  get passwordResetSuccessfully =>
+      "Reimpostazione della password con successo.";
+  @override
+  get emailAndUname => "Email / Username";
+  @override
+  get signUp => "Iscriviti";
+  @override
+  get promotionText => "Le offerte promozionali";
+  @override
+  get termsAndCondition => "Termini e condizioni";
+  @override
+  get mustAgreeTermsAndCondition =>
+      "È necessario accettare i termini e condizioni per accedere come Utente ospite";
+  @override
+  get forgotPasswordTitle => "Ha dimenticato la password";
+  @override
+  get uploadKYC => "Carica KYC";
+  @override
+  get uploadKycDesc =>
+      "Si prega di caricare i documenti KYC per accedere alle funzioni complete.";
+  @override
+  get hintPhotoIdentityProof => "Foto Identità * Proof";
+  @override
+  get hintBussinerssProof => "Affari identità * Proof";
+  @override
+  get btnFileUpload => "Upload di file";
+  @override
+  get pleaseUploadPhotoProof => "Si prega di caricare foto prova di identità.";
+  @override
+  get pleaseUploadBussinessProof =>
+      "Si prega di caricare Affari prova di identità.";
+  @override
+  get pleaseSelectFileFormat =>
+      "Si prega di caricare file in uno dei seguenti formati: .jpg";
+  @override
+  get kycSubmitted => "KYC Inserito";
+  @override
+  get kycSubmmittedDesc => "Il tuo KYC è stato inviato con successo.";
+  @override
+  get btnMoveToHome => "Spostare alla Home";
+  @override
+  get kYCRejected => "KYC Rifiutato";
+  @override
+  get kycRejectedDesc =>
+      "Il tuo KYC è stata rifiutata. Si prega di caricare nuovamente i documenti KYC per accedere a tutte le caratteristiche.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ItalianCommonString extends CommonString {
+  @override
+  get seeMore => "Vedi altro";
+  @override
+  get seeLess => "See Meno";
+  @override
+  get modify => "Modificare";
+  @override
+  get delete => "Elimina";
+  @override
+  get details => "Dettagli";
+  @override
+  get edit => "modificare";
+  @override
+  get addDemand => "Add domanda";
+  @override
+  get demandTitle => "La domanda Titolo";
+  @override
+  get pleaseEnterDemandTitle => "Si prega di inserire la domanda Titolo";
+  @override
+  get demandAddedSuccessfully => "La domanda di inserimento con successo";
+  @override
+  get selectAtleastOneFilter => "per favore";
+  @override
+  get savedSearch => "Saved Search";
+  @override
+  get searchSavedSearch => "Cerca Saved Search";
+  @override
+  get viewDetails => "Visualizza dettagli";
+  @override
+  get viewLessDetails => "Vista Meno dettagli";
+  @override
+  get myDemand => "La mia domanda";
+  @override
+  get date => "Data";
+  @override
+  get selectTime => "Seleziona Tempo";
+  @override
+  get selectDate => "Selezionare Data";
+  @override
+  get offerVelidTill => "Offerta valida fino al";
+  @override
+  get officeVisitDate => "Ufficio Visita Data";
+  @override
+  get all => "Tutti";
+  @override
+  get status => "Stato";
+  @override
+  get save => "Salva";
+  @override
+  get verify => "Verificare";
+  @override
+  get readMore => "Leggi di più";
+  @override
+  get goodMorning => "Buongiorno";
+  @override
+  get goodAfternoon => "Buon pomeriggio";
+  @override
+  get goodEvening => "buona serata";
+  @override
+  get btnSkip => "Salta";
+  @override
+  get btnUpdate => "Aggiornare";
+  @override
+  get btnContinue => "Continua";
+  @override
+  get btnContinueCap => "CONTINUA";
+  @override
+  get btnEdit => "modificare";
+  @override
+  get btnSubmit => "Invia";
+  @override
+  get btnNextCap => "Il prossimo";
+  @override
+  get btnSaveCap => "Aggiornamento password";
+  @override
+  get btnWithdrawCap => "PRELIEVI";
+  @override
+  get btnSaveAndContinueCap => "Salva e continua";
+  @override
+  get btnUnregister => "Non registrato mobile";
+  @override
+  get btnClose => "Vicino";
+  @override
+  get remove => "Rimuovere";
+  @override
+  get refresh => "ricaricare";
+  @override
+  get fetchLocationMessage =>
+      "Si prega di aspettare stiamo recupero vostra posizione";
+  @override
+  get done => "Fatto";
+  @override
+  get doneCap => "FATTO";
+  @override
+  get cancel => "Annulla";
+  @override
+  get allow => "permettere";
+  @override
+  get countryFirst => "Si prega di selezionare prima la nazione";
+  @override
+  get apply => "Applicare";
+  @override
+  get cancelCap => "ANNULLA";
+  @override
+  get uploadCap => "CARICARE";
+  @override
+  get yesCancelCap => "SÌ";
+  @override
+  get upload => "Caricare";
+  @override
+  get ok => "Ok";
+  @override
+  get home => "Casa";
+  @override
+  get goToMyWatchList => "Vai all'elenco degli osservati";
+  @override
+  get goToMyOrder => "Vai a mio Ordine";
+  @override
+  get gotToMyOffer => "Vai a La mia offerta";
+  @override
+  get gotToMyHold => "Vai alla mia presa";
+  @override
+  get gotToMyEnquiry => "Vai alla mia domanda";
+  @override
+  get gotToMyBid => "Vai alla mia offerta";
+  @override
+  get gotToMyReminder => "Vai a Il mio promemoria";
+  @override
+  get gotToMyComments => "Vai a My Notes";
+  @override
+  get yes => "sì";
+  @override
+  get no => "No";
+  @override
+  get selectCountry => "Seleziona il paese";
+  @override
+  get clickHere => "Clicca qui";
+  @override
+  get btnAddNewAddress => "AGGIUNGI UN NUOVO INDIRIZZO";
+  @override
+  get btnCancel => "ANNULLA";
+  @override
+  get btnTakeSelfie => "prendere selfie";
+  @override
+  get successfully => "Con successo";
+  @override
+  get lblAppExit => "Sei sicuro di voler uscire?";
+  @override
+  get lblExit => "Uscita";
+  @override
+  get openAppSetting => "Aprire Impostazioni";
+  @override
+  get lblOr => "O";
+  @override
+  get fromLbl => "A partire dal";
+  @override
+  get toLbl => "Per";
+  @override
+  get showMore => "Mostra di più";
+  @override
+  get showLess => "Mostra meno";
+  @override
+  get selectCity => "Seleziona Città";
+  @override
+  get notYetAvailable => "Non ancora disponibile";
+  @override
+  get updateAvailable => "Aggiornamento disponibile!";
+  @override
+  get downloadAppFrom => "Scarica l'applicazione aggiornamento dal";
+  @override
+  get playStore => "Play Store";
+  @override
+  get skipUpdate => "Skip Aggiornamento";
+  @override
+  get stateFirst => "Si prega di selezionare Stato First";
+  @override
+  get reallyExit => "Davvero uscire?";
+  @override
+  get alert => "Mettere in guardia!";
+  @override
+  get loading => "Caricamento in corso";
+  @override
+  get error => "Errore";
+  @override
+  get jumpToTop => "Salto in alto";
+  @override
+  get ihaveread => "Ho letto e accetto";
+  @override
+  get selected => "Selezionare";
+  @override
+  get lbllogout => "Disconnettersi";
+  @override
+  get lblThanx => "Grazie";
+  @override
+  get lblSelectCity => "Seleziona Città";
+  @override
+  get lblSelectState => "Seleziona stato";
+  @override
+  get lblSelectCountry => "Seleziona il paese";
+  @override
+  get lblCity => "Città";
+  @override
+  get lblCountry => "Nazione";
+  @override
+  get lblName => "Nome";
+  @override
+  get lblPinCode => "Codice PIN";
+  @override
+  get lblMobileNumber => "Numero di cellulare";
+  @override
+  get lblState => "Stato";
+  @override
+  get lblCode => "Codice:";
+  @override
+  get lblOrderNo => "Numero d'ordine:";
+  @override
+  get lblOrderItem => "Codice ordine:";
+  @override
+  get lblDelivered => "consegnato";
+  @override
+  get lblTicketReady => "Il biglietto è pronto";
+  @override
+  get lblPersonTicket => "Biglietto di 2 persone";
+  @override
+  get lblShuttleBus => "Bus navetta";
+  @override
+  get lblPickup => "Raccogliere";
+  @override
+  get lblDropoff => "Dropoff";
+  @override
+  get lblPassenger => "Passeggeri";
+  @override
+  get lblDeliveryNo => "No. consegna";
+  @override
+  get lblPrice => "Prezzo";
+  @override
+  get lblValid => "Valido per";
+  @override
+  get lblRenew => "Rinnovare";
+  @override
+  get lblDeparture => "Partenza";
+  @override
+  get lblArrived => "Arrivato";
+  @override
+  get lblSendtoFriend => "Invia ad un amico";
+  @override
+  get popupRenewTitle => "Rinnova biglietto";
+  @override
+  get popupRenewDesc => "Lorem ipsum dolor sit amet";
+  @override
+  get popuplblPassenger => "Passeggeri";
+  @override
+  get popuplblCancel => "Annulla";
+  @override
+  get popupbtnRenew => "Rinnovare";
+  @override
+  get ridelblAwesome => "Eccezionale";
+  @override
+  get ridebtnDone => "Fatto";
+  @override
+  get offerPricePerCarat => "Offerto Prezzo (Cts)";
+  @override
+  get dropOffText => "Dropoff";
+  @override
+  get pickUpText => "Raccogliere";
+  @override
+  get startAtText => "Iniziare a";
+  @override
+  get endAtText => "terminerà alle";
+  @override
+  get personText => "persona";
+  @override
+  get paymentScreenTitle => "Pagamento";
+  @override
+  get pickuplbl => "Raccogliere";
+  @override
+  get droplbl => "Dropoff";
+  @override
+  get makePaymentButtonlbl => "Fare un pagamento";
+  @override
+  get pessangerslbl => "viaggiatori";
+  @override
+  get priceBreakuplbl => "Prezzo Breakup";
+  @override
+  get tripPricelbl => "Trip Prezzo";
+  @override
+  get taxeslbl => "Le tasse";
+  @override
+  get totallbl => "Totale";
+  @override
+  get cardNumberhint => "Numero di carta";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / AA";
+  @override
+  get btnTryAgain => "Riprova";
+  @override
+  get cityFirst => "Si prega di selezionare la città prima";
+  @override
+  get enterFareDetails => "Inserire i dettagli di vendita";
+  @override
+  get fromDate => "dalla Data";
+  @override
+  get toDate => "Selected Data";
+  @override
+  get btnUnderstand => "Capisco";
+  @override
+  get applicationUpdate => "Aggiornamento dell'applicazione";
+  @override
+  get newVersionMessage => "Una nuova versione di applicazione è disponibile";
+  @override
+  get paymentCollected => "pagamento Collected";
+  @override
+  get addComment => "Aggiungi un commento";
+  @override
+  get more => "Di Più";
+  @override
+  get carat => "carato";
+  @override
+  get pcs => "Pz";
+  @override
+  get cts => "Cts";
+  @override
+  get disc => "Disco%";
+  @override
+  get avgPriceCrt => "Avg. Prezzo / Ct";
+  @override
+  get amount => "Quantità";
+  @override
+  get confirmStone => "pietra Conferma";
+  @override
+  get confirm => "Confermare";
+  @override
+  get offered => "offerto";
+  @override
+  get validTill => "Valido fino a";
+  @override
+  get remark => "osservazione";
+  @override
+  get color => "Colore";
+  @override
+  get colorGroup => "color Group";
+  @override
+  get colorFancy => "Fantasia";
+  @override
+  get colorWhite => "bianca";
+  @override
+  get clarity => "Chiarezza";
+  @override
+  get clarityGroup => "Gruppo chiarezza";
+  @override
+  get intensity => "Intensità";
+  @override
+  get overtone => "ipertono";
+  @override
+  get selectBusinessType => "Seleziona Tipo di azienda";
+  @override
+  get selectState => "Seleziona stato";
+  @override
+  get search => "Ricerca";
+  @override
+  get profile => "Il mio profilo";
+  @override
+  get personal => "Personale";
+  @override
+  get business => "Attività commerciale";
+  @override
+  get documents => "Documenti";
+  @override
+  get noSlotFound => "Nessuno slot trovato";
+  @override
+  get noDiamondFound =>
+      "Nessun Diamonds corrispondono alla ricerca. Si prega di aggiungere si domanda.";
+  @override
+  get selectType => "Seleziona tipo virtuale";
+  @override
+  get noSavedSearch => "No Saved Search esiste";
+  @override
+  get searchCity => "Cerca città";
+  @override
+  get searchCountry => "Cerca Paese";
+  @override
+  get searchState => "Ricerca stato";
+  @override
+  get notifications => "Notifica";
+  @override
+  get enter2Stone => "Seleziona almeno 2 pietra per confrontare.";
+  @override
+  get bidDesc =>
+      "si trova attualmente in India e per la consegna in qualsiasi altro paese a parte l'India ci vorranno almeno 7-10 giorni lavorativi.";
+  @override
+  get packetNo => "Packet No:";
+  @override
+  get quit => "Smettere";
+  @override
+  get agree => "Sono d'accordo";
+  @override
+  get laterToday => "Più tardi oggi";
+  @override
+  get toMorrow => "Domani";
+  @override
+  get nextWeek => "La prossima settimana";
+  @override
+  get chooseAnother => "Scegli un altro";
+  @override
+  get dateTime => "Appuntamento";
+  @override
+  get language => "linguaggio";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "Nessun documento trovato";
+  @override
+  get searchBusinessType => "Cerca Tipo di azienda";
+  @override
+  get hours => "Ore";
+  @override
+  get minutes => "Minuti";
+  @override
+  get seconds => "secondi";
+  @override
+  get bidEndsIn => "Bid finisce in:";
+  @override
+  get shape => "Forma";
+  @override
+  get download => "Scarica";
+  @override
+  get share => "Condividere";
+  @override
+  get placeOrder => "Invia ordine";
+  @override
+  get enterComment => "Inserisci il tuo commento";
+  @override
+  get deleteItem => "Sei sicuro di voler eliminare?";
+  @override
+  get shippingPolicy => "Condizioni della spedizione";
+  @override
+  get offerSundayRestriction =>
+      "Domenica non è permesso. giorni lavorativi ufficio sono Lunedi al Sabato";
+  @override
+  get weekAgo => "1 settimana fa";
+  @override
+  get lastWeek => "La settimana scorsa";
+  @override
+  get dayAgo => "giorni fa";
+  @override
+  get onedayAgo => "1 giorno fa";
+  @override
+  get yesterday => "Ieri";
+  @override
+  get hourAgo => "ore fa";
+  @override
+  get onehourAgo => "1 ora fa";
+  @override
+  get anhourAgo => "Un'ora fa";
+  @override
+  get mintuesAgo => "minuti fa";
+  @override
+  get onemintuesAgo => "1 minuto fa";
+  @override
+  get amintueAgo => "Un minuto fa";
+  @override
+  get secondsAgo => "secondi fa";
+  @override
+  get justNow => "Proprio adesso";
+  @override
+  get today => "Oggi";
+  @override
+  get past => "Passato";
+  @override
+  get selectPhotoProof => "Selezionare il documento";
+  @override
+  get pleaseSelectPhotoProof => "Si prega di selezionare il documento";
+  @override
+  get selectBusinessProof => "Selezionare il documento";
+  @override
+  get pleaseSelectBusinessProof => "Si prega di selezionare il documento";
+  @override
+  get touchId => "tocco Id";
+  @override
+  get faceId => "face ID";
+  @override
+  get enableTouchId => "Abilita tocco Id per sbloccare i miei diamanti?";
+  @override
+  get enableFaceId => "Abilita Face ID per sbloccare i miei diamanti?";
+  @override
+  get unlockWithTouchId => "Sbloccare i miei diamanti utilizzando tocco Id";
+  @override
+  get unlockWithFaceId => "Sbloccare i miei diamanti utilizzando Face ID.";
+  @override
+  get mPin => "MPin";
+  @override
+  get holdMemoStatusDiamondorder =>
+      "Non si può confermato le pietre che sono già in possesso o un memo di stato";
+  @override
+  get searchStoneIdCertificateNo => "Cerca di pietra Id / Certificato No";
+  @override
+  get createMPin => "Crea nuovo MPin";
+  @override
+  get reentermpin => "Reinserire MPin";
+  @override
+  get forgotmpin => "Hai dimenticato MPIN?";
+  @override
+  get verifympin => "Verifica Mpin";
+  @override
+  get enteryoursixdigitcode => "Inserisci il tuo MPIN 6 cifre";
+  @override
+  get changempin => "Cambio MPin";
+  @override
+  get faceidandtouchnotenable =>
+      "FaceID / TouchId non è abilitata nel telefono, Si prega di abilitare per utilizzare questa funzione";
+  @override
+  get enablempintounlockmydiamonds =>
+      "Abilita MPin per app sbloccare? Sarà disabilitare tocco Id. Sei sicuro di voler continuare?";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "Abilita tocco Id al app sbloccare? Sarà disabilitare MPin. Sei sicuro di voler continuare?";
+  @override
+  get rememberme => "Ricordati di me";
+  @override
+  get usertouchid => "Uso Toccare Id";
+  @override
+  get usempin => "Usa MPin";
+  @override
+  get filesarenotavailableonserver =>
+      "I file non sono disponibili sul server di, riprova più tardi";
+  @override
+  get allfileshavebeendownloaded => "Tutti i file sono stati scaricati.";
+  @override
+  get filesisdownloaded => "file viene scaricato";
+  @override
+  get filesisnotdownloadedbcz =>
+      "file non viene scaricato perché non è presente nel server.";
+  @override
+  get downloadingCanceled => "Downloading annullata";
+  @override
+  get downloading => "Download in corso ...";
+  @override
+  get expirydate => "Data di scadenza :";
+  @override
+  get youreallywanttodelete => "Si vuole veramente cancellare";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "Chiarezza",
+    "shape": "Forma",
+  };
+}
+
+class ItalianErrorString extends ErrorString {
+  @override
+  get accessDenide => "Accesso negato";
+  @override
+  get pleaseSelectOfferTillDate =>
+      "Si prega di selezionare l'offerta fino a data.";
+  @override
+  get pleaseSelectOfficeVisitDate =>
+      "Si prega di selezionare data di ufficio visita";
+  @override
+  get deleteStoneMsg => "Sei sicuro di voler cancellare pietra (s)?";
+  @override
+  get acceptTermsAndCondition =>
+      "Si prega di accettare i termini e le condizioni";
+  @override
+  get diamondCompareRemove => "Almeno 2 Stones sono tenuti a confrontare.";
+  @override
+  get diamondSelectionError => "Seleziona almeno una fava.";
+  @override
+  get pleaseEnterCompanyName => "Si prega di inserire nome della società.";
+  @override
+  get selectInvoiceDate => "Seleziona Data fattura";
+  @override
+  get pleaseEnterComment => "Inserisci il tuo commento.";
+  @override
+  get pleaseEnterRemarks => "Si prega di inserire commenti.";
+  @override
+  get selectExpiryDate => "Seleziona la data di scadenza.";
+  @override
+  get enterOTP => "Si prega di inserire il codice";
+  @override
+  get pleaseEnterOTP => "Si prega di inserire il codice di verifica.";
+  @override
+  get enteredCodeNotMatching =>
+      "codice inserito non è la corrispondenza. Riprova";
+  @override
+  get selectCancellationReason => "Seleziona motivo della cancellazione";
+  @override
+  get enterDesc => "Si prega di inserire descrizione.";
+  @override
+  get enterTitle => "Si prega di inserire il titolo.";
+  @override
+  get enterEmailOrPhone => "Inserisci e-mail / mobile.";
+  @override
+  get enterPassword =>
+      "La password non può essere vuoto. Per favore, inserisci la password.";
+  @override
+  get enterConfirmPassword => "Si prega di inserire la password di conferma.";
+  @override
+  get enterSkype => "Si prega di inserire Skype.";
+  @override
+  get enterRegisterCode => "Si prega di inserire il codice di registrazione";
+  @override
+  get enterEmail => "Si prega di inserire l'indirizzo e-mail.";
+  @override
+  get enterPhone => "Si prega di inserire numero di cellulare.";
+  @override
+  get enterUsername =>
+      "Nome utente non può essere vuoto. Si prega di inserire nome utente.";
+  @override
+  get enterValidEmail => "Si prega di inserire l'indirizzo e-mail valido.";
+  @override
+  get enterValidPhone => "Si prega di inserire il numero di cellulare valido.";
+  @override
+  get enterValidWhatsappPhone =>
+      "Si prega di inserire la valida WhatsApp Mobile Number.";
+  @override
+  get enterValidPassword =>
+      "Si prega di inserire 6 caratteri o password lunga.";
+  @override
+  get mismatchPassword => "Password e password di conferma non corrisponde.";
+  @override
+  get enterFirstName => "Si prega di inserire il Nome.";
+  @override
+  get enterMiddleName => "Si prega di inserire il secondo nome.";
+  @override
+  get enterPinCode => "Si prega di inserire il codice PIN.";
+  @override
+  get enterName => "Si prega di inserire nome.";
+  @override
+  get enterLastName => "Si prega di inserire cognome.";
+  @override
+  get enterAddress => "Si prega di inserire l'indirizzo.";
+  @override
+  get enterValidPinCode => "Inserisci PinCode valido.";
+  @override
+  get enterValidAddress =>
+      "Si prega di inserire 10 caratteri o l'indirizzo a lungo.";
+  @override
+  get enterPostalCode => "Si prega di inserire il codice postale.";
+  @override
+  get enterValidPostalCode =>
+      "Si prega di inserire 6 cifre codice postale numerico.";
+  @override
+  get enterCurrentPassword => "Si prega di inserire la password corrente.";
+  @override
+  get enterNewPassword => "Si prega di inserire una nuova password.";
+  @override
+  get enterFareAmount => "Si prega di inserire l'importo delle vendite.";
+  @override
+  get enterOrderNO => "Si prega di inserire ordine no.";
+  @override
+  get enterServiceType => "Si prega di selezionare il tipo di servizio.";
+  @override
+  get enterPaymentType => "Si prega di selezionare il tipo di pagamento.";
+  @override
+  get enterValidFareAmount => "importo delle vendite non può essere zero.";
+  @override
+  get enterPassangerNo => "Si prega di inserire n. di passeggeri.";
+  @override
+  get enterValidPassangerNo => "Numero di passeggeri non può essere zero.";
+  @override
+  get notEnterMorePassangerNo =>
+      "Numero di passeggeri non può essere superiore a sette.";
+  @override
+  get drivingLicenseValidationText =>
+      "Si prega di inserire 15 cifre alfanumeriche numero di patente.";
+  @override
+  get pANCardValidationText =>
+      "Si prega di inserire 10 cifre alfanumeriche numero di carta di PAN.";
+  @override
+  get selectFromDate => "Si prega di selezionare dalla data";
+  @override
+  get selectToDate => "Si prega di selezionare fino ad oggi";
+  @override
+  get fromGreaterTo => "Data selezionata deve essere superiore a data corrente";
+  @override
+  get wrongPassword =>
+      "must password contiene, minimo 8 caratteri, 1 alfabeto maiuscolo, 1 minuscolo alfabeto, 1 cifra, 1 charater speciale";
+  @override
+  get fromValueGreateThanTo =>
+      "Dal valore deve essere inferiore o uguale al valore A";
+  @override
+  get toValueGreaterThanFrom =>
+      "Per valore deve essere maggiore o uguale al valore di Da";
+  @override
+  get pleaseEnterCompanyCode => "Si prega di inserire il codice aziendale";
+  @override
+  get enterSamePassword =>
+      "Conferma password non corrisponde con la nuova password. Si prega di inserire la password di conferma stessa di New Password.";
+  @override
+  get selectAppointmentDate => "Seleziona la data di appuntamento";
+  @override
+  get selectTimeSlot => "Seleziona fascia oraria";
+  @override
+  get enterComments => "Inserisci il tuo commento";
+  @override
+  get selectVirtualType => "Si prega di selezionare il tipo virtuale";
+  @override
+  get versionError => "Errore Version";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ItalianNoDataStrings extends NoDataStrings {
+  @override
+  get noDataFound => "Dati non disponibili";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ItalianScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "Mettere un'offerta";
+  @override
+  get addedInWatchList => "Aggiunto in Watchlist";
+  @override
+  get addedInOffer => "offerta presentata";
+  @override
+  get addedInCart => "Aggiunto a carrello";
+  @override
+  get addedInBid => "Aggiunto in Bid";
+  @override
+  get myEnquiry => "la mia indagine";
+  @override
+  get delete => "Elimina";
+  @override
+  get addDemand => "Add domanda";
+  @override
+  get matchPair => "partita coppia";
+  @override
+  get savedAndSearch => "Salva ricerca";
+  @override
+  get updateAndSearch => "Aggiornamento e Ricerca";
+  @override
+  get upcoming => "Prossime";
+  @override
+  get bidPricePerCt => "Prezzo di offerta / Ct";
+  @override
+  get bidDisc => "Bid Disc";
+  @override
+  get bidValue => "Bid Valore";
+  @override
+  get bidStone => "offerta di pietra";
+  @override
+  get myCart => "La mia carta";
+  @override
+  get myComment => "I miei appunti";
+  @override
+  get compare => "Confrontare";
+  @override
+  get compareStones => "Pietre confronta";
+  @override
+  get statusHold => "In attesa";
+  @override
+  get statusOnMemo => "su Memo";
+  @override
+  get statusAvailable => "A disposizione";
+  @override
+  get statusNew => "Nuovo arrivo";
+  @override
+  get statusOffer => "Pietra Del Giorno / Promozione";
+  @override
+  get statusMyHold => "La mia attesa";
+  @override
+  get signup => "Iscriviti";
+  @override
+  get addToOffice => "Aggiungere a Office";
+  @override
+  get addComment => "Aggiungi un commento";
+  @override
+  get addEnquiry => "Aggiungere Inquiry";
+  @override
+  get finalOffer => "Offerta finale";
+  @override
+  get finalDisc => "Disco finale";
+  @override
+  get finalRate => "tasso finale";
+  @override
+  get finalValue => "Valore finale";
+  @override
+  get orderMsg =>
+      "1) i prezzi menzionati qui sono fissi e quindi non trattabile. \\ n2) La classificazione, parametri menzionato sul nostro sito web al di là di classificazione del GIA.";
+  @override
+  get offerMsg =>
+      "pietra Offerto sarà direttamente confermata se il prezzo viene approvato così vi chiediamo di essere sicuri prima di offrire. Ogni pietra (s) messo in lista Offerta non viene tenuto in attesa per voi in quanto è disponibile per altro cliente è pure.";
+  @override
+  get note => "Nota";
+  @override
+  get hours => "Ore";
+  @override
+  get offeredDisc => "Dis offerti";
+  @override
+  get offeredPriceCt => "Offerto Pr / Ct";
+  @override
+  get addOffer => "Aggiungere offerta";
+  @override
+  get expDiscPer => "Sconto previsto";
+  @override
+  get todayDiscPer => "Disco di oggi";
+  @override
+  get searchResult => "Risultato della ricerca";
+  @override
+  get searchDiamond => "Ricerca diamante";
+  @override
+  get basic => "Di base";
+  @override
+  get advanced => "Avanzate";
+  @override
+  get stoneIdCertNo => "StoneID / Cert No";
+  @override
+  get takeSignature => "prendere Firma";
+  @override
+  get optional => "Opzionale";
+  @override
+  get myAddress => "Il mio indirizzo";
+  @override
+  get expiryDate => "Data di scadenza";
+  @override
+  get drivingLicenceDesc => "La tua foto patente di guida";
+  @override
+  get panDesc => "La tua foto carta di PAN";
+  @override
+  get selfie => "Autoscatto";
+  @override
+  get selfieDesc => "La tua foto selfie";
+  @override
+  get pending => "in attesa di";
+  @override
+  get rejected => "Respinto";
+  @override
+  get uploadAgain => "Caricare";
+  @override
+  get remove => "Rimuovere";
+  @override
+  get title => "Titolo";
+  @override
+  get description => "Descrizione";
+  @override
+  get uploadYour => "Carica la tua";
+  @override
+  get raiseDispute => "Fatecelo sapere";
+  @override
+  get drivingLicense => "Patente di guida";
+  @override
+  get pANCard => "PAN carta";
+  @override
+  get saveContinue => "Salva e continua";
+  @override
+  get uploadFrontUmgText => "L'immagine Caricare Front Side";
+  @override
+  get uploadPANCardImgText => "Carica PAN Immagine biglietto";
+  @override
+  get uploadBackImageText => "L'immagine Caricare Back Side";
+  @override
+  get helptopic => "Argomenti di aiuto";
+  @override
+  get newRideSharingRequest => "Richieste Nuovo Autostop";
+  @override
+  get newRequest => "nuove richieste";
+  @override
+  get welcomeTo => "Benvenuto a";
+  @override
+  get welcomeDesc => "Accedi al tuo account esistente di Mani Jewel";
+  @override
+  get forgotPassword => "Ho dimenticato il tuo";
+  @override
+  get forgotPasswordDesc =>
+      "Inserisci il tuo numero di cellulare registrato per recuperare la password.";
+  @override
+  get termsAndCondition => "Termini & Condizioni";
+  @override
+  get privacyPolicy => "politica sulla riservatezza";
+  @override
+  get aboutUS => "Riguardo a noi";
+  @override
+  get otpVerification => "Verifica il codice giro";
+  @override
+  get otpVerificationDelivery => "Verifica il codice Pickup";
+  @override
+  get otpVerificationDeliveryDone => "Verifica il codice di consegna";
+  @override
+  get enterOtp => "Inserire 4 cifre";
+  @override
+  get recoveryCode => "codice di ripristino";
+  @override
+  get editProfile => "Modifica Profilo";
+  @override
+  get myProfile => "Il mio profilo";
+  @override
+  get reset => "Ripristina";
+  @override
+  get yourPassword => "La tua password";
+  @override
+  get photo => "Foto";
+  @override
+  get otpDesc =>
+      "Il codice di ripristino è stato inviato al tuo numero di cellulare. Si prega di inserire il codice.";
+  @override
+  get otpVerifyDesc =>
+      "Il codice di verifica è stato inviato al tuo numero di cellulare. Si prega di inserire il codice.";
+  @override
+  get diamondDetail => "diamante Dettaglio";
+  @override
+  get home => "Casa";
+  @override
+  get search => "Ricerca";
+  @override
+  get quickSearch => "Ricerca rapida";
+  @override
+  get newArrival => "Nuovo arrivo";
+  @override
+  get exclusiveDiamonds => "Diamanti Exclusive";
+  @override
+  get diamondOnAuction => "Diamante all'asta";
+  @override
+  get stoneOfTheDays => "Miglior acquisto";
+  @override
+  get myWatchlist => "mio Lista memo";
+  @override
+  get myBid => "la mia offerta";
+  @override
+  get myHold => "La mia attesa";
+  @override
+  get myOrder => "Il mio Elenco ordinato";
+  @override
+  get confirmStone => "pietra Conferma";
+  @override
+  get myOffice => "My Office View";
+  @override
+  get myOffer => "Il mio Elenco prodotti";
+  @override
+  get myPurchased => "La mia storia acquistati";
+  @override
+  get mySavedSearch => "La mia ricerca salvata";
+  @override
+  get savedSearch => "Saved Search";
+  @override
+  get myDemand => "La mia domanda";
+  @override
+  get contactUs => "Contattaci";
+  @override
+  get changePassword => "Cambia la password";
+  @override
+  get logout => "Disconnettersi";
+  @override
+  get fareDetailsTitle => "Inserire i dettagli di vendita";
+  @override
+  get fairAmt => "Ammontare delle vendite";
+  @override
+  get noOfPassengers => "Numero dei passeggeri";
+  @override
+  get remarks => "Osservazioni";
+  @override
+  get orderNo => "Numero d'ordine.";
+  @override
+  get typeOfService => "Tipo di servizio";
+  @override
+  get paymentType => "Modalità di pagamento*";
+  @override
+  get recentlyView => "recentemente View";
+  @override
+  get uploadImgValidationText =>
+      "Carica file deve essere .jpg, .jpeg, .png o .pdf con dimensioni 5 MB o meno.";
+  @override
+  get drivingLicenseHintText => "Numero di patente";
+  @override
+  get pANCARDHintText => "PAN Numero di carta";
+  @override
+  get viewRide => "vista Rides";
+  @override
+  get myVehicle => "Il mio veicolo";
+  @override
+  get personalDocument => "Documenti personali";
+  @override
+  get help => "AIUTO";
+  @override
+  get about => "Di";
+  @override
+  get bankDetails => "Coordinate bancarie";
+  @override
+  get accountAndPayment => "Conto e pagamento";
+  @override
+  get enquiry => "Inchiesta";
+  @override
+  get download => "Scarica";
+  @override
+  get addToCart => "Aggiungi al carrello";
+  @override
+  get addToWatchList => "Aggiungere alla lista delle cose da vedere";
+  @override
+  get finalCalculation => "calcolo finale";
+  @override
+  get bookOffice => "book Office";
+  @override
+  get clearSelection => "Annulla selezione";
+  @override
+  get comment => "Commenti";
+  @override
+  get hold => "Tenere";
+  @override
+  get offer => "Offrire";
+  @override
+  get officeView => "ufficio View";
+  @override
+  get placeOrder => "Invia ordine";
+  @override
+  get buyNow => "Acquista ora";
+  @override
+  get cancelStone => "Annulla pietra";
+  @override
+  get share => "Condividere";
+  @override
+  get watchlist => "Watchlist";
+  @override
+  get exclusive => "Esclusivo";
+  @override
+  get featuredStones => "Pietre in vetrina";
+  @override
+  get stoneOfDay => "Pietre di Giorno";
+  @override
+  get recentSearch => "recenti Ricerca";
+  @override
+  get viewAll => "Mostra tutto";
+  @override
+  get salesPersonDetail => "Persona Vendite Dettaglio";
+  @override
+  get searchTitle => "Ricerca Titolo";
+  @override
+  get enterSearchTitle => "Inserisci Ricerca Titolo";
+  @override
+  get timeSlots => "Fasce orarie";
+  @override
+  get selectCustomDate => "Seleziona date personalizzato";
+  @override
+  get availableSlot => "Slot disponibili";
+  @override
+  get reqOfficeView => "Richiedi Ufficio View";
+  @override
+  get myComments => "Il mio commento";
+  @override
+  get myReminder => "Il mio promemoria";
+  @override
+  get reminder => "Promemoria";
+  @override
+  get manageAddress => "gestire gli indirizzi";
+  @override
+  get myAccount => "Il mio account";
+  @override
+  get declaimer => "disconoscimento";
+  @override
+  get shareStone => "Condividi pietra";
+  @override
+  get addRemider => "Aggiungi promemoria";
+  @override
+  get offlineSearch => "offline Cerca";
+  @override
+  get searchHistory => "Cronologia delle ricerche";
+  @override
+  get offlineStock => "offline della";
+  @override
+  get searchOffline => "Cerca (Offline)";
+  @override
+  get voiceSearch => "Ricerca vocale";
+  @override
+  get tapMictoSpeak => "Toccare microfono a parlare";
+  @override
+  get typeToSearch => "Digita per ricerca";
+  @override
+  get typeWordsToSearch => "Digitare almeno 3 parole per cercare pietre";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ItalianDynamickeys extends Dynamickeys {
+  @override
+  get shape => "Forma";
+  @override
+  get caratRange => "Carat Gamma";
+  @override
+  get basicDetail => "Dettagli di base";
+  @override
+  get measurementTitle => "misure";
+  @override
+  get inclusionDetail => "Dettagli di inclusione";
+  @override
+  get other => "Altro";
+  @override
+  get stoneID => "pietra ID";
+  @override
+  get labTitle => "Laboratorio";
+  @override
+  get certNo => "CERT. NO.";
+  @override
+  get locationTitle => "POSIZIONE";
+  @override
+  get shapeTitle => "Forma";
+  @override
+  get caratTitle => "carato";
+  @override
+  get colorTitle => "Colore";
+  @override
+  get clarityTitle => "CHIAREZZA";
+  @override
+  get shadeTitle => "ombra";
+  @override
+  get cutTitle => "Taglio";
+  @override
+  get polishTitle => "polacco";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "Fluorescenza";
+  @override
+  get rapTitle => r"RAP ($)";
+  @override
+  get discountTitle => "Sconto (%)";
+  @override
+  get priceAndCt => r"Prezzo / Ct ($)";
+  @override
+  get amountTitle => "Quantità";
+  @override
+  get eyeCleanTitle => "Clean Eye";
+  @override
+  get brownTitle => "MARRONE";
+  @override
+  get milkyTitle => "latteo";
+  @override
+  get mixTingeTitle => "MIX tinge";
+  @override
+  get dimensionTitle => "Dimensioni (mm)";
+  @override
+  get girdleTitle => "CINTURA (%)";
+  @override
+  get tableTitle => "Tavolo %";
+  @override
+  get crownAngleTitle => "Angolo di corona";
+  @override
+  get depthTitle => "profondità%";
+  @override
+  get pavAngleTitle => "PAV ANGOLO";
+  @override
+  get crownHeightTitle => "Corona Altezza";
+  @override
+  get pavDepthTitle => "Padiglione Profondità (%)";
+  @override
+  get starLengthTitle => "stella Lunghezza";
+  @override
+  get lowerHalfTitle => "La metà inferiore";
+  @override
+  get gridleTitle => "Cintura";
+  @override
+  get gridleFacetedTitle => "CINTURA SFACCETTATA";
+  @override
+  get culetTitle => "culet";
+  @override
+  get rationTitle => "Rapporto";
+  @override
+  get blackInclusionTitle => "INCLUSIONE NERO";
+  @override
+  get otherInclusionTitle => "Altro inclusione";
+  @override
+  get openInclusionTitle => "INCLUSIONE APERTO";
+  @override
+  get extraFacetTitle => "FACET EXTRA";
+  @override
+  get naturalTitle => "Naturale";
+  @override
+  get hAndATitle => "H & A";
+  @override
+  get keyToSymbol => "LEGENDA SIMBOLO";
+  @override
+  get labComments => "COMMENTI LAB";
+  @override
+  get laserInsTitle => "LASER INS";
+  @override
+  get basicTitle => "Di base";
+  @override
+  get advancedTitle => "Avanzate";
+  @override
+  get stoneIdTitle => "Pietra ID / Cert No";
+  @override
+  get defaultTitle => "Predefinito";
+  @override
+  get newDiamondsTitle => "nuovi Diamonds";
+  @override
+  get priceLowToHigh => "Prezzo basso al più alto";
+  @override
+  get priceHighToLow => "Prezzo decrescente";
+  @override
+  get disLowToHigh => "Sconto basso al più alto";
+  @override
+  get disHighToLow => "Alto sconto per Basso";
+  @override
+  get colorLowToHigh => "Colore basso al più alto";
+  @override
+  get colorHighToLow => "Colore decrescente";
+  @override
+  get caratLowToHigh => "Carat basso al più alto";
+  @override
+  get caratHighToLow => "Carat decrescente";
+  @override
+  get clarityLowToHigh => "Chiarezza basso al più alto";
+  @override
+  get clarityHighToLow => "La chiarezza decrescente";
+  @override
+  get colorShadeTitle => "color Shade";
+  @override
+  get certiTitle => "Numero di certificato";
+  @override
+  get arrivalsTitle => "Arrivi";
+  @override
+  get lengthTitle => "Lunghezza";
+  @override
+  get widthTitle => "Larghezza";
+  @override
+  get pavilionAngleTitle => "Angolo Pavilion";
+  @override
+  get girdleConditionTitle => "Cintola Condizione";
+  @override
+  get cluetConditionTitle => "culet Condizione";
+  @override
+  get disTitle => "Dis%";
+  @override
+  get depthTitleWithoutPerc => "Profondità";
+  @override
+  get otherInformationTitle => "Altre informazioni";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "Forma",
+    "caratRange": "Carat Gamma",
+    "basicDetail": "Dettagli di base",
+    "measurementTitle": "misure",
+    "inclusionDetail": "Dettagli di inclusione",
+    "other": "Altro",
+    "stoneID": "pietra ID",
+    "labTitle": "Laboratorio",
+    "certNo": "CERT. NO.",
+    "locationTitle": "POSIZIONE",
+    "shapeTitle": "Forma",
+    "caratTitle": "carato",
+    "colorTitle": "Colore",
+    "clarityTitle": "CHIAREZZA",
+    "shadeTitle": "ombra",
+    "cutTitle": "Taglio",
+    "polishTitle": "polacco",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "Fluorescenza",
+    "rapTitle": r"RAP ($)",
+    "discountTitle": "Sconto (%)",
+    "priceAndCt": r"Prezzo / Ct ($)",
+    "amountTitle": "Quantità",
+    "eyeCleanTitle": "Clean Eye",
+    "brownTitle": "MARRONE",
+    "milkyTitle": "latteo",
+    "mixTingeTitle": "MIX tinge",
+    "dimensionTitle": "Dimensioni (mm)",
+    "girdleTitle": "CINTURA (%)",
+    "tableTitle": "Tavolo %",
+    "crownAngleTitle": "Angolo di corona",
+    "depthTitle": "profondità%",
+    "pavAngleTitle": "PAV ANGOLO",
+    "crownHeightTitle": "Corona Altezza",
+    "pavDepthTitle": "Padiglione Profondità (%)",
+    "starLengthTitle": "stella Lunghezza",
+    "lowerHalfTitle": "La metà inferiore",
+    "gridleTitle": "Cintura",
+    "gridleFacetedTitle": "CINTURA SFACCETTATA",
+    "culetTitle": "culet",
+    "rationTitle": "Rapporto",
+    "blackInclusionTitle": "INCLUSIONE NERO",
+    "otherInclusionTitle": "Altro inclusione",
+    "openInclusionTitle": "INCLUSIONE APERTO",
+    "extraFacetTitle": "FACET EXTRA",
+    "naturalTitle": "Naturale",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "LEGENDA SIMBOLO",
+    "labComments": "COMMENTI LAB",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "Di base",
+    "advancedTitle": "Avanzate",
+    "stoneIdTitle": "Pietra ID / Cert No",
+    "defaultTitle": "Predefinito",
+    "newDiamondsTitle": "nuovi Diamonds",
+    "priceLowToHigh": "Prezzo basso al più alto",
+    "priceHighToLow": "Prezzo decrescente",
+    "disLowToHigh": "Sconto basso al più alto",
+    "disHighToLow": "Alto sconto per Basso",
+    "colorLowToHigh": "Colore basso al più alto",
+    "colorHighToLow": "Colore decrescente",
+    "caratLowToHigh": "Carat basso al più alto",
+    "caratHighToLow": "Carat decrescente",
+    "clarityLowToHigh": "Chiarezza basso al più alto",
+    "clarityHighToLow": "La chiarezza decrescente",
+    "colorShadeTitle": "color Shade",
+    "certiTitle": "Numero di certificato",
+    "arrivalsTitle": "Arrivi",
+    "lengthTitle": "Lunghezza",
+    "widthTitle": "Larghezza",
+    "pavilionAngleTitle": "Angolo Pavilion",
+    "girdleConditionTitle": "Cintola Condizione",
+    "cluetConditionTitle": "culet Condizione",
+    "disTitle": "Dis%",
+    "depthTitleWithoutPerc": "Profondità",
+    "otherInformationTitle": "Altre informazioni",
+  };
+}
+
+class Spanish extends English {
+  @override
+  get authStrings => SpanishAuthStrings();
+  @override
+  get commonString => SpanishCommonString();
+  @override
+  get errorString => SpanishErrorString();
+  @override
+  get noDataStrings => SpanishNoDataStrings();
+  @override
+  get screenTitle => SpanishScreenTitle();
+  @override
+  get dynamickeys => SpanishDynamickeys();
+  static String get languageCode => "Spanish";
+  static String get languageName => "Spanish";
+}
+
+class SpanishAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation => "Editar Información de la empresa";
+  @override
+  get selectNatureOfOrganization => "Seleccionar naturaleza de la organización";
+  @override
+  get setNewPassword => "Establecer la nueva contraseña y acceder de nuevo.";
+  @override
+  get enterCompanyName => "Por favor, introduzca el nombre de la empresa.";
+  @override
+  get pleaseEnterCustomerOTP =>
+      "Por favor, introduzca el código de trayecto al cliente.";
+  @override
+  get pleaseEnterPickupOTP =>
+      "Por favor, introduzca el código de captación de clientes.";
+  @override
+  get pleaseEnterDeliveryOTP =>
+      "Por favor, introduzca el código de entrega al cliente.";
+  @override
+  get verified => "Verified";
+  @override
+  get verify => "Verificar";
+  @override
+  get addressLineOne => "Dirección 1";
+  @override
+  get addressLineTwo => "Dirección 2";
+  @override
+  get addressLineThree => "dirección 3";
+  @override
+  get oldPassword => "Contraseña anterior";
+  @override
+  get skype => "Skype";
+  @override
+  get whatsApp => "Whatsapp";
+  @override
+  get pinCode => "Código PIN*";
+  @override
+  get verifyMobileDesc =>
+      "Por favor, compruebe el número móvil para actualizar el perfil.";
+  @override
+  get verifyNow => "verifica ahora";
+  @override
+  get password => "Contraseña";
+  @override
+  get backToHome => "Ir a casa";
+  @override
+  get forgotPassword => "¿Se te olvidó tu contraseña?";
+  @override
+  get signInCap => "Registrarse";
+  @override
+  get moveToLogIn => "Mover a Entrar";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "haga clic aquí";
+  @override
+  get signUpHere => "Registrate aquí";
+  @override
+  get reset => "Reiniciar";
+  @override
+  get haveRegisterCode => "Tener un código de registro?";
+  @override
+  get welcome => "¡Dar una buena acogida!";
+  @override
+  get signInAsGuest => "Iniciar sesión como invitado";
+  @override
+  get editProfileTitle => "Editar perfil";
+  @override
+  get emaillbl => "Email";
+  @override
+  get searchInventory => "búsqueda de productos";
+  @override
+  get emailAddress => "Dirección de correo electrónico*";
+  @override
+  get offlineFilter =>
+      "No es posible encontrar el solitario deseada? Podemos ayudarle a obtener la mejor oferta de nuestro inventario en línea.";
+  @override
+  get loginDesc =>
+      "¿Quieres activar Touch ID / MPIN para desbloquear mis diamantes? Por favor seleccione una opción para la aplicación de desbloqueo";
+  @override
+  get searchDiamonds => "diamantes de búsqueda";
+  @override
+  get continueWithSearch => "¿Quieres continuar su búsqueda?";
+  @override
+  get mobileNumber => "Móvil";
+  @override
+  get searchHint => "Buscar...";
+  @override
+  get selectYourCountry => "Seleccionar país";
+  @override
+  get resendCodeIn => "Reenviar mensaje en código";
+  @override
+  get resendCode => "Enviar de nuevo";
+  @override
+  get haveAnAccount => "¿Ya tienes una cuenta?";
+  @override
+  get dontReceiveCode => "Si no recibe un código!";
+  @override
+  get inLogin => "iniciar sesión.";
+  @override
+  get resetPwdDesc =>
+      "Añadir contraseña y confirmación de contraseña para restablecer la contraseña.";
+  @override
+  get backToLogin => "Atrás para iniciar sesión";
+  @override
+  get firstName => "Primer nombre*";
+  @override
+  get name => "Nombre de usuario *";
+  @override
+  get lastName => "Apellido*";
+  @override
+  get middleName => "Segundo nombre*";
+  @override
+  get confirmPassword => "Confirmar contraseña";
+  @override
+  get currentPasswordErr => "Error de contraseña actual";
+  @override
+  get passwordChanged => "Contraseña cambiada";
+  @override
+  get lblLogInErr => "Error de inicio de sesión";
+  @override
+  get enterYour => "Entra tu";
+  @override
+  get details => "detalles";
+  @override
+  get registerCode => "Código de registro";
+  @override
+  get registerCodeDesc =>
+      "Añadir un código de registro para iniciar su inscripción en 3eco.";
+  @override
+  get uploadPhotoDesc => "Tome una autofoto de su auto";
+  @override
+  get updateProfile => "Actualización del perfil";
+  @override
+  get postalCode => "Código postal*";
+  @override
+  get removeButton => "Eliminar";
+  @override
+  get gender => "Género";
+  @override
+  get male => "Masculino";
+  @override
+  get female => "Hembra";
+  @override
+  get changePassword => "Cambia la contraseña";
+  @override
+  get currentPassword => "Contraseña actual*";
+  @override
+  get newPassword => "Nueva contraseña*";
+  @override
+  get confirmNewPassword => "Confirmar contraseña*";
+  @override
+  get personalDocuments => "Documentos personales";
+  @override
+  get assignedAuto => "Auto asignado";
+  @override
+  get logout => "Cerrar sesión";
+  @override
+  get logoutConfirmationMsg => "¿Seguro que desea finalizar la sesión?";
+  @override
+  get address => "Habla a*";
+  @override
+  get accountNumber => "Número de cuenta";
+  @override
+  get bankerName => "Nombre banqueros";
+  @override
+  get nameLable => "Nombre";
+  @override
+  get ifscCode => "código IFSC";
+  @override
+  get businessRegistrationNumbr => "Número de registro de negocios";
+  @override
+  get businessRelationshipPeriod => "Negocios período de vinculación (en años)";
+  @override
+  get designation => "Designacion";
+  @override
+  get nameofDesignation => "Nombre de";
+  @override
+  get natureofOrganization => "Naturaleza de la Organización";
+  @override
+  get uploadFile => "Sin archivo Choosen";
+  @override
+  get update => "ACTUALIZAR";
+  @override
+  get resetPwd => "Restablecer la contraseña";
+  @override
+  get pwdReset => "Restablecimiento de contraseña";
+  @override
+  get signInWithMPIN => "Iniciar sesión con MPIN";
+  @override
+  get pwdChanged => "Contraseña cambiada";
+  @override
+  get successfullyPwdDesc =>
+      "Ha restablecido la contraseña correctamente. Por favor utilice su nueva contraseña al iniciar la sesión.";
+  @override
+  get lblProfileSetup => "Su perfil está configurado";
+  @override
+  get lblProfileSetupDesc => "Hemos recibido los datos de su perfil";
+  @override
+  get hoursAvailable => "total Shifttime";
+  @override
+  get confirmStoneDetail => "Confirmar Detalle de piedra";
+  @override
+  get companyName => "nombre de empresa";
+  @override
+  get invoiceDate => "Fecha de la factura";
+  @override
+  get companyCode => "Codigo de compañia";
+  @override
+  get saveCompanyDetails => "Guardar Datos Empresa";
+  @override
+  get passwordNotChange => "Las contraseñas no coinciden";
+  @override
+  get rememberPassword => "¿Recordar contraseña?";
+  @override
+  get sendOTP => "Enviar OTP";
+  @override
+  get resendNow => "Ahora volvemos a enviar";
+  @override
+  get didNotReceiveOTP => "Si usted no recibió una OTP!";
+  @override
+  get sendOTPToEmail =>
+      "Vamos a enviar una OTP a su dirección de correo electrónico introducida o nombre de usuario. Por favor, introduzca la dirección de correo electrónico o nombre de usuario.";
+  @override
+  get enterOTP =>
+      "La Fiscalía ha sido enviada a su dirección de correo electrónico registrada. Por favor, introduzca la OTP.";
+  @override
+  get backToSignIn => "Volver a entrar";
+  @override
+  get passwordResetSuccessfully => "Restablecimiento de contraseñas con éxito.";
+  @override
+  get emailAndUname => "Email / Usuario";
+  @override
+  get signUp => "Regístrate";
+  @override
+  get promotionText => "Ofertas promocionales";
+  @override
+  get termsAndCondition => "Términos y Condiciones";
+  @override
+  get mustAgreeTermsAndCondition =>
+      "Debe aceptar los términos y condiciones de entrar como usuario invitado";
+  @override
+  get forgotPasswordTitle => "Se te olvidó tu contraseña";
+  @override
+  get uploadKYC => "Subir KYC";
+  @override
+  get uploadKycDesc =>
+      "Por favor, subir sus documentos KYC para acceder a funciones completas.";
+  @override
+  get hintPhotoIdentityProof => "Foto Identidad * Prueba";
+  @override
+  get hintBussinerssProof => "Identidad de negocios * Prueba";
+  @override
+  get btnFileUpload => "Subir archivo";
+  @override
+  get pleaseUploadPhotoProof => "Por favor, sube fotos prueba de identidad.";
+  @override
+  get pleaseUploadBussinessProof =>
+      "Por favor, sube Identidad negocio a prueba.";
+  @override
+  get pleaseSelectFileFormat =>
+      "Por favor, cargar el archivo en cualquiera de los formatos siguientes: .jpg";
+  @override
+  get kycSubmitted => "KYC Enviado";
+  @override
+  get kycSubmmittedDesc =>
+      "Su conocimiento del cliente se ha enviado correctamente.";
+  @override
+  get btnMoveToHome => "Mover a Inicio";
+  @override
+  get kYCRejected => "KYC Rechazado";
+  @override
+  get kycRejectedDesc =>
+      "Su conocimiento del cliente ha sido rechazada. Por favor, subir sus documentos KYC de nuevo para acceder a todas las funciones.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class SpanishCommonString extends CommonString {
+  @override
+  get seeMore => "Ver más";
+  @override
+  get seeLess => "Ver menos";
+  @override
+  get modify => "Modificar";
+  @override
+  get delete => "Eliminar";
+  @override
+  get details => "detalles";
+  @override
+  get edit => "Editar";
+  @override
+  get addDemand => "Agregar la demanda";
+  @override
+  get demandTitle => "La demanda Título";
+  @override
+  get pleaseEnterDemandTitle => "Por favor, introduzca demanda Título";
+  @override
+  get demandAddedSuccessfully => "La demanda agregado con éxito";
+  @override
+  get selectAtleastOneFilter => "Por favor";
+  @override
+  get savedSearch => "búsqueda guardada";
+  @override
+  get searchSavedSearch => "Buscar búsqueda guardada";
+  @override
+  get viewDetails => "Ver detalles";
+  @override
+  get viewLessDetails => "Ver menos detalles";
+  @override
+  get myDemand => "mi demanda";
+  @override
+  get date => "Fecha";
+  @override
+  get selectTime => "Seleccione Hora";
+  @override
+  get selectDate => "Seleccione fecha";
+  @override
+  get offerVelidTill => "Oferta válida Hasta";
+  @override
+  get officeVisitDate => "Consultorio Fecha";
+  @override
+  get all => "Todas";
+  @override
+  get status => "Estado";
+  @override
+  get save => "Salvar";
+  @override
+  get verify => "Verificar";
+  @override
+  get readMore => "Lee mas";
+  @override
+  get goodMorning => "Buenos días";
+  @override
+  get goodAfternoon => "Buenas tardes";
+  @override
+  get goodEvening => "Buena noches";
+  @override
+  get btnSkip => "Omitir";
+  @override
+  get btnUpdate => "Actualizar";
+  @override
+  get btnContinue => "Seguir";
+  @override
+  get btnContinueCap => "SEGUIR";
+  @override
+  get btnEdit => "Editar";
+  @override
+  get btnSubmit => "Enviar";
+  @override
+  get btnNextCap => "próximo";
+  @override
+  get btnSaveCap => "Actualiza contraseña";
+  @override
+  get btnWithdrawCap => "RETIRAR";
+  @override
+  get btnSaveAndContinueCap => "GUARDAR CONTINUAR";
+  @override
+  get btnUnregister => "no registrado móvil";
+  @override
+  get btnClose => "Cerca";
+  @override
+  get remove => "Eliminar";
+  @override
+  get refresh => "Actualizar";
+  @override
+  get fetchLocationMessage =>
+      "Por favor espere que están alcanzando su ubicación";
+  @override
+  get done => "Hecho";
+  @override
+  get doneCap => "HECHO";
+  @override
+  get cancel => "Cancelar";
+  @override
+  get allow => "Permitir";
+  @override
+  get countryFirst => "Por favor, seleccione País Primera";
+  @override
+  get apply => "Aplicar";
+  @override
+  get cancelCap => "CANCELAR";
+  @override
+  get uploadCap => "SUBIR";
+  @override
+  get yesCancelCap => "SI";
+  @override
+  get upload => "Subir";
+  @override
+  get ok => "Okay";
+  @override
+  get home => "Casa";
+  @override
+  get goToMyWatchList => "Ir a lista";
+  @override
+  get goToMyOrder => "Ir a Mi Pedido";
+  @override
+  get gotToMyOffer => "Ir a mi oferta";
+  @override
+  get gotToMyHold => "Ir a Mi Hold";
+  @override
+  get gotToMyEnquiry => "Ir a mi solicitud";
+  @override
+  get gotToMyBid => "Ir a mi oferta";
+  @override
+  get gotToMyReminder => "Ir a Mi Recordatorio";
+  @override
+  get gotToMyComments => "Ir a Mis Notas";
+  @override
+  get yes => "si";
+  @override
+  get no => "No";
+  @override
+  get selectCountry => "Seleccionar país";
+  @override
+  get clickHere => "Haga clic aquí";
+  @override
+  get btnAddNewAddress => "AGREGAR NUEVA DIRECCIÓN";
+  @override
+  get btnCancel => "CANCELAR";
+  @override
+  get btnTakeSelfie => "tome selfie";
+  @override
+  get successfully => "Exitosamente";
+  @override
+  get lblAppExit => "¿Seguro que quieres salir?";
+  @override
+  get lblExit => "Salida";
+  @override
+  get openAppSetting => "Configuración abierta";
+  @override
+  get lblOr => "O";
+  @override
+  get fromLbl => "Desde";
+  @override
+  get toLbl => "A";
+  @override
+  get showMore => "Mostrar más";
+  @override
+  get showLess => "Muestra menos";
+  @override
+  get selectCity => "Ciudad selecta";
+  @override
+  get notYetAvailable => "No disponible aún";
+  @override
+  get updateAvailable => "¡Actualización disponible!";
+  @override
+  get downloadAppFrom => "Descargar la aplicación de actualización de";
+  @override
+  get playStore => "Tienda de juegos";
+  @override
+  get skipUpdate => "Saltar actualización";
+  @override
+  get stateFirst => "Por favor, seleccione Estado Primera";
+  @override
+  get reallyExit => "Realmente salir?";
+  @override
+  get alert => "¡Alerta!";
+  @override
+  get loading => "Cargando";
+  @override
+  get error => "Error";
+  @override
+  get jumpToTop => "Saltar a la cima";
+  @override
+  get ihaveread => "he leido y acepto";
+  @override
+  get selected => "Seleccione";
+  @override
+  get lbllogout => "Cerrar sesión";
+  @override
+  get lblThanx => "Gracias";
+  @override
+  get lblSelectCity => "Ciudad selecta";
+  @override
+  get lblSelectState => "Seleccione estado";
+  @override
+  get lblSelectCountry => "Seleccionar país";
+  @override
+  get lblCity => "Ciudad";
+  @override
+  get lblCountry => "País";
+  @override
+  get lblName => "Nombre";
+  @override
+  get lblPinCode => "Código PIN";
+  @override
+  get lblMobileNumber => "Número de teléfono móvil";
+  @override
+  get lblState => "Estado";
+  @override
+  get lblCode => "Código:";
+  @override
+  get lblOrderNo => "N º de pedido:";
+  @override
+  get lblOrderItem => "Articulo ordenado:";
+  @override
+  get lblDelivered => "Entregado";
+  @override
+  get lblTicketReady => "Su billete está listo";
+  @override
+  get lblPersonTicket => "Billete de 2 persona";
+  @override
+  get lblShuttleBus => "Autobús de enlace";
+  @override
+  get lblPickup => "Recoger";
+  @override
+  get lblDropoff => "Bajar ó dejar algo";
+  @override
+  get lblPassenger => "Pasajero";
+  @override
+  get lblDeliveryNo => "Sin entrega.";
+  @override
+  get lblPrice => "Precio";
+  @override
+  get lblValid => "Valido para";
+  @override
+  get lblRenew => "Renovar";
+  @override
+  get lblDeparture => "Salida";
+  @override
+  get lblArrived => "Llegado";
+  @override
+  get lblSendtoFriend => "Enviala a un amigo";
+  @override
+  get popupRenewTitle => "renovar billete";
+  @override
+  get popupRenewDesc => "Lorem ipsum dolor sit amet";
+  @override
+  get popuplblPassenger => "Pasajero";
+  @override
+  get popuplblCancel => "Cancelar";
+  @override
+  get popupbtnRenew => "Renovar";
+  @override
+  get ridelblAwesome => "Increíble";
+  @override
+  get ridebtnDone => "Hecho";
+  @override
+  get offerPricePerCarat => "Precio ofrecido (CTS)";
+  @override
+  get dropOffText => "Bajar ó dejar algo";
+  @override
+  get pickUpText => "Recoger";
+  @override
+  get startAtText => "Empieza en";
+  @override
+  get endAtText => "Termina en";
+  @override
+  get personText => "persona";
+  @override
+  get paymentScreenTitle => "Pago";
+  @override
+  get pickuplbl => "Recoger";
+  @override
+  get droplbl => "Bajar ó dejar algo";
+  @override
+  get makePaymentButtonlbl => "Hacer el pago";
+  @override
+  get pessangerslbl => "Los pasajeros";
+  @override
+  get priceBreakuplbl => "Precio desintegración";
+  @override
+  get tripPricelbl => "Precio de viaje";
+  @override
+  get taxeslbl => "Impuestos";
+  @override
+  get totallbl => "Total";
+  @override
+  get cardNumberhint => "Número de tarjeta";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / YY";
+  @override
+  get btnTryAgain => "Inténtalo de nuevo";
+  @override
+  get cityFirst => "Por favor, seleccione la primera ciudad";
+  @override
+  get enterFareDetails => "Entrar en detalles de ventas";
+  @override
+  get fromDate => "Partir de la fecha";
+  @override
+  get toDate => "Fecha seleccionada";
+  @override
+  get btnUnderstand => "Entiendo";
+  @override
+  get applicationUpdate => "actualización de aplicaciones";
+  @override
+  get newVersionMessage => "Una nueva versión de la aplicación está disponible";
+  @override
+  get paymentCollected => "pago Collected";
+  @override
+  get addComment => "Añadir un comentario";
+  @override
+  get more => "Más";
+  @override
+  get carat => "Quilate";
+  @override
+  get pcs => "pcs";
+  @override
+  get cts => "cts";
+  @override
+  get disc => "Dto %";
+  @override
+  get avgPriceCrt => "Avg. Precio / Ct";
+  @override
+  get amount => "Cantidad";
+  @override
+  get confirmStone => "Piedra Confirmar";
+  @override
+  get confirm => "Confirmar";
+  @override
+  get offered => "Ofrecido";
+  @override
+  get validTill => "Válida hasta";
+  @override
+  get remark => "Observación";
+  @override
+  get color => "Color";
+  @override
+  get colorGroup => "Grupo de color";
+  @override
+  get colorFancy => "Lujoso";
+  @override
+  get colorWhite => "Blanco";
+  @override
+  get clarity => "Claridad";
+  @override
+  get clarityGroup => "Grupo claridad";
+  @override
+  get intensity => "Intensidad";
+  @override
+  get overtone => "Armónico";
+  @override
+  get selectBusinessType => "Seleccionar el tipo de negocio";
+  @override
+  get selectState => "Seleccione estado";
+  @override
+  get search => "Buscar";
+  @override
+  get profile => "Mi perfil";
+  @override
+  get personal => "Personal";
+  @override
+  get business => "Negocio";
+  @override
+  get documents => "Documentos";
+  @override
+  get noSlotFound => "No se encontraron ranuras";
+  @override
+  get noDiamondFound =>
+      "No hay diamantes coinciden con la búsqueda. Por favor, agrega que la demanda.";
+  @override
+  get selectType => "Seleccionar tipo virtual";
+  @override
+  get noSavedSearch => "No existe búsqueda guardada";
+  @override
+  get searchCity => "Buscar por ciudad";
+  @override
+  get searchCountry => "Buscar País";
+  @override
+  get searchState => "estado de búsqueda";
+  @override
+  get notifications => "Notificación";
+  @override
+  get enter2Stone => "Por favor, seleccione al menos 2 piedra para comparar.";
+  @override
+  get bidDesc =>
+      "Actualmente se encuentra en la India y para la entrega en cualquier otro país, aparte de la India tendrá al menos 7-10 días laborables.";
+  @override
+  get packetNo => "Sin paquete:";
+  @override
+  get quit => "Dejar";
+  @override
+  get agree => "Estoy de acuerdo";
+  @override
+  get laterToday => "Mas tarde, hoy";
+  @override
+  get toMorrow => "mañana";
+  @override
+  get nextWeek => "La próxima semana";
+  @override
+  get chooseAnother => "Seleccione otro";
+  @override
+  get dateTime => "Fecha y hora";
+  @override
+  get language => "Idioma";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "No se encontraron documentos";
+  @override
+  get searchBusinessType => "Buscar Tipo de empresa";
+  @override
+  get hours => "horas";
+  @override
+  get minutes => "Minutos";
+  @override
+  get seconds => "Segundos";
+  @override
+  get bidEndsIn => "La subasta termina en:";
+  @override
+  get shape => "Forma";
+  @override
+  get download => "Descargar";
+  @override
+  get share => "Compartir";
+  @override
+  get placeOrder => "Realizar pedido";
+  @override
+  get enterComment => "Por favor, introduzca comentario";
+  @override
+  get deleteItem => "¿Estas seguro que quieres borrarlo?";
+  @override
+  get shippingPolicy => "Politica de envios";
+  @override
+  get offerSundayRestriction =>
+      "No está permitido domingo. Oficina días hábiles son de lunes a sábado";
+  @override
+  get weekAgo => "Hace 1 semana";
+  @override
+  get lastWeek => "La semana pasada";
+  @override
+  get dayAgo => "hace días";
+  @override
+  get onedayAgo => "Hace 1 día";
+  @override
+  get yesterday => "Ayer";
+  @override
+  get hourAgo => "horas atras";
+  @override
+  get onehourAgo => "1 hora antes";
+  @override
+  get anhourAgo => "Hace una hora";
+  @override
+  get mintuesAgo => "hace minutos";
+  @override
+  get onemintuesAgo => "Hace 1 minuto";
+  @override
+  get amintueAgo => "Hace un minuto";
+  @override
+  get secondsAgo => "hace segundos";
+  @override
+  get justNow => "Justo ahora";
+  @override
+  get today => "Hoy";
+  @override
+  get past => "Pasado";
+  @override
+  get selectPhotoProof => "Seleccione el documento";
+  @override
+  get pleaseSelectPhotoProof => "Por favor, seleccione el documento";
+  @override
+  get selectBusinessProof => "Seleccione el documento";
+  @override
+  get pleaseSelectBusinessProof => "Por favor, seleccione el documento";
+  @override
+  get touchId => "Identifición de toque";
+  @override
+  get faceId => "Id cara";
+  @override
+  get enableTouchId => "Activar contacto Id para desbloquear mis diamantes?";
+  @override
+  get enableFaceId => "Habilitar Face ID para desbloquear mis diamantes?";
+  @override
+  get unlockWithTouchId => "Desbloquear mis diamantes utilizando Touch ID";
+  @override
+  get unlockWithFaceId => "Desbloquear mis diamantes utilizando Face ID.";
+  @override
+  get mPin => "MPIN";
+  @override
+  get holdMemoStatusDiamondorder => "你 不能 确诊 的 石块, 已经 在 保持 或 备忘录 状态";
+  @override
+  get searchStoneIdCertificateNo => "搜索 石 ID / 证书 号";
+  @override
+  get createMPin => "创建 新 的 M-PIN";
+  @override
+  get reentermpin => "重新 输入 M-PIN";
+  @override
+  get forgotmpin => "忘记 了 M-PIN?";
+  @override
+  get verifympin => "验证 M-PIN";
+  @override
+  get enteryoursixdigitcode => "输入 您 的 6 位 M-PIN";
+  @override
+  get changempin => "更改 M-PIN";
+  @override
+  get faceidandtouchnotenable => "FaceID / TouchId 在 您 的 手机 未 启用, 请 启用 使用 此 功能";
+  @override
+  get enablempintounlockmydiamonds =>
+      "启用 M-PIN 解锁 应用 程序? 这 将 禁用 触摸 标识. 你 确定 你 要 继续 ​​吗?";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "允许 使用 tocco ID 解锁 应用? 这 将 禁用 M-PIN. 你 确定 你 要 继续 ​​吗?";
+  @override
+  get rememberme => "记得 我";
+  @override
+  get usertouchid => "使用 触摸 标识";
+  @override
+  get usempin => "使用 M-PIN";
+  @override
+  get filesarenotavailableonserver => "文件 不可 用 的 服务器, 请 稍后 重 试";
+  @override
+  get allfileshavebeendownloaded => "所有 文件 都 被 下载.";
+  @override
+  get filesisdownloaded => "文件 下载";
+  @override
+  get filesisnotdownloadedbcz => "文件 没有 下载, 因为 它 不是 在 服务器 存在.";
+  @override
+  get downloadingCanceled => "取消 下载";
+  @override
+  get downloading => "下载 ...";
+  @override
+  get expirydate => "到期 日:";
+  @override
+  get youreallywanttodelete => "你 真的 要 删除";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "Claridad",
+    "shape": "Forma",
+  };
+}
+
+class SpanishErrorString extends ErrorString {
+  @override
+  get accessDenide => "Acceso denegado";
+  @override
+  get pleaseSelectOfferTillDate =>
+      "Por favor seleccione la oferta hasta la fecha.";
+  @override
+  get pleaseSelectOfficeVisitDate =>
+      "Por favor, seleccione la oficina fecha de visita";
+  @override
+  get deleteStoneMsg => "¿Seguro que quiere borrar la piedra (s)?";
+  @override
+  get acceptTermsAndCondition => "Por favor, acepta los términos y condiciones";
+  @override
+  get diamondCompareRemove => "Al menos 2 piedras están obligados a comparar.";
+  @override
+  get diamondSelectionError => "Por favor, seleccione al menos una piedra.";
+  @override
+  get pleaseEnterCompanyName => "Por favor, introduzca nombre de la empresa.";
+  @override
+  get selectInvoiceDate => "Seleccionar Fecha de la factura";
+  @override
+  get pleaseEnterComment => "Por favor, introduzca comentario.";
+  @override
+  get pleaseEnterRemarks => "Por favor, introduzca las observaciones.";
+  @override
+  get selectExpiryDate => "Por favor seleccione la fecha de caducidad.";
+  @override
+  get enterOTP => "Por favor, introduzca el código";
+  @override
+  get pleaseEnterOTP => "Por favor, introduzca el código de verificación.";
+  @override
+  get enteredCodeNotMatching =>
+      "código introducido no coincide. Inténtalo de nuevo";
+  @override
+  get selectCancellationReason =>
+      "Por favor, seleccione motivo de la cancelación";
+  @override
+  get enterDesc => "Por favor, introduzca la descripción.";
+  @override
+  get enterTitle => "Por favor, introduzca el título.";
+  @override
+  get enterEmailOrPhone => "Por favor, introduzca correo electrónico / móvil.";
+  @override
+  get enterPassword =>
+      "La contraseña no puede estar vacío. Por favor, ingrese contraseña.";
+  @override
+  get enterConfirmPassword =>
+      "Por favor, introduzca la contraseña de confirmación.";
+  @override
+  get enterSkype => "Por favor, introduzca Skype.";
+  @override
+  get enterRegisterCode => "Por favor, introduzca el código de registro";
+  @override
+  get enterEmail => "Por favor, introduzca la dirección de correo electrónico.";
+  @override
+  get enterPhone => "Por favor, introduzca número de teléfono móvil.";
+  @override
+  get enterUsername =>
+      "Nombre de usuario no puede estar vacío. Por favor, introduzca nombre de usuario.";
+  @override
+  get enterValidEmail =>
+      "Por favor, introduzca la dirección de correo electrónico válida.";
+  @override
+  get enterValidPhone => "Por favor, introduzca el número de móvil válido.";
+  @override
+  get enterValidWhatsappPhone =>
+      "Por favor, introduzca el número de teléfono móvil WhatsApp válida.";
+  @override
+  get enterValidPassword =>
+      "Por favor, introduzca 6 caracteres o contraseña larga.";
+  @override
+  get mismatchPassword =>
+      "Contraseña y confirmación de contraseña no coincide.";
+  @override
+  get enterFirstName => "Por favor, introduzca el nombre.";
+  @override
+  get enterMiddleName => "Por favor, introduzca el nombre.";
+  @override
+  get enterPinCode => "Por favor, introduzca el código PIN.";
+  @override
+  get enterName => "Por favor, introduzca su nombre.";
+  @override
+  get enterLastName => "Por favor, introduzca su apellido.";
+  @override
+  get enterAddress => "Por favor, introduzca la dirección.";
+  @override
+  get enterValidPinCode => "Introduzca código PIN válido.";
+  @override
+  get enterValidAddress =>
+      "Por favor, introduzca 10 caracteres o dirección larga.";
+  @override
+  get enterPostalCode => "Por favor, introduzca el código postal.";
+  @override
+  get enterValidPostalCode =>
+      "Por favor, introduzca 6 dígitos código postal numérico.";
+  @override
+  get enterCurrentPassword => "Por favor, introduzca la contraseña actual.";
+  @override
+  get enterNewPassword => "Por favor, introduzca la nueva contraseña.";
+  @override
+  get enterFareAmount => "Por favor, introduzca la cantidad de ventas.";
+  @override
+  get enterOrderNO => "Por favor, introduzca el fin no.";
+  @override
+  get enterServiceType => "Por favor, seleccione el tipo de servicio.";
+  @override
+  get enterPaymentType => "Por favor, seleccione el tipo de pago.";
+  @override
+  get enterValidFareAmount => "cantidad de ventas no puede ser cero.";
+  @override
+  get enterPassangerNo => "Por favor, introduzca ninguna. de pasajeros.";
+  @override
+  get enterValidPassangerNo => "No. de pasajeros no puede ser cero.";
+  @override
+  get notEnterMorePassangerNo =>
+      "Número de pasajeros no puede contener más de siete.";
+  @override
+  get drivingLicenseValidationText =>
+      "Por favor, introduzca 15 dígitos alfanuméricos del permiso de conducir.";
+  @override
+  get pANCardValidationText =>
+      "Por favor, introduzca 10 dígitos alfanuméricos número de tarjeta de PAN.";
+  @override
+  get selectFromDate => "Por favor seleccione de la fecha";
+  @override
+  get selectToDate => "Por favor, seleccione hasta la fecha";
+  @override
+  get fromGreaterTo => "Fecha seleccionada debe ser mayor que la fecha actual";
+  @override
+  get wrongPassword =>
+      "La contraseña debe contiene, mínimo 8 caracteres, 1 alfabeto en mayúsculas, minúsculas del alfabeto 1, 1 dígito, 1 charater especial";
+  @override
+  get fromValueGreateThanTo => "De valor debe ser menor o igual al valor de A";
+  @override
+  get toValueGreaterThanFrom => "A valor debe ser mayor o igual al valor Desde";
+  @override
+  get pleaseEnterCompanyCode => "Por favor, introduzca el código de empresa";
+  @override
+  get enterSamePassword =>
+      "Confirmar contraseña no coincide con la nueva contraseña. Por favor, introduzca la contraseña confirman mismo que la nueva contraseña.";
+  @override
+  get selectAppointmentDate => "Por favor, seleccione fecha de la cita";
+  @override
+  get selectTimeSlot => "Por favor, seleccione la ranura de tiempo";
+  @override
+  get enterComments => "Por favor, introduzca comentario";
+  @override
+  get selectVirtualType => "Por favor, seleccione el tipo virtuales";
+  @override
+  get versionError => "versión de error";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class SpanishNoDataStrings extends NoDataStrings {
+  @override
+  get noDataFound => "Ningún record fue encontrado";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class SpanishScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "Coloque una Oferta";
+  @override
+  get addedInWatchList => "Añadido en la lista";
+  @override
+  get addedInOffer => "oferta presentada";
+  @override
+  get addedInCart => "Añadido Carrito";
+  @override
+  get addedInBid => "Añadido en la subasta";
+  @override
+  get myEnquiry => "mi mensaje";
+  @override
+  get delete => "Eliminar";
+  @override
+  get addDemand => "Agregar demanda";
+  @override
+  get matchPair => "partido Par";
+  @override
+  get savedAndSearch => "Guardar y Buscar";
+  @override
+  get updateAndSearch => "Actualización y búsqueda";
+  @override
+  get upcoming => "próxima";
+  @override
+  get bidPricePerCt => "Precio de la oferta / Ct";
+  @override
+  get bidDisc => "Valor mínimo de disco";
+  @override
+  get bidValue => "Valor mínimo de la subasta";
+  @override
+  get bidStone => "Valor mínimo de la piedra";
+  @override
+  get myCart => "Mi carrito";
+  @override
+  get myComment => "Mis notas";
+  @override
+  get compare => "Comparar";
+  @override
+  get compareStones => "Piedras comparar";
+  @override
+  get statusHold => "En espera";
+  @override
+  get statusOnMemo => "en Memo";
+  @override
+  get statusAvailable => "Disponible";
+  @override
+  get statusNew => "Nueva llegada";
+  @override
+  get statusOffer => "Piedra Del Día / Promoción";
+  @override
+  get statusMyHold => "mi Hold";
+  @override
+  get signup => "Regístrate";
+  @override
+  get addToOffice => "Añadir Para Oficina";
+  @override
+  get addComment => "Agregar comentario";
+  @override
+  get addEnquiry => "Añadir mensaje";
+  @override
+  get finalOffer => "Oferta final";
+  @override
+  get finalDisc => "disco final";
+  @override
+  get finalRate => "Tasa final";
+  @override
+  get finalValue => "Valor final";
+  @override
+  get orderMsg =>
+      "1) Los precios mencionados aquí son fijos y por lo tanto no negociable. \\ n2) La clasificación, parámetros mencionados en nuestro sitio web más allá que califican de GIA.";
+  @override
+  get offerMsg =>
+      "piedra ofrecido directamente se puede confirmar si el precio se apruebe por lo que le rogamos que estar seguro antes de oferta. Cualquier piedra (s) puesto en la lista de oferta no se mantiene en espera por ti, ya que está disponible para otro cliente es así.";
+  @override
+  get note => "Nota";
+  @override
+  get hours => "horas";
+  @override
+  get offeredDisc => "Dis ofrecidos";
+  @override
+  get offeredPriceCt => "Presentado Pr / Ct";
+  @override
+  get addOffer => "Agregar una Oferta";
+  @override
+  get expDiscPer => "Descuento espera";
+  @override
+  get todayDiscPer => "Disco de hoy";
+  @override
+  get searchResult => "Resultado de búsqueda";
+  @override
+  get searchDiamond => "Buscar diamante";
+  @override
+  get basic => "Básico";
+  @override
+  get advanced => "Avanzado";
+  @override
+  get stoneIdCertNo => "StoneID / Cert n";
+  @override
+  get takeSignature => "Firma para llevar";
+  @override
+  get optional => "Opcional";
+  @override
+  get myAddress => "Mi dirección";
+  @override
+  get expiryDate => "Fecha de caducidad";
+  @override
+  get drivingLicenceDesc => "Su conducción imagen de licencia";
+  @override
+  get panDesc => "Su tarjeta de foto PAN";
+  @override
+  get selfie => "selfie";
+  @override
+  get selfieDesc => "Su imagen autofoto";
+  @override
+  get pending => "Pendiente";
+  @override
+  get rejected => "Rechazado";
+  @override
+  get uploadAgain => "Subir";
+  @override
+  get remove => "Eliminar";
+  @override
+  get title => "Título";
+  @override
+  get description => "Descripción";
+  @override
+  get uploadYour => "subir su";
+  @override
+  get raiseDispute => "contárnoslo";
+  @override
+  get drivingLicense => "Licencia de conducir";
+  @override
+  get pANCard => "Tarjeta de la cacerola";
+  @override
+  get saveContinue => "Guardar y continuar";
+  @override
+  get uploadFrontUmgText => "Subir Frente lado de la imagen";
+  @override
+  get uploadPANCardImgText => "Tarjeta PAN Subiendo imagen";
+  @override
+  get uploadBackImageText => "Subir Volver lado de la imagen";
+  @override
+  get helptopic => "Temas de ayuda";
+  @override
+  get newRideSharingRequest =>
+      "Las solicitudes nueva Agencia de viajes compartidos";
+  @override
+  get newRequest => "nuevas solicitudes";
+  @override
+  get welcomeTo => "Bienvenido a";
+  @override
+  get welcomeDesc => "Ingrese a su cuenta existente de Mani Joya";
+  @override
+  get forgotPassword => "Ha olvidado su";
+  @override
+  get forgotPasswordDesc =>
+      "Introduzca su número de móvil registrado para recuperar su contraseña.";
+  @override
+  get termsAndCondition => "Términos y condiciones";
+  @override
+  get privacyPolicy => "Política de privacidad";
+  @override
+  get aboutUS => "Sobre nosotros";
+  @override
+  get otpVerification => "Verificar el código de paseo";
+  @override
+  get otpVerificationDelivery => "Verificar el código de recogida";
+  @override
+  get otpVerificationDeliveryDone => "Verificar el código de Entrega";
+  @override
+  get enterOtp => "Introduzca 4 dígitos";
+  @override
+  get recoveryCode => "Código de recuperación";
+  @override
+  get editProfile => "Editar perfil";
+  @override
+  get myProfile => "Mi perfil";
+  @override
+  get reset => "Reiniciar";
+  @override
+  get yourPassword => "Tu contraseña";
+  @override
+  get photo => "Foto";
+  @override
+  get otpDesc =>
+      "El código de recuperación fue enviado a su número de móvil. Por favor, introduzca el código.";
+  @override
+  get otpVerifyDesc =>
+      "El código de verificación se envió a su número de móvil. Por favor, introduzca el código.";
+  @override
+  get diamondDetail => "Detalle de diamantes";
+  @override
+  get home => "Casa";
+  @override
+  get search => "Buscar";
+  @override
+  get quickSearch => "Búsqueda rápida";
+  @override
+  get newArrival => "Nueva llegada";
+  @override
+  get exclusiveDiamonds => "Diamantes exclusivos";
+  @override
+  get diamondOnAuction => "Diamante en subasta";
+  @override
+  get stoneOfTheDays => "La mejor compra";
+  @override
+  get myWatchlist => "lista";
+  @override
+  get myBid => "mi subasta";
+  @override
+  get myHold => "mi Hold";
+  @override
+  get myOrder => "Mi lista ordenada";
+  @override
+  get confirmStone => "Piedra Confirmar";
+  @override
+  get myOffice => "Mi opinión de la oficina";
+  @override
+  get myOffer => "Mi Lista de producto";
+  @override
+  get myPurchased => "Mi Historia comprada";
+  @override
+  get mySavedSearch => "Mi búsqueda guardada";
+  @override
+  get savedSearch => "búsqueda guardada";
+  @override
+  get myDemand => "mi demanda";
+  @override
+  get contactUs => "Contáctenos";
+  @override
+  get changePassword => "Cambia la contraseña";
+  @override
+  get logout => "Cerrar sesión";
+  @override
+  get fareDetailsTitle => "Entrar en detalles de ventas";
+  @override
+  get fairAmt => "Cantidad de ventas";
+  @override
+  get noOfPassengers => "No. de Pasajeros";
+  @override
+  get remarks => "observaciones";
+  @override
+  get orderNo => "N º de pedido.";
+  @override
+  get typeOfService => "Tipo de servicio";
+  @override
+  get paymentType => "Tipo de pago*";
+  @override
+  get recentlyView => "recientemente Vista";
+  @override
+  get uploadImgValidationText =>
+      "Carga de archivos debe ser .jpg, .jpeg, .png o .pdf tiene un tamaño de 5 MB o menos.";
+  @override
+  get drivingLicenseHintText => "Número de licencia de conducir";
+  @override
+  get pANCARDHintText => "Número de tarjeta de PAN";
+  @override
+  get viewRide => "Ver paseos";
+  @override
+  get myVehicle => "mi Vehículo";
+  @override
+  get personalDocument => "Documentos personales";
+  @override
+  get help => "AYUDA";
+  @override
+  get about => "Acerca de";
+  @override
+  get bankDetails => "Detalles del banco";
+  @override
+  get accountAndPayment => "Cuenta y Pago";
+  @override
+  get enquiry => "Investigación";
+  @override
+  get download => "Descargar";
+  @override
+  get addToCart => "Añadir al carrito";
+  @override
+  get addToWatchList => "Añadir a lista de seguimiento";
+  @override
+  get finalCalculation => "El cálculo final";
+  @override
+  get bookOffice => "Oficina libro";
+  @override
+  get clearSelection => "Selección clara";
+  @override
+  get comment => "comentarios";
+  @override
+  get hold => "Sostener";
+  @override
+  get offer => "Oferta";
+  @override
+  get officeView => "Vista de Oficina";
+  @override
+  get placeOrder => "Realizar pedido";
+  @override
+  get buyNow => "Compra ahora";
+  @override
+  get cancelStone => "Cancelar Piedra";
+  @override
+  get share => "Compartir";
+  @override
+  get watchlist => "lista";
+  @override
+  get exclusive => "Exclusivo";
+  @override
+  get featuredStones => "Piedras destacados";
+  @override
+  get stoneOfDay => "Piedras del Día";
+  @override
+  get recentSearch => "Búsqueda reciente";
+  @override
+  get viewAll => "Ver todo";
+  @override
+  get salesPersonDetail => "Detalle persona de ventas";
+  @override
+  get searchTitle => "búsqueda de títulos";
+  @override
+  get enterSearchTitle => "Introduzca Búsqueda de títulos";
+  @override
+  get timeSlots => "Ranuras de tiempo";
+  @override
+  get selectCustomDate => "Seleccione la fecha de encargo";
+  @override
+  get availableSlot => "Ranuras disponibles";
+  @override
+  get reqOfficeView => "Solicitar opinión de la oficina";
+  @override
+  get myComments => "Mi comentario";
+  @override
+  get myReminder => "mi Recordatorio";
+  @override
+  get reminder => "Recordatorio";
+  @override
+  get manageAddress => "administrar direcciones";
+  @override
+  get myAccount => "Mi cuenta";
+  @override
+  get declaimer => "Descargo de responsabilidad";
+  @override
+  get shareStone => "Compartir Piedra";
+  @override
+  get addRemider => "Agregar recordatorio";
+  @override
+  get offlineSearch => "Desconectado Buscar";
+  @override
+  get searchHistory => "Buscar Historia";
+  @override
+  get offlineStock => "Desconectado de la";
+  @override
+  get searchOffline => "Buscar (fuera de línea)";
+  @override
+  get voiceSearch => "Búsqueda por voz";
+  @override
+  get tapMictoSpeak => "Toca el micrófono a hablar";
+  @override
+  get typeToSearch => "Escribe para buscar";
+  @override
+  get typeWordsToSearch => "Escriba al menos 3 palabras para buscar piedras";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class SpanishDynamickeys extends Dynamickeys {
+  @override
+  get shape => "Forma";
+  @override
+  get caratRange => "Rango de quilates";
+  @override
+  get basicDetail => "Detalles básicos";
+  @override
+  get measurementTitle => "Mediciones";
+  @override
+  get inclusionDetail => "Detalles de inclusión";
+  @override
+  get other => "Otro";
+  @override
+  get stoneID => "piedra ID";
+  @override
+  get labTitle => "Laboratorio";
+  @override
+  get certNo => "CERT. NO.";
+  @override
+  get locationTitle => "UBICACIÓN";
+  @override
+  get shapeTitle => "Forma";
+  @override
+  get caratTitle => "Quilate";
+  @override
+  get colorTitle => "Color";
+  @override
+  get clarityTitle => "CLARIDAD";
+  @override
+  get shadeTitle => "Sombra";
+  @override
+  get cutTitle => "Cortar";
+  @override
+  get polishTitle => "polaco";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "Fluorescencia";
+  @override
+  get rapTitle => r"RAP ($)";
+  @override
+  get discountTitle => "Descuento (%)";
+  @override
+  get priceAndCt => r"Precio / Ct ($)";
+  @override
+  get amountTitle => "Cantidad";
+  @override
+  get eyeCleanTitle => "A simple vista";
+  @override
+  get brownTitle => "MARRÓN";
+  @override
+  get milkyTitle => "lechoso";
+  @override
+  get mixTingeTitle => "MIX tinte";
+  @override
+  get dimensionTitle => "Dimensiones (mm)";
+  @override
+  get girdleTitle => "FAJA (%)";
+  @override
+  get tableTitle => "Mesa %";
+  @override
+  get crownAngleTitle => "ángulo de la corona";
+  @override
+  get depthTitle => "profundidad%";
+  @override
+  get pavAngleTitle => "PAV ÁNGULO";
+  @override
+  get crownHeightTitle => "Altura de la corona";
+  @override
+  get pavDepthTitle => "Profundidad Pabellón (%)";
+  @override
+  get starLengthTitle => "Longitud de la estrella";
+  @override
+  get lowerHalfTitle => "Mitad inferior";
+  @override
+  get gridleTitle => "Faja";
+  @override
+  get gridleFacetedTitle => "FAJA FACETADO";
+  @override
+  get culetTitle => "culet";
+  @override
+  get rationTitle => "Proporción";
+  @override
+  get blackInclusionTitle => "INCLUSIÓN NEGRO";
+  @override
+  get otherInclusionTitle => "otro Inclusión";
+  @override
+  get openInclusionTitle => "INCLUSIÓN ABIERTO";
+  @override
+  get extraFacetTitle => "FACET EXTRA";
+  @override
+  get naturalTitle => "Natural";
+  @override
+  get hAndATitle => "H & A";
+  @override
+  get keyToSymbol => "CLAVE PARA EL SÍMBOLO";
+  @override
+  get labComments => "COMENTARIOS DE LABORATORIO";
+  @override
+  get laserInsTitle => "LASER INS";
+  @override
+  get basicTitle => "Básico";
+  @override
+  get advancedTitle => "Avanzado";
+  @override
+  get stoneIdTitle => "Piedra ID / Cert n";
+  @override
+  get defaultTitle => "Defecto";
+  @override
+  get newDiamondsTitle => "nuevos Diamantes";
+  @override
+  get priceLowToHigh => "Precios de barato a caro";
+  @override
+  get priceHighToLow => "Precio de mayor a menor";
+  @override
+  get disLowToHigh => "Descuento de menor a mayor";
+  @override
+  get disHighToLow => "Descuento de mayor a menor";
+  @override
+  get colorLowToHigh => "El color de menor a mayor";
+  @override
+  get colorHighToLow => "El color de mayor a menor";
+  @override
+  get caratLowToHigh => "Quilates de menor a mayor";
+  @override
+  get caratHighToLow => "Quilates de mayor a menor";
+  @override
+  get clarityLowToHigh => "La claridad de menor a mayor";
+  @override
+  get clarityHighToLow => "La claridad de mayor a menor";
+  @override
+  get colorShadeTitle => "Color sombra";
+  @override
+  get certiTitle => "Número certificado";
+  @override
+  get arrivalsTitle => "Llegadas";
+  @override
+  get lengthTitle => "Longitud";
+  @override
+  get widthTitle => "Anchura";
+  @override
+  get pavilionAngleTitle => "pabellón ángulo";
+  @override
+  get girdleConditionTitle => "faja Condición";
+  @override
+  get cluetConditionTitle => "Condición culata";
+  @override
+  get disTitle => "Dis%";
+  @override
+  get depthTitleWithoutPerc => "Profundidad";
+  @override
+  get otherInformationTitle => "Otra información";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "Forma",
+    "caratRange": "Rango de quilates",
+    "basicDetail": "Detalles básicos",
+    "measurementTitle": "Mediciones",
+    "inclusionDetail": "Detalles de inclusión",
+    "other": "Otro",
+    "stoneID": "piedra ID",
+    "labTitle": "Laboratorio",
+    "certNo": "CERT. NO.",
+    "locationTitle": "UBICACIÓN",
+    "shapeTitle": "Forma",
+    "caratTitle": "Quilate",
+    "colorTitle": "Color",
+    "clarityTitle": "CLARIDAD",
+    "shadeTitle": "Sombra",
+    "cutTitle": "Cortar",
+    "polishTitle": "polaco",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "Fluorescencia",
+    "rapTitle": r"RAP ($)",
+    "discountTitle": "Descuento (%)",
+    "priceAndCt": r"Precio / Ct ($)",
+    "amountTitle": "Cantidad",
+    "eyeCleanTitle": "A simple vista",
+    "brownTitle": "MARRÓN",
+    "milkyTitle": "lechoso",
+    "mixTingeTitle": "MIX tinte",
+    "dimensionTitle": "Dimensiones (mm)",
+    "girdleTitle": "FAJA (%)",
+    "tableTitle": "Mesa %",
+    "crownAngleTitle": "ángulo de la corona",
+    "depthTitle": "profundidad%",
+    "pavAngleTitle": "PAV ÁNGULO",
+    "crownHeightTitle": "Altura de la corona",
+    "pavDepthTitle": "Profundidad Pabellón (%)",
+    "starLengthTitle": "Longitud de la estrella",
+    "lowerHalfTitle": "Mitad inferior",
+    "gridleTitle": "Faja",
+    "gridleFacetedTitle": "FAJA FACETADO",
+    "culetTitle": "culet",
+    "rationTitle": "Proporción",
+    "blackInclusionTitle": "INCLUSIÓN NEGRO",
+    "otherInclusionTitle": "otro Inclusión",
+    "openInclusionTitle": "INCLUSIÓN ABIERTO",
+    "extraFacetTitle": "FACET EXTRA",
+    "naturalTitle": "Natural",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "CLAVE PARA EL SÍMBOLO",
+    "labComments": "COMENTARIOS DE LABORATORIO",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "Básico",
+    "advancedTitle": "Avanzado",
+    "stoneIdTitle": "Piedra ID / Cert n",
+    "defaultTitle": "Defecto",
+    "newDiamondsTitle": "nuevos Diamantes",
+    "priceLowToHigh": "Precios de barato a caro",
+    "priceHighToLow": "Precio de mayor a menor",
+    "disLowToHigh": "Descuento de menor a mayor",
+    "disHighToLow": "Descuento de mayor a menor",
+    "colorLowToHigh": "El color de menor a mayor",
+    "colorHighToLow": "El color de mayor a menor",
+    "caratLowToHigh": "Quilates de menor a mayor",
+    "caratHighToLow": "Quilates de mayor a menor",
+    "clarityLowToHigh": "La claridad de menor a mayor",
+    "clarityHighToLow": "La claridad de mayor a menor",
+    "colorShadeTitle": "Color sombra",
+    "certiTitle": "Número certificado",
+    "arrivalsTitle": "Llegadas",
+    "lengthTitle": "Longitud",
+    "widthTitle": "Anchura",
+    "pavilionAngleTitle": "pabellón ángulo",
+    "girdleConditionTitle": "faja Condición",
+    "cluetConditionTitle": "Condición culata",
+    "disTitle": "Dis%",
+    "depthTitleWithoutPerc": "Profundidad",
+    "otherInformationTitle": "Otra información",
+  };
+}
+
+class Germany extends English {
+  @override
+  get authStrings => GermanyAuthStrings();
+  @override
+  get commonString => GermanyCommonString();
+  @override
+  get errorString => GermanyErrorString();
+  @override
+  get noDataStrings => GermanyNoDataStrings();
+  @override
+  get screenTitle => GermanyScreenTitle();
+  @override
+  get dynamickeys => GermanyDynamickeys();
+  static String get languageCode => "Germany";
+  static String get languageName => "Germany";
+}
+
+class GermanyAuthStrings extends AuthStrings {
+  @override
+  get editCompanyInformation => "Firmeninformationen bearbeiten";
+  @override
+  get selectNatureOfOrganization => "Wählen Natur Organisations";
+  @override
+  get setNewPassword =>
+      "Legen Sie Ihr neues Passwort ein und Zeichen wieder in.";
+  @override
+  get enterCompanyName => "Bitte geben Sie Name des Unternehmens.";
+  @override
+  get pleaseEnterCustomerOTP => "Bitte geben Sie Kunden ride-Code.";
+  @override
+  get pleaseEnterPickupOTP => "Bitte geben Sie PickupByCustomer Code.";
+  @override
+  get pleaseEnterDeliveryOTP => "Bitte geben Sie Lieferung an den Kunden-Code.";
+  @override
+  get verified => "Verifiziert";
+  @override
+  get verify => "Überprüfen";
+  @override
+  get addressLineOne => "Adresse 1";
+  @override
+  get addressLineTwo => "Adresse 2";
+  @override
+  get addressLineThree => "Adresse 3";
+  @override
+  get oldPassword => "Altes Passwort";
+  @override
+  get skype => "Skype";
+  @override
+  get whatsApp => "WhatsApp";
+  @override
+  get pinCode => "Geheimzahl*";
+  @override
+  get verifyMobileDesc =>
+      "Bitte überprüfen Handynummer, um das Profil zu aktualisieren.";
+  @override
+  get verifyNow => "Jetzt überprüfen";
+  @override
+  get password => "Passwort";
+  @override
+  get backToHome => "Zur Startseite";
+  @override
+  get forgotPassword => "Passwort vergessen?";
+  @override
+  get signInCap => "Anmelden";
+  @override
+  get moveToLogIn => "Gehen Sie zu Login";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "Klicke hier";
+  @override
+  get signUpHere => "Hier anmelden";
+  @override
+  get reset => "Reset";
+  @override
+  get haveRegisterCode => "Haben Sie einen Registrierungscode?";
+  @override
+  get welcome => "Willkommen zurück!";
+  @override
+  get signInAsGuest => "Einloggen als Gast";
+  @override
+  get editProfileTitle => "Profil bearbeiten";
+  @override
+  get emaillbl => "Email";
+  @override
+  get searchInventory => "Produkt suchen";
+  @override
+  get emailAddress => "E-Mail-Addresse*";
+  @override
+  get offlineFilter =>
+      "Kann nicht die gewünschte Solitär finden? Wir bieten Ihnen das beste Angebot aus unserem Offline Inventar helfen zu bekommen.";
+  @override
+  get loginDesc =>
+      "Haben Sie Touch-Id / MPIN aktivieren möchten My Diamanten zu entsperren? Bitte wählen Sie eine Option zum Entsperren App";
+  @override
+  get searchDiamonds => "Suche nach Diamanten";
+  @override
+  get continueWithSearch => "Möchten Sie Ihre Suche fortsetzen?";
+  @override
+  get mobileNumber => "Handy, Mobiltelefon";
+  @override
+  get searchHint => "Suche...";
+  @override
+  get selectYourCountry => "Land auswählen";
+  @override
+  get resendCodeIn => "Erneut senden Code in";
+  @override
+  get resendCode => "Erneut senden";
+  @override
+  get haveAnAccount => "Sie haben bereits ein Konto?";
+  @override
+  get dontReceiveCode => "Wenn Sie keinen Code erhalten!";
+  @override
+  get inLogin => "Einloggen.";
+  @override
+  get resetPwdDesc =>
+      "In Passwort und Passwort bestätigen Sie Ihr Passwort zurücksetzen.";
+  @override
+  get backToLogin => "Zurück zur Anmeldung";
+  @override
+  get firstName => "Vorname*";
+  @override
+  get name => "Nutzername*";
+  @override
+  get lastName => "Familienname, Nachname*";
+  @override
+  get middleName => "Zweiter Vorname*";
+  @override
+  get confirmPassword => "Kennwort bestätigen";
+  @override
+  get currentPasswordErr => "Aktuelles Passwort-Fehler";
+  @override
+  get passwordChanged => "Passwort geändert";
+  @override
+  get lblLogInErr => "Login Fehler";
+  @override
+  get enterYour => "Geben Sie Ihr";
+  @override
+  get details => "Einzelheiten";
+  @override
+  get registerCode => "Registrierungscode";
+  @override
+  get registerCodeDesc =>
+      "Fügen Sie einen Registrierungscode Ihre Anmeldung mit 3eco zu starten.";
+  @override
+  get uploadPhotoDesc => "Nehmen Sie einen selfie Ihrer Selbst";
+  @override
+  get updateProfile => "Profil aktualisieren";
+  @override
+  get postalCode => "Postleitzahl*";
+  @override
+  get removeButton => "Entfernen";
+  @override
+  get gender => "Geschlecht";
+  @override
+  get male => "Männlich";
+  @override
+  get female => "Weiblich";
+  @override
+  get changePassword => "Passwort ändern";
+  @override
+  get currentPassword => "Jetziges Passwort*";
+  @override
+  get newPassword => "Neues Passwort*";
+  @override
+  get confirmNewPassword => "Kennwort bestätigen*";
+  @override
+  get personalDocuments => "persönliche Dokumente";
+  @override
+  get assignedAuto => "Assigned Auto";
+  @override
+  get logout => "Ausloggen";
+  @override
+  get logoutConfirmationMsg =>
+      "Sind Sie sicher, dass Sie sich abmelden wollen?";
+  @override
+  get address => "Adresse*";
+  @override
+  get accountNumber => "Kontonummer";
+  @override
+  get bankerName => "Bankers Namens";
+  @override
+  get nameLable => "Name";
+  @override
+  get ifscCode => "IFSC Code";
+  @override
+  get businessRegistrationNumbr => "Firmenregistrierungsnummer:";
+  @override
+  get businessRelationshipPeriod => "Geschäftsbeziehung Zeitraum (in Jahren)";
+  @override
+  get designation => "Bezeichnung";
+  @override
+  get nameofDesignation => "Name von";
+  @override
+  get natureofOrganization => "Art der Organisation";
+  @override
+  get uploadFile => "No File Choosen";
+  @override
+  get update => "AKTUALISIEREN";
+  @override
+  get resetPwd => "Passwort zurücksetzen";
+  @override
+  get pwdReset => "Passwort zurücksetzen";
+  @override
+  get signInWithMPIN => "Anmeldung mit MPIN";
+  @override
+  get pwdChanged => "Passwort geändert";
+  @override
+  get successfullyPwdDesc =>
+      "Sie haben Ihr Passwort zurücksetzen erfolgreich. Bitte benutzen Sie Ihr neues Passwort bei der Anmeldung.";
+  @override
+  get lblProfileSetup => "Ihr Profil eingerichtet ist,";
+  @override
+  get lblProfileSetupDesc => "Wir haben Ihre Profildetails erhalten";
+  @override
+  get hoursAvailable => "insgesamt Shifttime";
+  @override
+  get confirmStoneDetail => "Bestätigen Stein-Detail";
+  @override
+  get companyName => "Name der Firma";
+  @override
+  get invoiceDate => "Rechnungsdatum";
+  @override
+  get companyCode => "Buchungskreis";
+  @override
+  get saveCompanyDetails => "Speichern Firmendetails";
+  @override
+  get passwordNotChange => "Passwort stimmt nicht überein";
+  @override
+  get rememberPassword => "Passwort merken?";
+  @override
+  get sendOTP => "senden OTP";
+  @override
+  get resendNow => "Erneut senden Jetzt";
+  @override
+  get didNotReceiveOTP => "Wenn Sie nicht erhalten eine OTP!";
+  @override
+  get sendOTPToEmail =>
+      "Wir werden ein OTP an Ihre angegebene E-Mail-Adresse oder Benutzernamen senden. Bitte geben Sie die E-Mail-Adresse oder Benutzernamen.";
+  @override
+  get enterOTP =>
+      "Die OTP wurde an Ihre registrierte E-Mail-Adresse gesendet. Bitte geben Sie die OTP.";
+  @override
+  get backToSignIn => "Zurück sich anmelden";
+  @override
+  get passwordResetSuccessfully => "Kennworts erfolgreich.";
+  @override
+  get emailAndUname => "E-Mail / Benutzername";
+  @override
+  get signUp => "Anmelden";
+  @override
+  get promotionText => "Werbeangebote";
+  @override
+  get termsAndCondition => "Geschäftsbedingung";
+  @override
+  get mustAgreeTermsAndCondition =>
+      "Sie müssen zu Bedingungen und den Zustand zustimmen als Gast Benutzer anmelden";
+  @override
+  get forgotPasswordTitle => "Passwort vergessen";
+  @override
+  get uploadKYC => "hochladen KYC";
+  @override
+  get uploadKycDesc =>
+      "Bitte laden Sie Ihre KYC-Dokumente voll Funktionen zuzugreifen.";
+  @override
+  get hintPhotoIdentityProof => "Foto Identitätsnachweis *";
+  @override
+  get hintBussinerssProof => "Geschäfts-Identität Proof *";
+  @override
+  get btnFileUpload => "Datei-Upload";
+  @override
+  get pleaseUploadPhotoProof => "Bitte laden Foto Identitätsnachweis.";
+  @override
+  get pleaseUploadBussinessProof => "Bitte laden Geschäfts-Identität Beweis.";
+  @override
+  get pleaseSelectFileFormat =>
+      "Bitte laden Sie Datei in einem der folgenden Formate: .jpg";
+  @override
+  get kycSubmitted => "KYC eingereicht";
+  @override
+  get kycSubmmittedDesc => "Ihre KYC wurde erfolgreich abgegeben.";
+  @override
+  get btnMoveToHome => "Gehen Sie zu Start";
+  @override
+  get kYCRejected => "KYC Zurückgewiesen";
+  @override
+  get kycRejectedDesc =>
+      "Ihre KYC wurde abgelehnt. Bitte laden Sie Ihre KYC-Dokumente wieder alle Funktionen zugreifen zu können.";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class GermanyCommonString extends CommonString {
+  @override
+  get seeMore => "Mehr sehen";
+  @override
+  get seeLess => "Weniger anzeigen";
+  @override
+  get modify => "Ändern";
+  @override
+  get delete => "Löschen";
+  @override
+  get details => "Einzelheiten";
+  @override
+  get edit => "Bearbeiten";
+  @override
+  get addDemand => "Add Nachfrage";
+  @override
+  get demandTitle => "Die Nachfrage Titel";
+  @override
+  get pleaseEnterDemandTitle => "Bitte geben Sie die Nachfrage Titel";
+  @override
+  get demandAddedSuccessfully => "Die Nachfrage Erfolgreich";
+  @override
+  get selectAtleastOneFilter => "Bitte";
+  @override
+  get savedSearch => "Gespeicherte Suche";
+  @override
+  get searchSavedSearch => "Suche Gespeicherte Suche";
+  @override
+  get viewDetails => "Details anzeigen";
+  @override
+  get viewLessDetails => "Anzeigen Weniger Details";
+  @override
+  get myDemand => "Meine Nachfrage";
+  @override
+  get date => "Datum";
+  @override
+  get selectTime => "Wählen Sie Zeit";
+  @override
+  get selectDate => "Datum auswählen";
+  @override
+  get offerVelidTill => "Angebot gültig bis";
+  @override
+  get officeVisitDate => "Büro Besuchsdatum";
+  @override
+  get all => "Alle";
+  @override
+  get status => "Status";
+  @override
+  get save => "sparen";
+  @override
+  get verify => "Überprüfen";
+  @override
+  get readMore => "Weiterlesen";
+  @override
+  get goodMorning => "Guten Morgen";
+  @override
+  get goodAfternoon => "Guten Nachmittag";
+  @override
+  get goodEvening => "Guten Abend";
+  @override
+  get btnSkip => "Überspringen";
+  @override
+  get btnUpdate => "Aktualisieren";
+  @override
+  get btnContinue => "Fortsetzen";
+  @override
+  get btnContinueCap => "FORTSETZEN";
+  @override
+  get btnEdit => "Bearbeiten";
+  @override
+  get btnSubmit => "einreichen";
+  @override
+  get btnNextCap => "Nächster";
+  @override
+  get btnSaveCap => "Passwort erneuern";
+  @override
+  get btnWithdrawCap => "ABHEBEN";
+  @override
+  get btnSaveAndContinueCap => "SPEICHERN FORTSETZEN";
+  @override
+  get btnUnregister => "Nicht registrierte Mobil";
+  @override
+  get btnClose => "Schließen";
+  @override
+  get remove => "Entfernen";
+  @override
+  get refresh => "Aktualisierung";
+  @override
+  get fetchLocationMessage => "Bitte warten wir holen Sie Ihren Standort";
+  @override
+  get done => "Getan";
+  @override
+  get doneCap => "GETAN";
+  @override
+  get cancel => "Stornieren";
+  @override
+  get allow => "ermöglichen";
+  @override
+  get countryFirst => "Bitte wähle ein Land aus";
+  @override
+  get apply => "Anwenden";
+  @override
+  get cancelCap => "STORNIEREN";
+  @override
+  get uploadCap => "HOCHLADEN";
+  @override
+  get yesCancelCap => "JA";
+  @override
+  get upload => "Hochladen";
+  @override
+  get ok => "In Ordnung";
+  @override
+  get home => "Zuhause";
+  @override
+  get goToMyWatchList => "Zum Meine Beobachtungsliste";
+  @override
+  get goToMyOrder => "Zum Einloggen Bestellung";
+  @override
+  get gotToMyOffer => "Zum Mein Angebot";
+  @override
+  get gotToMyHold => "Gehen Sie zu Mein Halten";
+  @override
+  get gotToMyEnquiry => "Zum Meine Anfrage";
+  @override
+  get gotToMyBid => "Zum Mein Gebot";
+  @override
+  get gotToMyReminder => "Zur Meiner Erinnerung";
+  @override
+  get gotToMyComments => "Zum Meine Notizen";
+  @override
+  get yes => "Ja";
+  @override
+  get no => "Nein";
+  @override
+  get selectCountry => "Land auswählen";
+  @override
+  get clickHere => "Klicke hier";
+  @override
+  get btnAddNewAddress => "NEUE ADRESSE HINZUFÜGEN";
+  @override
+  get btnCancel => "STORNIEREN";
+  @override
+  get btnTakeSelfie => "nehmen Sie Selfie";
+  @override
+  get successfully => "Erfolgreich";
+  @override
+  get lblAppExit => "Sie sind sicher, dass Sie beenden wollen?";
+  @override
+  get lblExit => "Ausgang";
+  @override
+  get openAppSetting => "Einstellungen öffnen";
+  @override
+  get lblOr => "Oder";
+  @override
+  get fromLbl => "Von";
+  @override
+  get toLbl => "Zu";
+  @override
+  get showMore => "Zeig mehr";
+  @override
+  get showLess => "Zeige weniger";
+  @override
+  get selectCity => "Stadt wählen";
+  @override
+  get notYetAvailable => "Noch nicht verfügbar";
+  @override
+  get updateAvailable => "Update verfügbar!";
+  @override
+  get downloadAppFrom => "Download-Anwendung Update";
+  @override
+  get playStore => "Spielladen";
+  @override
+  get skipUpdate => "Update überspringen";
+  @override
+  get stateFirst => "Bitte wählen Staat Erste";
+  @override
+  get reallyExit => "Wirklich beenden?";
+  @override
+  get alert => "Aufmerksam!";
+  @override
+  get loading => "Wird geladen";
+  @override
+  get error => "Error";
+  @override
+  get jumpToTop => "Sprung nach oben";
+  @override
+  get ihaveread => "Ich habe gelesen und akzeptiere";
+  @override
+  get selected => "Wählen";
+  @override
+  get lbllogout => "Ausloggen";
+  @override
+  get lblThanx => "Vielen Dank";
+  @override
+  get lblSelectCity => "Stadt wählen";
+  @override
+  get lblSelectState => "Staat wählen";
+  @override
+  get lblSelectCountry => "Land auswählen";
+  @override
+  get lblCity => "Stadt";
+  @override
+  get lblCountry => "Land";
+  @override
+  get lblName => "Name";
+  @override
+  get lblPinCode => "Geheimzahl";
+  @override
+  get lblMobileNumber => "Handynummer";
+  @override
+  get lblState => "Zustand";
+  @override
+  get lblCode => "Code:";
+  @override
+  get lblOrderNo => "Best.-Nr:";
+  @override
+  get lblOrderItem => "Bestellungsartikel:";
+  @override
+  get lblDelivered => "geliefert";
+  @override
+  get lblTicketReady => "Ihr Ticket ist bereit";
+  @override
+  get lblPersonTicket => "Ticket von 2 Personen";
+  @override
+  get lblShuttleBus => "Shuttlebus";
+  @override
+  get lblPickup => "Abholen";
+  @override
+  get lblDropoff => "Dropoff";
+  @override
+  get lblPassenger => "Passagier";
+  @override
+  get lblDeliveryNo => "Liefer-Nr.";
+  @override
+  get lblPrice => "Preis";
+  @override
+  get lblValid => "Gültig für";
+  @override
+  get lblRenew => "Erneuern";
+  @override
+  get lblDeparture => "Abfahrt";
+  @override
+  get lblArrived => "Ist eingetroffen";
+  @override
+  get lblSendtoFriend => "An Freund senden";
+  @override
+  get popupRenewTitle => "erneuern Ticket";
+  @override
+  get popupRenewDesc => "Lorem ipsum dolor sit amet";
+  @override
+  get popuplblPassenger => "Passagier";
+  @override
+  get popuplblCancel => "Stornieren";
+  @override
+  get popupbtnRenew => "Erneuern";
+  @override
+  get ridelblAwesome => "Genial";
+  @override
+  get ridebtnDone => "Getan";
+  @override
+  get offerPricePerCarat => "Angeboten Preis (cts)";
+  @override
+  get dropOffText => "Dropoff";
+  @override
+  get pickUpText => "Abholen";
+  @override
+  get startAtText => "Anfangen bei";
+  @override
+  get endAtText => "beenden Sie bei";
+  @override
+  get personText => "Person";
+  @override
+  get paymentScreenTitle => "Zahlung";
+  @override
+  get pickuplbl => "Abholen";
+  @override
+  get droplbl => "Dropoff";
+  @override
+  get makePaymentButtonlbl => "Jetzt Zahlung";
+  @override
+  get pessangerslbl => "Passagiere";
+  @override
+  get priceBreakuplbl => "Preis Breakup";
+  @override
+  get tripPricelbl => "Reisepreis";
+  @override
+  get taxeslbl => "Steuern";
+  @override
+  get totallbl => "Gesamt";
+  @override
+  get cardNumberhint => "Kartennummer";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / JJ";
+  @override
+  get btnTryAgain => "Versuchen Sie es nochmal";
+  @override
+  get cityFirst => "Bitte wählen Sie eine Stadt zuerst";
+  @override
+  get enterFareDetails => "Geben Sie Verkaufsdetails";
+  @override
+  get fromDate => "Ab Datum";
+  @override
+  get toDate => "ausgewählte Datum";
+  @override
+  get btnUnderstand => "Ich verstehe";
+  @override
+  get applicationUpdate => "Software-Update";
+  @override
+  get newVersionMessage => "Eine neue Version von Anwendung ist";
+  @override
+  get paymentCollected => "Zahlung Gesammelte";
+  @override
+  get addComment => "Einen Kommentar hinzufügen";
+  @override
+  get more => "Mehr";
+  @override
+  get carat => "Karat";
+  @override
+  get pcs => "Stck";
+  @override
+  get cts => "cts";
+  @override
+  get disc => "Rabatt %";
+  @override
+  get avgPriceCrt => "Durchschn. Preis / Ct";
+  @override
+  get amount => "Menge";
+  @override
+  get confirmStone => "Bestätigen Stein";
+  @override
+  get confirm => "Bestätigen";
+  @override
+  get offered => "Angeboten";
+  @override
+  get validTill => "Gültig bis";
+  @override
+  get remark => "Anmerkung";
+  @override
+  get color => "Farbe";
+  @override
+  get colorGroup => "Color Group";
+  @override
+  get colorFancy => "Schick";
+  @override
+  get colorWhite => "Weiß";
+  @override
+  get clarity => "Klarheit";
+  @override
+  get clarityGroup => "Clarity-Gruppe";
+  @override
+  get intensity => "Intensität";
+  @override
+  get overtone => "Oberton";
+  @override
+  get selectBusinessType => "Wählen Sie Unternehmensart";
+  @override
+  get selectState => "Staat wählen";
+  @override
+  get search => "Suche";
+  @override
+  get profile => "Mein Profil";
+  @override
+  get personal => "persönlich";
+  @override
+  get business => "Geschäft";
+  @override
+  get documents => "Unterlagen";
+  @override
+  get noSlotFound => "Keine Slots";
+  @override
+  get noDiamondFound =>
+      "Keine Diamanten für Ihre Suche. Bitte fügen Sie verlangen.";
+  @override
+  get selectType => "Wählen Sie Virtuelle Typ";
+  @override
+  get noSavedSearch => "Keine Gespeicherte Suche Exists";
+  @override
+  get searchCity => "Suche nach Stadt";
+  @override
+  get searchCountry => "Suchen Land";
+  @override
+  get searchState => "Suchzustand";
+  @override
+  get notifications => "Benachrichtigung";
+  @override
+  get enter2Stone => "Bitte wählen Sie mindestens 2 Stein zu vergleichen.";
+  @override
+  get bidDesc =>
+      "wird derzeit in Indien und für die Lieferung in jedem anderen Land außer Indien nehmen mindestens 7-10 Arbeitstag entfernt.";
+  @override
+  get packetNo => "Packet No:";
+  @override
+  get quit => "Verlassen";
+  @override
+  get agree => "Genau";
+  @override
+  get laterToday => "Später am heutigen Tag";
+  @override
+  get toMorrow => "Morgen";
+  @override
+  get nextWeek => "Nächste Woche";
+  @override
+  get chooseAnother => "Wähle ein anderes";
+  @override
+  get dateTime => "Terminzeit";
+  @override
+  get language => "Sprache";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "Keine Dokumente gefunden";
+  @override
+  get searchBusinessType => "Suche Unternehmensart";
+  @override
+  get hours => "Std";
+  @override
+  get minutes => "Protokoll";
+  @override
+  get seconds => "Sekunden";
+  @override
+  get bidEndsIn => "Bid endet in:";
+  @override
+  get shape => "Gestalten";
+  @override
+  get download => "Herunterladen";
+  @override
+  get share => "Aktie";
+  @override
+  get placeOrder => "Bestellung aufgeben";
+  @override
+  get enterComment => "Bitte Kommentar eingeben";
+  @override
+  get deleteItem => "Sind Sie sicher, dass Sie löschen möchten?";
+  @override
+  get shippingPolicy => "Versandbedingungen";
+  @override
+  get offerSundayRestriction =>
+      "Sonntag ist nicht erlaubt. Büroarbeitstage sind Montag bis Samstag";
+  @override
+  get weekAgo => "Vor 1 Woche";
+  @override
+  get lastWeek => "Letzte Woche";
+  @override
+  get dayAgo => "Vor Tagen";
+  @override
+  get onedayAgo => "Vor 1 Tag";
+  @override
+  get yesterday => "Gestern";
+  @override
+  get hourAgo => "Vor Stunden";
+  @override
+  get onehourAgo => "vor 1 Stunde";
+  @override
+  get anhourAgo => "Vor einer Stunde";
+  @override
+  get mintuesAgo => "Vor ein paar Minuten";
+  @override
+  get onemintuesAgo => "Vor 1 Minute";
+  @override
+  get amintueAgo => "Vor einer Minute";
+  @override
+  get secondsAgo => "Sekunden zuvor";
+  @override
+  get justNow => "Grade eben";
+  @override
+  get today => "Heute";
+  @override
+  get past => "Vergangenheit";
+  @override
+  get selectPhotoProof => "Wählen Sie Dokument";
+  @override
+  get pleaseSelectPhotoProof => "Bitte wählen Sie Dokument";
+  @override
+  get selectBusinessProof => "Wählen Sie Dokument";
+  @override
+  get pleaseSelectBusinessProof => "Bitte wählen Sie Dokument";
+  @override
+  get touchId => "Berührungsidentifikation";
+  @override
+  get faceId => "Gesicht Id";
+  @override
+  get enableTouchId => "Aktivieren Touch-Id My Diamanten zu entsperren?";
+  @override
+  get enableFaceId => "Aktivieren Gesicht Id My Diamanten zu entsperren?";
+  @override
+  get unlockWithTouchId => "Diamanten Unlock My mit Touch-Id";
+  @override
+  get unlockWithFaceId => "Schalt Meine Diamanten mit dem Gesicht Id.";
+  @override
+  get mPin => "MPIN";
+  @override
+  get holdMemoStatusDiamondorder =>
+      "Sie können nicht mit Steinen bestätigt, die bereits im Halte- oder Memo-Status sind";
+  @override
+  get searchStoneIdCertificateNo => "Suchen Stein Id / Zertifikat Nr";
+  @override
+  get createMPin => "Create New MPIN";
+  @override
+  get reentermpin => "reenter MPIN";
+  @override
+  get forgotmpin => "Vergessen MPIN?";
+  @override
+  get verifympin => "Stellen Sie sicher, MPIN";
+  @override
+  get enteryoursixdigitcode => "Geben Sie Ihre 6-stellige MPIN";
+  @override
+  get changempin => "ändern MPIN";
+  @override
+  get faceidandtouchnotenable =>
+      "FaceID / TouchId ist in Ihrem Telefon nicht aktiviert, aktivieren Sie bitte diese Funktion zu nutzen";
+  @override
+  get enablempintounlockmydiamonds =>
+      "Aktivieren MPIN zu entsperren app? Es wird Touch-Id deaktivieren. Bist du dir sicher, dass du weitermachen willst?";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "Aktivieren Touch-Id zu entsperren app? Es wird MPIN deaktivieren. Bist du dir sicher, dass du weitermachen willst?";
+  @override
+  get rememberme => "Behalte mich in Erinnerung";
+  @override
+  get usertouchid => "Verwenden Sie Touch-Id";
+  @override
+  get usempin => "Verwenden MPIN";
+  @override
+  get filesarenotavailableonserver =>
+      "Die Dateien sind nicht verfügbar auf dem Server, Bitte versuchen Sie es später noch einmal";
+  @override
+  get allfileshavebeendownloaded => "Alle Dateien heruntergeladen wurden.";
+  @override
+  get filesisdownloaded => "Dateien heruntergeladen";
+  @override
+  get filesisnotdownloadedbcz =>
+      "Dateien nicht heruntergeladen, weil es nicht auf dem Server vorhanden ist.";
+  @override
+  get downloadingCanceled => "Vorgang abgebrochen";
+  @override
+  get downloading => "Wird heruntergeladen...";
+  @override
+  get expirydate => "Verfallsdatum :";
+  @override
+  get youreallywanttodelete => "Sie wollen wirklich löschen";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "Klarheit",
+    "shape": "Gestalten",
+  };
+}
+
+class GermanyErrorString extends ErrorString {
+  @override
+  get accessDenide => "Zugriff verweigert";
+  @override
+  get pleaseSelectOfferTillDate => "Bitte wählen Angebot bis heute.";
+  @override
+  get pleaseSelectOfficeVisitDate => "Bitte wählen Sie Büro Besuchstermin";
+  @override
+  get deleteStoneMsg => "Sind Sie sicher, dass Sie löschen möchten Stein (e)?";
+  @override
+  get acceptTermsAndCondition =>
+      "Bitte akzeptieren Bedingungen und den Zustand";
+  @override
+  get diamondCompareRemove =>
+      "Mindestens 2 Steine ​​sind erforderlich, um zu vergleichen.";
+  @override
+  get diamondSelectionError => "Bitte wählen Sie mindestens einen Stein.";
+  @override
+  get pleaseEnterCompanyName => "Bitte geben Sie Firmennamen.";
+  @override
+  get selectInvoiceDate => "Wählen Sie Rechnungsdatum";
+  @override
+  get pleaseEnterComment => "Bitte Kommentar eingeben.";
+  @override
+  get pleaseEnterRemarks => "Bitte geben Sie Bemerkungen.";
+  @override
+  get selectExpiryDate => "Bitte wählen Sie Ablaufdatum.";
+  @override
+  get enterOTP => "Bitte Code eingeben";
+  @override
+  get pleaseEnterOTP => "Bitte Sicherheitscode eingeben.";
+  @override
+  get enteredCodeNotMatching =>
+      "Eingegebene Code ist passend nicht. Versuchen Sie es nochmal";
+  @override
+  get selectCancellationReason => "Bitte wählen Sie Grund für die Stornierung";
+  @override
+  get enterDesc => "Bitte geben Sie Beschreibung.";
+  @override
+  get enterTitle => "Bitte Titel eingeben.";
+  @override
+  get enterEmailOrPhone => "Bitte geben Sie E-Mail / mobile.";
+  @override
+  get enterPassword =>
+      "Das Passwort darf nicht leer sein. Bitte Passwort eingeben.";
+  @override
+  get enterConfirmPassword => "Bitte geben Sie bestätigen Passwort.";
+  @override
+  get enterSkype => "Bitte geben Sie Skype.";
+  @override
+  get enterRegisterCode => "Bitte geben Sie den Registrierungscode";
+  @override
+  get enterEmail => "Bitte geben Sie die E-Mail-Adresse ein.";
+  @override
+  get enterPhone => "Bitte geben Sie Mobile Number.";
+  @override
+  get enterUsername =>
+      "Benutzername darf nicht leer sein. Bitte geben sie einen Benutzernamen ein.";
+  @override
+  get enterValidEmail => "Bitte geben Sie die gültige E-Mail-Adresse ein.";
+  @override
+  get enterValidPhone => "Bitte geben Sie die Handynummer ein.";
+  @override
+  get enterValidWhatsappPhone =>
+      "Bitte geben Sie das gültige WhatsApp Mobile Number.";
+  @override
+  get enterValidPassword => "Bitte geben Sie 6 Zeichen oder langes Passwort.";
+  @override
+  get mismatchPassword =>
+      "Passwort und Passwort bestätigen wird passend nicht.";
+  @override
+  get enterFirstName => "Bitte geben Sie den Vornamen.";
+  @override
+  get enterMiddleName => "Bitte geben Sie den Mittelnamen.";
+  @override
+  get enterPinCode => "Bitte geben Sie den PIN-Code.";
+  @override
+  get enterName => "Bitte geben Sie den Namen.";
+  @override
+  get enterLastName => "Bitte geben Sie Nachname.";
+  @override
+  get enterAddress => "Bitte geben Sie Adresse.";
+  @override
+  get enterValidPinCode => "Geben Sie eine gültige PinCode.";
+  @override
+  get enterValidAddress => "Bitte geben Sie 10 Zeichen oder lange Adresse.";
+  @override
+  get enterPostalCode => "Bitte geben Sie Postleitzahl.";
+  @override
+  get enterValidPostalCode => "Bitte geben Sie 6-stellige Zahlen Postleitzahl.";
+  @override
+  get enterCurrentPassword => "Bitte geben Sie das aktuelle Kennwort.";
+  @override
+  get enterNewPassword => "Bitte neues Passwort eingeben.";
+  @override
+  get enterFareAmount => "Bitte geben Sie Verkaufsbetrag.";
+  @override
+  get enterOrderNO => "Bitte geben Sie Bestell-Nr.";
+  @override
+  get enterServiceType => "Bitte wählen Sie Art von Service.";
+  @override
+  get enterPaymentType => "Bitte wählen Sie die Zahlungsart.";
+  @override
+  get enterValidFareAmount => "Verkaufsbetrag kann nicht Null sein.";
+  @override
+  get enterPassangerNo => "Bitte geben Sie nicht. der Passagiere.";
+  @override
+  get enterValidPassangerNo => "Anzahl der Passagiere darf nicht Null sein.";
+  @override
+  get notEnterMorePassangerNo =>
+      "Anzahl der Passagiere darf nicht mehr als sieben sein.";
+  @override
+  get drivingLicenseValidationText =>
+      "Bitte geben Sie 15-stellige alphanumerische Führerscheinnummer.";
+  @override
+  get pANCardValidationText =>
+      "Bitte geben Sie 10-stellige alphanumerische PAN Kartennummer.";
+  @override
+  get selectFromDate => "Bitte wählen Sie aus Datum";
+  @override
+  get selectToDate => "Bitte wählen Sie auf dem Laufenden";
+  @override
+  get fromGreaterTo =>
+      "Das gewählte Datum muss größer sein als das aktuelle Datum";
+  @override
+  get wrongPassword =>
+      "Das Passwort muss enthält, Minimum 8 Zeichen, 1 Groß Alphabet, 1 Kleinbuchstaben, 1-stellig, 1 Spezial charater";
+  @override
+  get fromValueGreateThanTo =>
+      "Von Wert sollte um Wert kleiner oder gleich sein";
+  @override
+  get toValueGreaterThanFrom =>
+      "Um Wert sollte größer oder gleich sein, von Wert";
+  @override
+  get pleaseEnterCompanyCode => "Bitte geben Sie den Buchungskreis";
+  @override
+  get enterSamePassword =>
+      "Kennwort bestätigt nicht mit neuem Kennwort überein. Bitte geben Sie bestätigen Passwort gleiche wie Neues Passwort.";
+  @override
+  get selectAppointmentDate => "Bitte wählen Sie Termin Datum";
+  @override
+  get selectTimeSlot => "Bitte wählen Sie Zeitschlitz";
+  @override
+  get enterComments => "Bitte geben Sie Kommentar";
+  @override
+  get selectVirtualType => "Bitte wählen Sie virtuellen Typ";
+  @override
+  get versionError => "Version Fehler";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class GermanyNoDataStrings extends NoDataStrings {
+  @override
+  get noDataFound => "Kein Eintrag gefunden";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class GermanyScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "Legen Sie ein Angebot";
+  @override
+  get addedInWatchList => "Hinzugefügt in Merkliste";
+  @override
+  get addedInOffer => "Angebot eingereicht";
+  @override
+  get addedInCart => "in Einkaufswagen gelegt";
+  @override
+  get addedInBid => "Hinzugefügt in Bid";
+  @override
+  get myEnquiry => "Meine Anfrage";
+  @override
+  get delete => "Löschen";
+  @override
+  get addDemand => "Add-Demand";
+  @override
+  get matchPair => "Spiel Pair";
+  @override
+  get savedAndSearch => "Sichere Suche";
+  @override
+  get updateAndSearch => "Update & Suche";
+  @override
+  get upcoming => "Bevorstehende";
+  @override
+  get bidPricePerCt => "Geldkurs / Ct";
+  @override
+  get bidDisc => "Bid Disc";
+  @override
+  get bidValue => "Gebot";
+  @override
+  get bidStone => "Bid Stein";
+  @override
+  get myCart => "Mein Warenkorb";
+  @override
+  get myComment => "Meine Notizen";
+  @override
+  get compare => "Vergleichen Sie";
+  @override
+  get compareStones => "Vergleichen Sie Steine";
+  @override
+  get statusHold => "In Wartestellung";
+  @override
+  get statusOnMemo => "auf Memo";
+  @override
+  get statusAvailable => "Verfügbar";
+  @override
+  get statusNew => "Neuankömmling";
+  @override
+  get statusOffer => "Stein des Tages / Promotion";
+  @override
+  get statusMyHold => "Mein Halten";
+  @override
+  get signup => "Anmelden";
+  @override
+  get addToOffice => "In Büro";
+  @override
+  get addComment => "Einen Kommentar hinzufügen";
+  @override
+  get addEnquiry => "In Anfrage";
+  @override
+  get finalOffer => "Finales Angebot";
+  @override
+  get finalDisc => "Schluss Disc";
+  @override
+  get finalRate => "Endrate";
+  @override
+  get finalValue => "Endwert";
+  @override
+  get orderMsg =>
+      "1) Die angegebenen Preise hier über fixiert sind und daher nicht verhandelbar. \\ n2) Die Einstufung, genannten Parameter auf unserer Website über GIA Grading.";
+  @override
+  get offerMsg =>
+      "Angeboten Stein wird direkt bestätigt werden, wenn der Preis genehmigt bekommt, damit wir Sie bitten, bevor Angebot sicher zu sein. Jeder Stein (e) in Angebotsliste setzen ist nicht für Sie in der Warteschleife gehalten, wie es auch für andere Kunden auch zur Verfügung steht.";
+  @override
+  get note => "Hinweis";
+  @override
+  get hours => "Std";
+  @override
+  get offeredDisc => "angeboten Dis";
+  @override
+  get offeredPriceCt => "Angeboten Pr / Ct";
+  @override
+  get addOffer => "Angebot melden";
+  @override
+  get expDiscPer => "Erwartete Discount";
+  @override
+  get todayDiscPer => "Die heutige Disc";
+  @override
+  get searchResult => "Suchergebnis";
+  @override
+  get searchDiamond => "Suchen Diamant";
+  @override
+  get basic => "Basic";
+  @override
+  get advanced => "fortgeschritten";
+  @override
+  get stoneIdCertNo => "StoneID / Cert No";
+  @override
+  get takeSignature => "nehmen Signature";
+  @override
+  get optional => "Optional";
+  @override
+  get myAddress => "Meine Adresse";
+  @override
+  get expiryDate => "Verfallsdatum";
+  @override
+  get drivingLicenceDesc => "Ihr Führerschein Bild";
+  @override
+  get panDesc => "Ihre PAN-Karte Bild";
+  @override
+  get selfie => "Selfie";
+  @override
+  get selfieDesc => "Ihr selfie Bild";
+  @override
+  get pending => "steht aus";
+  @override
+  get rejected => "Abgelehnt";
+  @override
+  get uploadAgain => "Hochladen";
+  @override
+  get remove => "Entfernen";
+  @override
+  get title => "Titel";
+  @override
+  get description => "Beschreibung";
+  @override
+  get uploadYour => "laden Sie Ihre";
+  @override
+  get raiseDispute => "Erzähl uns davon";
+  @override
+  get drivingLicense => "Führerschein";
+  @override
+  get pANCard => "PAN-Karte";
+  @override
+  get saveContinue => "Speichern und fortfahren";
+  @override
+  get uploadFrontUmgText => "Hochladen Front Side Bild";
+  @override
+  get uploadPANCardImgText => "Hochladen von PAN-Karte Bild";
+  @override
+  get uploadBackImageText => "Hochladen der Rückseite Bild";
+  @override
+  get helptopic => "Hilfethemen";
+  @override
+  get newRideSharingRequest => "Neue Fahrt Freigabeanfragen";
+  @override
+  get newRequest => "neue Anfragen";
+  @override
+  get welcomeTo => "Willkommen zu";
+  @override
+  get welcomeDesc => "Anmeldung zu Ihrem bestehenden Konto von Mani Jewel";
+  @override
+  get forgotPassword => "Haben Sie Ihr";
+  @override
+  get forgotPasswordDesc =>
+      "Geben Sie Ihre registrierte Mobiltelefonnummer, Ihr Passwort zu erholen.";
+  @override
+  get termsAndCondition => "Terms & amp; Bedingungen";
+  @override
+  get privacyPolicy => "Datenschutz-Bestimmungen";
+  @override
+  get aboutUS => "Über uns";
+  @override
+  get otpVerification => "Stellen Sie sicher, Fahrt-Code";
+  @override
+  get otpVerificationDelivery => "Stellen Sie sicher, Pickup-Code";
+  @override
+  get otpVerificationDeliveryDone => "Stellen Sie sicher, Liefer-Code";
+  @override
+  get enterOtp => "Geben Sie 4-stellige";
+  @override
+  get recoveryCode => "Wiederherstellungscode";
+  @override
+  get editProfile => "Profil bearbeiten";
+  @override
+  get myProfile => "Mein Profil";
+  @override
+  get reset => "Reset";
+  @override
+  get yourPassword => "Ihr Passwort";
+  @override
+  get photo => "Foto";
+  @override
+  get otpDesc =>
+      "Der Recovery-Code wurde an Ihre Handy-Nummer gesendet. Bitte geben Sie den Code ein.";
+  @override
+  get otpVerifyDesc =>
+      "Der Bestätigungscode wurde an Ihre Handy-Nummer gesendet. Bitte geben Sie den Code ein.";
+  @override
+  get diamondDetail => "Diamant-Detail";
+  @override
+  get home => "Zuhause";
+  @override
+  get search => "Suche";
+  @override
+  get quickSearch => "Schnelle Suche";
+  @override
+  get newArrival => "Neuankömmling";
+  @override
+  get exclusiveDiamonds => "exklusive Diamanten";
+  @override
+  get diamondOnAuction => "Diamant ersteigern";
+  @override
+  get stoneOfTheDays => "best Buy";
+  @override
+  get myWatchlist => "Meine Beobachtungsliste";
+  @override
+  get myBid => "Mein Gebot";
+  @override
+  get myHold => "Mein Halten";
+  @override
+  get myOrder => "Meine Sortierte Liste";
+  @override
+  get confirmStone => "Bestätigen Stein";
+  @override
+  get myOffice => "Mein Büro Blick";
+  @override
+  get myOffer => "Mein Angebot Liste";
+  @override
+  get myPurchased => "Meine Gekaufte Geschichte";
+  @override
+  get mySavedSearch => "Gespeicherte Suchen";
+  @override
+  get savedSearch => "Gespeicherte Suche";
+  @override
+  get myDemand => "Meine Nachfrage";
+  @override
+  get contactUs => "Kontaktiere uns";
+  @override
+  get changePassword => "Passwort ändern";
+  @override
+  get logout => "Ausloggen";
+  @override
+  get fareDetailsTitle => "Geben Sie Verkaufsdetails";
+  @override
+  get fairAmt => "Verkaufsmenge";
+  @override
+  get noOfPassengers => "Anzahl der Passagiere";
+  @override
+  get remarks => "Bemerkungen";
+  @override
+  get orderNo => "Best.-Nr.";
+  @override
+  get typeOfService => "Art der Leistung";
+  @override
+  get paymentType => "Zahlungsart*";
+  @override
+  get recentlyView => "Kürzlich anzeigen";
+  @override
+  get uploadImgValidationText =>
+      "Upload-Datei muss sein .jpg, JPEG-, PNG- oder PDF-Format mit 5 MB oder weniger.";
+  @override
+  get drivingLicenseHintText => "Führerscheinnummer";
+  @override
+  get pANCARDHintText => "PAN Kartennummer";
+  @override
+  get viewRide => "Ansicht Rides";
+  @override
+  get myVehicle => "Mein Fahrzeug";
+  @override
+  get personalDocument => "persönliche Dokumente";
+  @override
+  get help => "HILFE";
+  @override
+  get about => "Über";
+  @override
+  get bankDetails => "Bankdaten";
+  @override
+  get accountAndPayment => "Konto- und Zahlungs";
+  @override
+  get enquiry => "Anfrage";
+  @override
+  get download => "Herunterladen";
+  @override
+  get addToCart => "in den Warenkorb legen";
+  @override
+  get addToWatchList => "Auf die Beobachtungsliste";
+  @override
+  get finalCalculation => "endgültige Berechnung";
+  @override
+  get bookOffice => "Book Office";
+  @override
+  get clearSelection => "Auswahl löschen";
+  @override
+  get comment => "Bemerkungen";
+  @override
+  get hold => "Halt";
+  @override
+  get offer => "Angebot";
+  @override
+  get officeView => "Büro Blick";
+  @override
+  get placeOrder => "Bestellung aufgeben";
+  @override
+  get buyNow => "Kaufe jetzt";
+  @override
+  get cancelStone => "Abbrechen Stein";
+  @override
+  get share => "Aktie";
+  @override
+  get watchlist => "Beobachtungsliste";
+  @override
+  get exclusive => "Exklusiv";
+  @override
+  get featuredStones => "Besondere Steine";
+  @override
+  get stoneOfDay => "Stone of Day";
+  @override
+  get recentSearch => "Aktuelle Suche";
+  @override
+  get viewAll => "Alle ansehen";
+  @override
+  get salesPersonDetail => "Sales Person Details";
+  @override
+  get searchTitle => "Suche Titel";
+  @override
+  get enterSearchTitle => "Geben Sie Suche Titel";
+  @override
+  get timeSlots => "Zeitfenster";
+  @override
+  get selectCustomDate => "Wählen Sie Benutzerdefinierte Datum";
+  @override
+  get availableSlot => "Verfügbare Plätze";
+  @override
+  get reqOfficeView => "Anfordern Büro Blick";
+  @override
+  get myComments => "Mein Kommentar";
+  @override
+  get myReminder => "Meine Erinnerung";
+  @override
+  get reminder => "Erinnerung";
+  @override
+  get manageAddress => "Adressen verwalten";
+  @override
+  get myAccount => "Mein Konto";
+  @override
+  get declaimer => "Haftungsausschluss";
+  @override
+  get shareStone => "Teile Stein";
+  @override
+  get addRemider => "In Erinnerung";
+  @override
+  get offlineSearch => "offline-Suche";
+  @override
+  get searchHistory => "Suchverlauf";
+  @override
+  get offlineStock => "offline-Auf";
+  @override
+  get searchOffline => "Suchen (Offline)";
+  @override
+  get voiceSearch => "Sprachsuche";
+  @override
+  get tapMictoSpeak => "Tippen Sie Mikrofon zu sprechen";
+  @override
+  get typeToSearch => "Tippe um zu suchen";
+  @override
+  get typeWordsToSearch => "Geben Sie mindestens 3 Wörter Steine ​​suchen";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class GermanyDynamickeys extends Dynamickeys {
+  @override
+  get shape => "Gestalten";
+  @override
+  get caratRange => "Carat-Strecke";
+  @override
+  get basicDetail => "Grundlegende Details";
+  @override
+  get measurementTitle => "Messungen";
+  @override
+  get inclusionDetail => "Aufnahme-Details";
+  @override
+  get other => "Andere";
+  @override
+  get stoneID => "Stein ID";
+  @override
+  get labTitle => "Labor";
+  @override
+  get certNo => "CERT. NEIN.";
+  @override
+  get locationTitle => "STANDORT";
+  @override
+  get shapeTitle => "Gestalten";
+  @override
+  get caratTitle => "Karat";
+  @override
+  get colorTitle => "Farbe";
+  @override
+  get clarityTitle => "KLARHEIT";
+  @override
+  get shadeTitle => "Schatten";
+  @override
+  get cutTitle => "Schnitt";
+  @override
+  get polishTitle => "Polieren";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "Fluoreszenz";
+  @override
+  get rapTitle => r"RAP ($)";
+  @override
+  get discountTitle => "Rabatt (%)";
+  @override
+  get priceAndCt => r"Preis / Ct ($)";
+  @override
+  get amountTitle => "Menge";
+  @override
+  get eyeCleanTitle => "Augen-saubere";
+  @override
+  get brownTitle => "BRAUN";
+  @override
+  get milkyTitle => "Milchig";
+  @override
+  get mixTingeTitle => "MIX tinge";
+  @override
+  get dimensionTitle => "MASSE (MM)";
+  @override
+  get girdleTitle => "GÜRTELN (%)";
+  @override
+  get tableTitle => "Tabelle %";
+  @override
+  get crownAngleTitle => "Crown Winkel";
+  @override
+  get depthTitle => "Tiefes%";
+  @override
+  get pavAngleTitle => "Pav Angle";
+  @override
+  get crownHeightTitle => "Kronenhöhe";
+  @override
+  get pavDepthTitle => "Pavilion Tiefe (%)";
+  @override
+  get starLengthTitle => "Stern Länge";
+  @override
+  get lowerHalfTitle => "Untere Hälfte";
+  @override
+  get gridleTitle => "Gürtel";
+  @override
+  get gridleFacetedTitle => "GÜRTELN FACETED";
+  @override
+  get culetTitle => "culet";
+  @override
+  get rationTitle => "Verhältnis";
+  @override
+  get blackInclusionTitle => "BLACK INCLUSION";
+  @override
+  get otherInclusionTitle => "andere Inclusion";
+  @override
+  get openInclusionTitle => "OPEN INCLUSION";
+  @override
+  get extraFacetTitle => "EXTRA FACET";
+  @override
+  get naturalTitle => "Natürlich";
+  @override
+  get hAndATitle => "H & A";
+  @override
+  get keyToSymbol => "SCHLÜSSEL ZUM SYMBOL";
+  @override
+  get labComments => "LAB KOMMENTAR";
+  @override
+  get laserInsTitle => "LASER IN";
+  @override
+  get basicTitle => "Basic";
+  @override
+  get advancedTitle => "fortgeschritten";
+  @override
+  get stoneIdTitle => "Stein ID / Cert No";
+  @override
+  get defaultTitle => "Standard";
+  @override
+  get newDiamondsTitle => "New Diamanten";
+  @override
+  get priceLowToHigh => "Preis niedrig bis hoch";
+  @override
+  get priceHighToLow => "Preis absteigend";
+  @override
+  get disLowToHigh => "Rabatt aufsteigend";
+  @override
+  get disHighToLow => "Rabatt absteigend";
+  @override
+  get colorLowToHigh => "Farbe aufsteigend";
+  @override
+  get colorHighToLow => "Farbe absteigend";
+  @override
+  get caratLowToHigh => "Carat aufsteigend";
+  @override
+  get caratHighToLow => "Carat absteigend";
+  @override
+  get clarityLowToHigh => "Klarheit aufsteigend";
+  @override
+  get clarityHighToLow => "Klarheit absteigend";
+  @override
+  get colorShadeTitle => "Farbschattierung";
+  @override
+  get certiTitle => "Zertifikatsnummer";
+  @override
+  get arrivalsTitle => "Ankünfte";
+  @override
+  get lengthTitle => "Länge";
+  @override
+  get widthTitle => "Breite";
+  @override
+  get pavilionAngleTitle => "Pavilion Winkel";
+  @override
+  get girdleConditionTitle => "Hüfthalter Zustand";
+  @override
+  get cluetConditionTitle => "culet Zustand";
+  @override
+  get disTitle => "Dis%";
+  @override
+  get depthTitleWithoutPerc => "Tiefe";
+  @override
+  get otherInformationTitle => "Andere Informationen";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "Gestalten",
+    "caratRange": "Carat-Strecke",
+    "basicDetail": "Grundlegende Details",
+    "measurementTitle": "Messungen",
+    "inclusionDetail": "Aufnahme-Details",
+    "other": "Andere",
+    "stoneID": "Stein ID",
+    "labTitle": "Labor",
+    "certNo": "CERT. NEIN.",
+    "locationTitle": "STANDORT",
+    "shapeTitle": "Gestalten",
+    "caratTitle": "Karat",
+    "colorTitle": "Farbe",
+    "clarityTitle": "KLARHEIT",
+    "shadeTitle": "Schatten",
+    "cutTitle": "Schnitt",
+    "polishTitle": "Polieren",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "Fluoreszenz",
+    "rapTitle": r"RAP ($)",
+    "discountTitle": "Rabatt (%)",
+    "priceAndCt": r"Preis / Ct ($)",
+    "amountTitle": "Menge",
+    "eyeCleanTitle": "Augen-saubere",
+    "brownTitle": "BRAUN",
+    "milkyTitle": "Milchig",
+    "mixTingeTitle": "MIX tinge",
+    "dimensionTitle": "MASSE (MM)",
+    "girdleTitle": "GÜRTELN (%)",
+    "tableTitle": "Tabelle %",
+    "crownAngleTitle": "Crown Winkel",
+    "depthTitle": "Tiefes%",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "Kronenhöhe",
+    "pavDepthTitle": "Pavilion Tiefe (%)",
+    "starLengthTitle": "Stern Länge",
+    "lowerHalfTitle": "Untere Hälfte",
+    "gridleTitle": "Gürtel",
+    "gridleFacetedTitle": "GÜRTELN FACETED",
+    "culetTitle": "culet",
+    "rationTitle": "Verhältnis",
+    "blackInclusionTitle": "BLACK INCLUSION",
+    "otherInclusionTitle": "andere Inclusion",
+    "openInclusionTitle": "OPEN INCLUSION",
+    "extraFacetTitle": "EXTRA FACET",
+    "naturalTitle": "Natürlich",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "SCHLÜSSEL ZUM SYMBOL",
+    "labComments": "LAB KOMMENTAR",
+    "laserInsTitle": "LASER IN",
+    "basicTitle": "Basic",
+    "advancedTitle": "fortgeschritten",
+    "stoneIdTitle": "Stein ID / Cert No",
+    "defaultTitle": "Standard",
+    "newDiamondsTitle": "New Diamanten",
+    "priceLowToHigh": "Preis niedrig bis hoch",
+    "priceHighToLow": "Preis absteigend",
+    "disLowToHigh": "Rabatt aufsteigend",
+    "disHighToLow": "Rabatt absteigend",
+    "colorLowToHigh": "Farbe aufsteigend",
+    "colorHighToLow": "Farbe absteigend",
+    "caratLowToHigh": "Carat aufsteigend",
+    "caratHighToLow": "Carat absteigend",
+    "clarityLowToHigh": "Klarheit aufsteigend",
+    "clarityHighToLow": "Klarheit absteigend",
+    "colorShadeTitle": "Farbschattierung",
+    "certiTitle": "Zertifikatsnummer",
+    "arrivalsTitle": "Ankünfte",
+    "lengthTitle": "Länge",
+    "widthTitle": "Breite",
+    "pavilionAngleTitle": "Pavilion Winkel",
+    "girdleConditionTitle": "Hüfthalter Zustand",
+    "cluetConditionTitle": "culet Zustand",
+    "disTitle": "Dis%",
+    "depthTitleWithoutPerc": "Tiefe",
+    "otherInformationTitle": "Andere Informationen",
+  };
 }
 
 class Arabic extends English {
   @override
-  get app => ArabicApp();
+  get authStrings => ArabicAuthStrings();
   @override
-  get signup => ArabicSignup();
+  get commonString => ArabicCommonString();
   @override
-  get addCard => ArabicAddCard();
+  get errorString => ArabicErrorString();
+  @override
+  get noDataStrings => ArabicNoDataStrings();
+  @override
+  get screenTitle => ArabicScreenTitle();
+  @override
+  get dynamickeys => ArabicDynamickeys();
   static String get languageCode => "Arabic";
   static String get languageName => "Arabic";
 }
 
-class ArabicApp extends App {
+class ArabicAuthStrings extends AuthStrings {
   @override
-  get lblAppName => "ركلة سكوتر";
+  get editCompanyInformation => "تحرير معلومات عن الشركة";
+  @override
+  get selectNatureOfOrganization => "تحديد طبيعة منظمة";
+  @override
+  get setNewPassword => "تعيين كلمة المرور الجديدة وتسجيل الدخول مرة أخرى.";
+  @override
+  get enterCompanyName => "الرجاء إدخال اسم الشركة.";
+  @override
+  get pleaseEnterCustomerOTP => "الرجاء إدخال العملاء كود ركوب.";
+  @override
+  get pleaseEnterPickupOTP => "الرجاء إدخال العملاء كود صغيرة.";
+  @override
+  get pleaseEnterDeliveryOTP => "الرجاء إدخال العملاء كود التسليم.";
+  @override
+  get verified => "تم التحقق";
+  @override
+  get verify => "تحقق";
+  @override
+  get addressLineOne => "العنوان 1";
+  @override
+  get addressLineTwo => "العنوان 2";
+  @override
+  get addressLineThree => "العنوان 3";
+  @override
+  get oldPassword => "كلمة سر قديمة";
+  @override
+  get skype => "سكايب";
+  @override
+  get whatsApp => "ال WhatsApp";
+  @override
+  get pinCode => "الرقم السري *";
+  @override
+  get verifyMobileDesc =>
+      "يرجى التحقق من رقم الهاتف المحمول لتحديث ملف التعريف.";
+  @override
+  get verifyNow => "تحقق الآن";
+  @override
+  get password => "كلمه السر";
+  @override
+  get backToHome => "الذهاب إلى الصفحة الرئيسية";
+  @override
+  get forgotPassword => "هل نسيت كلمة المرور؟";
+  @override
+  get signInCap => "تسجيل الدخول";
+  @override
+  get moveToLogIn => "الانتقال إلى تسجيل الدخول";
+  @override
+  get dontHaveAnAccount => "#ERROR!";
+  @override
+  get clickHere => "انقر هنا";
+  @override
+  get signUpHere => "سجل هنا";
+  @override
+  get reset => "إعادة تعيين";
+  @override
+  get haveRegisterCode => "لديك رمز التسجيل؟";
+  @override
+  get welcome => "مرحبا بعودتك!";
+  @override
+  get signInAsGuest => "تسجيل الدخول كضيف";
+  @override
+  get editProfileTitle => "تعديل الملف الشخصي";
+  @override
+  get emaillbl => "البريد الإلكتروني";
+  @override
+  get searchInventory => "البحث عن المنتج";
+  @override
+  get emailAddress => "عنوان البريد الالكترونى*";
+  @override
+  get offlineFilter =>
+      "تعذر العثور على الماس المنشود؟ يمكننا مساعدتك في الحصول على صفقة أفضل من المخزون لدينا حاليا.";
+  @override
+  get loginDesc =>
+      "هل تريد تمكين اللمس رقم / MPin لفتح بلدي الماس؟ يرجى اختيار خيار التطبيق فتح";
+  @override
+  get searchDiamonds => "البحث الماس";
+  @override
+  get continueWithSearch => "هل ترغب في الاستمرار في البحث؟";
+  @override
+  get mobileNumber => "التليفون المحمول";
+  @override
+  get searchHint => "بحث...";
+  @override
+  get selectYourCountry => "حدد الدولة";
+  @override
+  get resendCodeIn => "إعادة إرسال الرمز في";
+  @override
+  get resendCode => "إعادة إرسال";
+  @override
+  get haveAnAccount => "هل لديك حساب؟";
+  @override
+  get dontReceiveCode => "إذا لم يحصل على رمز!";
+  @override
+  get inLogin => "لتسجيل الدخول.";
+  @override
+  get resetPwdDesc =>
+      "إضافة كلمة المرور و تأكيد كلمة المرور لإعادة تعيين كلمة المرور الخاصة بك.";
+  @override
+  get backToLogin => "العودة إلى تسجيل الدخول";
+  @override
+  get firstName => "الاسم الاول*";
+  @override
+  get name => "اسم المستخدم*";
+  @override
+  get lastName => "الكنية*";
+  @override
+  get middleName => "الاسم الوسطى*";
+  @override
+  get confirmPassword => "تأكيد كلمة المرور";
+  @override
+  get currentPasswordErr => "خطأ كلمة المرور الحالية";
+  @override
+  get passwordChanged => "تم تغيير كلمة السر";
+  @override
+  get lblLogInErr => "خطأ في تسجيل الدخول";
+  @override
+  get enterYour => "ادخل";
+  @override
+  get details => "تفاصيل";
+  @override
+  get registerCode => "رمز التسجيل";
+  @override
+  get registerCodeDesc => "إضافة رمز التسجيل لبدء التسجيل الخاص بك مع 3eco.";
+  @override
+  get uploadPhotoDesc => "تأخذ صورة شخصية لنفسك";
+  @override
+  get updateProfile => "تحديث الملف";
+  @override
+  get postalCode => "الرمز البريدي*";
+  @override
+  get removeButton => "إزالة";
+  @override
+  get gender => "جنس";
+  @override
+  get male => "الذكر";
+  @override
+  get female => "أنثى";
+  @override
+  get changePassword => "غير كلمة السر";
+  @override
+  get currentPassword => "كلمة المرور الحالي*";
+  @override
+  get newPassword => "كلمة مرور جديدة*";
+  @override
+  get confirmNewPassword => "تأكيد كلمة المرور*";
+  @override
+  get personalDocuments => "مستندات شخصية";
+  @override
+  get assignedAuto => "تعيين السيارات";
+  @override
+  get logout => "تسجيل خروج";
+  @override
+  get logoutConfirmationMsg => "هل أنت متأكد أنك تريد تسجيل الخروج؟";
+  @override
+  get address => "عنوان*";
+  @override
+  get accountNumber => "رقم حساب";
+  @override
+  get bankerName => "اسم المصرفيين";
+  @override
+  get nameLable => "اسم";
+  @override
+  get ifscCode => "كود IFSC";
+  @override
+  get businessRegistrationNumbr => "رقم التسجيل التجاري";
+  @override
+  get businessRelationshipPeriod => "العمل فترة العلاقة (في سنوات)";
+  @override
+  get designation => "تعيين";
+  @override
+  get nameofDesignation => "اسم";
+  @override
+  get natureofOrganization => "طبيعة منظمة";
+  @override
+  get uploadFile => "لا ملف إخبارية";
+  @override
+  get update => "تحديث";
+  @override
+  get resetPwd => "إعادة تعيين كلمة المرور";
+  @override
+  get pwdReset => "إعادة تعيين كلمة المرور";
+  @override
+  get signInWithMPIN => "تسجيل الدخول مع MPIN";
+  @override
+  get pwdChanged => "تم تغيير كلمة السر";
+  @override
+  get successfullyPwdDesc =>
+      "لقد بنجاح إعادة تعيين كلمة المرور الخاصة بك. الرجاء استخدام كلمة المرور الجديدة عند تسجيل الدخول.";
+  @override
+  get lblProfileSetup => "ومن المقرر الشخصي الخاص بك";
+  @override
+  get lblProfileSetupDesc => "لقد تلقينا تفاصيل ملفك الشخصي";
+  @override
+  get hoursAvailable => "إجمالي Shifttime";
+  @override
+  get confirmStoneDetail => "تأكيد تفاصيل الحجر";
+  @override
+  get companyName => "اسم الشركة";
+  @override
+  get invoiceDate => "تاريخ الفاتورة";
+  @override
+  get companyCode => "رمز الشركة";
+  @override
+  get saveCompanyDetails => "حفظ معلومات الشركة";
+  @override
+  get passwordNotChange => "كلمة السر غير متطابقة";
+  @override
+  get rememberPassword => "تذكر كلمة المرور؟";
+  @override
+  get sendOTP => "إرسال OTP";
+  @override
+  get resendNow => "إعادة إرسال الآن";
+  @override
+  get didNotReceiveOTP => "إذا كنت لا تتلقى مكتب المدعي العام!";
+  @override
+  get sendOTPToEmail =>
+      "سوف نقوم بإرسال OTP إلى عنوان البريد الإلكتروني الخاص بك دخل أو اسم المستخدم. يرجى إدخال عنوان البريد الإلكتروني أو اسم المستخدم.";
+  @override
+  get enterOTP =>
+      "تم إرسال OTP إلى عنوان بريدك الإلكتروني المسجل. الرجاء إدخال مكتب المدعي العام.";
+  @override
+  get backToSignIn => "ارجع إلى تسجيل الدخول";
+  @override
+  get passwordResetSuccessfully => "إستعادة كلمة بنجاح.";
+  @override
+  get emailAndUname => "البريد الالكتروني / اسم المستخدم";
+  @override
+  get signUp => "سجل";
+  @override
+  get promotionText => "عروض ترويجية";
+  @override
+  get termsAndCondition => "أحكام وشروط";
+  @override
+  get mustAgreeTermsAndCondition =>
+      "يجب أن توافق على أحكام وشروط لتسجيل الدخول كما مستخدم ضيف";
+  @override
+  get forgotPasswordTitle => "هل نسيت كلمة المرور";
+  @override
+  get uploadKYC => "تحميل KYC";
+  @override
+  get uploadKycDesc => "يرجى تحميل الوثائق KYC للوصول إلى ميزات الكامل.";
+  @override
+  get hintPhotoIdentityProof => "صور الهوية * والدليل على";
+  @override
+  get hintBussinerssProof => "الهوية التجارية * والدليل على";
+  @override
+  get btnFileUpload => "تحميل الملف";
+  @override
+  get pleaseUploadPhotoProof => "يرجى تحميل إثبات صور الهوية.";
+  @override
+  get pleaseUploadBussinessProof => "يرجى تحميل إثبات الهوية الأعمال.";
+  @override
+  get pleaseSelectFileFormat =>
+      "يرجى تحميل الملف في أي من التنسيقات التالية: .JPG";
+  @override
+  get kycSubmitted => "KYC مقدم";
+  @override
+  get kycSubmmittedDesc => "وقد قدمت KYC بنجاح.";
+  @override
+  get btnMoveToHome => "انتقال إلى الصفحة الرئيسية";
+  @override
+  get kYCRejected => "KYC رفض";
+  @override
+  get kycRejectedDesc =>
+      "تم رفض KYC الخاص بك. يرجى تحميل الوثائق KYC مرة أخرى للوصول إلى كافة الميزات.";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class ArabicSignup extends Signup {
+class ArabicCommonString extends CommonString {
   @override
-  get lblFirstName => "الاسم الاول";
+  get seeMore => "شاهد المزيد";
   @override
-  get lblLastName => "الكنية";
+  get seeLess => "انظر أقل";
   @override
-  get lblSelectDateOfBirth => "حدد تاريخ الميلاد";
+  get modify => "تعديل";
   @override
-  get lblGender => "جنس";
+  get delete => "حذف";
   @override
-  get lblEnterPhoneNo => "أدخل رقم الهاتف";
+  get details => "تفاصيل";
   @override
-  get lblEnterPassword => "أدخل كلمة المرور";
+  get edit => "تعديل";
   @override
-  get lblAlreadyHaveAnAccount => "هل لديك حساب؟";
+  get addDemand => "الطلب إضافة";
   @override
-  get lblPhoneNo => "رقم الهاتف.";
+  get demandTitle => "الطلب عنوان";
   @override
-  get lblMale => "الذكر";
+  get pleaseEnterDemandTitle => "يرجى إدخال عنوان الطلب";
   @override
-  get lblFemale => "أنثى";
+  get demandAddedSuccessfully => "الطلب أضيف بنجاح";
   @override
-  get lblRidersAgreement => "اتفاق المتسابق";
+  get selectAtleastOneFilter => "رجاء";
   @override
-  get msgAgeInfo =>
-      "يجب أن تكون على الأقل 16 لركوب دراجة نارية. حسابات المستخدمين الذين تقل أعمارهم عن 16 قد تحصل المحظورة.";
+  get savedSearch => "بحث محفوظ";
+  @override
+  get searchSavedSearch => "بحث بحث محفوظ";
+  @override
+  get viewDetails => "عرض التفاصيل";
+  @override
+  get viewLessDetails => "عرض أقل تفاصيل";
+  @override
+  get myDemand => "بلدي الطلب";
+  @override
+  get date => "تاريخ";
+  @override
+  get selectTime => "اختر الوقت";
+  @override
+  get selectDate => "حدد تاريخ";
+  @override
+  get offerVelidTill => "يسري العرض حتى";
+  @override
+  get officeVisitDate => "مكتب موقع التسجيل";
+  @override
+  get all => "الكل";
+  @override
+  get status => "الحالة";
+  @override
+  get save => "حفظ";
+  @override
+  get verify => "تحقق";
+  @override
+  get readMore => "قراءة المزيد";
+  @override
+  get goodMorning => "صباح الخير";
+  @override
+  get goodAfternoon => "طاب مسائك";
+  @override
+  get goodEvening => "مساء الخير";
+  @override
+  get btnSkip => "تخطى";
+  @override
+  get btnUpdate => "تحديث";
+  @override
+  get btnContinue => "استمر";
+  @override
+  get btnContinueCap => "استمر";
+  @override
+  get btnEdit => "تعديل";
+  @override
+  get btnSubmit => "إرسال";
+  @override
+  get btnNextCap => "التالى";
+  @override
+  get btnSaveCap => "تطوير كلمة السر";
+  @override
+  get btnWithdrawCap => "انسحب";
+  @override
+  get btnSaveAndContinueCap => "حفظ ومتابعة";
+  @override
+  get btnUnregister => "غير مسجل موبايل";
+  @override
+  get btnClose => "قريب";
+  @override
+  get remove => "إزالة";
+  @override
+  get refresh => "تحديث";
+  @override
+  get fetchLocationMessage => "يرجى الانتظار نحن جلب موقعك";
+  @override
+  get done => "منجز";
+  @override
+  get doneCap => "منجز";
+  @override
+  get cancel => "إلغاء";
+  @override
+  get allow => "السماح";
+  @override
+  get countryFirst => "الرجاء اختيار الدولة أولا";
+  @override
+  get apply => "تطبيق";
+  @override
+  get cancelCap => "إلغاء";
+  @override
+  get uploadCap => "رفع";
+  @override
+  get yesCancelCap => "نعم";
+  @override
+  get upload => "رفع";
+  @override
+  get ok => "حسنا";
+  @override
+  get home => "الصفحة الرئيسية";
+  @override
+  get goToMyWatchList => "انتقل إلى جهاز قائمة الرغبات";
+  @override
+  get goToMyOrder => "الذهاب إلى طلبي";
+  @override
+  get gotToMyOffer => "انتقل إلى جهاز العرض";
+  @override
+  get gotToMyHold => "انتقل إلى جهاز عقد";
+  @override
+  get gotToMyEnquiry => "انتقل إلى جهاز رسالتك";
+  @override
+  get gotToMyBid => "انتقل إلى جهاز المزايدة";
+  @override
+  get gotToMyReminder => "انتقل إلى جهاز تذكير";
+  @override
+  get gotToMyComments => "الذهاب إلى ملاحظاتي";
+  @override
+  get yes => "نعم";
+  @override
+  get no => "لا";
+  @override
+  get selectCountry => "حدد الدولة";
+  @override
+  get clickHere => "انقر هنا";
+  @override
+  get btnAddNewAddress => "أضف عنوان جديد";
+  @override
+  get btnCancel => "إلغاء";
+  @override
+  get btnTakeSelfie => "أخذ الصور الشخصية لل";
+  @override
+  get successfully => "بنجاح";
+  @override
+  get lblAppExit => "هل أنت متأكد من انك تريد الخروج؟";
+  @override
+  get lblExit => "خروج";
+  @override
+  get openAppSetting => "أفتح الإعدادات";
+  @override
+  get lblOr => "أو";
+  @override
+  get fromLbl => "من عند";
+  @override
+  get toLbl => "إلى";
+  @override
+  get showMore => "أظهر المزيد";
+  @override
+  get showLess => "عرض أقل";
+  @override
+  get selectCity => "اختر مدينة";
+  @override
+  get notYetAvailable => "لم تتوفر بعد";
+  @override
+  get updateAvailable => "تحديث متوفر!";
+  @override
+  get downloadAppFrom => "تحميل تطبيق التحديث من";
+  @override
+  get playStore => "لعب مخزن";
+  @override
+  get skipUpdate => "تخطي تحديث";
+  @override
+  get stateFirst => "الرجاء اختيار الدولة أولا";
+  @override
+  get reallyExit => "الخروج حقا؟";
+  @override
+  get alert => "إنذار!";
+  @override
+  get loading => "جار التحميل";
+  @override
+  get error => "خطأ";
+  @override
+  get jumpToTop => "إذهب إلى أعلى";
+  @override
+  get ihaveread => "لقد قرأت واستعرض";
+  @override
+  get selected => "تحديد";
+  @override
+  get lbllogout => "تسجيل خروج";
+  @override
+  get lblThanx => "شكرا لك";
+  @override
+  get lblSelectCity => "اختر مدينة";
+  @override
+  get lblSelectState => "اختر ولايه";
+  @override
+  get lblSelectCountry => "حدد الدولة";
+  @override
+  get lblCity => "مدينة";
+  @override
+  get lblCountry => "بلد";
+  @override
+  get lblName => "اسم";
+  @override
+  get lblPinCode => "كود PIN";
+  @override
+  get lblMobileNumber => "رقم الهاتف المحمول";
+  @override
+  get lblState => "حالة";
+  @override
+  get lblCode => "الشفرة:";
+  @override
+  get lblOrderNo => "أجل لا:";
+  @override
+  get lblOrderItem => "قائمة الطلبات:";
+  @override
+  get lblDelivered => "تم التوصيل";
+  @override
+  get lblTicketReady => "تذكرتك جاهز";
+  @override
+  get lblPersonTicket => "تذكرة من 2 شخص";
+  @override
+  get lblShuttleBus => "اتوبيس داخلي";
+  @override
+  get lblPickup => "امسك";
+  @override
+  get lblDropoff => "إنزال";
+  @override
+  get lblPassenger => "راكب";
+  @override
+  get lblDeliveryNo => "أي التسليم.";
+  @override
+  get lblPrice => "السعر";
+  @override
+  get lblValid => "صالحة ل";
+  @override
+  get lblRenew => "جدد";
+  @override
+  get lblDeparture => "مغادرة";
+  @override
+  get lblArrived => "وصل";
+  @override
+  get lblSendtoFriend => "أرسل إلى صديق";
+  @override
+  get popupRenewTitle => "تجديد تذكرة";
+  @override
+  get popupRenewDesc => "أبجد هوز دولور الجلوس امات";
+  @override
+  get popuplblPassenger => "راكب";
+  @override
+  get popuplblCancel => "إلغاء";
+  @override
+  get popupbtnRenew => "جدد";
+  @override
+  get ridelblAwesome => "رائع";
+  @override
+  get ridebtnDone => "منجز";
+  @override
+  get offerPricePerCarat => "عرض السعر (CTS)";
+  @override
+  get dropOffText => "إنزال";
+  @override
+  get pickUpText => "امسك";
+  @override
+  get startAtText => "تبدأ في";
+  @override
+  get endAtText => "يغلق عند مستوى";
+  @override
+  get personText => "شخص";
+  @override
+  get paymentScreenTitle => "دفع";
+  @override
+  get pickuplbl => "امسك";
+  @override
+  get droplbl => "إنزال";
+  @override
+  get makePaymentButtonlbl => "قم بالدفع";
+  @override
+  get pessangerslbl => "ركاب";
+  @override
+  get priceBreakuplbl => "سعر تفكك";
+  @override
+  get tripPricelbl => "الأسعار رحلة";
+  @override
+  get taxeslbl => "الضرائب";
+  @override
+  get totallbl => "مجموع";
+  @override
+  get cardNumberhint => "رقم البطاقة";
+  @override
+  get cvvhint => "CVV";
+  @override
+  get datehint => "MM / YY";
+  @override
+  get btnTryAgain => "حاول مرة أخري";
+  @override
+  get cityFirst => "الرجاء تحديد المدينة أولا";
+  @override
+  get enterFareDetails => "أدخل تفاصيل المبيعات";
+  @override
+  get fromDate => "من التاريخ";
+  @override
+  get toDate => "التاريخ المحدد";
+  @override
+  get btnUnderstand => "أنا أفهم";
+  @override
+  get applicationUpdate => "تطبيق تحديث";
+  @override
+  get newVersionMessage => "نسخة جديدة من تطبيق مجانية متاحة";
+  @override
+  get paymentCollected => "الدفع يتم جمعها";
+  @override
+  get addComment => "اضف تعليق";
+  @override
+  get more => "أكثر";
+  @override
+  get carat => "قيراط";
+  @override
+  get pcs => "جهاز كمبيوتر شخصى";
+  @override
+  get cts => "سنت";
+  @override
+  get disc => "القرص٪";
+  @override
+  get avgPriceCrt => "متوسط السعر / ط م";
+  @override
+  get amount => "كمية";
+  @override
+  get confirmStone => "ستون تأكيد";
+  @override
+  get confirm => "تؤكد";
+  @override
+  get offered => "تقدم";
+  @override
+  get validTill => "صالح حتى";
+  @override
+  get remark => "تعليق";
+  @override
+  get color => "اللون";
+  @override
+  get colorGroup => "المجموعة اللون";
+  @override
+  get colorFancy => "مولع ب";
+  @override
+  get colorWhite => "أبيض";
+  @override
+  get clarity => "وضوح";
+  @override
+  get clarityGroup => "المجموعة الوضوح";
+  @override
+  get intensity => "الشدة";
+  @override
+  get overtone => "يغلب";
+  @override
+  get selectBusinessType => "اختر نوع الشركة";
+  @override
+  get selectState => "اختر ولايه";
+  @override
+  get search => "بحث";
+  @override
+  get profile => "ملفي";
+  @override
+  get personal => "شخصي";
+  @override
+  get business => "اعمال";
+  @override
+  get documents => "مستندات";
+  @override
+  get noSlotFound => "لا توجد فتحات";
+  @override
+  get noDiamondFound => "لا الماس مطابقة بحثك. الرجاء إضافة كنت الطلب.";
+  @override
+  get selectType => "حدد نوع الظاهري";
+  @override
+  get noSavedSearch => "لا بحث محفوظ موجود";
+  @override
+  get searchCity => "المدينة بحث";
+  @override
+  get searchCountry => "بحث البلد";
+  @override
+  get searchState => "الدولة البحث";
+  @override
+  get notifications => "تنبيه";
+  @override
+  get enter2Stone => "يرجى تحديد ما لا يقل عن 2 الحجر للمقارنة.";
+  @override
+  get bidDesc =>
+      "يقع حاليا في الهند وللتسليم في أي بلد آخر بصرف النظر عن الهند سوف يستغرق 7-10 أيام عمل على الأقل.";
+  @override
+  get packetNo => "حزمة رقم:";
+  @override
+  get quit => "استقال";
+  @override
+  get agree => "أنا موافق";
+  @override
+  get laterToday => "في وقت لاحق اليوم";
+  @override
+  get toMorrow => "غدا";
+  @override
+  get nextWeek => "الاسبوع المقبل";
+  @override
+  get chooseAnother => "اختيار آخر";
+  @override
+  get dateTime => "التاريخ والوقت";
+  @override
+  get language => "لغة";
+  @override
+  get diamNow => "DiamNow";
+  @override
+  get noDocument => "لا توجد وثائق تم العثور عليها";
+  @override
+  get searchBusinessType => "بحث نوع الشركة";
+  @override
+  get hours => "ساعات";
+  @override
+  get minutes => "الدقائق";
+  @override
+  get seconds => "ثواني";
+  @override
+  get bidEndsIn => "المزايدة ينتهي في:";
+  @override
+  get shape => "شكل";
+  @override
+  get download => "تحميل";
+  @override
+  get share => "شارك";
+  @override
+  get placeOrder => "مكان الامر";
+  @override
+  get enterComment => "الرجاء إدخال تعليق";
+  @override
+  get deleteItem => "هل أنت متأكد أنك تريد حذف؟";
+  @override
+  get shippingPolicy => "سياسة الشحن";
+  @override
+  get offerSundayRestriction =>
+      "لا يسمح الاحد. مكتب أيام عمل من الاثنين إلى السبت";
+  @override
+  get weekAgo => "1 قبل أسبوع";
+  @override
+  get lastWeek => "الاسبوع الماضى";
+  @override
+  get dayAgo => "أيام مضت";
+  @override
+  get onedayAgo => "1 منذ يوم";
+  @override
+  get yesterday => "في الامس";
+  @override
+  get hourAgo => "منذ ساعات";
+  @override
+  get onehourAgo => "منذ 1 ساعة";
+  @override
+  get anhourAgo => "قبل ساعة";
+  @override
+  get mintuesAgo => "دقائق مضت";
+  @override
+  get onemintuesAgo => "منذ 1 دقيقة";
+  @override
+  get amintueAgo => "وقبل دقيقة";
+  @override
+  get secondsAgo => "منذ ثوانى";
+  @override
+  get justNow => "في هذة اللحظة";
+  @override
+  get today => "اليوم";
+  @override
+  get past => "الماضي";
+  @override
+  get selectPhotoProof => "حدد مستند";
+  @override
+  get pleaseSelectPhotoProof => "الرجاء تحديد ثيقة";
+  @override
+  get selectBusinessProof => "حدد مستند";
+  @override
+  get pleaseSelectBusinessProof => "الرجاء تحديد ثيقة";
+  @override
+  get touchId => "معرف اتصال";
+  @override
+  get faceId => "وجه إيد";
+  @override
+  get enableTouchId => "تمكين اللمس رقم لفتح بلدي الماس؟";
+  @override
+  get enableFaceId => "تمكين الوجه رقم لفتح بلدي الماس؟";
+  @override
+  get unlockWithTouchId => "فتح بلدي الماس باستخدام اللمس رقم";
+  @override
+  get unlockWithFaceId => "فتح بلدي الماس باستخدام الوجه رقم.";
+  @override
+  get mPin => "MPin";
+  @override
+  get holdMemoStatusDiamondorder =>
+      "لا يمكنك أكدت الحجارة التي هي بالفعل في عقد أو مذكرة الوضع";
+  @override
+  get searchStoneIdCertificateNo => "بحث ستون رقم / شهادة لا";
+  @override
+  get createMPin => "إنشاء MPin جديد";
+  @override
+  get reentermpin => "إعادة إدخال MPin";
+  @override
+  get forgotmpin => "نسيت MPIN؟";
+  @override
+  get verifympin => "تحقق Mpin";
+  @override
+  get enteryoursixdigitcode => "أدخل MPIN 6 أرقام";
+  @override
+  get changempin => "تغيير MPin";
+  @override
+  get faceidandtouchnotenable =>
+      "لم يتم تمكين في هاتفك FaceId / TouchId، الرجاء تمكن من استخدام هذه الميزة";
+  @override
+  get enablempintounlockmydiamonds =>
+      "تمكين MPin إلى التطبيق فتح؟ وسوف تعطيل لمسة إيد. هل أنت متأكد أنك تريد المتابعة؟";
+  @override
+  get enabletouchidtounlockmydiamonds =>
+      "تمكين اللمس رقم إلى التطبيق فتح؟ وسوف تعطيل MPin. هل أنت متأكد أنك تريد المتابعة؟";
+  @override
+  get rememberme => "تذكرنى";
+  @override
+  get usertouchid => "استخدام اللمس رقم";
+  @override
+  get usempin => "استخدام MPin";
+  @override
+  get filesarenotavailableonserver =>
+      "الملفات غير متوفرة على الخادم، الرجاء إعادة المحاولة لاحقا";
+  @override
+  get allfileshavebeendownloaded => "تم تحميل جميع الملفات.";
+  @override
+  get filesisdownloaded => "يتم تحميل الملفات";
+  @override
+  get filesisnotdownloadedbcz =>
+      "لن يتم تحميل الملفات لأنه غير موجود في الملقم.";
+  @override
+  get downloadingCanceled => "تحميل إلغاء";
+  @override
+  get downloading => "جارى التحميل...";
+  @override
+  get expirydate => "تاريخ الانتهاء :";
+  @override
+  get youreallywanttodelete => "هل حقا تريد حذف";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "clarity": "وضوح",
+    "shape": "شكل",
+  };
+}
+
+class ArabicErrorString extends ErrorString {
+  @override
+  get accessDenide => "تم الرفض";
+  @override
+  get pleaseSelectOfferTillDate => "الرجاء تحديد العرض حتى الآن.";
+  @override
+  get pleaseSelectOfficeVisitDate => "يرجى اختيار مكتب موعد الزيارة";
+  @override
+  get deleteStoneMsg => "هل أنت متأكد أنك تريد حذف الحجر (ق)؟";
+  @override
+  get acceptTermsAndCondition => "وتفضلوا بقبول الشروط والأحكام";
+  @override
+  get diamondCompareRemove => "ويلزم على الأقل 2 الأحجار للمقارنة.";
+  @override
+  get diamondSelectionError => "الرجاء تحديد بحجر واحد على الأقل.";
+  @override
+  get pleaseEnterCompanyName => "يرجى إدخال اسم الشركة.";
+  @override
+  get selectInvoiceDate => "تحديد تاريخ الفاتورة";
+  @override
+  get pleaseEnterComment => "الرجاء إدخال تعليق.";
+  @override
+  get pleaseEnterRemarks => "الرجاء إدخال الملاحظات.";
+  @override
+  get selectExpiryDate => "يرجى تحديد تاريخ انتهاء الصلاحية.";
+  @override
+  get enterOTP => "الرجاء إدخال الرمز";
+  @override
+  get pleaseEnterOTP => "الرجاء إدخال رمز التحقق.";
+  @override
+  get enteredCodeNotMatching => "كود دخلت ليست مطابقة. حاول مرة أخري";
+  @override
+  get selectCancellationReason => "يرجى تحديد سبب الإلغاء";
+  @override
+  get enterDesc => "الرجاء إدخال الوصف.";
+  @override
+  get enterTitle => "يرجى إدخال عنوان.";
+  @override
+  get enterEmailOrPhone => "يرجى إدخال البريد الإلكتروني / المحمول.";
+  @override
+  get enterPassword =>
+      "كلمة سر لا يمكن أن يكون فارغا. الرجاء إدخال كلمة المرور.";
+  @override
+  get enterConfirmPassword => "الرجاء إدخال تأكيد كلمة المرور.";
+  @override
+  get enterSkype => "الرجاء إدخال سكايب.";
+  @override
+  get enterRegisterCode => "الرجاء إدخال رمز التسجيل";
+  @override
+  get enterEmail => "يرجى إدخال عنوان البريد الإلكتروني.";
+  @override
+  get enterPhone => "الرجاء إدخال رقم الجوال.";
+  @override
+  get enterUsername =>
+      "اسم المستخدم لا يمكن أن يكون فارغا. الرجاء إدخال اسم المستخدم.";
+  @override
+  get enterValidEmail => "الرجاء إدخال عنوان البريد الإلكتروني الصحيح.";
+  @override
+  get enterValidPhone => "الرجاء إدخال رقم الجوال صحيح.";
+  @override
+  get enterValidWhatsappPhone => "الرجاء إدخال صالح ال WhatsApp رقم الجوال.";
+  @override
+  get enterValidPassword => "الرجاء إدخال 6 أحرف أو كلمة المرور طويلة.";
+  @override
+  get mismatchPassword => "كلمة المرور وتأكيد كلمة المرور لم يتم مطابقة.";
+  @override
+  get enterFirstName => "الرجاء إدخال الاسم الأول.";
+  @override
+  get enterMiddleName => "الرجاء إدخال الاسم الأوسط.";
+  @override
+  get enterPinCode => "الرجاء إدخال الرقم السري.";
+  @override
+  get enterName => "الرجاء إدخال اسم.";
+  @override
+  get enterLastName => "الرجاء إدخال اسم العائلة.";
+  @override
+  get enterAddress => "يرجى إدخال عنوان.";
+  @override
+  get enterValidPinCode => "أدخل الرقم السري صالح.";
+  @override
+  get enterValidAddress => "الرجاء إدخال 10 حرفا أو عنوان طويل.";
+  @override
+  get enterPostalCode => "الرجاء إدخال الرمز البريدي.";
+  @override
+  get enterValidPostalCode => "الرجاء إدخال 6 أرقام الرمز البريدي الرقمية.";
+  @override
+  get enterCurrentPassword => "الرجاء إدخال كلمة المرور الحالية.";
+  @override
+  get enterNewPassword => "يرجى إدخال كلمة المرور الجديدة.";
+  @override
+  get enterFareAmount => "الرجاء إدخال كمية المبيعات.";
+  @override
+  get enterOrderNO => "الرجاء إدخال أي نظام.";
+  @override
+  get enterServiceType => "يرجى تحديد نوع الخدمة.";
+  @override
+  get enterPaymentType => "يرجى تحديد نوع الدفع.";
+  @override
+  get enterValidFareAmount => "كمية المبيعات لا يمكن أن يكون صفرا.";
+  @override
+  get enterPassangerNo => "الرجاء إدخال رقم الركاب.";
+  @override
+  get enterValidPassangerNo => "عدد الركاب لا يمكن أن يكون صفرا.";
+  @override
+  get notEnterMorePassangerNo =>
+      "عدد الركاب لا يمكن أن يكون أكثر من سبع سنوات.";
+  @override
+  get drivingLicenseValidationText =>
+      "الرجاء إدخال 15 أرقام أبجدية القيادة رقم الترخيص.";
+  @override
+  get pANCardValidationText => "الرجاء إدخال 10 أرقام أبجدية رقم بطاقة PAN.";
+  @override
+  get selectFromDate => "الرجاء تحديد من تاريخ";
+  @override
+  get selectToDate => "الرجاء تحديد حتى الآن";
+  @override
+  get fromGreaterTo => "يجب أن يكون التاريخ المحدد أكبر من التاريخ الحالي";
+  @override
+  get wrongPassword =>
+      "يحتوي كلمة لا بد منه، والحد الأدنى 8 أحرف، 1 الأبجدية الكبيرة (1)، أقل حالة الأبجدية، الرقم 1، 1 charater خاص";
+  @override
+  get fromValueGreateThanTo => "من القيمة يجب أن تكون أقل من أو يساوي قيمة ل";
+  @override
+  get toValueGreaterThanFrom =>
+      "إلى القيمة يجب أن يكون أكبر من أو يساوي من قيمة";
+  @override
+  get pleaseEnterCompanyCode => "الرجاء إدخال رمز الشركة";
+  @override
+  get enterSamePassword =>
+      "لا يتطابق مع تأكيد كلمة المرور مع كلمة المرور الجديدة. الرجاء إدخال تأكيد كلمة المرور نفس كلمة المرور الجديدة.";
+  @override
+  get selectAppointmentDate => "يرجى تحديد تاريخ التعيين";
+  @override
+  get selectTimeSlot => "الرجاء تحديد فتحة وقت";
+  @override
+  get enterComments => "الرجاء إدخال تعليق";
+  @override
+  get selectVirtualType => "يرجى تحديد نوع الظاهري";
+  @override
+  get versionError => "خطأ نسخة";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
 }
 
-class ArabicAddCard extends AddCard {
+class ArabicNoDataStrings extends NoDataStrings {
   @override
-  get lblCreditCard => "بطاقة ائتمان";
-  @override
-  get lblCardNumber => "رقم البطاقة";
-  @override
-  get lblCardHolderName => "إسم صاحب البطاقة";
-  @override
-  get lblExpiryDate => "تاريخ الانتهاء";
-  @override
-  get lblCvvCode => "رقم الكود الموجود على بطاقات الاتمان";
+  get noDataFound => "لا يوجد سجلات";
   String byKey(String key) => _dynamicValues[key];
   Map<String, String> _dynamicValues = {};
+}
+
+class ArabicScreenTitle extends ScreenTitle {
+  @override
+  get placeAnOffer => "وضع العرض";
+  @override
+  get addedInWatchList => "وأضاف في قائمة الرغبات";
+  @override
+  get addedInOffer => "العرض المقدم";
+  @override
+  get addedInCart => "وأضاف في العربة";
+  @override
+  get addedInBid => "وأضاف في المزايدة";
+  @override
+  get myEnquiry => "بلدي رسالتك";
+  @override
+  get delete => "حذف";
+  @override
+  get addDemand => "إضافة الطلب";
+  @override
+  get matchPair => "مباراة زوج";
+  @override
+  get savedAndSearch => "حفظ البحث";
+  @override
+  get updateAndSearch => "تحديث والبحث";
+  @override
+  get upcoming => "القادمة";
+  @override
+  get bidPricePerCt => "سعر العرض / ط م";
+  @override
+  get bidDisc => "محاولة القرص";
+  @override
+  get bidValue => "المزايدة القيمة";
+  @override
+  get bidStone => "محاولة ستون";
+  @override
+  get myCart => "سلتي";
+  @override
+  get myComment => "ملاحظاتي";
+  @override
+  get compare => "قارن";
+  @override
+  get compareStones => "الأحجار قارن";
+  @override
+  get statusHold => "في الانتظار";
+  @override
+  get statusOnMemo => "على مذكرة";
+  @override
+  get statusAvailable => "متاح";
+  @override
+  get statusNew => "قادم جديد";
+  @override
+  get statusOffer => "حجر من اليوم / الترويج";
+  @override
+  get statusMyHold => "بلدي الانتظار";
+  @override
+  get signup => "سجل";
+  @override
+  get addToOffice => "إضافة مكتب ل";
+  @override
+  get addComment => "أضف تعليق";
+  @override
+  get addEnquiry => "إضافة رسالتك";
+  @override
+  get finalOffer => "العرض الأخير";
+  @override
+  get finalDisc => "القرص النهائي";
+  @override
+  get finalRate => "تقييم النهائي";
+  @override
+  get finalValue => "القيمة النهائية";
+  @override
+  get orderMsg =>
+      "1) المذكورة أسعار أكثر من هنا وثابتة، وبالتالي غير قابلة للتفاوض. \\ N2) والدرجات، وذكرت المعلمات على موقعنا على الانترنت وراء تصنيف GIA ل.";
+  @override
+  get offerMsg =>
+      "ومباشرة تأكيد الحجر إذا عرضت يحصل على الموافقة على السعر لذلك نحن نطلب من سيادتكم التأكد قبل الطرح. لا يتم الاحتفاظ أي الحجر (ق) وضعت في قائمة عرض في الانتظار بالنسبة لك كما هو متاح للعملاء الآخرين أيضا.";
+  @override
+  get note => "ملحوظة";
+  @override
+  get hours => "ساعات";
+  @override
+  get offeredDisc => "ديس المقدمة";
+  @override
+  get offeredPriceCt => "عرضت العلاقات العامة / ط م";
+  @override
+  get addOffer => "إضافة عرض";
+  @override
+  get expDiscPer => "الخصم المتوقع";
+  @override
+  get todayDiscPer => "قرص اليوم";
+  @override
+  get searchResult => "نتيجة البحث";
+  @override
+  get searchDiamond => "البحث الماس";
+  @override
+  get basic => "الأساسي";
+  @override
+  get advanced => "المتقدمة";
+  @override
+  get stoneIdCertNo => "StoneID / سيرت لا";
+  @override
+  get takeSignature => "خذ التوقيع";
+  @override
+  get optional => "اختياري";
+  @override
+  get myAddress => "عنواني";
+  @override
+  get expiryDate => "تاريخ الانتهاء";
+  @override
+  get drivingLicenceDesc => "القيادة الصورة الترخيص الخاص بك";
+  @override
+  get panDesc => "PAN الصورة بطاقتك";
+  @override
+  get selfie => "صورة شخصية";
+  @override
+  get selfieDesc => "الصورة صورك الشخصية";
+  @override
+  get pending => "قيد الانتظار";
+  @override
+  get rejected => "مرفوض";
+  @override
+  get uploadAgain => "رفع";
+  @override
+  get remove => "إزالة";
+  @override
+  get title => "عنوان";
+  @override
+  get description => "وصف";
+  @override
+  get uploadYour => "حمل سيرتك";
+  @override
+  get raiseDispute => "اخبرنا عنها";
+  @override
+  get drivingLicense => "رخصة قيادة";
+  @override
+  get pANCard => "بطاقة الطعام";
+  @override
+  get saveContinue => "حفظ ومتابعة";
+  @override
+  get uploadFrontUmgText => "تحميل الأمامي صورة";
+  @override
+  get uploadPANCardImgText => "تحميل بطاقة PAN صورة";
+  @override
+  get uploadBackImageText => "تحميل الجانب الخلفي صورة";
+  @override
+  get helptopic => "مواضيع التعليمات";
+  @override
+  get newRideSharingRequest => "طلبات جديدة ركوب مشاركة";
+  @override
+  get newRequest => "طلبات جديدة";
+  @override
+  get welcomeTo => "مرحبا بك في";
+  @override
+  get welcomeDesc => "تسجيل الدخول إلى حسابك الحالي ماني جوهرة";
+  @override
+  get forgotPassword => "نسيت";
+  @override
+  get forgotPasswordDesc =>
+      "أدخل رقم الجوال المسجل لاستعادة كلمة السر الخاصة بك.";
+  @override
+  get termsAndCondition => "البنود و الظروف";
+  @override
+  get privacyPolicy => "سياسة الخصوصية";
+  @override
+  get aboutUS => "معلومات عنا";
+  @override
+  get otpVerification => "التحقق من كود ركوب";
+  @override
+  get otpVerificationDelivery => "التحقق من شفرة بيك اب";
+  @override
+  get otpVerificationDeliveryDone => "التحقق من كود تسليم";
+  @override
+  get enterOtp => "أدخل 4 أرقام";
+  @override
+  get recoveryCode => "رمز الاسترداد";
+  @override
+  get editProfile => "تعديل الملف الشخصي";
+  @override
+  get myProfile => "ملفي";
+  @override
+  get reset => "إعادة تعيين";
+  @override
+  get yourPassword => "كلمة السر خاصتك";
+  @override
+  get photo => "صورة فوتوغرافية";
+  @override
+  get otpDesc =>
+      "تم إرسال رمز الاسترداد إلى رقم هاتفك المحمول. الرجاء إدخال الرمز.";
+  @override
+  get otpVerifyDesc =>
+      "تم إرسال رمز التحقق إلى رقم هاتفك المحمول. الرجاء إدخال الرمز.";
+  @override
+  get diamondDetail => "الماس التفاصيل";
+  @override
+  get home => "الصفحة الرئيسية";
+  @override
+  get search => "بحث";
+  @override
+  get quickSearch => "بحث سريع";
+  @override
+  get newArrival => "قادم جديد";
+  @override
+  get exclusiveDiamonds => "الماس الحصرية";
+  @override
+  get diamondOnAuction => "الماس في مزاد";
+  @override
+  get stoneOfTheDays => "افضل شراء";
+  @override
+  get myWatchlist => "بلدي قائمة الرغبات";
+  @override
+  get myBid => "بلدي المزايدة";
+  @override
+  get myHold => "بلدي الانتظار";
+  @override
+  get myOrder => "بلدي قائمة أمرت";
+  @override
+  get confirmStone => "ستون تأكيد";
+  @override
+  get myOffice => "مكتبي مشاهدة";
+  @override
+  get myOffer => "بلدي قائمة المنتجات";
+  @override
+  get myPurchased => "بلدي التاريخ شراؤها";
+  @override
+  get mySavedSearch => "بلدي بحث محفوظ";
+  @override
+  get savedSearch => "بحث محفوظ";
+  @override
+  get myDemand => "بلدي الطلب";
+  @override
+  get contactUs => "اتصل بنا";
+  @override
+  get changePassword => "غير كلمة السر";
+  @override
+  get logout => "تسجيل خروج";
+  @override
+  get fareDetailsTitle => "أدخل تفاصيل المبيعات";
+  @override
+  get fairAmt => "مبيعات المبلغ";
+  @override
+  get noOfPassengers => "عدد الركاب";
+  @override
+  get remarks => "ملاحظات";
+  @override
+  get orderNo => "الأمر رقم";
+  @override
+  get typeOfService => "نوع الخدمة";
+  @override
+  get paymentType => "نوع الدفع*";
+  @override
+  get recentlyView => "مؤخرا عرض";
+  @override
+  get uploadImgValidationText =>
+      "يجب أن يكون إيداع الملف. jpg أو JPEG أو بابوا نيو غينيا أو قوات الدفاع الشعبي وجود حجم 5 ميغا بايت أو أقل.";
+  @override
+  get drivingLicenseHintText => "القيادة رقم الرخصة";
+  @override
+  get pANCARDHintText => "PAN رقم البطاقة";
+  @override
+  get viewRide => "عرض ركوب الخيل";
+  @override
+  get myVehicle => "سيارتي";
+  @override
+  get personalDocument => "مستندات شخصية";
+  @override
+  get help => "مساعدة";
+  @override
+  get about => "حول";
+  @override
+  get bankDetails => "التفاصيل المصرفية";
+  @override
+  get accountAndPayment => "الحساب والدفع";
+  @override
+  get enquiry => "تحقيق";
+  @override
+  get download => "تحميل";
+  @override
+  get addToCart => "أضف إلى السلة";
+  @override
+  get addToWatchList => "أضافة إلى قائمة المشاهدة";
+  @override
+  get finalCalculation => "حساب النهائي";
+  @override
+  get bookOffice => "مكتب كتاب";
+  @override
+  get clearSelection => "مسح التحديد";
+  @override
+  get comment => "تعليقات";
+  @override
+  get hold => "معلق";
+  @override
+  get offer => "عرض";
+  @override
+  get officeView => "مكتب مشاهدة";
+  @override
+  get placeOrder => "مكان الامر";
+  @override
+  get buyNow => "اشتري الآن";
+  @override
+  get cancelStone => "إلغاء الحجر";
+  @override
+  get share => "شارك";
+  @override
+  get watchlist => "قائمة الرغبات";
+  @override
+  get exclusive => "حصرية";
+  @override
+  get featuredStones => "احجار مميزة";
+  @override
+  get stoneOfDay => "حجارة يوم";
+  @override
+  get recentSearch => "البحث الأخيرة";
+  @override
+  get viewAll => "عرض جميع";
+  @override
+  get salesPersonDetail => "شخص المبيعات التفاصيل";
+  @override
+  get searchTitle => "عنوان البحث";
+  @override
+  get enterSearchTitle => "أدخل عنوان البحث";
+  @override
+  get timeSlots => "فتحات الوقت";
+  @override
+  get selectCustomDate => "تحديد موعد مخصص";
+  @override
+  get availableSlot => "فتحات متاحة";
+  @override
+  get reqOfficeView => "طلب مكتب مشاهدة";
+  @override
+  get myComments => "تعليقي";
+  @override
+  get myReminder => "بلدي تذكير";
+  @override
+  get reminder => "تذكير";
+  @override
+  get manageAddress => "إدارة العناوين";
+  @override
+  get myAccount => "حسابي";
+  @override
+  get declaimer => "تنصل";
+  @override
+  get shareStone => "حصة ستون";
+  @override
+  get addRemider => "إضافة تذكير";
+  @override
+  get offlineSearch => "غير متصل البحث";
+  @override
+  get searchHistory => "عمليات البحث السابقة";
+  @override
+  get offlineStock => "الأسهم حاليا";
+  @override
+  get searchOffline => "بحث (غير متصل)";
+  @override
+  get voiceSearch => "البحث الصوتي";
+  @override
+  get tapMictoSpeak => "اضغط هيئة التصنيع العسكري في الكلام";
+  @override
+  get typeToSearch => "اكتب للبحث";
+  @override
+  get typeWordsToSearch => "اكتب على الأقل 3 كلمات للبحث الحجارة";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {};
+}
+
+class ArabicDynamickeys extends Dynamickeys {
+  @override
+  get shape => "شكل";
+  @override
+  get caratRange => "المدى قيراط";
+  @override
+  get basicDetail => "تفاصيل أساسية";
+  @override
+  get measurementTitle => "قياسات";
+  @override
+  get inclusionDetail => "تفاصيل إدراج";
+  @override
+  get other => "آخر";
+  @override
+  get stoneID => "ID الحجر";
+  @override
+  get labTitle => "مختبر";
+  @override
+  get certNo => "CERT. لا.";
+  @override
+  get locationTitle => "موقعك";
+  @override
+  get shapeTitle => "شكل";
+  @override
+  get caratTitle => "قيراط";
+  @override
+  get colorTitle => "اللون";
+  @override
+  get clarityTitle => "وضوح";
+  @override
+  get shadeTitle => "ظل";
+  @override
+  get cutTitle => "يقطع";
+  @override
+  get polishTitle => "تلميع";
+  @override
+  get symmentryTitle => "Symmentry";
+  @override
+  get fluorescenceTitle => "ضوئي";
+  @override
+  get rapTitle => r"موسيقى الراب ($/)";
+  @override
+  get discountTitle => "خصم (٪)";
+  @override
+  get priceAndCt => r"السعر / ط م ($/)";
+  @override
+  get amountTitle => "كمية";
+  @override
+  get eyeCleanTitle => "العين النظيفة";
+  @override
+  get brownTitle => "بنى";
+  @override
+  get milkyTitle => "حليبي";
+  @override
+  get mixTingeTitle => "MIX مسحة";
+  @override
+  get dimensionTitle => "الأبعاد (MM)";
+  @override
+  get girdleTitle => "حزام (٪)";
+  @override
+  get tableTitle => "الطاولة ٪";
+  @override
+  get crownAngleTitle => "تاج زاوية";
+  @override
+  get depthTitle => "٪ العمق";
+  @override
+  get pavAngleTitle => "Pav Angle";
+  @override
+  get crownHeightTitle => "ولي العهد الارتفاع";
+  @override
+  get pavDepthTitle => "عمق جناح (٪)";
+  @override
+  get starLengthTitle => "نجمة طول";
+  @override
+  get lowerHalfTitle => "النصف السفلي";
+  @override
+  get gridleTitle => "حزام";
+  @override
+  get gridleFacetedTitle => "حزام الأوجه";
+  @override
+  get culetTitle => "Culet";
+  @override
+  get rationTitle => "نسبة";
+  @override
+  get blackInclusionTitle => "إدراج أسود";
+  @override
+  get otherInclusionTitle => "إدراج الآخرين";
+  @override
+  get openInclusionTitle => "إدراج المفتوح";
+  @override
+  get extraFacetTitle => "FACET اكسترا";
+  @override
+  get naturalTitle => "طبيعي >> صفة";
+  @override
+  get hAndATitle => "H & A";
+  @override
+  get keyToSymbol => "KEY TO SYMBOL";
+  @override
+  get labComments => "تعليقات LAB";
+  @override
+  get laserInsTitle => "LASER INS";
+  @override
+  get basicTitle => "الأساسي";
+  @override
+  get advancedTitle => "المتقدمة";
+  @override
+  get stoneIdTitle => "حجر ID / سيرت لا";
+  @override
+  get defaultTitle => "إفتراضي";
+  @override
+  get newDiamondsTitle => "الماس جديدة";
+  @override
+  get priceLowToHigh => "السعر من الارخص للاعلى";
+  @override
+  get priceHighToLow => "السعر الاعلى الى الادنى";
+  @override
+  get disLowToHigh => "خصم الأدنى إلى الأعلى";
+  @override
+  get disHighToLow => "خصم الاعلى الى الادنى";
+  @override
+  get colorLowToHigh => "اللون الأدنى إلى الأعلى";
+  @override
+  get colorHighToLow => "اللون من الأعلى إلى الأقل";
+  @override
+  get caratLowToHigh => "قيراط الأدنى إلى الأعلى";
+  @override
+  get caratHighToLow => "قيراط الاعلى الى الادنى";
+  @override
+  get clarityLowToHigh => "وضوح الأدنى إلى الأعلى";
+  @override
+  get clarityHighToLow => "وضوح الاعلى الى الادنى";
+  @override
+  get colorShadeTitle => "لون الظل";
+  @override
+  get certiTitle => "رقم شهادة";
+  @override
+  get arrivalsTitle => "الوصول";
+  @override
+  get lengthTitle => "الطول";
+  @override
+  get widthTitle => "عرض";
+  @override
+  get pavilionAngleTitle => "جناح زاوية";
+  @override
+  get girdleConditionTitle => "حزام الحالة";
+  @override
+  get cluetConditionTitle => "Culet الحالة";
+  @override
+  get disTitle => "ديس٪";
+  @override
+  get depthTitleWithoutPerc => "عمق";
+  @override
+  get otherInformationTitle => "#ERROR!";
+  String byKey(String key) => _dynamicValues[key];
+  Map<String, String> _dynamicValues = {
+    "shape": "شكل",
+    "caratRange": "المدى قيراط",
+    "basicDetail": "تفاصيل أساسية",
+    "measurementTitle": "قياسات",
+    "inclusionDetail": "تفاصيل إدراج",
+    "other": "آخر",
+    "stoneID": "ID الحجر",
+    "labTitle": "مختبر",
+    "certNo": "CERT. لا.",
+    "locationTitle": "موقعك",
+    "shapeTitle": "شكل",
+    "caratTitle": "قيراط",
+    "colorTitle": "اللون",
+    "clarityTitle": "وضوح",
+    "shadeTitle": "ظل",
+    "cutTitle": "يقطع",
+    "polishTitle": "تلميع",
+    "symmentryTitle": "Symmentry",
+    "fluorescenceTitle": "ضوئي",
+    "rapTitle": r"موسيقى الراب ($/)",
+    "discountTitle": "خصم (٪)",
+    "priceAndCt": r"السعر / ط م ($/)",
+    "amountTitle": "كمية",
+    "eyeCleanTitle": "العين النظيفة",
+    "brownTitle": "بنى",
+    "milkyTitle": "حليبي",
+    "mixTingeTitle": "MIX مسحة",
+    "dimensionTitle": "الأبعاد (MM)",
+    "girdleTitle": "حزام (٪)",
+    "tableTitle": "الطاولة ٪",
+    "crownAngleTitle": "تاج زاوية",
+    "depthTitle": "٪ العمق",
+    "pavAngleTitle": "Pav Angle",
+    "crownHeightTitle": "ولي العهد الارتفاع",
+    "pavDepthTitle": "عمق جناح (٪)",
+    "starLengthTitle": "نجمة طول",
+    "lowerHalfTitle": "النصف السفلي",
+    "gridleTitle": "حزام",
+    "gridleFacetedTitle": "حزام الأوجه",
+    "culetTitle": "Culet",
+    "rationTitle": "نسبة",
+    "blackInclusionTitle": "إدراج أسود",
+    "otherInclusionTitle": "إدراج الآخرين",
+    "openInclusionTitle": "إدراج المفتوح",
+    "extraFacetTitle": "FACET اكسترا",
+    "naturalTitle": "طبيعي >> صفة",
+    "hAndATitle": "H & A",
+    "keyToSymbol": "KEY TO SYMBOL",
+    "labComments": "تعليقات LAB",
+    "laserInsTitle": "LASER INS",
+    "basicTitle": "الأساسي",
+    "advancedTitle": "المتقدمة",
+    "stoneIdTitle": "حجر ID / سيرت لا",
+    "defaultTitle": "إفتراضي",
+    "newDiamondsTitle": "الماس جديدة",
+    "priceLowToHigh": "السعر من الارخص للاعلى",
+    "priceHighToLow": "السعر الاعلى الى الادنى",
+    "disLowToHigh": "خصم الأدنى إلى الأعلى",
+    "disHighToLow": "خصم الاعلى الى الادنى",
+    "colorLowToHigh": "اللون الأدنى إلى الأعلى",
+    "colorHighToLow": "اللون من الأعلى إلى الأقل",
+    "caratLowToHigh": "قيراط الأدنى إلى الأعلى",
+    "caratHighToLow": "قيراط الاعلى الى الادنى",
+    "clarityLowToHigh": "وضوح الأدنى إلى الأعلى",
+    "clarityHighToLow": "وضوح الاعلى الى الادنى",
+    "colorShadeTitle": "لون الظل",
+    "certiTitle": "رقم شهادة",
+    "arrivalsTitle": "الوصول",
+    "lengthTitle": "الطول",
+    "widthTitle": "عرض",
+    "pavilionAngleTitle": "جناح زاوية",
+    "girdleConditionTitle": "حزام الحالة",
+    "cluetConditionTitle": "Culet الحالة",
+    "disTitle": "ديس٪",
+    "depthTitleWithoutPerc": "عمق",
+    "otherInformationTitle": "#ERROR!",
+  };
 }

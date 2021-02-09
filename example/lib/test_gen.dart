@@ -100,23 +100,25 @@ class TestGen {
         innerValue.forEach((key, value) {
           if (key == "dynamicKeys") {
             if (value is List<dynamic>) {
-              print("in if");
               localeData.dynamicKeys.addAll(value.map((e) => e.toString()));
             }
           } else {
             if (localeData.dynamicKeys.contains(key)) {
-              dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
-              print(dynamicKeysSource);
+              dynamicKeysSource +=
+                  "\"${toCamelCase(key)}\":  ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""},";
             }
-            subClassSource += " String ${toCamelCase(key)} = \"$value\" ;";
+            subClassSource +=
+                " String ${toCamelCase(key)} = ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""};";
           }
         });
       } else {
         innerValue.forEach((key, value) {
           if (defaultLocal.dynamicKeys.contains(key)) {
-            dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
+            dynamicKeysSource +=
+                "\"${toCamelCase(key)}\": ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""},";
           }
-          subClassSource += "@override get ${toCamelCase(key)} => \"$value\" ;";
+          subClassSource +=
+              "@override get ${toCamelCase(key)} => ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""};";
         });
       }
       dynamicKeysSource += "};";
@@ -191,9 +193,7 @@ class TestGen {
   }
 }
  ''';
-
     /*var formatter = new DartFormatter();
     return formatter.format(source);*/
-    return source;
   }
 }

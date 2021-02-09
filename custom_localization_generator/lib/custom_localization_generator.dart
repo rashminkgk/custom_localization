@@ -20,7 +20,6 @@ class CustomLocalizationGenerator
     return getSource(annotation.read("jsonFileUrl").stringValue);
   }
 
-
   Future<String> getSource(String fileUrl) async {
     String jsonString = await File(fileUrl).readAsString();
 
@@ -104,25 +103,25 @@ class CustomLocalizationGenerator
         innerValue.forEach((key, value) {
           if (key == "dynamicKeys") {
             if (value is List<dynamic>) {
-              print("in if");
               localeData.dynamicKeys.addAll(value.map((e) => e.toString()));
             }
           } else {
             if (localeData.dynamicKeys.contains(key)) {
-              dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
-              print(dynamicKeysSource);
-            } else
-              subClassSource += " String ${toCamelCase(key)} = \"$value\" ;";
+              dynamicKeysSource +=
+                  "\"${toCamelCase(key)}\":  ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""},";
+            }
+            subClassSource +=
+                " String ${toCamelCase(key)} = ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""};";
           }
         });
       } else {
         innerValue.forEach((key, value) {
           if (defaultLocal.dynamicKeys.contains(key)) {
-            dynamicKeysSource += "\"${toCamelCase(key)}\": \"$value\",";
-          } else {
-            subClassSource +=
-            "@override get ${toCamelCase(key)} => \"$value\" ;";
+            dynamicKeysSource +=
+                "\"${toCamelCase(key)}\": ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""},";
           }
+          subClassSource +=
+              "@override get ${toCamelCase(key)} => ${(value as String).contains("\$") ? "r\"$value\"" : "\"$value\""};";
         });
       }
       dynamicKeysSource += "};";
@@ -142,13 +141,13 @@ class CustomLocalizationGenerator
 
     if (localeData.languageCode != null)
       source +=
-      "static String get languageCode=>\"${localeData.languageCode}\";";
+          "static String get languageCode=>\"${localeData.languageCode}\";";
 
     if (localeData.scriptCode != null)
       source += "static String get scriptCode=>\"${localeData.scriptCode}\";";
     if (localeData.languageName != null)
       source +=
-      "static String get languageName=>\"${localeData.languageName}\";";
+          "static String get languageName=>\"${localeData.languageName}\";";
 
     source += "}";
     subClasses.forEach((element) {
@@ -163,7 +162,7 @@ class CustomLocalizationGenerator
     String supportedLocalesSource = "{";
     supportedLocales.forEach((element) {
       supportedLocalesSource +=
-      "\"${element.languageName}\":${element.className}(),";
+          "\"${element.languageName}\":${element.className}(),";
     });
     supportedLocalesSource += "};";
 

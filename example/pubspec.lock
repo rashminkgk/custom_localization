@@ -165,16 +165,20 @@ packages:
   custom_localization:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.2"
+      path: "."
+      ref: HEAD
+      resolved-ref: "48d37ecb1996225c440ce57c4964d5a65f184f22"
+      url: "https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git"
+    source: git
+    version: "0.0.3"
   custom_localization_generator:
     dependency: "direct dev"
     description:
-      path: "../custom_localization_generator"
-      relative: true
-    source: path
+      path: custom_localization_generator
+      ref: HEAD
+      resolved-ref: "48d37ecb1996225c440ce57c4964d5a65f184f22"
+      url: "https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git"
+    source: git
     version: "0.0.1"
   dart_style:
     dependency: transitive
