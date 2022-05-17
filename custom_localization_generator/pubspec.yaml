@@ -15,7 +15,7 @@ dependencies:
   dart_style: ^1.3.3
   custom_localization:
     #    path: ../../custom_localization
-    git: https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git
+    git: https://gitlab.diamnow.com/flutter-public/flutter-localisation.git
 
 
 dev_dependencies:

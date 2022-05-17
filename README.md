@@ -72,13 +72,13 @@ class AuthStrings {
 ```yaml
 dependencies:
     custom_localization:
-        git: https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git
+        git: https://gitlab.diamnow.com/flutter-public/flutter-localisation.git
 
 dev_dependencies:
     build_runner: any
     custom_localization_generator:
         git:
-          url: https://gitlab.coruscate.in:8443/coruslab/flutter-localisation.git
+          url: https://gitlab.diamnow.com/flutter-public/flutter-localisation.git
           path: custom_localization_generator
 ```
 
